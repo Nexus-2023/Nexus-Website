@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
 import { Transition } from "./Transition"
 // import styles from "../styles/reveal.module.css"
-import { useInterval, usePrevious } from "@/hooks"
+
 import dynamic from "next/dynamic"
 import { Fragment, useEffect, useState } from "react"
 
@@ -28,54 +28,7 @@ const introSentences = [
   "A plugable Staking Solution",
 ]
 
-const RevealExample = () => {
-  const revealVariants = {
-    initial: { opacity: 0, width: 0, left: 0 },
-    animate: { opacity: 1, width: "100%", left: "100%" },
-    exit: { opacity: 0 },
-  }
-
-  const artifactVariants = {
-    initial: { width: 0 },
-    animate: { width: "100%" },
-  }
-
-  const contentVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-  }
-
-  return (
-    <motion.div
-      className="reveal"
-      variants={revealVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
-    >
-      <motion.h1 className="reveal__content" variants={contentVariants}>
-        Welcome To,
-      </motion.h1>
-      <motion.span
-        className="reveal__artifact"
-        variants={artifactVariants}
-        style={{ backgroundColor: "black", display: "block", height: "100%" }}
-      />
-    </motion.div>
-  )
-}
-
 const HomePage = () => {
-  const [disciplineIndex, setDisciplineIndex] = useState(0)
-
-  const currentSentence = introSentences.find(
-    (item, index) => index === disciplineIndex
-  )
-
-  useInterval(() => {
-    const index = (disciplineIndex + 1) % introSentences.length
-    setDisciplineIndex(index)
-  }, 5000)
   return (
     <div className="h-[88vh] space-x-8 flex justify-center items-center  -mt-[3rem]">
       {/* <RevealContainer delay={0}>
@@ -124,7 +77,7 @@ const HomePage = () => {
 
         <div className="flex  flex-col   space-y-6">
           <div className="flex text-3xl font-semibold text-gray-700 items-center space-x-4">
-            <RevealContainer delay={0.5}>
+            <RevealContainer delay={1.2}>
               <h1>
                 <RevealContent>
                   <div className="flex items-center">
@@ -147,7 +100,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex  ">
-            <ReversedRevealContainer delay={2}>
+            <ReversedRevealContainer delay={4}>
               <ReversedRevealContent>
                 <Image
                   src={text}
@@ -162,7 +115,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <RevealContainer delay={1.5}>
+            <RevealContainer delay={2.3}>
               <h1>
                 <RevealContent>
                   <div className="flex items-center">

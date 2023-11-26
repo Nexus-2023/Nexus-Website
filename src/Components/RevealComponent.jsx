@@ -81,7 +81,7 @@ const ReversedRevealContainer = styled.div`
     const delay = props.delay || 0
     return `
       & > * {
-        animation-delay: ${delay}s;
+        animation-delay: ${delay * 0.6}s;
       }
     `
   }}

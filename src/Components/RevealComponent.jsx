@@ -4,6 +4,7 @@
 import styled, { keyframes } from "styled-components"
 
 const revealAnimation = keyframes`
+transition: all 0.3s easeInOutSine;
   0%, 100% {
     width: 0%;
     left: 0%;
@@ -49,7 +50,7 @@ const RevealArtifact = styled.span`
   height: 100%;
   background-color: #0394ff;
   animation-name: ${revealAnimation};
-  animation-duration: 1s;
+  animation-duration: 1.8s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-delay: inherit; // Inherit the delay from the parent
@@ -57,7 +58,7 @@ const RevealArtifact = styled.span`
 
 const RevealContent = styled.span`
   animation-name: ${revealContentAnimation};
-  animation-duration: 1s;
+  animation-duration: 1.8s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-delay: inherit; // Inherit the delay from the parent
@@ -95,7 +96,7 @@ const ReversedRevealArtifact = styled.span`
   height: 100%;
   background-color: black;
   animation-name: ${revealAnimation};
-  animation-duration: 1s;
+  animation-duration: 1.8s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-direction: reverse; // Set the animation direction to reverse
@@ -104,7 +105,7 @@ const ReversedRevealArtifact = styled.span`
 
 const ReversedRevealContent = styled.span`
   animation-name: ${ReversedrevealContentAnimation};
-  animation-duration: 1s;
+  animation-duration: 1.8s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-direction: reverse; // Set the animation direction to reverse
@@ -112,7 +113,7 @@ const ReversedRevealContent = styled.span`
 `
 const RevealImage = styled.img`
   animation-name: ${ReversedrevealContentAnimation};
-  animation-duration: 1s;
+  animation-duration: 1.8s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
 `

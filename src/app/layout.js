@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/Components/Navbar"
+import styles from "../styles/Reveal.module.css"
 
 export const metadata = {
   title: "Nexus",
@@ -13,8 +14,8 @@ export default function RootLayout({ children }) {
       <body>
         <div className=" container mx-auto px-16 py-4">
           <Navbar />
-          {children}
         </div>
+        {children}
       </body>
     </html>
   )

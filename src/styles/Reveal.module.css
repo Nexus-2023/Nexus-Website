@@ -1,0 +1,67 @@
+/* reveal.module.css */
+ 
+.reveal {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+
+  .reveal--artifact,
+  .reveal--content {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+  .reveal--artifact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+
+    animation-name: reveal;
+  }
+
+  .reveal--content {
+    animation-name: reveal-content;
+  }
+
+ 
+  .reveal:nth-child(3) {
+    .reveal__artifact,
+    .reveal__content {
+      animation-delay: 1s;
+    }
+  }
+  .reveal:nth-child(5) {
+    .reveal__artifact,
+    .reveal__content {
+      animation-delay: 1.5s;
+    }
+  }
+}
+
+@keyframes reveal {
+  0%, 100% {
+    width: 0%;
+    left: 0%;
+  }
+  50% {
+    width: 100%;
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes reveal-content {
+  0%, 49.999% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}  

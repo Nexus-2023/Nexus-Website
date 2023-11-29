@@ -52,6 +52,7 @@ const HomePage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 2, // Adjust the duration for the fade-in effect
+            delay: 2,
           }}
         >
           {/* initial={{ opacity: 0, y: -50 }}
@@ -65,8 +66,8 @@ const HomePage = () => {
             animate={{ y: [0, 0, 0], rotate: 360 }}
             transition={{
               duration: 4,
-              repeat: Infinity,
-              repeatType: "loop",
+              // repeat: Infinity,
+              // repeatType: "loop",
             }}
           >
             <Image src={logo} height={200} width={200} alt="Nexus Logo" />
@@ -102,13 +103,22 @@ const HomePage = () => {
           <div className="flex  ">
             <ReversedRevealContainer delay={4}>
               <ReversedRevealContent>
-                <Image
-                  src={text}
-                  height={580}
-                  width={580}
-                  alt="Nexus Network"
-                  className=" "
-                />
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 1, // Adjust the duration for the fade-in effect
+                    delay: 1,
+                  }}
+                >
+                  <Image
+                    src={text}
+                    height={580}
+                    width={580}
+                    alt="Nexus Network"
+                    className=""
+                  />
+                </motion.div>
               </ReversedRevealContent>
               <ReversedRevealArtifact />
             </ReversedRevealContainer>

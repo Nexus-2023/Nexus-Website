@@ -7,7 +7,7 @@ import logo from "/public/Image/bigLogo.png"
 import text from "/public/Image/textGradient.png"
 import { motion } from "framer-motion"
 import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
-import { Transition } from "./Transition"
+
 // import styles from "../styles/reveal.module.css"
 
 import dynamic from "next/dynamic"
@@ -52,7 +52,7 @@ const HomePage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 2, // Adjust the duration for the fade-in effect
-            delay: 2,
+            delay: 2.2,
           }}
         >
           {/* initial={{ opacity: 0, y: -50 }}
@@ -89,7 +89,7 @@ const HomePage = () => {
                   <RevealContent>
                     <div className="flex items-center">
                       <div>Welcome To, </div>
-                      <div className=" h-2 w-[20rem] bg-primary ml-4" />
+                      <div className=" h-2 w-[20rem] bg-primary ml-4 mt-2" />
                     </div>
                   </RevealContent>
                   <RevealArtifact />
@@ -134,14 +134,23 @@ const HomePage = () => {
               <RevealContainer delay={2.3}>
                 <h1>
                   <RevealContent>
-                    <div className="flex items-center">
-                      <div className=" h-2 w-[4rem] bg-primary mr-3" />
-                      <div>
-                        <h1 className="text-4xl  font-semibold text-gray-700">
-                          An Economic Layer for Rollups
-                        </h1>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 1, // Adjust the duration for the fade-in effect
+                        delay: 2,
+                      }}
+                    >
+                      <div className="flex  items-center ">
+                        <div className=" h-2 w-[4rem] bg-primary mr-3" />
+                        <div>
+                          <h1 className="text-4xl -mt-3 font-semibold text-gray-700">
+                            An Economic Layer for Rollups
+                          </h1>
+                        </div>
                       </div>
-                    </div>
+                    </motion.div>
                   </RevealContent>
                   <RevealArtifact />
                 </h1>

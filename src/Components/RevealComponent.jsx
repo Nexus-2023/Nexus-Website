@@ -48,7 +48,7 @@ const RevealArtifact = styled.span`
   left: 0;
   width: 0%;
   height: 100%;
-  background: linear-gradient(to right, #0190ff, #045192);
+  background-color: #0394ff;
   animation-name: ${revealAnimation};
   animation-duration: 1.8s;
   animation-iteration-count: 1;
@@ -56,6 +56,7 @@ const RevealArtifact = styled.span`
   animation-delay: inherit; // Inherit the delay from the parent
 `
 //     background: linear-gradient(to right, #0190ff, #045192);
+//    background-color: black;
 const RevealContent = styled.span`
   animation-name: ${revealContentAnimation};
   animation-duration: 1.8s;
@@ -94,8 +95,8 @@ const ReversedRevealArtifact = styled.span`
   left: 0;
   width: 0%;
   height: 100%;
-  background: linear-gradient(to right, #0190ff, #045192);
   background-color: black;
+
   animation-name: ${revealAnimation};
   animation-duration: 1.8s;
   animation-iteration-count: 1;
@@ -104,6 +105,7 @@ const ReversedRevealArtifact = styled.span`
   animation-delay: inherit; // Inherit the delay from the parent
 `
 //  background-color: black;
+// background: linear-gradient(to right, #0190ff, #000000);
 const ReversedRevealContent = styled.span`
   animation-name: ${ReversedrevealContentAnimation};
   animation-duration: 1.8s;

@@ -17,7 +17,7 @@ import p2 from "/public/Image/p2.png"
 import p3 from "/public/Image/p3.png"
 
 import twitter from "/public/Image/TwitterIcon.svg"
-import linkedin from "/public/Image/LinkedinIcon.svg"
+import linkedin from "/public/Image/linkden.svg"
 
 import vector from "/public/Image/vector.png"
 import { StyledButton } from "./Button"

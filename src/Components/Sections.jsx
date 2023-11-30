@@ -697,7 +697,7 @@ const Team = () => {
           </motion.div>
         </div>
       </div>
-      <div ref={ref} className="mt-[13rem]" />
+      <div ref={ref} className="mt-[40rem]" />
     </div>
   )
 }

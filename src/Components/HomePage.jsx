@@ -50,7 +50,7 @@ const HomePage = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 2, // Adjust the duration for the fade-in effect
+          duration: 0.5, // Adjust the duration for the fade-in effect
         }}
       >
         <div className="flex  flex-col   space-y-6">
@@ -84,7 +84,7 @@ const HomePage = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{
-                    duration: 1, // Adjust the duration for the fade-in effect
+                    duration: 0.5, // Adjust the duration for the fade-in effect
                     delay: 1,
                   }}
                 >
@@ -109,7 +109,7 @@ const HomePage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
-                      duration: 1, // Adjust the duration for the fade-in effect
+                      duration: 0.5, // Adjust the duration for the fade-in effect
                       delay: 2,
                     }}
                   >

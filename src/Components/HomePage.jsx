@@ -142,7 +142,7 @@ const HomePage = () => {
                         delay: 2,
                       }}
                     >
-                      <div className="flex  items-center ">
+                      <div className="flex h-[8vh] items-center -mt-2 ">
                         <div className=" h-2 w-[4rem] bg-primary mr-3" />
                         <div>
                           <h1 className="text-4xl -mt-3 font-semibold text-gray-700">

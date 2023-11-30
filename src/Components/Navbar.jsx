@@ -4,6 +4,7 @@ import React from "react"
 import logo from "/public/Image/Logo.png"
 // import styles from "../styles/button.module.css"
 import { StyledButton } from "./Button"
+import { Links, StyledLink } from "./Links"
 
 const Navbar = () => {
   return (
@@ -14,11 +15,25 @@ const Navbar = () => {
         </div>
 
         <div className="  ">
-          <ul className="flex space-x-8 text-lg font-semibold items-center ">
-            <li>Home</li>
-            <li>About</li>
-            <li>Docs</li>
-            <li>Contact</li>
+          <ul className="flex space-x-8 text-lg text-black font-semibold items-center ">
+            <li className="">
+              <StyledLink>
+                {" "}
+                <span> Home </span>{" "}
+              </StyledLink>
+            </li>
+            <li className="">
+              {" "}
+              <StyledLink> About </StyledLink>
+            </li>
+            <li className="">
+              {" "}
+              <StyledLink> Docs </StyledLink>
+            </li>
+            <li className="">
+              {" "}
+              <StyledLink> Contact </StyledLink>
+            </li>
             <StyledButton color="#1A1A1A" round="0px">
               Schedule call
             </StyledButton>

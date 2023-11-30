@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 
 import { HomePage } from "@/Components/HomePage"
@@ -13,6 +15,9 @@ import {
   Contact,
 } from "@/Components/Sections"
 
+import { useInView } from "framer-motion"
+import { useEffect, useRef } from "react"
+
 import Faq from "@/Components/Faq"
 export default function Home() {
   return (
@@ -23,7 +28,7 @@ export default function Home() {
       <Oppportunity />
 
       <Features />
-      <RoadMap />
+      {/* <RoadMap /> */}
       <Team />
       <Faq />
       <Contact />

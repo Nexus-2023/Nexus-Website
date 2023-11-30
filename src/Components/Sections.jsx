@@ -34,88 +34,193 @@ import {
 } from "./RevealComponent"
 import { motion } from "framer-motion"
 import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
+import { useInView, animate, useAnimate } from "framer-motion"
+import { useEffect, useRef } from "react"
+
+// const About = () => {
+
+//   const ref = useRef(null)
+//   const isInView = useInView(ref, { once: true })
+
+//   if (isInView) {
+//     console.log("inview")
+//   }
+//   return (
+//     <div className="h-[100vh] flex justify-between items-center p-16 mx-16">
+//       <div className="flex justify-center space-x-6 items-center w-full">
+//         <div className="flex-col space-y-4 items-center justify-center w-5/12">
+//           <motion.div
+//             initial={{ opacity: 0, x: -20 }}
+//             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+//             transition={{ duration: 0.5, delay: 0.5 }}
+//           >
+//             <div>
+//               <Image src={vector} height={50} width={100} />
+//             </div>
+
+//             <div>
+//               <h1 className="text-xl font-regular ml-3">01</h1>
+//             </div>
+//           </motion.div>
+
+//           <div className="flex space-x-3 items-center">
+//             <motion.div
+//               initial={{ opacity: 0, y: 20 }}
+//               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+//               transition={{ duration: 0.5 }}
+//             >
+//               <h1 className="text-6xl font-bold text-primary mb-4">About Us</h1>
+//             </motion.div>
+//           </div>
+
+//           <motion.div
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+//             transition={{ duration: 0.5 }}
+//           >
+//             <div>
+//               <p className="text-xl font-regular text-black max-w-xl leading-relaxed mb-4">
+//                 Nexus Network envisions to become the economic layer for
+//                 rollups. Using our staking infrastructure, Rollups can stake the
+//                 ETH locked in their bridges and earn continuous stable staking
+//                 returns.
+//               </p>
+//             </div>
+//           </motion.div>
+
+//           <div className="-ml-[1rem]">
+//             <motion.div
+//               initial={{ opacity: 0, y: 20 }}
+//               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+//               transition={{ duration: 0.5 }}
+//             >
+//               <StyledButton>Get Started</StyledButton>
+//             </motion.div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div ref={ref} className="mt-[40rem]"></div>
+//     </div>
+//   )
+// }
+
 const About = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  if (isInView) {
+    console.log("inview")
+  }
   return (
-    <div className=" h-full flex  justify-evenly items-center p-16 mx-16 mb-[10rem]">
-      <div className=" flex-col space-y-4 items-center">
-        <div className="flex space-x-3 items-center">
-          <div>
-            <Image src={vector} height={50} width={100} />
+    <div className=" h-[70vh] flex  justify-between items-center p-16 mx-16     ">
+      <div className="flex  justify-center  space-x-6  items-center w-full">
+        <div className=" flex-col space-y-4 items-center justify-center w-5/12">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
+            style={{ display: "flex", spaceX: "3", alignItems: "center" }}
+          >
+            <div>
+              <Image src={vector} height={50} width={100} />
+            </div>
+
+            <div>
+              <h1 className="text-xl font-regular ml-3">01</h1>
+            </div>
+          </motion.div>
+
+          <div className="flex space-x-3 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+            >
+              <h1 className="text-6xl font-bold  text-primary mb-4">
+                About Us
+              </h1>
+            </motion.div>
           </div>
 
-          <div>
-            <h1 className="text-xl font-regular">01</h1>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
+          >
+            <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
+              Nexus Network envisions to become the economic layer for rollups.
+              Using our staking infrastructure, Rollups can stake the ETH locked
+              in their bridges and earn continuous stable staking returns.
+            </p>
+          </motion.div>
+          {/* <StyledButton> Get Started</StyledButton> */}
+          <div className="  -ml-[1rem] ">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+            >
+              <StyledButton> Get Started</StyledButton>
+            </motion.div>
           </div>
         </div>
-
-        <div className="flex space-x-3 items-center">
-          <div>
-            <h1 className="text-5xl font-bold  text-primary mb-4">About Us</h1>
-          </div>
-        </div>
-
-        <div>
-          <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-            Nexus Network envisions to become the economic layer for rollups.
-            Using our staking infrastructure, Rollups can stake the ETH locked
-            in their bridges and earn continuous stable staking returns.
-          </p>
-        </div>
-        {/* <StyledButton> Get Started</StyledButton> */}
-        <div className="  -ml-[1rem]">
-          <StyledButton> Get Started</StyledButton>
-        </div>
+        {isInView && (
+          <RevealContainer delay={1.2}>
+            <RevealContent>
+              <Image src={diagram} height={450} width={450} />
+            </RevealContent>
+            <RevealArtifact />
+          </RevealContainer>
+        )}
       </div>
-
-      <RevealContainer delay={1.2}>
-        <RevealContent>
-          <Image src={diagram} height={400} width={400} />
-        </RevealContent>
-        <RevealArtifact />
-      </RevealContainer>
+      <div ref={ref} className="mt-[40rem]"></div>
     </div>
   )
 }
 
 const Problems = () => {
   return (
-    <div className=" h-full flex  justify-evenly items-center p-16 mx-16 mb-[10rem]">
-      <RevealContainer delay={1.2}>
-        <RevealContent>
-          <Image src={diagram2} height={500} width={500} />
-        </RevealContent>
-        <RevealArtifact />
-      </RevealContainer>
+    <div className=" h-[100vh] flex  justify-between items-center p-16 mx-16     ">
+      <div className="flex  justify-center   items-center w-full  ">
+        <div className=" w-8/12 flex  justify-center ">
+          <RevealContainer delay={1.2}>
+            <RevealContent>
+              <Image src={diagram2} height={500} width={500} />
+            </RevealContent>
+            <RevealArtifact />
+          </RevealContainer>
+        </div>
+        <div className="flex- flex-col space-y-4 items-center w-1/2">
+          <div className="flex space-x-3 items-center">
+            <div>
+              <Image src={vector} height={50} width={100} />
+            </div>
 
-      <div className="flex- flex-col space-y-4 items-center">
-        <div className="flex space-x-3 items-center">
-          <div>
-            <Image src={vector} height={50} width={100} />
+            <div>
+              <h1 className="text-xl font-regular">02</h1>
+            </div>
+          </div>
+
+          <div className="flex space-x-3 items-center">
+            <div>
+              <h1 className="text-6xl font-bold  text-primary mb-4">
+                Problems we Solve
+              </h1>
+            </div>
           </div>
 
           <div>
-            <h1 className="text-xl font-regular">02</h1>
+            <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
+              Nexus Network envisions to become the economic layer for rollups.
+              Using our staking infrastructure, Rollups can stake the ETH locked
+              in their bridges and earn continuous stable staking returns.
+            </p>
           </div>
-        </div>
 
-        <div className="flex space-x-3 items-center">
           <div>
-            <h1 className="text-5xl font-bold  text-primary mb-4">
-              Problems we Solve
-            </h1>
+            <StyledButton> Get Started</StyledButton>
           </div>
-        </div>
-
-        <div>
-          <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-            Nexus Network envisions to become the economic layer for rollups.
-            Using our staking infrastructure, Rollups can stake the ETH locked
-            in their bridges and earn continuous stable staking returns.
-          </p>
-        </div>
-
-        <div>
-          <StyledButton> Get Started</StyledButton>
         </div>
       </div>
     </div>
@@ -124,16 +229,10 @@ const Problems = () => {
 
 const Oppportunity = () => {
   return (
-    <div className=" h-full flex justify-center   items-center ml-6       mb-[10rem]">
-      <div className="flex- flex-col space-y-4 items-center justify-center  ml-4 ">
-        <div className="flex space-x-3 items-center justify-start ">
-          <div className=" justify-start flex">
-            <h1 className="text-5xl font-bold  text-primary mb-4">
-              Oppportunity
-            </h1>
-          </div>
-
-          <div className="flex space-x-3  items-center  ">
+    <div className=" h-[100vh] flex  justify-between items-center p-16     ">
+      <div className="flex  justify-center  space-x-16  items-center w-full">
+        <div className=" flex-col space-y-4 items-center justify-center  ">
+          <div className="flex space-x-3 items-center">
             <div>
               <Image src={vector} height={50} width={100} />
             </div>
@@ -142,24 +241,74 @@ const Oppportunity = () => {
               <h1 className="text-xl font-regular">03</h1>
             </div>
           </div>
+
+          <div className="flex space-x-3 items-center">
+            <div>
+              <h1 className="text-6xl font-bold  text-primary mb-4">
+                Opportunity
+              </h1>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
+              Nexus Network envisions to become the economic layer for rollups.
+              Using our staking infrastructure, Rollups can stake the ETH locked
+              in their bridges and earn continuous stable staking returns.
+            </p>
+          </div>
+          {/* <StyledButton> Get Started</StyledButton> */}
+          <div className="  -ml-[1rem] ">
+            <StyledButton> Get Started</StyledButton>
+          </div>
         </div>
 
-        <div className="flex items-center justify-start">
-          <p className="text-xl font-regular   text-black max-w-2xl leading-relaxed mb-4">
-            Nexus Network envisions to become the economic layer for rollups.
-            Using our staking infrastructure, Rollups can stake the ETH locked
-            in their bridges and earn continuous stable staking returns.
-          </p>
+        <div className="  ">
+          <RevealContainer delay={1.2}>
+            <RevealContent>
+              <Image src={diagram3} height={800} width={700} />
+            </RevealContent>
+            <RevealArtifact />
+          </RevealContainer>
         </div>
-
-        <RevealContainer>
-          <RevealContent>
-            <Image src={diagram3} height={500} width={800} />
-          </RevealContent>
-          <RevealArtifact />
-        </RevealContainer>
       </div>
     </div>
+    // <div className=" h-[100vh]  flex justify-center   items-center ml-6   ">
+    //   <div className="flex- flex-col space-y-4 items-center justify-center  ml-4 ">
+    //     <div className="flex space-x-3 items-center justify-start ">
+    //       <div className=" justify-start flex">
+    //         <h1 className="text-5xl font-bold  text-primary mb-4">
+    //           Oppportunity
+    //         </h1>
+    //       </div>
+
+    //       <div className="flex space-x-3  items-center  ">
+    //         <div>
+    //           <Image src={vector} height={50} width={100} />
+    //         </div>
+
+    //         <div>
+    //           <h1 className="text-xl font-regular">03</h1>
+    //         </div>
+    //       </div>
+    //     </div>
+
+    //     <div className="flex items-center justify-start">
+    //       <p className="text-xl font-regular   text-black max-w-2xl leading-relaxed mb-4">
+    //         Nexus Network envisions to become the economic layer for rollups.
+    //         Using our staking infrastructure, Rollups can stake the ETH locked
+    //         in their bridges and earn continuous stable staking returns.
+    //       </p>
+    //     </div>
+
+    //     <RevealContainer>
+    //       <RevealContent>
+    //         <Image src={diagram3} height={500} width={800} />
+    //       </RevealContent>
+    //       <RevealArtifact />
+    //     </RevealContainer>
+    //   </div>
+    // </div>
   )
 }
 
@@ -310,7 +459,7 @@ const RoadMap = () => {
 
 const Team = () => {
   return (
-    <div className="  h-full flex    p-16 mx-16  ">
+    <div className="  h-full flex   justify-center  p-16 mx-16  ">
       <div className=" flex-col  items-center">
         <div className="flex space-x-3 items-center">
           <div>
@@ -330,8 +479,8 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap  mt-8   space-x-12  w-[80vw] items-center  justify-center   ">
-          <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary h-[55vh]  rounded-3xl">
+        <div className="flex    mt-8   space-x-12  w-[80vw] items-center  justify-center   ">
+          <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary    rounded-3xl">
             <div className="flex justify-center items-center">
               <Image src={p1} height={150} width={150} />
             </div>
@@ -363,7 +512,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary h-[55vh]  rounded-3xl">
+          <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary  rounded-3xl">
             <div className="flex justify-center items-center">
               <Image src={p2} height={150} width={150} />
             </div>
@@ -395,7 +544,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary h-[55vh]  rounded-3xl">
+          <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary   rounded-3xl">
             <div className="flex justify-center items-center">
               <Image src={p3} height={130} width={130} />
             </div>
@@ -435,7 +584,7 @@ const Team = () => {
 
 const Contact = () => {
   return (
-    <div className=" h-full flex    items-center p-16 mx-16 mb-[10rem]">
+    <div className=" h-full flex  justify-center   items-center p-16 mx-16 mb-[10rem]">
       <div className=" flex-col space-y-4 items-center">
         <div className="flex space-x-3 items-center">
           <div>

@@ -20,13 +20,7 @@ import {
   ReversedRevealContainer,
   ReversedRevealContent,
   ReversedRevealArtifact,
-  RevealImage,
 } from "./RevealComponent"
-
-const introSentences = [
-  "An Economic Layer for Rollups",
-  "A plugable Staking Solution",
-]
 
 const HomePage = () => {
   return (

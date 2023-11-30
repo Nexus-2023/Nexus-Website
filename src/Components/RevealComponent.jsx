@@ -2,7 +2,7 @@
 
 // components/RevealComponent.js
 import styled, { keyframes } from "styled-components"
-
+import Image from "next/image"
 const revealAnimation = keyframes`
 transition: all 0.3s easeInOutSine;
   0%, 100% {
@@ -126,6 +126,7 @@ const ImageContainer = styled.div`
   display: inline-block;
   white-space: nowrap;
 `
+
 export {
   RevealContainer,
   RevealArtifact,

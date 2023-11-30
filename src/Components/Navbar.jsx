@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
               <li className="">
                 {" "}
-                <StyledLink> Contact </StyledLink>
+                <StyledLink> Demo </StyledLink>
               </li>
               <StyledButton color="#1A1A1A" round="0px">
                 Schedule call

@@ -11,8 +11,9 @@ const Links = {
 }
 
 const Socials = {
-  Twitter: "",
-  Linkedin: "",
+  Twitter: "https://twitter.com/_Nexus_Network",
+  Linkedin:
+    "https://www.linkedin.com/company/nexus-network-staking-infra/about/",
 }
 const Footer = () => {
   const ref = useRef(null)
@@ -40,7 +41,9 @@ const Footer = () => {
 
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Links).map(([key, value]) => (
-                <Link href={value}>{key}</Link>
+                <Link href={value} target="_blank">
+                  {key}
+                </Link>
               ))}
             </div>
           </div>
@@ -52,7 +55,9 @@ const Footer = () => {
 
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Socials).map(([key, value]) => (
-                <Link href={value}>{key}</Link>
+                <Link href={value} target="_blank">
+                  {key}
+                </Link>
               ))}
             </div>
           </div>

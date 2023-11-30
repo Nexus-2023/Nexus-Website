@@ -48,7 +48,7 @@ const StyledButton = styled.button`
   }
 
   &:active:before {
-    background: #3a0ca3;
+    background: #0394ff;
     transition: background 0s;
   }
 `

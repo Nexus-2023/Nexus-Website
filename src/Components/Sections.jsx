@@ -35,7 +35,12 @@ import {
 import { motion } from "framer-motion"
 import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
 import { useInView, animate, useAnimate } from "framer-motion"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, Suspense } from "react"
+
+import { OrbitControls, Preload, useGLTF, Environment } from "@react-three/drei"
+
+import { Canvas, useFrame } from "@react-three/fiber"
+import { Mesh } from "three"
 
 // const About = () => {
 
@@ -608,11 +613,17 @@ const Team = () => {
               </div>
 
               <div className="flex  justify-center items-center space-x-5  max-w-[20rem] mt-6 ">
-                <Link href={""}>
+                <Link
+                  href={"https://twitter.com/ashishkumar_19"}
+                  target="_blank"
+                >
                   <Image src={twitter} height={40} width={40} />
                 </Link>
 
-                <Link href={""}>
+                <Link
+                  href={"https://www.linkedin.com/in/ashishkumar29/"}
+                  target="_blank"
+                >
                   <Image src={linkedin} height={40} width={40} />
                 </Link>
               </div>
@@ -646,11 +657,14 @@ const Team = () => {
               </div>
 
               <div className="flex  justify-center items-center space-x-5  max-w-[20rem] mt-6 ">
-                <Link href={""}>
+                <Link href={"https://twitter.com/mnkrj500"} target="_blank">
                   <Image src={twitter} height={40} width={40} />
                 </Link>
 
-                <Link href={""}>
+                <Link
+                  href={"https://www.linkedin.com/in/mayank-raj/"}
+                  target="_blank"
+                >
                   <Image src={linkedin} height={40} width={40} />
                 </Link>
               </div>
@@ -685,11 +699,17 @@ const Team = () => {
               </div>
 
               <div className="flex  justify-center items-center space-x-5  max-w-[20rem] mt-6 ">
-                <Link href={""}>
+                <Link
+                  href={"https://twitter.com/RohitZoro_eth"}
+                  target="_blank"
+                >
                   <Image src={twitter} height={40} width={40} />
                 </Link>
 
-                <Link href={""}>
+                <Link
+                  href={"https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/"}
+                  target="_blank"
+                >
                   <Image src={linkedin} height={40} width={40} />
                 </Link>
               </div>
@@ -702,13 +722,58 @@ const Team = () => {
   )
 }
 
+const PhoneObject = () => {
+  const ref = null
+  const gltf = useGLTF("./model/scene.gltf")
+
+  return (
+    <mesh ref={ref}>
+      <hemisphereLight intensity={0.1} groundColor="black" />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={0.2}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <directionalLight intensity={0.2} position={[1, 1, 0]} />
+      <primitive object={gltf.scene} scale={0.012} rotation-y={0} />
+    </mesh>
+  )
+}
+
+export const PhoneCanvas = () => {
+  return (
+    <Canvas
+      shadows
+      frameloop="demand"
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+      camera={{
+        fov: 45,
+        near: 0.1,
+        far: 200,
+        position: [-4, 3, 6],
+      }}
+    >
+      <OrbitControls autoRotate enableZoom={false} />
+      <Suspense>
+        <Environment preset="park" />
+        <PhoneObject />
+      </Suspense>
+      <Preload all />
+    </Canvas>
+  )
+}
+
 const Contact = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
   return (
     <>
-      <div className=" h-full flex  justify-center   items-center p-16 mx-16 mb-[20rem]">
+      <div className=" h-[100vh] flex  justify-center   items-center p-16 mx-16 mb-[20rem]">
         <div className=" flex-col space-y-4 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -753,11 +818,23 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-            <StyledButton> Get Started</StyledButton>
+            <StyledButton color="#1A1A1A" round="0px">
+              Book a call
+            </StyledButton>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className="  h-[70vh] w-[30vw] items-center">
+            <PhoneCanvas />
+          </div>
+        </motion.div>
       </div>
-      <div ref={ref} className="mt-[17rem]" />
+      <div ref={ref} className="-mt-[25rem]" />
     </>
   )
 }

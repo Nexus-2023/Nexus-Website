@@ -30,23 +30,8 @@ const introSentences = [
 
 const HomePage = () => {
   return (
-    <div className="h-[88vh] space-x-8 flex justify-center items-center  -mt-[3rem]">
-      {/* <RevealContainer delay={0}>
-        <h1>
-          <RevealContent>Reveal Text and Images</RevealContent>
-          <RevealArtifact />
-        </h1>
-      </RevealContainer>
-
-      <RevealContainer delay={1}>
-        <p>
-          <RevealContent>Using CSS animations</RevealContent>
-          <RevealArtifact />
-        </p>
-      </RevealContainer> */}
-
+    <div className="h-[95vh] space-x-8 flex justify-center items-center   ">
       <LazyMotion features={domAnimation}>
-        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,13 +40,6 @@ const HomePage = () => {
             delay: 2.2,
           }}
         >
-          {/* initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0, rotate: [0, 0, 360] }}
-      transition={{
-        duration: 1, // Adjust the duration for the fade-in effect
-        repeat: Infinity,
-        repeatType: 'loop',
-      }} */}
           <motion.div
             animate={{ y: [0, 0, 0], rotate: 360 }}
             transition={{

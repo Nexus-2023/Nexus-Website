@@ -20,7 +20,8 @@ import twitter from "/public/Image/TwitterIcon.svg"
 import linkedin from "/public/Image/linkden.svg"
 
 import vector from "/public/Image/vector.png"
-import { StyledButton } from "./Button"
+import { StyledButton, StyledButton2 } from "./Button"
+import { Button2 } from "./Button"
 import Link from "next/link"
 import {
   RevealContainer,
@@ -60,7 +61,10 @@ const About = () => {
             in their bridges and earn continuous stable staking returns.
           </p>
         </div>
-        <button>Get Started</button>
+        {/* <StyledButton> Get Started</StyledButton> */}
+        <div className="  -ml-[1rem]">
+          <StyledButton> Get Started</StyledButton>
+        </div>
       </div>
 
       <RevealContainer delay={1.2}>
@@ -111,7 +115,7 @@ const Problems = () => {
         </div>
 
         <div>
-          <button>Get Started</button>
+          <StyledButton> Get Started</StyledButton>
         </div>
       </div>
     </div>
@@ -458,7 +462,7 @@ const Contact = () => {
             in their bridges and earn continuous stable staking returns.
           </p>
         </div>
-        <button>Get Started</button>
+        <StyledButton> Get Started</StyledButton>
       </div>
     </div>
   )

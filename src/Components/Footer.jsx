@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useInView, animate, useAnimate, motion } from "framer-motion"
 import { useEffect, useRef } from "react"
+import { StyledLink } from "./Links"
 const Links = {
   Documentation: "",
   "Nexus Dapp": "",
@@ -42,7 +43,9 @@ const Footer = () => {
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Links).map(([key, value]) => (
                 <Link href={value} target="_blank">
-                  {key}
+                  <StyledLink hoverColor="white" Col="white">
+                    <span> {key}</span>
+                  </StyledLink>
                 </Link>
               ))}
             </div>
@@ -56,7 +59,9 @@ const Footer = () => {
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Socials).map(([key, value]) => (
                 <Link href={value} target="_blank">
-                  {key}
+                  <StyledLink hoverColor="white" Col="white">
+                    <span> {key}</span>
+                  </StyledLink>
                 </Link>
               ))}
             </div>

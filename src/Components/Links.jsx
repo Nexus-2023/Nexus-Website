@@ -5,7 +5,7 @@ const StyledLink = styled.a`
   position: relative;
   text-decoration: none;
   padding: 10px 0;
-  color: black;
+  color: ${props => props.Col || "black"};
 
   &:after {
     content: "";

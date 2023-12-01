@@ -91,10 +91,10 @@ const About = () => {
               transition={{ duration: 0.5, delay: 1.0 }}
             >
               <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-                Nexus Network envisions to become the economic layer for
-                rollups. Using our staking infrastructure, Rollups can stake the
-                ETH locked in their bridges and earn continuous stable staking
-                returns.
+                Nexus Network is at the forefront of revolutionizing Ethereum's
+                rollup landscape. With a commitment to security,
+                decentralization, and innovation, we provide an economic layer
+                for rollups through our cutting-edge staking infrastructure.
               </p>
             </motion.div>
             {/* <StyledButton> Get Started</StyledButton> */}
@@ -177,19 +177,21 @@ const Problems = () => {
             transition={{ duration: 0.5, delay: 1.0 }}
           >
             <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-              Nexus Network envisions to become the economic layer for rollups.
-              Using our staking infrastructure, Rollups can stake the ETH locked
-              in their bridges and earn continuous stable staking returns.
+              Addressing Ethereum's challenges, Nexus Network securely stakes
+              ETH locked in rollup bridges. Our solution enhances network
+              security, optimizes capital efficiency, and fosters the growth of
+              rollups, aligning with the long-term vision of a staked Ethereum.
             </p>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-          >
-            <StyledButton> Get Started</StyledButton>
-          </motion.div>
+          <div className="  -ml-[1rem] ">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+            >
+              <StyledButton> Get Started</StyledButton>
+            </motion.div>
+          </div>
         </div>
       </div>
       <div ref={ref} className="mt-[40rem]" />
@@ -238,9 +240,12 @@ const Oppportunity = () => {
             transition={{ duration: 0.5, delay: 1.0 }}
           >
             <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-              Nexus Network envisions to become the economic layer for rollups.
-              Using our staking infrastructure, Rollups can stake the ETH locked
-              in their bridges and earn continuous stable staking returns.
+              Embark on a lucrative investment journey with Nexus Network. As
+              Ethereum's rollup-centric roadmap propels, our staking
+              infrastructure becomes a gateway to unparalleled returns. With the
+              ETH staked projected to grow from 1.6% to a staggering 20% by
+              2027, the opportunity to reap rewards in the billions has never
+              been more compelling
             </p>
           </motion.div>
 
@@ -347,7 +352,7 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <div className=" p-8 mx-4  border-2 border-[#5404FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#5404FF]">
+            <div className=" p-8 mx-4  border-2 min-h-[30vh] border-[#5404FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#5404FF]">
               <div className="flex space-x-5 items-center  mb-4 ">
                 <div>
                   <Image src={l1} width={50} height={50} />
@@ -360,9 +365,11 @@ const Features = () => {
 
               <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
-                  We provide an easy pluggable Staking Infrastructure.Rollups
-                  can integrate with Nexus Network within a few minutes by
-                  calling Nexus contracts
+                  Elevate your rollup seamlessly with Nexus Network's pluggable
+                  staking infrastructure. Effortlessly integrate within minutes
+                  by calling Nexus contracts. Enjoy the flexibility and
+                  adaptability that comes with a modular staking solution,
+                  tailored to meet the unique needs of your rollup.
                 </p>
               </div>
             </div>
@@ -373,7 +380,7 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <div className=" p-8 mx-4 border-black max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-black ">
+            <div className=" p-8 mx-4 border-black  min-h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-black ">
               <div className="flex space-x-5 items-center  mb-4 ">
                 <div>
                   <Image src={l2} width={50} height={50} />
@@ -386,9 +393,11 @@ const Features = () => {
 
               <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
-                  We provide an easy pluggable Staking Infrastructure.Rollups
-                  can integrate with Nexus Network within a few minutes by
-                  calling Nexus contracts
+                  Define your rollup's staking strategy with Nexus Network's
+                  customizable staking limits. Tailor the proportion of ETH
+                  staked in your bridge, ensuring optimal capital efficiency.
+                  From 1% to 100%, set the limits that align with your rollup's
+                  growth and financial goals.
                 </p>
               </div>
             </div>
@@ -400,7 +409,7 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 1.0 }}
           >
-            <div className=" p-8 mx-4  border-2 border-[#0394FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#0394FF]">
+            <div className=" p-8 mx-4  border-2  min-h-[30vh] border-[#0394FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#0394FF]">
               <div className="flex space-x-5  items-center mb-4 ">
                 <div>
                   <Image src={l3} width={50} height={50} />
@@ -413,9 +422,10 @@ const Features = () => {
 
               <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
-                  We provide an easy pluggable Staking Infrastructure.Rollups
-                  can integrate with Nexus Network within a few minutes by
-                  calling Nexus contracts
+                  Simplify validator operations with Nexus Network's one-stop
+                  validator management. No additional burden on your rollup team
+                  , and let Nexus Network seamlessly handle the staking process.
+                  Effortless management, maximum efficiency.
                 </p>
               </div>
             </div>
@@ -426,7 +436,7 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            <div className=" p-8 mx-4 border-[#9F00AD] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-[#9F00AD]">
+            <div className=" p-8 mx-4 border-[#9F00AD]   min-h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-[#9F00AD]">
               <div className="flex space-x-5  items-center mb-4 ">
                 <div>
                   <Image src={l4} width={50} height={50} />
@@ -439,9 +449,12 @@ const Features = () => {
 
               <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
-                  We provide an easy pluggable Staking Infrastructure.Rollups
-                  can integrate with Nexus Network within a few minutes by
-                  calling Nexus contracts
+                  Trust in Nexus Network's security-first approach. Our
+                  non-custodial solution ensures direct transfers from rollups
+                  to validators, reducing risk and enhancing reliability. With
+                  Distributed Validator Technology (DVT), enjoy redundancy and
+                  mitigate slashing risks, securing your rollup's assets and
+                  operations.
                 </p>
               </div>
             </div>

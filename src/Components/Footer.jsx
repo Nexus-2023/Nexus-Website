@@ -42,11 +42,14 @@ const Footer = () => {
 
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Links).map(([key, value]) => (
-                <Link href={value} target="_blank">
-                  <StyledLink hoverColor="white" Col="white">
-                    <span> {key}</span>
-                  </StyledLink>
-                </Link>
+                <StyledLink
+                  hoverColor="white"
+                  Col="white"
+                  href={value}
+                  target="_blank"
+                >
+                  <span> {key}</span>
+                </StyledLink>
               ))}
             </div>
           </div>
@@ -58,11 +61,14 @@ const Footer = () => {
 
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Socials).map(([key, value]) => (
-                <Link href={value} target="_blank">
-                  <StyledLink hoverColor="white" Col="white">
-                    <span> {key}</span>
-                  </StyledLink>
-                </Link>
+                <StyledLink
+                  hoverColor="white"
+                  Col="white"
+                  href={value}
+                  target="_blank"
+                >
+                  <span> {key}</span>
+                </StyledLink>
               ))}
             </div>
           </div>

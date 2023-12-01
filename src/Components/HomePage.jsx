@@ -24,7 +24,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="h-[95vh] space-x-8 flex justify-center items-center   ">
+    <div className="h-[95vh]  space-x-8 flex justify-center items-center   ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

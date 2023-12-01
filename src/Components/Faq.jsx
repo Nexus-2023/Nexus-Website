@@ -24,7 +24,7 @@ export default function Faq() {
       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="p-16 m-16 max-w-[100vw] flex-col justify-center  items-center h-[80vh]  flex   ]">
+      <div className="p-16 m-16 max-w-[100vw] flex-col justify-center  items-center h-[40vh]  flex   ">
         <div className="flex justify-center text-4xl font-semibold mb-8">
           FAQ
         </div>
@@ -58,7 +58,7 @@ export default function Faq() {
           </Accordion>
         ))}
       </div>
-      <div ref={ref} className="-mt-[12rem]" />
+      <div ref={ref} className="mt-[12rem]" />
     </motion.div>
   )
 }

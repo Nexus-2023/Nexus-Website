@@ -428,7 +428,7 @@ const Features = () => {
                 </h1>
               </div>
 
-              <div className="ml-2  leading-relaxed   ">
+              <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
                   We provide an easy pluggable Staking Infrastructure.Rollups
                   can integrate with Nexus Network within a few minutes by
@@ -454,7 +454,7 @@ const Features = () => {
                 </h1>
               </div>
 
-              <div className="ml-2  leading-relaxed   ">
+              <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
                   We provide an easy pluggable Staking Infrastructure.Rollups
                   can integrate with Nexus Network within a few minutes by
@@ -481,7 +481,7 @@ const Features = () => {
                 </h1>
               </div>
 
-              <div className="ml-2  leading-relaxed   ">
+              <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
                   We provide an easy pluggable Staking Infrastructure.Rollups
                   can integrate with Nexus Network within a few minutes by
@@ -507,7 +507,7 @@ const Features = () => {
                 </h1>
               </div>
 
-              <div className="ml-2  leading-relaxed   ">
+              <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
                   We provide an easy pluggable Staking Infrastructure.Rollups
                   can integrate with Nexus Network within a few minutes by
@@ -518,7 +518,7 @@ const Features = () => {
           </motion.div>
         </div>
       </div>
-      <div ref={ref} className="mt-[40rem]" />
+      <div ref={ref} className="mt-[50rem]" />
     </div>
   )
 }
@@ -624,6 +624,7 @@ const Team = () => {
                 <Link
                   href={"https://twitter.com/ashishkumar_19"}
                   target="_blank"
+                  className="hover:scale-105  scale-100 ease-in-out  duration-150"
                 >
                   <Image src={twitter} height={40} width={40} />
                 </Link>
@@ -631,6 +632,7 @@ const Team = () => {
                 <Link
                   href={"https://www.linkedin.com/in/ashishkumar29/"}
                   target="_blank"
+                  className="hover:scale-105  scale-100 ease-in-out  duration-150"
                 >
                   <Image src={linkedin} height={40} width={40} />
                 </Link>
@@ -641,7 +643,7 @@ const Team = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
             <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary  rounded-3xl">
               <div className="flex justify-center items-center">
@@ -665,13 +667,18 @@ const Team = () => {
               </div>
 
               <div className="flex  justify-center items-center space-x-5  max-w-[20rem] mt-6 ">
-                <Link href={"https://twitter.com/mnkrj500"} target="_blank">
+                <Link
+                  href={"https://twitter.com/mnkrj500"}
+                  target="_blank"
+                  className="hover:scale-105  scale-100 ease-in-out  duration-150"
+                >
                   <Image src={twitter} height={40} width={40} />
                 </Link>
 
                 <Link
                   href={"https://www.linkedin.com/in/mayank-raj/"}
                   target="_blank"
+                  className="hover:scale-105  scale-100 ease-in-out  duration-150"
                 >
                   <Image src={linkedin} height={40} width={40} />
                 </Link>
@@ -682,7 +689,7 @@ const Team = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-            transition={{ duration: 0.5, delay: 1.4 }}
+            transition={{ duration: 0.5, delay: 1.0 }}
           >
             <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary   rounded-3xl">
               <div className="flex justify-center items-center">
@@ -710,12 +717,14 @@ const Team = () => {
                 <Link
                   href={"https://twitter.com/RohitZoro_eth"}
                   target="_blank"
+                  className="hover:scale-105  scale-100 ease-in-out  duration-150"
                 >
                   <Image src={twitter} height={40} width={40} />
                 </Link>
 
                 <Link
                   href={"https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/"}
+                  className="hover:scale-105  scale-100 ease-in-out  duration-150"
                   target="_blank"
                 >
                   <Image src={linkedin} height={40} width={40} />
@@ -851,7 +860,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className=" h-[100vh] flex  justify-evenly  items-center p-16 mx-16 mb-[20rem]">
+      <div className=" h-[100vh] flex  justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]">
         <div className=" flex-col  items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -979,22 +988,21 @@ const Contact = () => {
             </StyledButton>
           </motion.div>
         </div>
-
+        <div ref={ref} className="mt-[45rem]" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="  h-[70vh] w-[30vw]   z-10 relative items-center">
+          <div className="  h-[70vh] w-[30vw]  flex z-10 relative items-center">
             {/* <PhoneCanvas /> */}
             <Image src={phone} width={400} height={400} />
-            <div className="absolute top-0 left-20 -z-10">
+            <div className="absolute top-20 left-20 -z-10">
               <Image src={blueCircle} width={450} height={450} />
             </div>
           </div>
         </motion.div>
       </div>
-      <div ref={ref} className="-mt-[25rem]" />
     </>
   )
 }

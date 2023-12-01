@@ -21,7 +21,7 @@ import { useEffect, useRef } from "react"
 import Faq from "@/Components/Faq"
 export default function Home() {
   return (
-    <div>
+    <div className="border-2    overflow-clip">
       <HomePage />
       <About />
       <Problems />

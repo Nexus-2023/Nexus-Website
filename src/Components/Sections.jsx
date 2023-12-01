@@ -6,6 +6,7 @@ import diagram from "/public/Image/d1.png"
 import diagram2 from "/public/Image/diagram2.svg"
 import diagram3 from "/public/Image/diagram3.svg"
 import diagram4 from "/public/Image/diagram5.svg"
+import diagram5 from "/public/Image/diagram5a.svg"
 
 import l1 from "/public/Image/plugLogo.png"
 import l2 from "/public/Image/lockLogo.png"
@@ -204,110 +205,147 @@ const Oppportunity = () => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className=" h-[60vh] flex  justify-between items-center p-16   mb-[3rem]  ">
-      <div className="flex  justify-center  space-x-16  items-center w-full">
-        <div className=" flex-col space-y-4 items-center justify-center  ">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-            style={{ display: "flex", spaceX: "3", alignItems: "center" }}
-          >
-            <div>
-              <Image src={vector} height={50} width={100} />
+    <>
+      <div className=" h-[70vh] flex  justify-between items-center p-16 mx-16     ">
+        <div className="flex  justify-center  space-x-6  items-center w-full">
+          <div className=" flex-col space-y-4 items-center justify-center w-5/12">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+              transition={{ duration: 0.5, delay: 1.0 }}
+              style={{ display: "flex", spaceX: "3", alignItems: "center" }}
+            >
+              <div>
+                <Image src={vector} height={50} width={100} />
+              </div>
+
+              <div>
+                <h1 className="text-xl font-regular ml-3">03</h1>
+              </div>
+            </motion.div>
+
+            <div className="flex space-x-3 items-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
+                transition={{ duration: 0.5, delay: 1.0 }}
+              >
+                <h1 className="text-6xl font-bold  text-primary mb-4">
+                  Opportunity
+                </h1>
+              </motion.div>
             </div>
 
-            <div>
-              <h1 className="text-xl font-regular ml-3">03</h1>
-            </div>
-          </motion.div>
-
-          <div className="flex space-x-3 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 1.0 }}
             >
-              <h1 className="text-6xl font-bold  text-primary mb-4">
-                Opportunity
-              </h1>
+              <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
+                Embark on a lucrative investment journey with Nexus Network. As
+                Ethereum's rollup-centric roadmap propels, our staking
+                infrastructure becomes a gateway to unparalleled returns. With
+                the ETH staked projected to grow from 1.6% to a staggering 20%
+                by 2027, the opportunity to reap rewards in the billions has
+                never been more compelling
+              </p>
             </motion.div>
+            {/* <StyledButton> Get Started</StyledButton> */}
+
+            <div className="  -ml-[1rem] ">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                }
+                transition={{ duration: 0.5, delay: 1.0 }}
+              >
+                <StyledButton> Get Started</StyledButton>
+              </motion.div>
+            </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-          >
-            <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-              Embark on a lucrative investment journey with Nexus Network. As
-              Ethereum's rollup-centric roadmap propels, our staking
-              infrastructure becomes a gateway to unparalleled returns. With the
-              ETH staked projected to grow from 1.6% to a staggering 20% by
-              2027, the opportunity to reap rewards in the billions has never
-              been more compelling
-            </p>
-          </motion.div>
-
-          <div className="  -ml-[1rem] ">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.5, delay: 1.0 }}
-            >
-              <StyledButton> Get Started</StyledButton>
-            </motion.div>
-          </div>
-        </div>
-
-        <div className="  ">
           {isInView && (
             <RevealContainer delay={1.2}>
               <RevealContent>
-                <Image src={diagram3} height={800} width={700} />
+                <Image src={diagram5} height={550} width={550} />
               </RevealContent>
               <RevealArtifact />
             </RevealContainer>
           )}
         </div>
       </div>
-      <div ref={ref} className="mt-[40rem]" />
-    </div>
-    // <div className=" h-[100vh]  flex justify-center   items-center ml-6   ">
-    //   <div className="flex- flex-col space-y-4 items-center justify-center  ml-4 ">
-    //     <div className="flex space-x-3 items-center justify-start ">
-    //       <div className=" justify-start flex">
-    //         <h1 className="text-5xl font-bold  text-primary mb-4">
-    //           Oppportunity
-    //         </h1>
-    //       </div>
-
-    //       <div className="flex space-x-3  items-center  ">
+      <div ref={ref} className="mt-[0rem]" />
+    </>
+    // <div className=" h-[60vh] flex  justify-between items-center p-16   mb-[3rem]  ">
+    //   <div className="flex  justify-center  space-x-24  items-center w-full">
+    //     <div className=" flex-col space-y-4 items-center justify-center  ">
+    //       <motion.div
+    //         initial={{ opacity: 0, x: -20 }}
+    //         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+    //         transition={{ duration: 0.5, delay: 1.0 }}
+    //         style={{ display: "flex", spaceX: "3", alignItems: "center" }}
+    //       >
     //         <div>
     //           <Image src={vector} height={50} width={100} />
     //         </div>
 
     //         <div>
-    //           <h1 className="text-xl font-regular">03</h1>
+    //           <h1 className="text-xl font-regular ml-3">03</h1>
     //         </div>
+    //       </motion.div>
+
+    //       <div className="flex space-x-3 items-center">
+    //         <motion.div
+    //           initial={{ opacity: 0, y: 20 }}
+    //           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+    //           transition={{ duration: 0.5, delay: 1.0 }}
+    //         >
+    //           <h1 className="text-6xl font-bold  text-primary mb-4">
+    //             Opportunity
+    //           </h1>
+    //         </motion.div>
+    //       </div>
+
+    //       <motion.div
+    //         initial={{ opacity: 0, y: 20 }}
+    //         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+    //         transition={{ duration: 0.5, delay: 1.0 }}
+    //       >
+    //         <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
+    // Embark on a lucrative investment journey with Nexus Network. As
+    // Ethereum's rollup-centric roadmap propels, our staking
+    // infrastructure becomes a gateway to unparalleled returns. With the
+    // ETH staked projected to grow from 1.6% to a staggering 20% by
+    // 2027, the opportunity to reap rewards in the billions has never
+    // been more compelling
+    //         </p>
+    //       </motion.div>
+
+    //       <div className="  -ml-[1rem] ">
+    //         <motion.div
+    //           initial={{ opacity: 0, y: 20 }}
+    //           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+    //           transition={{ duration: 0.5, delay: 1.0 }}
+    //         >
+    //           <StyledButton> Get Started</StyledButton>
+    //         </motion.div>
     //       </div>
     //     </div>
 
-    //     <div className="flex items-center justify-start">
-    //       <p className="text-xl font-regular   text-black max-w-2xl leading-relaxed mb-4">
-    //         Nexus Network envisions to become the economic layer for rollups.
-    //         Using our staking infrastructure, Rollups can stake the ETH locked
-    //         in their bridges and earn continuous stable staking returns.
-    //       </p>
+    //     <div className="  ">
+    //       {isInView && (
+    //         <RevealContainer delay={1.2}>
+    //           <RevealContent>
+    //             <Image src={diagram5} height={550} width={550} />
+    //           </RevealContent>
+    //           <RevealArtifact />
+    //         </RevealContainer>
+    //       )}
     //     </div>
-
-    //     <RevealContainer>
-    //       <RevealContent>
-    //         <Image src={diagram3} height={500} width={800} />
-    //       </RevealContent>
-    //       <RevealArtifact />
-    //     </RevealContainer>
     //   </div>
+    //   <div ref={ref} className="mt-[40rem]" />
     // </div>
   )
 }
@@ -340,7 +378,7 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-5xl font-bold  text-primary mb-4">
+            <h1 className="text-5xl font-bold  text-primary  ">
               Features we provide
             </h1>
           </motion.div>

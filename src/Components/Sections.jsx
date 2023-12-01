@@ -43,80 +43,9 @@ import { motion } from "framer-motion"
 import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
 import { useInView, animate, useAnimate } from "framer-motion"
 
-import { OrbitControls, Preload, useGLTF, Environment } from "@react-three/drei"
-
-import { Canvas, useFrame } from "@react-three/fiber"
-import { Mesh } from "three"
 import { useRef, useEffect } from "react"
 import { Button, FormGroup, Stack, TextField, Typography } from "@mui/material"
 import { styled } from "@mui/material/styles"
-// const About = () => {
-
-//   const ref = useRef(null)
-//   const isInView = useInView(ref, { once: true })
-
-//   if (isInView) {
-//     console.log("inview")
-//   }
-//   return (
-//     <div className="h-[100vh] flex justify-between items-center p-16 mx-16">
-//       <div className="flex justify-center space-x-6 items-center w-full">
-//         <div className="flex-col space-y-4 items-center justify-center w-5/12">
-//           <motion.div
-//             initial={{ opacity: 0, x: -20 }}
-//             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-//             transition={{ duration: 0.5, delay: 0.5 }}
-//           >
-//             <div>
-//               <Image src={vector} height={50} width={100} />
-//             </div>
-
-//             <div>
-//               <h1 className="text-xl font-regular ml-3">01</h1>
-//             </div>
-//           </motion.div>
-
-//           <div className="flex space-x-3 items-center">
-//             <motion.div
-//               initial={{ opacity: 0, y: 20 }}
-//               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-//               transition={{ duration: 0.5 }}
-//             >
-//               <h1 className="text-6xl font-bold text-primary mb-4">About Us</h1>
-//             </motion.div>
-//           </div>
-
-//           <motion.div
-//             initial={{ opacity: 0, y: 20 }}
-//             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-//             transition={{ duration: 0.5 }}
-//           >
-//             <div>
-//               <p className="text-xl font-regular text-black max-w-xl leading-relaxed mb-4">
-//                 Nexus Network envisions to become the economic layer for
-//                 rollups. Using our staking infrastructure, Rollups can stake the
-//                 ETH locked in their bridges and earn continuous stable staking
-//                 returns.
-//               </p>
-//             </div>
-//           </motion.div>
-
-//           <div className="-ml-[1rem]">
-//             <motion.div
-//               initial={{ opacity: 0, y: 20 }}
-//               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-//               transition={{ duration: 0.5 }}
-//             >
-//               <StyledButton>Get Started</StyledButton>
-//             </motion.div>
-//           </div>
-//         </div>
-//       </div>
-
-//       <div ref={ref} className="mt-[40rem]"></div>
-//     </div>
-//   )
-// }
 
 const About = () => {
   const ref = useRef(null)
@@ -169,6 +98,7 @@ const About = () => {
               </p>
             </motion.div>
             {/* <StyledButton> Get Started</StyledButton> */}
+
             <div className="  -ml-[1rem] ">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

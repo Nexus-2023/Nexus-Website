@@ -26,7 +26,7 @@ const Footer = () => {
         animate={isInView ? { opacity: 1, y: 20 } : { opacity: 0, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <div className="h-[30vh] bg-primary text-white flex justify-evenly  p-10">
+        <div className="h-[30vh] bg-primary text-white flex justify-evenly  p-10 ">
           <div className="flex flex-col space-y-2  w-[40vw]">
             <div>
               <Image src={logo} height={170} width={170} />

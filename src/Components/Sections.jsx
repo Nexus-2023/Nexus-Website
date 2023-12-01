@@ -19,6 +19,13 @@ import p3 from "/public/Image/p3.png"
 import twitter from "/public/Image/TwitterIcon.svg"
 import linkedin from "/public/Image/linkden.svg"
 
+import gitIcon from "/public/Image/githubIcon.svg"
+import linkedinIcon from "/public/Image/linkIcon.svg"
+import mailIcon from "/public/Image/Email.svg"
+import twitterIcon from "/public/Image/twitter.svg"
+import phone from "/public/Image/phone.svg"
+import blueCircle from "/public/Image/circle.svg"
+
 import vector from "/public/Image/vector.png"
 import { StyledButton, StyledButton2 } from "./Button"
 import { Button2 } from "./Button"
@@ -35,13 +42,14 @@ import {
 import { motion } from "framer-motion"
 import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
 import { useInView, animate, useAnimate } from "framer-motion"
-import { useEffect, useRef, Suspense } from "react"
 
 import { OrbitControls, Preload, useGLTF, Environment } from "@react-three/drei"
 
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Mesh } from "three"
-
+import { useRef, useEffect } from "react"
+import { Button, FormGroup, Stack, TextField, Typography } from "@mui/material"
+import { styled } from "@mui/material/styles"
 // const About = () => {
 
 //   const ref = useRef(null)
@@ -374,8 +382,8 @@ const Features = () => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className=" h-full flex  justify-center  p-16 mx-16 mb-[10rem]">
-      <div className=" flex-col  items-center">
+    <div className=" h-full flex  justify-center items-center      p-16 mx-16 mb-[10rem]">
+      <div className=" flex-col     items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
@@ -722,50 +730,120 @@ const Team = () => {
   )
 }
 
-const PhoneObject = () => {
-  const ref = null
-  const gltf = useGLTF("./model/scene.gltf")
+// const PhoneObject = () => {
+//   const ref = null
+//   const gltf = useGLTF("./model/scene.gltf")
 
-  return (
-    <mesh ref={ref}>
-      <hemisphereLight intensity={0.1} groundColor="black" />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={0.2}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <directionalLight intensity={0.2} position={[1, 1, 0]} />
-      <primitive object={gltf.scene} scale={0.012} rotation-y={0} />
-    </mesh>
-  )
-}
+//   return (
+//     <mesh ref={ref}>
+//       <hemisphereLight intensity={0.1} groundColor="black" />
+//       <spotLight
+//         position={[-20, 50, 10]}
+//         angle={0.12}
+//         penumbra={1}
+//         intensity={0.2}
+//         castShadow
+//         shadow-mapSize={1024}
+//       />
+//       <directionalLight intensity={0.2} position={[1, 1, 0]} />
+//       <primitive object={gltf.scene} scale={0.012} rotation-y={0} />
+//     </mesh>
+//   )
+// }
 
-export const PhoneCanvas = () => {
-  return (
-    <Canvas
-      shadows
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: 45,
-        near: 0.1,
-        far: 200,
-        position: [-4, 3, 6],
-      }}
-    >
-      <OrbitControls autoRotate enableZoom={false} />
-      <Suspense>
-        <Environment preset="park" />
-        <PhoneObject />
-      </Suspense>
-      <Preload all />
-    </Canvas>
-  )
-}
+// export const PhoneCanvas = () => {
+//   return (
+//     <Canvas
+//       shadows
+//       frameloop="demand"
+//       dpr={[1, 2]}
+//       gl={{ preserveDrawingBuffer: true }}
+//       camera={{
+//         fov: 45,
+//         near: 0.1,
+//         far: 200,
+//         position: [-4, 3, 6],
+//       }}
+//     >
+//       <OrbitControls autoRotate enableZoom={false} />
+//       <Suspense>
+//         <Environment preset="park" />
+//         <PhoneObject />
+//       </Suspense>
+//       <Preload all />
+//     </Canvas>
+//   )
+// }
+
+const mainPrimary = `#04A5FF`
+const darkGreen = `#CBCBCB`
+
+const CssTextField = styled(TextField)({
+  transition: "all 0.3s ease-in-out",
+  backgroundColor: "white",
+
+  "& label": { color: "gray" },
+  "& helperText": { color: "white" },
+  "& .MuiInputBase-input": { color: "black" },
+
+  "& label.Mui-focused": {
+    transition: "all 0.3s ease-in-out",
+    color: mainPrimary,
+  },
+  "& .MuiInput-underline:after": {
+    transition: "all 0.3s ease-in-out",
+    borderBottomColor: mainPrimary,
+  },
+
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      transition: "all 0.3s ease-in-out",
+      borderColor: mainPrimary,
+    },
+    "&:hover fieldset": {
+      transition: "all 0.3s ease-in-out",
+      borderColor: darkGreen,
+    },
+    "&.Mui-focused fieldset": {
+      transition: "all 0.3s ease-in-out",
+      borderColor: darkGreen,
+    },
+  },
+})
+
+const CssMessageField = styled(TextField)({
+  transition: "all 0.3s ease-in-out",
+  backgroundColor: "white",
+
+  "& label": { color: "gray" },
+  "& helperText": { color: "white" },
+
+  "& .MuiInputBase-input": { color: "black", height: "8rem" },
+
+  "& label.Mui-focused": {
+    transition: "all 0.3s ease-in-out",
+    color: mainPrimary,
+  },
+  "& .MuiInput-underline:after": {
+    transition: "all 0.3s ease-in-out",
+    borderBottomColor: mainPrimary,
+  },
+
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      transition: "all 0.3s ease-in-out",
+      borderColor: mainPrimary,
+    },
+    "&:hover fieldset": {
+      transition: "all 0.3s ease-in-out",
+      borderColor: darkGreen,
+    },
+    "&.Mui-focused fieldset": {
+      transition: "all 0.3s ease-in-out",
+      borderColor: darkGreen,
+    },
+  },
+})
 
 const Contact = () => {
   const ref = useRef(null)
@@ -773,8 +851,8 @@ const Contact = () => {
 
   return (
     <>
-      <div className=" h-[100vh] flex  justify-center   items-center p-16 mx-16 mb-[20rem]">
-        <div className=" flex-col space-y-4 items-center">
+      <div className=" h-[100vh] flex  justify-evenly  items-center p-16 mx-16 mb-[20rem]">
+        <div className=" flex-col  items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
@@ -807,11 +885,88 @@ const Contact = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
-              Nexus Network envisions to become the economic layer for rollups.
-              Using our staking infrastructure, Rollups can stake the ETH locked
-              in their bridges and earn continuous stable staking returns.
-            </p>
+            <div className="flex    text-black  space-x-2 items-center   ">
+              <a
+                href="https://github.com/Nexus-2023"
+                target="_blank"
+                className="hover:scale-105  scale-100 ease-in-out duration-75"
+              >
+                <Image src={gitIcon} width={42} height={42} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/nexus-network-staking-infra/"
+                target="_blank"
+                className="hover:scale-105  scale-100 ease-in-out  duration-150"
+              >
+                <Image src={linkedinIcon} width={42} height={42} />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                className="hover:scale-105  scale-100 ease-in-out  duration-150"
+              >
+                <Image src={mailIcon} width={42} height={82} />
+              </a>
+              <a
+                href="https://twitter.com/_Nexus_Network"
+                target="_blank"
+                className="hover:scale-105  scale-100 ease-in-out  duration-150"
+              >
+                <Image src={twitterIcon} width={42} height={52} />
+              </a>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Stack sx={{ mt: 2 }}>
+              <FormGroup>
+                <CssTextField
+                  label="Name"
+                  id="username"
+                  style={{ marginTop: 8, width: "30rem" }}
+                  name="username"
+                />
+                <Typography
+                  className="text-md text-[#111111] mb-8"
+                  sx={{ marginTop: 1, fontWeight: "500" }}
+                >
+                  your full Name
+                </Typography>
+
+                <CssTextField
+                  label="Email"
+                  id="email"
+                  type="email"
+                  style={{ marginTop: 1, width: "30rem" }}
+                  name="email"
+                />
+                <Typography
+                  className="text-md text-[#111111]"
+                  sx={{ mb: 2, marginTop: 1, fontWeight: "500" }}
+                >
+                  your Email
+                </Typography>
+
+                <CssMessageField
+                  label="Message"
+                  id="message"
+                  multiline
+                  rows={4}
+                  style={{ marginTop: 1, width: "30rem" }}
+                  name="message"
+                />
+                <Typography
+                  className="text-md text-[#111111]"
+                  sx={{ mb: 2, marginTop: 1, fontWeight: "500" }}
+                >
+                  your message
+                </Typography>
+              </FormGroup>
+            </Stack>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -820,7 +975,7 @@ const Contact = () => {
             style={{ marginLeft: "-1rem" }}
           >
             <StyledButton color="#1A1A1A" round="0px">
-              Book a call
+              Send
             </StyledButton>
           </motion.div>
         </div>
@@ -830,8 +985,12 @@ const Contact = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="  h-[70vh] w-[30vw] items-center">
-            <PhoneCanvas />
+          <div className="  h-[70vh] w-[30vw]   z-10 relative items-center">
+            {/* <PhoneCanvas /> */}
+            <Image src={phone} width={400} height={400} />
+            <div className="absolute top-0 left-20 -z-10">
+              <Image src={blueCircle} width={450} height={450} />
+            </div>
           </div>
         </motion.div>
       </div>

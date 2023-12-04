@@ -41,27 +41,29 @@ export function TemporaryDrawer() {
   }
 
   const list = anchor => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {["Home", "About", "Documentation", "Contact", "Schedule call"].map(
-          (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
-      </List>
-    </Box>
+    <div className="flex justify-center    flex-col  items-center">
+      <div className="flex  justify-center  items-center flex-col  text-base text-black font-semibold  ">
+        <div className="justify-center items-center">
+          {" "}
+          <StyledLink> Home</StyledLink>
+        </div>
+        <div className="justify-center items-center">
+          {" "}
+          <StyledLink> About </StyledLink>
+        </div>
+        <div className="justify-center items-center">
+          {" "}
+          <StyledLink> Docs </StyledLink>
+        </div>
+        <div className="">
+          {" "}
+          <StyledLink> Demo </StyledLink>
+        </div>
+        <StyledButton color="#1A1A1A" round="0px">
+          Contact us
+        </StyledButton>
+      </div>
+    </div>
   )
 
   return (

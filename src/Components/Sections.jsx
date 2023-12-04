@@ -56,7 +56,7 @@ const About = () => {
     <>
       <div className=" h-[70vh] flex  justify-between items-center p-16 mx-16     ">
         <div className="flex  justify-center  space-x-6  items-center w-full">
-          <div className=" flex-col space-y-4 items-center justify-center w-5/12">
+          <div className=" flex-col space-y-4 items-center justify-center   medium:border-yellow-900   tablet:border-red-500 laptop:border-blue-500  desktop:border-gray-800   small:border-green-800   min-w-[30vw]  border-2">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
@@ -91,7 +91,7 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 1.0 }}
             >
-              <p className="text-xl font-regular  text-black max-w-xl leading-relaxed mb-4">
+              <p className=" tablet:text-base laptop:text-lg  desktop:text-xl font-regular   small:text-sm text-xs  text-black max-w-xl leading-relaxed mb-4 border-2     ">
                 Nexus Network is at the forefront of revolutionizing Ethereum's
                 rollup landscape. With a commitment to security,
                 decentralization, and innovation, we provide an economic layer
@@ -113,12 +113,24 @@ const About = () => {
             </div>
           </div>
           {isInView && (
-            <RevealContainer delay={1.2}>
-              <RevealContent>
-                <Image src={diagram} height={450} width={450} />
-              </RevealContent>
-              <RevealArtifact />
-            </RevealContainer>
+            <div className=" min-w-fit">
+              <RevealContainer delay={1.2}>
+                <RevealContent>
+                  <Image
+                    src={diagram}
+                    height={400}
+                    width={400}
+                    style={{
+                      minWidth: "40%",
+                      minHeight: "40%",
+                      maxHeight: "50vh",
+                      maxWidth: "100%",
+                    }}
+                  />
+                </RevealContent>
+                <RevealArtifact />
+              </RevealContainer>
+            </div>
           )}
         </div>
       </div>

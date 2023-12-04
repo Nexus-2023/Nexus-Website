@@ -26,7 +26,7 @@ const HomePage = () => {
   return (
     <>
       {/*  web */}
-      <div className="h-[93vh]   medium:flex hidden   space-x-8  justify-center items-center    ">
+      <div className="h-[93vh]   tablet:flex hidden   space-x-8  justify-center items-center    ">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -151,7 +151,7 @@ const HomePage = () => {
 
       {/* mobile */}
 
-      <div className="h-[93vh]    flex medium:hidden  flex-col space-x-8  justify-center items-center   ">
+      <div className="h-[93vh]    flex tablet:hidden  flex-col space-x-8  justify-center items-center   ">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}

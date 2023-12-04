@@ -59,7 +59,7 @@ export function TemporaryDrawer() {
           {" "}
           <StyledLink> Demo </StyledLink>
         </div>
-        <StyledButton color="#1A1A1A" round="0px">
+        <StyledButton color="#1A1A1A" round="0px" size="14px">
           Contact us
         </StyledButton>
       </div>

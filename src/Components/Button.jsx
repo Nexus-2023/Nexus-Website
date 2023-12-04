@@ -17,7 +17,7 @@ const StyledButton = styled.button`
   border: 2px solid var(--color);
   transition: color 0.5s;
   z-index: 1;
-  font-size: 17px;
+  font-size: ${props => props.size || "17px"};
   border-radius: ${props => props.round || "6px"};
   font-weight: 500;
   color: var(--color);

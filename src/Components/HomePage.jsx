@@ -194,17 +194,6 @@ const HomePage = () => {
         >
           <div className="  flex   flex-col    ">
             <div className="flex small:text-2xl  laptop:text-3xl font-semibold text-gray-700 items-center space-x-4">
-              {/* <RevealContainer delay={1.2}>
-                <h1>
-                  <RevealContent>
-                    <div className="flex  items-center">
-                      <div>Welcome To, </div>
-                      <div className=" h-2 w-[20rem] bg-primary ml-4 mt-2" />
-                    </div>
-                  </RevealContent>
-                  <RevealArtifact />
-                </h1>
-              </RevealContainer> */}
               <div>
                 <h1></h1>
               </div>
@@ -243,7 +232,7 @@ const HomePage = () => {
               </ReversedRevealContainer>
             </div>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 ">
               <RevealContainer delay={2.3}>
                 <h1>
                   <RevealContent>
@@ -255,8 +244,7 @@ const HomePage = () => {
                         delay: 2,
                       }}
                     >
-                      <div className="flex justify-center text-2xl  h-[8vh] items-center -mt-2 ">
-                        <div className=" h-2 w-[4rem] bg-primary mr-3" />
+                      <div className="flex justify-center   text-2xl  h-[8vh] items-center -mt-2 ">
                         <div>
                           <h1 className=" -mt-3 font-semibold text-gray-700">
                             An Economic Layer for Rollups

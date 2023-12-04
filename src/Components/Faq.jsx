@@ -24,7 +24,7 @@ export default function Faq() {
       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="p-16 m-16 max-w-[100vw] flex-col justify-center  items-center h-[40vh]  flex   ">
+      <div className="p-16  tablet:m:16 m:4 max-w-[100vw] flex-col justify-center  items-center h-[40vh]  flex   ">
         <div className="flex justify-center text-4xl font-semibold mb-8">
           FAQ
         </div>
@@ -38,7 +38,14 @@ export default function Faq() {
             >
               <AddIcon />
               <Typography
-                sx={{ ml: "8px", fontWeight: "500", fontSize: "20px" }}
+                sx={{
+                  ml: "8px",
+                  fontWeight: "500",
+                  fontSize: "20px",
+                  "@media (max-width: 768px)": {
+                    fontSize: "16px",
+                  },
+                }}
               >
                 {ques}
               </Typography>
@@ -50,6 +57,9 @@ export default function Faq() {
                   ml: "8px",
                   mt: "-8px",
                   fontSize: "16px",
+                  "@media (max-width: 768px)": {
+                    fontSize: "16px",
+                  },
                 }}
               >
                 {ans}

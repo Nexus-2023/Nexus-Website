@@ -804,7 +804,7 @@ const Team = () => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className="  h-full flex   justify-center  p-16 mx-16  ">
+    <div className="  h-full  flex  desktop:mx-16 mx-4   justify-center  p-16   ">
       <div className=" flex-col  items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -833,13 +833,13 @@ const Team = () => {
           </motion.div>
         </div>
 
-        <div className="flex    mt-8   space-x-12  w-[80vw] items-center  justify-center   ">
+        <div className="flex  laptop:flex-row flex-col   mt-8  space-y-8  laptop:space-y-0 laptop:space-x-12  w-[80vw] items-center  justify-center   ">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary    rounded-3xl">
+            <div className="p-4 flex-col     w-fit    min-w-min  border-2 border-primary shadow-md shadow-primary    rounded-3xl">
               <div className="flex justify-center items-center">
                 <Image src={p1} height={150} width={150} />
               </div>
@@ -886,7 +886,7 @@ const Team = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary  rounded-3xl">
+            <div className="p-4 flex-col border-2 min-w-min border-primary shadow-md shadow-primary  rounded-3xl">
               <div className="flex justify-center items-center">
                 <Image src={p2} height={150} width={150} />
               </div>
@@ -932,7 +932,7 @@ const Team = () => {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.5, delay: 1.0 }}
           >
-            <div className="p-4 flex-col border-2 border-primary shadow-md shadow-primary   rounded-3xl">
+            <div className="p-4 flex-col border-2 min-w-min border-primary shadow-md shadow-primary   rounded-3xl">
               <div className="flex justify-center items-center">
                 <Image src={p3} height={130} width={130} />
               </div>
@@ -979,51 +979,6 @@ const Team = () => {
     </div>
   )
 }
-
-// const PhoneObject = () => {
-//   const ref = null
-//   const gltf = useGLTF("./model/scene.gltf")
-
-//   return (
-//     <mesh ref={ref}>
-//       <hemisphereLight intensity={0.1} groundColor="black" />
-//       <spotLight
-//         position={[-20, 50, 10]}
-//         angle={0.12}
-//         penumbra={1}
-//         intensity={0.2}
-//         castShadow
-//         shadow-mapSize={1024}
-//       />
-//       <directionalLight intensity={0.2} position={[1, 1, 0]} />
-//       <primitive object={gltf.scene} scale={0.012} rotation-y={0} />
-//     </mesh>
-//   )
-// }
-
-// export const PhoneCanvas = () => {
-//   return (
-//     <Canvas
-//       shadows
-//       frameloop="demand"
-//       dpr={[1, 2]}
-//       gl={{ preserveDrawingBuffer: true }}
-//       camera={{
-//         fov: 45,
-//         near: 0.1,
-//         far: 200,
-//         position: [-4, 3, 6],
-//       }}
-//     >
-//       <OrbitControls autoRotate enableZoom={false} />
-//       <Suspense>
-//         <Environment preset="park" />
-//         <PhoneObject />
-//       </Suspense>
-//       <Preload all />
-//     </Canvas>
-//   )
-// }
 
 const mainPrimary = `#04A5FF`
 const darkGreen = `#CBCBCB`
@@ -1177,7 +1132,10 @@ const Contact = () => {
                 <CssTextField
                   label="Name"
                   id="username"
-                  style={{ marginTop: 8, width: "30rem" }}
+                  style={{
+                    marginTop: 8,
+                    width: "27rem",
+                  }}
                   name="username"
                 />
                 <Typography
@@ -1191,7 +1149,10 @@ const Contact = () => {
                   label="Email"
                   id="email"
                   type="email"
-                  style={{ marginTop: 1, width: "30rem" }}
+                  style={{
+                    marginTop: 1,
+                    width: "27rem",
+                  }}
                   name="email"
                 />
                 <Typography
@@ -1206,7 +1167,10 @@ const Contact = () => {
                   id="message"
                   multiline
                   rows={4}
-                  style={{ marginTop: 1, width: "30rem" }}
+                  style={{
+                    marginTop: 1,
+                    width: "27rem",
+                  }}
                   name="message"
                 />
                 <Typography
@@ -1235,11 +1199,11 @@ const Contact = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="  h-[70vh] w-[30vw]  flex z-10 relative items-center">
+          <div className="  h-[70vh] w-[30vw]  hidden laptop:flex    z-10 relative items-center">
             {/* <PhoneCanvas /> */}
-            <Image src={phone} width={400} height={400} />
+            <Image src={phone} width={450} height={450} />
             <div className="absolute top-20 left-20 -z-10">
-              <Image src={blueCircle} width={450} height={450} />
+              <Image src={blueCircle} width={500} height={500} />
             </div>
           </div>
         </motion.div>

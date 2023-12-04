@@ -246,7 +246,7 @@ const Problems = () => {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <h1 className="  laptop:text-5xl  desktop:text-6xl text-5xl font-bold  text-primary mb-4">
+                <h1 className="  laptop:text-5xl  desktop:text-6xl text-5xl font-bold  text-primary mb-6">
                   Problems we Solve
                 </h1>
               </motion.div>
@@ -393,7 +393,7 @@ const Oppportunity = () => {
                   }
                   transition={{ duration: 0.5, delay: 1.0 }}
                 >
-                  <h1 className=" tablet:text-5xl laptop:text-6xl  text-5xl font-bold  text-primary mb-4">
+                  <h1 className=" tablet:text-5xl laptop:text-6xl  text-5xl font-bold  text-primary mb-6">
                     Opportunity
                   </h1>
                 </motion.div>
@@ -644,19 +644,19 @@ const Features = () => {
           </motion.div>
         </div>
 
-        <div className="  flex   justify-center items-center mt-16   w-[80vw]">
+        <div className="  flex  flex-col desktop:text-base  space-y-8 tablet:flex-row  tablet:space-y-0 tablet:space-x-5 text-sm  justify-center items-center mt-16   w-[80vw]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <div className=" p-8 mx-4  border-2 min-h-[30vh] border-[#5404FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#5404FF]">
+            <div className=" p-4 mx-4  border-2 h-[30vh] border-[#5404FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#5404FF]">
               <div className="flex space-x-5 items-center  mb-4 ">
                 <div>
                   <Image src={l1} width={50} height={50} />
                 </div>
 
-                <h1 className="text-[#5404FF] text-2xl font-medium">
+                <h1 className="text-[#5404FF] text-lg  medium:text-lg laptop:text-xl desktop:text-2xl font-medium">
                   pluggable Staking Infrastructure
                 </h1>
               </div>
@@ -678,13 +678,13 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <div className=" p-8 mx-4 border-black  min-h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-black ">
+            <div className=" p-4 mx-4 border-black   h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-black ">
               <div className="flex space-x-5 items-center  mb-4 ">
                 <div>
                   <Image src={l2} width={50} height={50} />
                 </div>
 
-                <h1 className="text-black text-2xl font-medium">
+                <h1 className="text-black text-lg  medium:text-lg laptop:text-xl desktop:text-2xl font-medium">
                   Non-custodial Solution
                 </h1>
               </div>
@@ -701,19 +701,19 @@ const Features = () => {
             </div>
           </motion.div>
         </div>
-        <div className="  flex    justify-center items-center mt-16  w-[80vw]">
+        <div className="  flex   desktop:text-base   text-sm  flex-col space-y-8 tablet:flex-row  tablet:space-y-0 tablet:space-x-5  justify-center items-center mt-16  w-[80vw]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 1.0 }}
           >
-            <div className=" p-8 mx-4  border-2  min-h-[30vh] border-[#0394FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#0394FF]">
+            <div className=" p-8 mx-4  border-2  h-[30vh] border-[#0394FF] max-w-lg flex flex-col w-full shadow-md rounded-md shadow-[#0394FF]">
               <div className="flex space-x-5  items-center mb-4 ">
                 <div>
                   <Image src={l3} width={50} height={50} />
                 </div>
 
-                <h1 className="text-[#0394FF] text-2xl font-medium">
+                <h1 className="text-[#0394FF]  text-lg  medium:text-lg laptop:text-xl desktop:text-2xl font-medium">
                   One Stop Validator Management
                 </h1>
               </div>
@@ -734,13 +734,13 @@ const Features = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            <div className=" p-8 mx-4 border-[#9F00AD]   min-h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-[#9F00AD]">
+            <div className=" p-4 mx-4 border-[#9F00AD]  h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-[#9F00AD]">
               <div className="flex space-x-5  items-center mb-4 ">
                 <div>
                   <Image src={l4} width={50} height={50} />
                 </div>
 
-                <h1 className="text-[#9F00AD] text-2xl font-medium">
+                <h1 className="text-[#9F00AD] text-lg  medium:text-lg laptop:text-xl desktop:text-2xl font-medium">
                   pluggable Staking Infrastructure
                 </h1>
               </div>

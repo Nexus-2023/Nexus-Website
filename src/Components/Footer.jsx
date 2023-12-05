@@ -6,8 +6,8 @@ import { useInView, animate, useAnimate, motion } from "framer-motion"
 import { useEffect, useRef } from "react"
 import { StyledLink } from "./Links"
 const Links = {
-  Documentation: "",
-  "Nexus Dapp": "",
+  Documentation: "https://docs.nexusnetwork.co.in/",
+  "Nexus Dapp": "https://nexus-dashboard-omega.vercel.app/",
   Demo: "",
 }
 
@@ -27,12 +27,15 @@ const Footer = () => {
         transition={{ duration: 0.7 }}
       >
         <div className="h-[30vh] bg-primary hidden medium:flex text-white  justify-evenly  p-10  rounded-xl m-0   ">
-          <div className="flex flex-col space-y-2  w-[40vw]">
+          <div className="flex flex-col    w-[40vw]">
             <div>
               <Image src={logo} height={170} width={170} />
             </div>
 
-            <div className="text-md">© 2023 Nexus Network, Inc.</div>
+            <div className="text-md mt-2">office@nexusnetwork.co.in</div>
+            <div className="text-sm mt-9  opacity-70">
+              © 2023 Nexus Network, Inc.
+            </div>
           </div>
 
           <div className="flex flex-col text-base space-y-2  mb-16">
@@ -42,13 +45,11 @@ const Footer = () => {
 
             <div className="text-md flex flex-col space-y-2">
               {Object.entries(Links).map(([key, value]) => (
-                <StyledLink
-                  hoverColor="white"
-                  Col="white"
-                  href={value}
-                  target="_blank"
-                >
-                  <span> {key}</span>
+                <StyledLink hoverColor="white" Col="white">
+                  <a href={value} target="_blank">
+                    {" "}
+                    {key}{" "}
+                  </a>
                 </StyledLink>
               ))}
             </div>
@@ -67,7 +68,10 @@ const Footer = () => {
                   href={value}
                   target="_blank"
                 >
-                  <span> {key}</span>
+                  <a href={value} target="_blank">
+                    {" "}
+                    {key}{" "}
+                  </a>
                 </StyledLink>
               ))}
             </div>
@@ -77,12 +81,14 @@ const Footer = () => {
         {/* mobile*/}
 
         <div className="h-[50vh] bg-primary flex-col flex medium:hidden medium:h-[30vh] text-white  justify-center items-center p-10 rounded-xl m-0  ">
-          <div className="flex flex-col space-y-2 justify-center items-center  mb-[3rem] w-[40vw]">
+          <div className="flex flex-col   justify-center items-center  mb-[3rem] w-[40vw]">
             <div>
               <Image src={logo} height={170} width={170} />
             </div>
 
-            <div className="text-md">© 2023 Nexus Network, Inc.</div>
+            <div className="text-sm  opacity-70">
+              © 2023 Nexus Network, Inc.
+            </div>
           </div>
 
           <div className="flex space-x-24 justify-evenly  mb-16">
@@ -99,7 +105,10 @@ const Footer = () => {
                     href={value}
                     target="_blank"
                   >
-                    {key}
+                    <a href={value} target="_blank">
+                      {" "}
+                      {key}{" "}
+                    </a>
                   </StyledLink>
                 ))}
               </div>
@@ -118,7 +127,10 @@ const Footer = () => {
                     href={value}
                     target="_blank"
                   >
-                    {key}
+                    <a href={value} target="_blank">
+                      {" "}
+                      {key}{" "}
+                    </a>
                   </StyledLink>
                 ))}
               </div>

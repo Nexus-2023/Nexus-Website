@@ -34,7 +34,7 @@ const LazyContact = dynamic(() => import("@/Components/Section/Contact"), {
 const LazyFooter = dynamic(() => import("@/Components/Footer"))
 export default function Home() {
   return (
-    <div className="border-2    overflow-clip">
+    <div className="overflow-clip">
       <HomePage />
       <LazyAbout />
       <LazyProblems />

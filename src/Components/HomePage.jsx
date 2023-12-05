@@ -257,7 +257,7 @@ const HomePage = () => {
           </div>
         </motion.div>
       </div>
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute medium:flex hidden xs:bottom-10 bottom-32 w-full   justify-center items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -267,6 +267,33 @@ const HomePage = () => {
           }}
         >
           <Link to="about" smooth duration={1000} easing="easeInOutCubic">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+            </div>
+          </Link>
+        </motion.div>
+      </div>
+
+      <div className="absolute medium:hidden flex xs:bottom-10 bottom-32 w-full   justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 3,
+          }}
+        >
+          <Link to="about2" smooth duration={1000} easing="easeInOutCubic">
             <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
               <motion.div
                 animate={{

@@ -77,7 +77,7 @@ export default function Oppportunity() {
               </motion.div>
               {/* <StyledButton> Get Started</StyledButton> */}
 
-              <div className="  -ml-[1rem] ">
+              {/* <div className="  -ml-[1rem] ">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={
@@ -85,9 +85,9 @@ export default function Oppportunity() {
                   }
                   transition={{ duration: 0.5, delay: 1.0 }}
                 >
-                  <StyledButton> Get Started</StyledButton>
+                  
                 </motion.div>
-              </div>
+              </div> */}
             </div>
             {/* <div className=" tablet:w-6/12  medium:w-12/12    small:w-8/12 w-full laptop:w-6/12  border-2"> */}
             {isInView && (
@@ -166,9 +166,8 @@ export default function Oppportunity() {
                   never been more compelling
                 </p>
               </motion.div>
-              {/* <StyledButton> Get Started</StyledButton> */}
 
-              <div className="  -ml-[1rem] flex  justify-start items-center w-full   ">
+              {/* <div className="  -ml-[1rem] flex  justify-start items-center w-full   ">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={
@@ -177,8 +176,8 @@ export default function Oppportunity() {
                   transition={{ duration: 0.5, delay: 1.0 }}
                 >
                   <StyledButton size="14px"> Get Started</StyledButton>
-                </motion.div>
-              </div>
+                </motion.div> 
+              </div> */}
             </div>
             {isInView && (
               <div className=" flex justify-center  w-full">

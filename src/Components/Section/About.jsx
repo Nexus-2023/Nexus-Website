@@ -69,7 +69,8 @@ export default function About() {
                 Nexus Network is at the forefront of revolutionizing Ethereum's
                 rollup landscape. With a commitment to security,
                 decentralization, and innovation, we provide an economic layer
-                for rollups through our cutting-edge staking infrastructure.
+                for rollups through our cutting-edge staking infrastructure. see
+                our docs for more information
               </p>
             </motion.div>
             {/* <StyledButton> Get Started</StyledButton> */}
@@ -82,7 +83,11 @@ export default function About() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <StyledButton> Get Started</StyledButton>
+                <StyledButton size="16px">
+                  <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+                    Get Started
+                  </a>
+                </StyledButton>
               </motion.div>
             </div>
           </div>
@@ -146,7 +151,8 @@ export default function About() {
                 Nexus Network is at the forefront of revolutionizing Ethereum's
                 rollup landscape. With a commitment to security,
                 decentralization, and innovation, we provide an economic layer
-                for rollups through our cutting-edge staking infrastructure.
+                for rollups through our cutting-edge staking infrastructure.See
+                our docs for more information
               </p>
             </motion.div>
             {/* <StyledButton> Get Started</StyledButton> */}

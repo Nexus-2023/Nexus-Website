@@ -88,7 +88,11 @@ export default function Problems() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <StyledButton> Get Started</StyledButton>
+                <StyledButton size="16px">
+                  <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+                    Get Started
+                  </a>
+                </StyledButton>
               </motion.div>
             </div>
           </div>
@@ -160,7 +164,11 @@ export default function Problems() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <StyledButton size="14px"> Get Started</StyledButton>
+                <StyledButton size="14px">
+                  <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+                    Get Started
+                  </a>
+                </StyledButton>
               </motion.div>
             </div>
           </div>

@@ -6,12 +6,8 @@ import styled from "@emotion/styled"
 import logo from "/public/Image/bigLogo.png"
 import text from "/public/Image/textGradient.png"
 import { motion } from "framer-motion"
-import { AnimatePresence, LazyMotion, domAnimation, m } from "framer-motion"
 
 // import styles from "../styles/reveal.module.css"
-
-import dynamic from "next/dynamic"
-import { Fragment, useEffect, useState } from "react"
 
 import {
   RevealContainer,
@@ -71,19 +67,14 @@ const HomePage = () => {
           <div className="  flex   flex-col   space-y-6">
             <div className="flex small:text-2xl  laptop:text-3xl font-semibold text-gray-700 items-center space-x-4">
               <RevealContainer delay={1.2}>
-                <h1>
-                  <RevealContent>
-                    <div className="flex  items-center">
-                      <div>Welcome To, </div>
-                      <div className=" h-2 w-[20rem] bg-primary ml-4 mt-2" />
-                    </div>
-                  </RevealContent>
-                  <RevealArtifact />
-                </h1>
+                <RevealContent>
+                  <div className="flex  items-center">
+                    <div>Welcome To, </div>
+                    <div className=" h-2 w-[20rem] bg-primary ml-4 mt-2" />
+                  </div>
+                </RevealContent>
+                <RevealArtifact />
               </RevealContainer>
-              <div>
-                <h1></h1>
-              </div>
             </div>
 
             <div className="flex  ">

@@ -1,38 +1,51 @@
 "use client"
 
-import Image from "next/image"
-
 import { HomePage } from "@/Components/HomePage"
-import { Navbar } from "@/Components/Navbar"
-import Footer from "@/Components/Footer"
-import {
-  About,
-  Problems,
-  Oppportunity,
-  Features,
-  RoadMap,
-  Team,
-  Contact,
-} from "@/Components/Sections"
 
-import { useInView } from "framer-motion"
-import { useEffect, useRef } from "react"
+import dynamic from "next/dynamic"
 
-import Faq from "@/Components/Faq"
+const LazyAbout = dynamic(() => import("@/Components/Section/About"), {
+  ssr: false,
+})
+
+const LazyProblems = dynamic(() => import("@/Components/Section/Problem"), {
+  ssr: false,
+})
+
+const LazyOppportunity = dynamic(
+  () => import("@/Components/Section/Opportunity"),
+  {
+    ssr: false,
+  }
+)
+
+const LazyTeam = dynamic(() => import("@/Components/Section/Team"), {
+  ssr: false,
+})
+
+const LazyFeatures = dynamic(() => import("@/Components/Section/Features"), {
+  ssr: false,
+})
+
+const LazyFaq = dynamic(() => import("@/Components/Faq"))
+const LazyContact = dynamic(() => import("@/Components/Section/Contact"), {
+  ssr: false,
+})
+const LazyFooter = dynamic(() => import("@/Components/Footer"))
 export default function Home() {
   return (
     <div className="border-2    overflow-clip">
       <HomePage />
-      <About />
-      <Problems />
-      <Oppportunity />
+      <LazyAbout />
+      <LazyProblems />
+      <LazyOppportunity />
 
-      <Features />
-      {/* <RoadMap /> */}
-      <Team />
-      <Faq />
-      <Contact />
-      <Footer />
+      <LazyFeatures />
+
+      <LazyTeam />
+      <LazyFaq />
+      <LazyContact />
+      <LazyFooter />
     </div>
   )
 }

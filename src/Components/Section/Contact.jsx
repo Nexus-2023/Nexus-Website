@@ -8,7 +8,7 @@ import mailIcon from "/public/Image/Email.svg"
 import twitterIcon from "/public/Image/twitter.svg"
 import phone from "/public/Image/phone.svg"
 import blueCircle from "/public/Image/circle.svg"
-
+import emailjs from "@emailjs/browser"
 import vector from "/public/Image/vector.png"
 import { StyledButton } from "../Button"
 
@@ -16,10 +16,12 @@ import { motion } from "framer-motion"
 
 import { useInView } from "framer-motion"
 
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import styled from "styled-components"
 import { TextField, Stack, FormGroup, Typography } from "@mui/material"
-
+import Alert from "@mui/material/Alert"
+import CloseIcon from "@mui/icons-material/Close"
+import IconButton from "@mui/material/IconButton"
 const mainPrimary = `#04A5FF`
 const darkGreen = `#CBCBCB`
 
@@ -91,12 +93,145 @@ const CssMessageField = styled(TextField)({
 })
 
 export default function Contact() {
+  const [aleartErrorOpen, setaleartErrorOpen] = useState(false)
+  const [aleartPendingOpen, setaleartPendingOpen] = useState(false)
+  const [aleartSucceessOpen, setaleartSucceessOpen] = useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
+  const formRef = useRef()
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+
+  const handlaleartErrorclose = () => {
+    setaleartErrorOpen(false)
+  }
+  const handlaleartPendingclose = () => {
+    setaleartPendingOpen(false)
+  }
+  const handlaleartSuccessclose = () => {
+    setaleartSucceessOpen(false)
+  }
+
+  const handleChange = e => {
+    const { target } = e
+    const { name, value } = target
+
+    setForm({
+      ...form,
+      [name]: value,
+    })
+  }
+  const secviceKey = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_API_KEY
+  const templateKey = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_API_KEY
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_API_KEY
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    setaleartPendingOpen(true)
+
+    try {
+      emailjs
+        .send(
+          secviceKey,
+          templateKey,
+          {
+            from_name: form.name,
+            to_name: "Nexus Team",
+            from_email: form.email,
+            to_email: "office@nexusnetwork.co.in",
+            message: form.message,
+          },
+          publicKey
+        )
+        .then(
+          () => {
+            handlaleartPendingclose()
+            setaleartSucceessOpen(true)
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            })
+
+            setTimeout(() => {
+              handlaleartSuccessclose()
+            }, 2000)
+          },
+          error => {
+            handlaleartPendingclose()
+            setaleartErrorOpen(true)
+            console.error(error)
+
+            setTimeout(() => {
+              handlaleartErrorclose()
+            }, 2000)
+          }
+        )
+    } catch (error) {
+      handlaleartPendingclose()
+      setaleartErrorOpen(true)
+      console.error(error)
+
+      setTimeout(() => {
+        handlaleartErrorclose()
+      }, 2000)
+    }
+  }
 
   return (
     <>
-      <div className=" h-[100vh] flex  justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]">
+      <div className=" h-[100vh] flex  relative justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]">
+        {aleartErrorOpen && (
+          <>
+            <Alert
+              severity="error"
+              action={
+                <IconButton
+                  aria-label="close"
+                  color="inherit"
+                  size="small"
+                  onClick={handlaleartErrorclose}
+                ></IconButton>
+              }
+              sx={{ position: "absolute", top: "8rem" }}
+            >
+              Faild to send Email
+            </Alert>
+          </>
+        )}
+
+        {aleartSucceessOpen && (
+          <>
+            <Alert
+              severity="success"
+              action={
+                <IconButton
+                  aria-label="close"
+                  color="inherit"
+                  size="small"
+                  onClick={handlaleartSuccessclose}
+                ></IconButton>
+              }
+              sx={{ position: "absolute", top: "8rem" }}
+            >
+              Email Successfully Send
+            </Alert>
+          </>
+        )}
+
+        {aleartPendingOpen && (
+          <>
+            <Alert
+              severity="warning"
+              sx={{ position: "absolute", top: "8rem" }}
+            >
+              Email pending
+            </Alert>
+          </>
+        )}
         <div className=" flex-col  items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -146,7 +281,7 @@ export default function Contact() {
                 <Image src={linkedinIcon} width={42} height={42} />
               </a>
               <a
-                href=""
+                href="mailto:office@nexusnetwork.co.in"
                 target="_blank"
                 className="hover:scale-105  scale-100 ease-in-out  duration-150"
               >
@@ -168,15 +303,19 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
           >
             <Stack sx={{ mt: 2 }}>
-              <FormGroup>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <CssTextField
-                  label="Name"
-                  id="username"
+                  type="text"
+                  required
+                  value={form.name}
+                  onChange={handleChange}
+                  label="name"
+                  id="name"
                   style={{
                     marginTop: 8,
                     width: "27rem",
                   }}
-                  name="username"
+                  name="name"
                 />
                 <Typography
                   className="text-md text-[#111111] mb-8"
@@ -186,9 +325,12 @@ export default function Contact() {
                 </Typography>
 
                 <CssTextField
+                  required
                   label="Email"
                   id="email"
                   type="email"
+                  value={form.email}
+                  onChange={handleChange}
                   style={{
                     marginTop: 1,
                     width: "27rem",
@@ -203,8 +345,11 @@ export default function Contact() {
                 </Typography>
 
                 <CssMessageField
+                  required
                   label="Message"
                   id="message"
+                  value={form.message}
+                  onChange={handleChange}
                   multiline
                   rows={4}
                   style={{
@@ -219,18 +364,20 @@ export default function Contact() {
                 >
                   your message
                 </Typography>
-              </FormGroup>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                  }
+                  transition={{ duration: 0.5 }}
+                  style={{ marginLeft: "-1rem" }}
+                >
+                  <StyledButton color="#1A1A1A" round="0px">
+                    Send
+                  </StyledButton>
+                </motion.div>
+              </form>
             </Stack>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
-            style={{ marginLeft: "-1rem" }}
-          >
-            <StyledButton color="#1A1A1A" round="0px">
-              Send
-            </StyledButton>
           </motion.div>
         </div>
         <div ref={ref} className="mt-[45rem]" />

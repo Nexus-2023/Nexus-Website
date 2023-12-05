@@ -284,7 +284,7 @@ const HomePage = () => {
         </motion.div>
       </div>
 
-      <div className="absolute medium:hidden flex xs:bottom-10 bottom-32 w-full   justify-center items-center">
+      <div className="absolute medium:hidden flex  bottom-4 w-full   justify-center items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -25,7 +25,10 @@ export default function About() {
   return (
     <>
       {/* web */}
-      <div className=" h-[70vh]   medium:flex hidden justify-between items-center p-16 tablet:mx-0 laptop:mx-16 mx-0        ">
+      <div
+        className=" h-[70vh]   medium:flex hidden justify-between items-center p-16 tablet:mx-0 laptop:mx-16 mx-0  "
+        id="about"
+      >
         <div className="flex  justify-center  space-x-6  items-center w-full">
           <div className=" flex-col space-y-4 items-center justify-center min-w-[30vw]   ">
             <motion.div
@@ -99,7 +102,10 @@ export default function About() {
 
       {/* Mobile */}
 
-      <div className="  h-full   flex  medium:hidden  justify-between items-center p-16      w-full    ">
+      <div
+        className="  h-full   flex  medium:hidden  justify-between items-center p-16      w-full    "
+        id="about2"
+      >
         <div className="flex  justify-center  flex-col space-x-6  items-center w-full">
           <div className=" flex-col   items-center justify-center min-w-[30vw]   ">
             <motion.div

@@ -21,6 +21,7 @@ import ListItemText from "@mui/material/ListItemText"
 import InboxIcon from "@mui/icons-material/MoveToInbox"
 import MailIcon from "@mui/icons-material/Mail"
 import { useState, Fragment } from "react"
+import { Link } from "react-scroll"
 export function TemporaryDrawer() {
   const [state, setState] = useState({
     top: false,
@@ -43,25 +44,35 @@ export function TemporaryDrawer() {
   const list = anchor => (
     <div className="flex justify-center    flex-col  items-center">
       <div className="flex  justify-center  items-center flex-col  text-base text-black font-semibold  ">
+        <Link to="home2" smooth duration={1000} easing="easeInOutCubic">
+          <div className="justify-center items-center">
+            {" "}
+            <StyledLink> Home</StyledLink>
+          </div>
+        </Link>
         <div className="justify-center items-center">
-          {" "}
-          <StyledLink> Home</StyledLink>
+          <Link to="about2" smooth duration={1000} easing="easeInOutCubic">
+            <StyledLink> About </StyledLink>
+          </Link>
         </div>
         <div className="justify-center items-center">
-          {" "}
-          <StyledLink> About </StyledLink>
-        </div>
-        <div className="justify-center items-center">
-          {" "}
-          <StyledLink> Docs </StyledLink>
+          <StyledLink>
+            <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+              Docs
+            </a>
+          </StyledLink>
         </div>
         <div className="">
-          {" "}
-          <StyledLink> Demo </StyledLink>
+          <Link to="demo" smooth duration={1000} easing="easeInOutCubic">
+            <StyledLink> Demo </StyledLink>
+          </Link>
         </div>
-        <StyledButton color="#1A1A1A" round="0px" size="14px">
-          Contact us
-        </StyledButton>
+
+        <Link to="contact" smooth duration={1000} easing="easeInOutCubic">
+          <StyledButton color="#1A1A1A" round="0px" size="14px">
+            Contact us
+          </StyledButton>
+        </Link>
       </div>
     </div>
   )
@@ -96,34 +107,36 @@ const Navbar = () => {
           delay: 2.6,
         }}
       >
-        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden    ">
+        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden      ">
           <div className="flex">
             <Image src={logo} alt="Nexus Logo" width={150} height={150} />
           </div>
 
           <div className="  ">
             <ul className="flex space-x-8 text-lg text-black font-semibold items-center ">
-              <li className="">
-                <StyledLink>
-                  {" "}
-                  <span> Home </span>{" "}
-                </StyledLink>
-              </li>
-              <li className="">
-                {" "}
+              <StyledLink>
+                <Link to="home" smooth duration={1000} easing="easeInOutCubic">
+                  Home
+                </Link>
+              </StyledLink>
+
+              <Link to="about" smooth duration={1000} easing="easeInOutCubic">
                 <StyledLink> About </StyledLink>
-              </li>
-              <li className="">
-                {" "}
-                <StyledLink> Docs </StyledLink>
-              </li>
-              <li className="">
-                {" "}
-                <StyledLink> Demo </StyledLink>
-              </li>
-              <StyledButton color="#1A1A1A" round="0px">
-                Contact us
-              </StyledButton>
+              </Link>
+
+              <StyledLink>
+                <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+                  {" "}
+                  Docs
+                </a>
+              </StyledLink>
+
+              <StyledLink> Demo</StyledLink>
+              <Link to="contact" smooth duration={1000} easing="easeInOutCubic">
+                <StyledButton color="#1A1A1A" round="0px">
+                  Contact us
+                </StyledButton>
+              </Link>
             </ul>
           </div>
         </div>

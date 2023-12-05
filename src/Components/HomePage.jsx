@@ -6,7 +6,7 @@ import styled from "@emotion/styled"
 import logo from "/public/Image/bigLogo.png"
 import text from "/public/Image/textGradient.png"
 import { motion } from "framer-motion"
-
+import { Link } from "react-scroll"
 // import styles from "../styles/reveal.module.css"
 
 import {
@@ -22,7 +22,10 @@ const HomePage = () => {
   return (
     <>
       {/*  web */}
-      <div className="h-[93vh]   tablet:flex hidden   space-x-8  justify-center items-center    ">
+      <div
+        className="h-[93vh]   tablet:flex hidden   space-x-8  justify-center items-center    "
+        id="home"
+      >
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -142,7 +145,10 @@ const HomePage = () => {
 
       {/* mobile */}
 
-      <div className="h-[93vh]    flex tablet:hidden  flex-col space-x-8  justify-center items-center   ">
+      <div
+        className="h-[93vh]    flex tablet:hidden  flex-col space-x-8  justify-center items-center "
+        id="home2"
+      >
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -249,6 +255,32 @@ const HomePage = () => {
               </RevealContainer>
             </div>
           </div>
+        </motion.div>
+      </div>
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 3,
+          }}
+        >
+          <Link to="about" smooth duration={1000} easing="easeInOutCubic">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+            </div>
+          </Link>
         </motion.div>
       </div>
     </>

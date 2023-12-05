@@ -183,7 +183,10 @@ export default function Contact() {
 
   return (
     <>
-      <div className=" h-[100vh] flex  relative justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]">
+      <div
+        className=" h-[100vh] flex  relative justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]"
+        id="contact"
+      >
         {aleartErrorOpen && (
           <>
             <Alert

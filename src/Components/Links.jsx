@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledLink = styled.a`
+const StyledLink = styled.div`
   display: inline-block;
   position: relative;
   text-decoration: none;

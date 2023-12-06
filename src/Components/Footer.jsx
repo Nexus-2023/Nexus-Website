@@ -26,7 +26,7 @@ const Footer = () => {
         animate={isInView ? { opacity: 1, y: 20 } : { opacity: 0, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <div className="h-[30vh] bg-primary hidden medium:flex text-white  justify-evenly  p-10  rounded-xl m-0   ">
+        <div className="min-h-max bg-primary hidden medium:flex text-white  justify-evenly  p-10  rounded-xl m-0   ">
           <div className="flex flex-col    w-[40vw]">
             <div>
               <Image src={logo} height={170} width={170} />
@@ -80,7 +80,7 @@ const Footer = () => {
 
         {/* mobile*/}
 
-        <div className="h-[50vh] bg-primary flex-col flex medium:hidden medium:h-[30vh] text-white  justify-center items-center p-10 rounded-xl m-0  ">
+        <div className=" min-h-max bg-primary flex-col flex medium:hidden medium:h-[30vh] text-white  justify-center items-center p-10 rounded-xl m-0  ">
           <div className="flex flex-col   justify-center items-center  mb-[3rem] w-[40vw]">
             <div>
               <Image src={logo} height={170} width={170} />

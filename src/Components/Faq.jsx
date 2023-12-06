@@ -53,8 +53,12 @@ export default function Faq() {
                   ml: "8px",
                   fontWeight: "500",
                   fontSize: "20px",
-                  "@media (max-width: 768px)": {
+                  "@media (max-width: 1024px)": {
                     fontSize: "16px",
+                  },
+
+                  "@media (max-width: 500px)": {
+                    fontSize: "14px",
                   },
                 }}
               >
@@ -68,8 +72,11 @@ export default function Faq() {
                   ml: "8px",
                   mt: "-8px",
                   fontSize: "16px",
-                  "@media (max-width: 768px)": {
+                  "@media (max-width: 1024px)": {
                     fontSize: "16px",
+                  },
+                  "@media (max-width: 500px)": {
+                    fontSize: "14px",
                   },
                 }}
               >

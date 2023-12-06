@@ -184,7 +184,7 @@ export default function Contact() {
   return (
     <>
       <div
-        className=" h-[100vh] flex  relative justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]"
+        className=" h-full flex  relative justify-evenly -mt-[10rem] items-center p-16 mx-16 mb-[20rem]"
         id="contact"
       >
         {aleartErrorOpen && (
@@ -247,7 +247,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <h1 className="text-xl font-regular ml-3">06</h1>
+              <h1 className="text-lg font-regular ml-3">06</h1>
             </div>
           </motion.div>
 
@@ -257,7 +257,7 @@ export default function Contact() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-5xl font-bold  text-primary mb-4">
+              <h1 className="medium:text-5xl text-4xl font-bold  text-primary mb-4">
                 Contact Us
               </h1>
             </motion.div>
@@ -375,7 +375,7 @@ export default function Contact() {
                   transition={{ duration: 0.5 }}
                   style={{ marginLeft: "-1rem" }}
                 >
-                  <StyledButton color="#1A1A1A" round="0px">
+                  <StyledButton color="#1A1A1A" round="0px" size="14px">
                     Send
                   </StyledButton>
                 </motion.div>

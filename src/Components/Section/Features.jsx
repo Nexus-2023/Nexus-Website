@@ -33,7 +33,7 @@ export default function Features() {
           </div>
 
           <div>
-            <h1 className="text-xl font-regular ml-3">04</h1>
+            <h1 className="text-lg font-regular ml-3">04</h1>
           </div>
         </motion.div>
 
@@ -43,7 +43,7 @@ export default function Features() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-5xl font-bold  text-primary  ">
+            <h1 className="medium:text-5xl text-4xl font-bold   text-primary  ">
               Features we provide
             </h1>
           </motion.div>

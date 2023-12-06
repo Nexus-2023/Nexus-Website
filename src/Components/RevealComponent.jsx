@@ -95,7 +95,7 @@ const ReversedRevealArtifact = styled.span`
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: black;
+  background-color: #1e1e1e;
 
   animation-name: ${revealAnimation};
   animation-duration: 1.8s;

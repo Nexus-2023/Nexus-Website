@@ -117,7 +117,7 @@ export default function Oppportunity() {
         {/* Mobile */}
 
         <div className="  h-full   flex  medium:hidden  justify-between items-center p-16      w-full    ">
-          <div className="flex  justify-center  flex-col space-x-6  items-center w-full">
+          <div className="flex  justify-center  flex-col-reverse space-x-6  items-center w-full">
             <div className=" flex-col   items-center justify-center min-w-[30vw]  mb-8 ">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -128,11 +128,11 @@ export default function Oppportunity() {
                 style={{ display: "flex", spaceX: "3", alignItems: "center" }}
               >
                 <div>
-                  <Image src={vector} height={50} width={100} />
+                  <Image src={vector} height={50} width={80} />
                 </div>
 
                 <div>
-                  <h1 className="text-lg font-regular ml-3">03</h1>
+                  <h1 className="text-base font-regular ml-3">03</h1>
                 </div>
               </motion.div>
 
@@ -144,7 +144,7 @@ export default function Oppportunity() {
                   }
                   transition={{ duration: 0.5, delay: 1.0 }}
                 >
-                  <h1 className="text-5xl font-bold  text-primary mb-6">
+                  <h1 className="text-4xl font-bold  text-primary mb-6">
                     Opportunity
                   </h1>
                 </motion.div>
@@ -157,7 +157,7 @@ export default function Oppportunity() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <p className=" text-lg    font-normal  text-black max-w-xl leading-relaxed      ">
+                <p className=" text-sm    font-normal  text-black max-w-xl leading-relaxed      ">
                   Embark on a lucrative investment journey with Nexus Network.
                   As Ethereum's rollup-centric roadmap propels, our staking
                   infrastructure becomes a gateway to unparalleled returns. With
@@ -166,21 +166,9 @@ export default function Oppportunity() {
                   never been more compelling
                 </p>
               </motion.div>
-
-              {/* <div className="  -ml-[1rem] flex  justify-start items-center w-full   ">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={
-                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
-                  }
-                  transition={{ duration: 0.5, delay: 1.0 }}
-                >
-                  <StyledButton size="14px"> Get Started</StyledButton>
-                </motion.div> 
-              </div> */}
             </div>
             {isInView && (
-              <div className=" flex justify-center  w-full">
+              <div className=" flex justify-center  w-full mb-10">
                 <RevealContainer delay={1.2}>
                   <RevealContent>
                     <Image src={diagram5} height={500} width={500} />

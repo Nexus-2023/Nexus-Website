@@ -23,7 +23,7 @@ const HomePage = () => {
     <>
       {/*  web */}
       <div
-        className="h-[93vh]   tablet:flex hidden   space-x-8  justify-center items-center    "
+        className="h-[100vh]     tablet:flex hidden   space-x-8  justify-center items-center    "
         id="home"
       >
         <motion.div
@@ -146,7 +146,7 @@ const HomePage = () => {
       {/* mobile */}
 
       <div
-        className="h-[93vh]    flex tablet:hidden  flex-col space-x-8  justify-center items-center "
+        className="h-[100vh]    flex tablet:hidden  flex-col space-x-8  justify-center items-center "
         id="home2"
       >
         <motion.div
@@ -257,7 +257,7 @@ const HomePage = () => {
           </div>
         </motion.div>
       </div>
-      <div className="absolute medium:flex hidden xs:bottom-10 bottom-32 w-full   justify-center items-center">
+      <div className="absolute medium:flex hidden  bottom-10 w-full   justify-center items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -284,7 +284,8 @@ const HomePage = () => {
         </motion.div>
       </div>
 
-      <div className="absolute medium:hidden flex  bottom-4 w-full   justify-center items-center">
+      {/* Mobile */}
+      <div className="absolute medium:hidden flex  medium:bottom-4  bottom-1 w-full   justify-center items-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -294,7 +295,7 @@ const HomePage = () => {
           }}
         >
           <Link to="about2" smooth duration={1000} easing="easeInOutCubic">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <div className="w-[35px] h-[64px] rounded-3xl  scale-75 border-4 border-secondary flex justify-center items-start p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],

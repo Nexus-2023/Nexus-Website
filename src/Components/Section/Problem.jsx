@@ -102,12 +102,12 @@ export default function Problems() {
       {/* Mobile */}
 
       <div className="  h-full  medium:hidden flex   justify-between items-center p-16       ">
-        <div className="flex  flex-col-reverse justify-center   items-center w-full  ">
-          <div className="   flex  justify-center ">
+        <div className="flex  flex-col  justify-center   items-center w-full  ">
+          <div className="   flex  justify-center  mb-10">
             {isInView2 && (
               <RevealContainer delay={1.2}>
                 <RevealContent>
-                  <Image src={diagram2} height={410} width={410} />
+                  <Image src={diagram2} height={350} width={350} />
                 </RevealContent>
                 <RevealArtifact />
               </RevealContainer>
@@ -121,11 +121,11 @@ export default function Problems() {
               style={{ display: "flex", spaceX: "3", alignItems: "center" }}
             >
               <div className=" ">
-                <Image src={vector} height={50} width={100} />
+                <Image src={vector} height={50} width={80} />
               </div>
 
               <div>
-                <h1 className="text-xl font-regular ml-3">02</h1>
+                <h1 className="text-base font-regular ml-3">02</h1>
               </div>
             </motion.div>
 
@@ -137,7 +137,7 @@ export default function Problems() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <h1 className="text-5xl font-bold  text-primary mb-6">
+                <h1 className="text-4xl font-bold  text-primary mb-6">
                   Problems we Solve
                 </h1>
               </motion.div>
@@ -148,7 +148,7 @@ export default function Problems() {
               animate={isInView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 1.0 }}
             >
-              <p className="text-lg font-regular  text-black max-w-xl leading-relaxed  ">
+              <p className="text-sm font-regular  text-black max-w-xl leading-relaxed  ">
                 Addressing Ethereum's challenges, Nexus Network securely stakes
                 ETH locked in rollup bridges. Our solution enhances network
                 security, optimizes capital efficiency, and fosters the growth
@@ -164,7 +164,7 @@ export default function Problems() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <StyledButton size="14px">
+                <StyledButton size="12px">
                   <a href="https://docs.nexusnetwork.co.in/" target="_blank">
                     Get Started
                   </a>

@@ -235,7 +235,7 @@ export default function Contact() {
             </Alert>
           </>
         )}
-        <div className=" flex-col  items-center">
+        <div className=" flex-col  items-center min-w-[20rem]  medium:min-w-[30rem]   ">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
@@ -314,9 +314,9 @@ export default function Contact() {
                   onChange={handleChange}
                   label="name"
                   id="name"
+                  fullWidth
                   style={{
                     marginTop: 8,
-                    width: "27rem",
                   }}
                   name="name"
                 />
@@ -333,10 +333,10 @@ export default function Contact() {
                   id="email"
                   type="email"
                   value={form.email}
+                  fullWidth
                   onChange={handleChange}
                   style={{
                     marginTop: 1,
-                    width: "27rem",
                   }}
                   name="email"
                 />
@@ -355,9 +355,9 @@ export default function Contact() {
                   onChange={handleChange}
                   multiline
                   rows={4}
+                  fullWidth
                   style={{
                     marginTop: 1,
-                    width: "27rem",
                   }}
                   name="message"
                 />

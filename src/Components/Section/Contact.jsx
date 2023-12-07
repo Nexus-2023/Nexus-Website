@@ -235,7 +235,7 @@ export default function Contact() {
             </Alert>
           </>
         )}
-        <div className=" flex-col  items-center min-w-[20rem]  medium:min-w-[30rem]   ">
+        <div className=" flex-col  items-center min-w-[10rem] small:min-w-[20rem]  medium:min-w-[30rem]   ">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}

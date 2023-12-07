@@ -107,7 +107,7 @@ const Navbar = () => {
           delay: 2.6,
         }}
       >
-        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden      ">
+        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden    border-2   desktop:border-yellow-800  laptop:border-blue-500 tablet:border-red-600  medium:border-purple-700 small:border-green-500   ">
           <div className="flex">
             <Image src={logo} alt="Nexus Logo" width={150} height={150} />
           </div>
@@ -143,7 +143,7 @@ const Navbar = () => {
 
         {/* mobile nav */}
 
-        <div className="  justify-between fixed  flex   px-4  mx-auto w-full items-center backdrop-blur rounded-lg z-30  laptop:hidden  ">
+        <div className="  justify-between fixed  flex   px-4  mx-auto w-full items-center backdrop-blur rounded-lg z-30  laptop:hidden  border-2   desktop:border-yellow-800  laptop:border-blue-500 tablet:border-red-600  medium:border-purple-700 small:border-green-500  ">
           <div className=" flex   w-full">
             <div className="flex">
               <Image src={logo} alt="Nexus Logo" width={150} height={150} />

@@ -75,23 +75,10 @@ export default function Oppportunity() {
                   never been more compelling
                 </p>
               </motion.div>
-              {/* <StyledButton> Get Started</StyledButton> */}
-
-              {/* <div className="  -ml-[1rem] ">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={
-                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
-                  }
-                  transition={{ duration: 0.5, delay: 1.0 }}
-                >
-                  
-                </motion.div>
-              </div> */}
             </div>
             {/* <div className=" tablet:w-6/12  medium:w-12/12    small:w-8/12 w-full laptop:w-6/12  border-2"> */}
             {isInView && (
-              <div className="  min-w-min  ml-16  tablet:w-10/12   medium:w-12/12        laptop:w-4/12   ">
+              <div className="  laptop:ml-[3rem]  min-w-min    ">
                 <RevealContainer delay={1.2}>
                   <RevealContent>
                     <Image

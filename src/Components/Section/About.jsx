@@ -92,10 +92,10 @@ export default function About() {
             </div>
           </div>
           {isInView && (
-            <div className=" tablet:w-6/12  medium:w-12/12    small:w-8/12 w-full laptop:w-3/12   ">
+            <div>
               <RevealContainer delay={1.2}>
                 <RevealContent>
-                  <Image src={diagram} height={400} width={400} style={{}} />
+                  <Image src={diagram} height={400} width={400} />
                 </RevealContent>
                 <RevealArtifact />
               </RevealContainer>

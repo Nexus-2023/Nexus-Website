@@ -27,11 +27,16 @@ export default function Problems() {
     <>
       <div className=" h-[75vh]  medium:flex hidden  justify-center items-center p-16 tablet:mx-0 laptop:mx-16 mx-0    ">
         <div className="flex  justify-center   items-center    ">
-          <div className=" tablet:w-6/12  medium:w-12/12    small:w-8/12 w-full laptop:w-6/12   justify-center">
+          <div className="   justify-center laptop:mr-[3rem] mr-[0rem]">
             {isInView && (
               <RevealContainer delay={1.2}>
                 <RevealContent>
-                  <Image src={diagram2} height={500} width={500} />
+                  <Image
+                    src={diagram2}
+                    height={500}
+                    width={500}
+                    className=" w-max   "
+                  />
                 </RevealContent>
                 <RevealArtifact />
               </RevealContainer>

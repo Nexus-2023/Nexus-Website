@@ -98,7 +98,7 @@ export default function Problems() {
           </div>
         </div>
       </div>
-      <div ref={ref} className="mt-[0rem]" />
+      <div className="mt-[0rem]" ref={ref} />
       {/* Mobile */}
 
       <div className="  h-full  medium:hidden flex   justify-between items-center p-16       ">

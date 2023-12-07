@@ -75,7 +75,7 @@ export default function About() {
             </motion.div>
             {/* <StyledButton> Get Started</StyledButton> */}
 
-            <div className="  -ml-[1rem]">
+            <div className="  -ml-[1rem]" ref={ref}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={
@@ -103,7 +103,7 @@ export default function About() {
           )}
         </div>
       </div>
-      <div ref={ref} className="mt-[0rem]" />
+      <div className="mt-[0rem]" />
 
       {/* Mobile */}
 

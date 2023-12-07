@@ -18,18 +18,14 @@ module.exports = {
     },
 
     screens: {
-      xsmall: "300px",
       small: "400px", // green
       medium: "640px",
       large: "740px",
       tablet: "900px", // red
-      // => @media (min-width: 640px) { ... }
 
       laptop: "1024px", // blue
-      // => @media (min-width: 1024px) { ... }
 
       desktop: "1280px",
-      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

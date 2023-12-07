@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="  relative  ">
+        <div className="  relative  border-2   desktop:border-yellow-800  laptop:border-blue-500 tablet:border-red-600  medium:border-purple-700 small:border-green-500">
           <Navbar />
         </div>
         {children}

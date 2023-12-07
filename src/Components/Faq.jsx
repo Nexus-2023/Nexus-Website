@@ -86,7 +86,7 @@ export default function Faq() {
           </Accordion>
         ))}
       </div>
-      <div ref={ref} className="mt-[12rem]" />
+      <div ref={ref} className="mt-[8rem]" />
     </motion.div>
   )
 }

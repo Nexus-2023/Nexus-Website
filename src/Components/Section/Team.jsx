@@ -246,7 +246,10 @@ export default function Team() {
           </motion.div>
         </div>
       </div>
-      <div ref={ref} className="mt-[40rem]" />
+      <div
+        ref={ref}
+        className=" laptop:mt-[40rem] mt-[30rem] medium:mt-[15rem] "
+      />
     </div>
   )
 }

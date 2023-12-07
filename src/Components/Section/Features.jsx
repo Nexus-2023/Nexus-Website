@@ -20,7 +20,7 @@ export default function Features() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className=" h-full flex  justify-center items-center      p-16 mx-16 mb-[10rem]">
+    <div className=" h-full flex  justify-center items-center  relative     p-16 mx-16 laptop:mb-[10rem]">
       <div className=" flex-col     items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -77,7 +77,7 @@ export default function Features() {
               </div>
             </div>
           </motion.div>
-
+          <div ref={ref} />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -164,7 +164,7 @@ export default function Features() {
           </motion.div>
         </div>
       </div>
-      <div ref={ref} className="mt-[50rem]" />
+      {/* <div ref={ref} className="mt-[50rem]" /> */}
     </div>
   )
 }

@@ -50,9 +50,16 @@ export function TemporaryDrawer() {
             <StyledLink> Home</StyledLink>
           </div>
         </Link>
-        <div className="justify-center items-center">
-          <Link to="about2" smooth duration={1000} easing="easeInOutCubic">
-            <StyledLink> About </StyledLink>
+
+        <div className="">
+          <Link to="features" smooth duration={1000} easing="easeInOutCubic">
+            <StyledLink> Features </StyledLink>
+          </Link>
+        </div>
+
+        <div>
+          <Link to="team" smooth duration={1000} easing="easeInOutCubic">
+            <StyledLink> Team </StyledLink>
           </Link>
         </div>
         <div className="justify-center items-center">
@@ -62,12 +69,6 @@ export function TemporaryDrawer() {
             </a>
           </StyledLink>
         </div>
-        <div className="">
-          <Link to="demo" smooth duration={1000} easing="easeInOutCubic">
-            <StyledLink> Demo </StyledLink>
-          </Link>
-        </div>
-
         <Link to="contact" smooth duration={1000} easing="easeInOutCubic">
           <StyledButton color="#1A1A1A" round="0px" size="14px">
             Contact us
@@ -107,7 +108,7 @@ const Navbar = () => {
           delay: 2.6,
         }}
       >
-        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden    border-2   desktop:border-yellow-800  laptop:border-blue-500 tablet:border-red-600  medium:border-purple-700 small:border-green-500   ">
+        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden      ">
           <div className="flex">
             <Image src={logo} alt="Nexus Logo" width={150} height={150} />
           </div>
@@ -120,10 +121,18 @@ const Navbar = () => {
                 </Link>
               </StyledLink>
 
-              <Link to="about" smooth duration={1000} easing="easeInOutCubic">
-                <StyledLink> About </StyledLink>
+              <Link
+                to="features"
+                smooth
+                duration={1000}
+                easing="easeInOutCubic"
+              >
+                <StyledLink> Features </StyledLink>
               </Link>
 
+              <Link to="team" smooth duration={1000} easing="easeInOutCubic">
+                <StyledLink> Team </StyledLink>
+              </Link>
               <StyledLink>
                 <a href="https://docs.nexusnetwork.co.in/" target="_blank">
                   {" "}
@@ -131,7 +140,6 @@ const Navbar = () => {
                 </a>
               </StyledLink>
 
-              <StyledLink> Demo</StyledLink>
               <Link to="contact" smooth duration={1000} easing="easeInOutCubic">
                 <StyledButton color="#1A1A1A" round="0px">
                   Contact us
@@ -143,7 +151,7 @@ const Navbar = () => {
 
         {/* mobile nav */}
 
-        <div className="  justify-between fixed  flex   px-4  mx-auto w-full items-center backdrop-blur rounded-lg z-30  laptop:hidden  border-2   desktop:border-yellow-800  laptop:border-blue-500 tablet:border-red-600  medium:border-purple-700 small:border-green-500  ">
+        <div className="  justify-between fixed  flex   px-4  mx-auto w-full items-center backdrop-blur rounded-lg z-30  laptop:hidden   ">
           <div className=" flex   w-full">
             <div className="flex">
               <Image src={logo} alt="Nexus Logo" width={150} height={150} />

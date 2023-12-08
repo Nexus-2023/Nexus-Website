@@ -20,7 +20,10 @@ export default function Features() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className=" h-full flex  justify-center items-center  relative     p-16 mx-16 laptop:mb-[10rem]">
+    <div
+      className=" h-full flex  justify-center items-center  relative     p-16 mx-16 laptop:mb-[10rem]"
+      id="features"
+    >
       <div className=" flex-col     items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -33,7 +36,7 @@ export default function Features() {
           </div>
 
           <div>
-            <h1 className="text-lg font-regular ml-3">04</h1>
+            <h1 className="text-lg font-regular ml-3">05</h1>
           </div>
         </motion.div>
 

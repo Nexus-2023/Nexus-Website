@@ -24,7 +24,10 @@ export default function Team() {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div className="  h-full  flex  desktop:mx-16 mx-4   justify-center  p-16   ">
+    <div
+      className="  h-full  flex  desktop:mx-16 mx-4   justify-center  p-16   "
+      id="team"
+    >
       <div className=" flex-col  items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}

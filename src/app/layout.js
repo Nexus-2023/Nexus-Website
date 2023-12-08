@@ -4,8 +4,12 @@ import { Navbar } from "@/Components/Navbar"
 //import styles from "../styles/Reveal.module.css"
 
 export const metadata = {
-  title: "Nexus",
+  title: "Nexus Network",
   description: "Nexus Network , A layer 2 economics layer in blockchain",
+
+  icons: {
+    icon: "/bigLogo.png",
+  },
 }
 
 export default function RootLayout({ children }) {

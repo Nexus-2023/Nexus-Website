@@ -4,6 +4,21 @@ import { HomePage } from "@/Components/HomePage"
 
 import dynamic from "next/dynamic"
 
+const LazyAchievement = dynamic(
+  () => import("@/Components/Section/Achievement"),
+  {
+    ssr: false,
+  }
+)
+
+const LazyPartner = dynamic(() => import("@/Components/Section/Partner"), {
+  ssr: false,
+})
+
+const LazyDemo = dynamic(() => import("@/Components/Section/Demo"), {
+  ssr: false,
+})
+
 const LazyAbout = dynamic(() => import("@/Components/Section/About"), {
   ssr: false,
 })
@@ -39,9 +54,11 @@ export default function Home() {
       <LazyAbout />
       <LazyProblems />
       <LazyOppportunity />
-
+      <LazyPartner />
       <LazyFeatures />
+      {/* <LazyAchievement /> */}
 
+      {/* <LazyDemo /> */}
       <LazyTeam />
       <LazyFaq />
       <LazyContact />

@@ -66,7 +66,7 @@ export default function Oppportunity() {
                 }
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                <p className="   tablet:text-lg  laptop:text-lg desktop:text-xl font-regular    large:text-base       text-black max-w-xl   laptop:leading-relaxed desktop:leading-relaxed     ">
+                <p className="   tablet:text-lg  laptop:text-lg desktop:text-xl font-regular     large:text-base       text-black max-w-xl   laptop:leading-relaxed desktop:leading-relaxed     ">
                   Embark on a lucrative investment journey with Nexus Network.
                   As Ethereum's rollup-centric roadmap propels, our staking
                   infrastructure becomes a gateway to unparalleled returns. With

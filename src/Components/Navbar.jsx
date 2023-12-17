@@ -42,7 +42,7 @@ export function TemporaryDrawer() {
   }
 
   const list = anchor => (
-    <div className="flex justify-center    flex-col  items-center">
+    <div className="flex justify-center  flex-col  items-center">
       <div className="flex  justify-center  items-center flex-col  text-base text-black font-semibold  ">
         <Link to="home2" smooth duration={1000} easing="easeInOutCubic">
           <div className="justify-center items-center">
@@ -108,7 +108,7 @@ const Navbar = () => {
           delay: 2.6,
         }}
       >
-        <div className="laptop:flex  px-[10rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden      ">
+        <div className="laptop:flex  px-[4rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden      ">
           <div className="flex">
             <Image src={logo} alt="Nexus Logo" width={150} height={150} />
           </div>

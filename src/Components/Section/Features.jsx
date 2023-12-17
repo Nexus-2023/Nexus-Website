@@ -99,17 +99,18 @@ export default function Features() {
 
               <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
-                  Define your rollup's staking strategy with Nexus Network's
-                  customizable staking limits. Tailor the proportion of ETH
-                  staked in your bridge, ensuring optimal capital efficiency.
-                  From 1% to 100%, set the limits that align with your rollup's
-                  growth and financial goals.
+                  Trust in Nexus Network's security-first approach. Our
+                  non-custodial solution ensures direct transfers from rollups
+                  to validators, reducing risk and enhancing reliability. With
+                  Distributed Validator Technology (DVT), enjoy redundancy and
+                  mitigate slashing risks, securing your rollup's assets and
+                  operations.
                 </p>
               </div>
             </div>
           </motion.div>
         </div>
-        <div className="  flex   desktop:text-base   text-sm  flex-col space-y-8 tablet:flex-row  tablet:space-y-0 tablet:space-x-5  justify-center items-center mt-16  w-[80vw]">
+        <div className="  flex   desktop:text-base   text-sm  flex-col space-y-8 tablet:flex-row  tablet:space-y-0 tablet:space-x-9  justify-center items-center mt-16  w-[80vw]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -142,25 +143,24 @@ export default function Features() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            <div className=" p-4 mx-4 border-[#9F00AD]  min-h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-[#9F00AD]">
+            <div className=" p-6 mx-4 border-[#9F00AD]  min-h-[30vh] max-w-lg border-2 flex flex-col w-full shadow-md rounded-md shadow-[#9F00AD]">
               <div className="flex space-x-5  items-center mb-4 ">
                 <div>
                   <Image src={l4} width={50} height={50} />
                 </div>
 
                 <h1 className="text-[#9F00AD] text-lg  medium:text-lg laptop:text-xl desktop:text-2xl font-medium">
-                  pluggable Staking Infrastructure
+                  Customizable Staking Limits
                 </h1>
               </div>
 
               <div className="ml-2  leading-relaxed font-medium   ">
                 <p>
-                  Trust in Nexus Network's security-first approach. Our
-                  non-custodial solution ensures direct transfers from rollups
-                  to validators, reducing risk and enhancing reliability. With
-                  Distributed Validator Technology (DVT), enjoy redundancy and
-                  mitigate slashing risks, securing your rollup's assets and
-                  operations.
+                  Define your rollup's staking strategy with Nexus Network's
+                  customizable staking limits. Tailor the proportion of ETH
+                  staked in your bridge, ensuring optimal capital efficiency.
+                  From 1% to 100%, set the limits that align with your rollup's
+                  growth and financial goals.
                 </p>
               </div>
             </div>

@@ -105,7 +105,7 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.5,
-          delay: 2.6,
+          delay: 3.6,
         }}
       >
         <div className="laptop:flex  px-[4rem]   justify-between   fixed  mx-auto w-full items-center backdrop-blur rounded-lg z-30   hidden      ">

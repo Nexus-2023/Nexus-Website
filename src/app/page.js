@@ -2,6 +2,8 @@
 
 import { HomePage } from "@/Components/HomePage"
 
+import { useState, useEffect } from "react"
+
 import dynamic from "next/dynamic"
 
 const LazyAchievement = dynamic(
@@ -48,9 +50,16 @@ const LazyContact = dynamic(() => import("@/Components/Section/Contact"), {
 })
 const LazyFooter = dynamic(() => import("@/Components/Footer"))
 export default function Home() {
+  const [showPage, setShowPage] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => setShowPage(true), 1000) // Set delay to 3 seconds
+  }, [])
+
   return (
     <div className="overflow-clip">
-      <HomePage />
+      {showPage ? <HomePage /> : <div className="opacity-0 h-[100vh]"></div>}
+      {/* <HomePage /> */}
       <LazyAbout />
       <LazyProblems />
       <LazyOppportunity />

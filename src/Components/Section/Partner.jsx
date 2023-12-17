@@ -29,19 +29,21 @@ export default function Partner() {
         <div className="flex  justify-center   items-center    ">
           <div className="   justify-center  mr-[3rem]  ">
             {isInView && (
-              <RevealContainer delay={1.2}>
-                <RevealContent>
-                  <a href="https://ssv.network/" target="_blank">
-                    <Image
-                      src={partner1}
-                      height={450}
-                      width={450}
-                      className="hover:scale-105  scale-100 transition-all duration-300  "
-                    />
-                  </a>
-                </RevealContent>
-                <RevealArtifact />
-              </RevealContainer>
+              <div>
+                <RevealContainer delay={1.2}>
+                  <RevealContent>
+                    <a href="https://ssv.network/" target="_blank">
+                      <Image
+                        src={partner1}
+                        height={450}
+                        width={450}
+                        className="hover:scale-105  scale-100 transition-all duration-300  "
+                      />
+                    </a>
+                  </RevealContent>
+                  <RevealArtifact />
+                </RevealContainer>
+              </div>
             )}
           </div>
           <div className="flex- flex-col  items-center ">

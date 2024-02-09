@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
 :root {
   --text-gradient-from: white; /* your desired top color */
@@ -18,12 +19,52 @@ html, body {
 body {
   color: white;
   background: #01080F;
- 
+
  
  
 }
 
+main {
+  background-image: url("../../public/Images/effect3.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+/*   
+  background-image: url("../../public/Images/effect3.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  object-position: center; */
+  /* justify-content: center;
+  align-items: center;
+  display: flex; */
+
+}
+
+.backImg {
+ 
+  /* background-image: url("../../public/Images/effect3.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  object-position: center;
+  justify-content: center;
+  align-items: center; */
+}
 @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+ies {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+es {
   .text-balance {
     text-wrap: balance;
   }

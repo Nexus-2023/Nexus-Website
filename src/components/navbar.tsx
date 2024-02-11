@@ -33,9 +33,10 @@ function ResponsiveAppBar() {
 
   return (
     <div className="flex justify-center    ">
-      <div className=" -z-10 w-[80vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
+      <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
+      {/* border-2  */}
       <nav
-        className=" backdrop-blur-lg z-10 py-2 px-4 w-full  border-x-[1px]  border-b-[1px]  border-[#0D1820] fixed mx-auto  md:max-w-[73vw]    "
+        className=" backdrop-blur-lg z-10  px-8 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]    "
         aria-labelledby="menu-button"
       >
         <Toolbar disableGutters>

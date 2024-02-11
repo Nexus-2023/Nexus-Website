@@ -22,6 +22,14 @@ const config = {
         // "gradient-to-b": `linear-gradient(to bottom, var(--text-gradient-from) 70%, var(--text-gradient-to) 30%)`,
         "gradient-to-b": `linear-gradient(to bottom, white 55%, #85caf8 80%)`,
       },
+      boxShadow: {
+        innerC: "box-shadow: inset 0 2px 8px 0 rgb(0 0 0 / 0.05)",
+        innerB: "box-shadow: inset 2 8px 8px 0 rgb(0 0 0 / 0.05)",
+      },
+      buttonGrad: {
+        // "gradient-to-b": `linear-gradient(to bottom, var(--text-gradient-from) 70%, var(--text-gradient-to) 30%)`,
+        "gradient-to-b": `linear-gradient(to bottom, #2D3A49 55%, #000000 80%)`,
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

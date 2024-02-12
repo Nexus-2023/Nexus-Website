@@ -1,7 +1,7 @@
 import React from "react"
 import { buttonCss } from "@/css"
 import glow from "/public/Images/glow.svg"
-import diagram from "/public/Images/flow.svg"
+import diagram from "/public/Images/diagram1.png"
 
 import Image from "next/image"
 export function WorkPage() {

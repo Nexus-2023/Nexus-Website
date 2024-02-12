@@ -21,6 +21,8 @@ const config = {
       backgroundImage: {
         // "gradient-to-b": `linear-gradient(to bottom, var(--text-gradient-from) 70%, var(--text-gradient-to) 30%)`,
         "gradient-to-b": `linear-gradient(to bottom, white 55%, #85caf8 80%)`,
+        "metal-button": "url('/Images/button_bg.png')",
+        "metal-features": "url('/Images/button_background.png')",
       },
       boxShadow: {
         innerC: "box-shadow: inset 0 2px 8px 0 rgb(0 0 0 / 0.05)",

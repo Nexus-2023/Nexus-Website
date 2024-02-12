@@ -30,8 +30,8 @@ export function FeaturePage() {
 
           <Image
             src={features}
-            width={100}
-            height={100}
+            width={110}
+            height={110}
             alt="effect"
             className="  "
           />

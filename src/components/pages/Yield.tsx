@@ -39,7 +39,7 @@ export function YieldPage() {
 
         <div className=" h-full w-full   flex  justify-center items-center">
           {/* boxes */}
-          <div className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:space-x-24 items-center    lg:space-y-2   ">
+          <div className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:ml-12 lg:space-x-28 items-center    lg:space-y-2   ">
             {/* 1st col */}
             <div className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0 mb-16">
               <Image

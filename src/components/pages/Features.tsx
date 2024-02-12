@@ -77,7 +77,7 @@ export function FeaturePage() {
             </div>
 
             {/* 2 col */}
-            <div className="flex flex-col  space-y-5  xl:h-[70vh] h-full ">
+            <div className="flex flex-col  space-y-5  xl:h-[80vh] h-full max-h-[700px] ">
               <FullBox
                 src={d5}
                 t1={"Easy Integration"}

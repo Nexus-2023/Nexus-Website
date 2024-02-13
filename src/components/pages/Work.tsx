@@ -9,7 +9,7 @@ export function WorkPage() {
     <div
       className={`justify-center items-center flex  z-10  md:px-16  mx-auto`}
     >
-      <div className=" h-full -z-20   bg-[#010305] w-full relative  p-8    border-2 border-[#0D1820] ">
+      <div className=" h-full -z-20   bg-[#010305] w-full relative  md:p-8    border-2 border-[#0D1820] ">
         {/* draw circle her  bg-[#010305] */}
         {/* <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[10%] h-full bg-[#0e223f33]  rounded-2xl blur-3xl "></div>   */}
         <Image

@@ -31,7 +31,7 @@ export function DemoPage() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="w-full aspect-video max-w-screen-lg rounded-2xl border-2 border-[#00163896] shadow-lg shadow-slate-700 opacity-100 absolute top-0 left-0 transition-opacity duration-500 ease-in-out  "
+            className="w-full aspect-video max-w-screen-lg rounded-2xl   shadow-lg shadow-slate-700 opacity-100 absolute top-0 left-0 transition-opacity duration-500 ease-in-out  "
           ></iframe>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#0016389a] to-transparent opacity-90 pointer-events-none"></div>
           {/* from-transparent to-[#00163896] */}

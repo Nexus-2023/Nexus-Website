@@ -6,7 +6,7 @@ import { Button } from "@mui/material"
 export function AnnouncementPage() {
   return (
     <div
-      className={`justify-center items-center flex  z-10     px-16     mx-auto`}
+      className={`justify-center items-center flex  z-10     md:px-16 px-6      mx-auto`}
     >
       <div className="h-full w-full relative border-2 border-[#0D1820] py-16  ">
         <div className="flex justify-center items-center   ">

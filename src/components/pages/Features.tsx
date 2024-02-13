@@ -17,7 +17,7 @@ export function FeaturePage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full   w-full p-16 flex    items-center  border-2 border-[#0D1820] relative   space-y-10 flex-col  ">
+      <div className="h-full   w-full p-16 flex    items-center  relative   space-y-10 flex-col  ">
         {/* <Image
           src={glow}
           width={800}

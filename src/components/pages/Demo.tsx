@@ -2,7 +2,7 @@ import React from "react"
 import { buttonCss } from "@/css"
 import d5 from "/public/Images/d5.svg"
 import features from "/public/Images/btFeatures.svg"
-import demo from "/public/Images/btn_demo.svg"
+import demo from "/public/Images/demo_btn.svg"
 import Image from "next/image"
 
 export function DemoPage() {

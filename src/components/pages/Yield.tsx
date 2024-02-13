@@ -2,7 +2,7 @@ import React from "react"
 import { buttonCss } from "@/css"
 import Image from "next/image"
 
-import yeild from "/public/Images/bt_yeild.svg"
+import yeild from "/public/Images/yeild_btn.svg"
 import EthIcon from "/public/Images/icon1.svg"
 import coinsIcon from "/public/Images/icon2.svg"
 import layerIcon from "/public/Images/icon3.svg"

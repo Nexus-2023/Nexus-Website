@@ -24,7 +24,7 @@ export function FeaturePage() {
           alt="effect"
           className="  -z-10   absolute  top-0"
         /> */}
-        <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#66a3ff1f]  rounded-2xl blur-3xl  -z-20 " />
+        <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 " />
         <div className="justify-center">
           {/*  bg-gradient-to-t from-[#00000018]   to-[#2D3A49]  text-yellow-500  */}
 
@@ -39,7 +39,7 @@ export function FeaturePage() {
         </div>
 
         <div className="">
-          <h1 className="md:text-4xl    text-3xl  text-wrap text-center ">
+          <h1 className="md:text-4xl  font-medium   text-3xl  text-wrap text-center ">
             {" "}
             Why you should use Nexus Network for Rollups
           </h1>

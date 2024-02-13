@@ -22,7 +22,7 @@ export function WorkPage() {
         />
 
         <div className="  flex items-center justify-center  mt-8 ">
-          <h1 className="md:text-4xl    text-3xl  text-wrap text-center ">
+          <h1 className="md:text-4xl   font-medium  text-3xl  text-wrap text-center ">
             {" "}
             How does Nexus Network Work ?
           </h1>
@@ -37,7 +37,7 @@ export function WorkPage() {
             height={0}
             style={{ width: "100%", height: "100%" }} // optional
             alt="image effect"
-            className="     "
+            className=" aspect-video max-w-screen-xl"
           />
         </div>
       </div>

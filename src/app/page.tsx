@@ -15,6 +15,8 @@ import {
   DemoPage,
 } from "@/components/pages"
 
+import Footer from "@/components/Footer"
+
 export default function Home() {
   return (
     <>
@@ -25,6 +27,7 @@ export default function Home() {
       <DemoPage />
       <AnnouncementPage />
       <TeamPage />
+      <Footer />
     </>
   )
 }

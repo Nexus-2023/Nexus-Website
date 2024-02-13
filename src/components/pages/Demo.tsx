@@ -10,7 +10,7 @@ export function DemoPage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full  mb-24  w-full p-16 flex  justify-center items-center  relative     flex-col  ">
+      <div className="h-full   w-full p-16 flex  justify-center items-center  relative  border-2 border-[#0D1820]   flex-col  ">
         <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[#38598a2c]  rounded-2xl blur-3xl  -z-20 " />
         <div className="justify-center items-center mb-4">
           <Image src={demo} width={90} height={90} alt="effect" className=" " />

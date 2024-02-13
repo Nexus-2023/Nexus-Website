@@ -19,7 +19,7 @@ html, body {
 body {
   color: white;
   background: #01080F;
-
+ 
  
  
 }
@@ -33,27 +33,33 @@ main {
   align-items: center;
 }
 
-.back {
-/*   
-  background-image: url("../../public/Images/effect3.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  object-position: center; */
-  /* justify-content: center;
-  align-items: center;
-  display: flex; */
-
+ /* Scrollbar Track */
+::-webkit-scrollbar {
+  width:4px; /* Set the width of the scrollbar */
+  height: 4px; 
+  scroll-snap-type: mandatory;
 }
 
-.backImg {
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #FFB82F; /* Set the color of the scrollbar handle */
+  border-radius: 8px; /* Set the border radius of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: 
+  #1c4786; /* Set the color of the scrollbar handle on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #3d4244; /* Set the color of the scrollbar track */
+}
+
  
-  /* background-image: url("../../public/Images/effect3.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  object-position: center;
-  justify-content: center;
-  align-items: center; */
-}
+ 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

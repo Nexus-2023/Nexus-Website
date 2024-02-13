@@ -7,9 +7,9 @@ import Image from "next/image"
 export function WorkPage() {
   return (
     <div
-      className={`justify-center items-center flex  z-10    md:px-16  mx-auto`}
+      className={`justify-center items-center flex  z-10  md:px-16  mx-auto`}
     >
-      <div className="       h-full -z-20  my-16 bg-[#010305] w-full relative rounded-2xl p-8 ">
+      <div className=" h-full -z-20   bg-[#010305] w-full relative  p-8    border-2 border-[#0D1820] ">
         {/* draw circle her  bg-[#010305] */}
         {/* <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[10%] h-full bg-[#0e223f33]  rounded-2xl blur-3xl "></div>   */}
         <Image
@@ -31,8 +31,6 @@ export function WorkPage() {
         <div className="flex items-center justify-center">
           <Image
             src={diagram}
-            // width={1200}
-            // height={1200}
             width={0}
             height={0}
             style={{ width: "100%", height: "100%" }} // optional
@@ -44,5 +42,3 @@ export function WorkPage() {
     </div>
   )
 }
-
-//  <div className=" absolute  top-0 left-40  " />

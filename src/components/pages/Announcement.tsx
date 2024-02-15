@@ -6,7 +6,7 @@ import { Button } from "@mui/material"
 export function AnnouncementPage() {
   return (
     <div
-      className={`justify-center items-center flex  z-10     md:px-16 px-6      mx-auto`}
+      className={`justify-center items-center flex  z-10     md:px-16       mx-auto`}
     >
       <div className="h-full w-full relative border-2 border-[#0D1820] py-16  ">
         <div className="flex justify-center items-center   ">
@@ -18,7 +18,7 @@ export function AnnouncementPage() {
 
             <Partners />
 
-            <div className=" w-full h-full lg:px-16  flex flex-col    py-16     ">
+            <div className=" w-full h-full  px-16  flex flex-col    py-16    max-w-screen-xl   ">
               <h1 className=" text-yellow-500 text-lg mb-3">Announcements</h1>
               <h1 className="  font-medium text-2xl mb-4">
                 Stay in the Loop: Latest News and Announcements
@@ -26,11 +26,11 @@ export function AnnouncementPage() {
 
               {/* scroll */}
 
-              <div className="    snap-mandatory  xl:px-28  py-16     justify-center   items-center    overflow-auto">
+              <div className="    snap-mandatory    py-16     justify-center   items-center    overflow-auto">
                 {/* <div className="flex xl:flex-row flex-col   space-y-16 xl:space-y-0 justify-between items-center   "> */}
-                <div className="flex   space-x-16    min-w-max    justify-between items-center   ">
+                <div className="flex      min-w-max  space-x-8   justify-between items-center   ">
                   {/* first item */}
-                  <div className=" space-y-5 flex     lg:min-w-[30vw] min-w-[40vw] flex-col justify-start items-start  ">
+                  <div className=" space-y-5 flex     lg:min-w-[25vw] min-w-[40vw] flex-col justify-start items-start  ">
                     <h1 className="  font-medium text-blue-100 text-xl">
                       Received USD 60k grant
                     </h1>
@@ -45,7 +45,7 @@ export function AnnouncementPage() {
                   </div>
 
                   {/* second */}
-                  <div className=" space-y-5 flex    flex-col  lg:min-w-[30vw] min-w-[40vw]  justify-start items-start ">
+                  <div className=" space-y-5 flex    flex-col  lg:min-w-[25vw] min-w-[40vw]  justify-start items-start ">
                     <h1 className="  font-medium text-blue-100 text-xl">
                       Received USD 60k grant
                     </h1>

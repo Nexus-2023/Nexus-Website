@@ -4,7 +4,7 @@ import { buttonCss } from "@/css"
 export function HomePage() {
   return (
     <div
-      className={`h-[100vh] justify-center items-center    mx-16 flex  z-10 `}
+      className={`h-[100vh] justify-center items-center  border-2 border-[#0D1820]   md:mx-16 flex  z-10 `}
     >
       {/* web */}
 

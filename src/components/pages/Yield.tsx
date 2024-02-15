@@ -3,9 +3,9 @@ import { buttonCss } from "@/css"
 import Image from "next/image"
 
 import yeild from "/public/Images/yeild_btn.svg"
-import EthIcon from "/public/Images/icon1.svg"
-import coinsIcon from "/public/Images/icon2.svg"
-import layerIcon from "/public/Images/icon3.svg"
+import { yeildData } from "@/constants/data"
+import { YieldCard } from "../ui/Card"
+
 export function YieldPage() {
   return (
     <div
@@ -38,53 +38,17 @@ export function YieldPage() {
         </div>
 
         <div className=" h-full w-full   flex  justify-center items-center">
-          {/* boxes */}
           <div className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:ml-12 lg:space-x-28 items-center    lg:space-y-2   ">
-            {/* 1st col */}
-            <div className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0 mb-16">
-              <Image
-                src={EthIcon}
-                width={50}
-                height={50}
-                alt="effect"
-                className=" mb-2  "
+            {yeildData.map((data, index) => (
+              <YieldCard
+                key={index}
+                src={data.src}
+                heading={data.heading}
+                range={data.range}
+                width={data.width}
+                height={data.height}
               />
-              <h1 className="md:text-2xl    text-2xl  text-wrap text-center ">
-                {" "}
-                Eth Staking
-              </h1>
-              <p className="text-gray-500 ">4-5%</p>
-            </div>
-
-            <div className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0 mb-16">
-              <Image
-                src={coinsIcon}
-                width={180}
-                height={180}
-                alt="effect"
-                className="  mb-2  "
-              />
-              <h1 className="md:text-2xl    text-2xl  text-wrap text-center ">
-                {" "}
-                Re Staking
-              </h1>
-              <p className="text-gray-500 ">4-5%</p>
-            </div>
-
-            <div className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0 mb-16">
-              <Image
-                src={layerIcon}
-                width={140}
-                height={140}
-                alt="effect"
-                className=" mb-2   "
-              />
-              <h1 className="md:text-2xl    text-2xl  text-wrap text-center ">
-                {" "}
-                Stablecoin Yeilds
-              </h1>
-              <p className="text-gray-500 ">4-5%</p>
-            </div>
+            ))}
           </div>
         </div>
       </div>

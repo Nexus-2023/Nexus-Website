@@ -10,25 +10,16 @@ import d5 from "/public/Images/d5.svg"
 import features from "/public/Images/feature_btn.svg"
 import Image from "next/image"
 import glow from "/public/Images/Glow.png"
-import Box from "../Box"
-import { FullBox } from "../Box"
+import Box from "../ui/Box"
+import { FullBox } from "../ui/Box"
 export function FeaturePage() {
   return (
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
       <div className="h-full   w-full p-16 flex    items-center  relative  border-2 border-[#0D1820]  space-y-10 flex-col  ">
-        {/* <Image
-          src={glow}
-          width={800}
-          height={800}
-          alt="effect"
-          className="  -z-10   absolute  top-0"
-        /> */}
         <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 " />
         <div className="justify-center">
-          {/*  bg-gradient-to-t from-[#00000018]   to-[#2D3A49]  text-yellow-500  */}
-
           <Image
             src={features}
             width={110}
@@ -36,7 +27,6 @@ export function FeaturePage() {
             alt="effect"
             className="  "
           />
-          {/* <div className="    bg-metal-features       "></div> */}
         </div>
 
         <div className="">

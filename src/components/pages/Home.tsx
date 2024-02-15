@@ -7,7 +7,6 @@ export function HomePage() {
       className={`h-[100vh] justify-center items-center  border-2 border-[#0D1820]   md:mx-16 flex  z-10 `}
     >
       {/* web */}
-
       <div className=" ">
         <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">
           <div className=" px-4 py-4">
@@ -28,8 +27,8 @@ export function HomePage() {
           </div>
         </div>
       </div>
-      {/* mobile */}
 
+      {/* mobile */}
       <div className="  justify-center items-center space-y-12 lg:hidden  flex flex-col">
         <div className="">
           <h1 className="text-6xl font-bold  bg-gradient-to-b text-transparent bg-clip-text text-wrap text-center ">

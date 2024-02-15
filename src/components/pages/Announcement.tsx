@@ -1,8 +1,11 @@
 import React from "react"
 import { buttonCss } from "@/css"
 
-import Partners from "../Partners"
+import Partners from "../ui/Partners"
 import { Button } from "@mui/material"
+import Card from "@mui/material"
+import { AnnounceCard } from "../ui/Card"
+import { announcementData } from "@/constants/data"
 export function AnnouncementPage() {
   return (
     <div
@@ -24,115 +27,18 @@ export function AnnouncementPage() {
                 Stay in the Loop: Latest News and Announcements
               </h1>
 
-              {/* scroll */}
-
               <div className="    snap-mandatory    py-16     justify-center   items-center    overflow-auto">
-                {/* <div className="flex xl:flex-row flex-col   space-y-16 xl:space-y-0 justify-between items-center   "> */}
                 <div className="flex      min-w-max  space-x-8   justify-between items-center   ">
-                  {/* first item */}
-                  <div className=" space-y-5 flex     lg:min-w-[25vw] min-w-[40vw] flex-col justify-start items-start  ">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut.
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
-
-                  {/* second */}
-                  <div className=" space-y-5 flex    flex-col  lg:min-w-[25vw] min-w-[40vw]  justify-start items-start ">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut. vel sem leo ullamcorper pharetra.
-                      Faucibus sit nec feugiat in eu ut. Lorem ipsum dolor sit
-                      amet consectetur. Volutpat aliquam mauris vel sem leo Call
-                      to Action
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
-
-                  {/* first third item */}
-                  <div className=" space-y-5 flex  flex-col   lg:min-w-[25vw] min-w-[40vw]   justify-start items-start">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut.
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
-
-                  {/* first third item */}
-                  <div className=" space-y-5 flex  flex-col  lg:min-w-[25vw] min-w-[40vw] justify-start items-start">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut.
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
-
-                  <div className=" space-y-5 flex  flex-col  lg:min-w-[25vw]  min-w-[40vw] justify-start items-start">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut.
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
-
-                  <div className=" space-y-5 flex  flex-col  lg:min-w-[25vw] min-w-[40vw] justify-start items-start">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut.
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
-
-                  <div className=" space-y-5 flex  flex-col  lg:min-w-[25vw] min-w-[40vw] justify-start items-start">
-                    <h1 className="  font-medium text-blue-100 text-xl">
-                      Received USD 60k grant
-                    </h1>
-
-                    <p className=" text-gray-400  w-full max-w-96">
-                      Lorem ipsum dolor sit amet consectetur. Volutpat aliquam
-                      mauris vel sem leo ullamcorper pharetra. Faucibus sit nec
-                      feugiat in eu ut.
-                    </p>
-
-                    <Button sx={{ color: "#77C3F8" }}> Call to Action</Button>
-                  </div>
+                  {announcementData.map((data, index) => (
+                    <>
+                      <AnnounceCard
+                        key={index}
+                        h1={data.heading}
+                        p={data.paragraph}
+                        link={data.link}
+                      />
+                    </>
+                  ))}
                 </div>
               </div>
             </div>

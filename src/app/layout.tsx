@@ -18,8 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="  mx-auto  ">
-          <div className="flex justify-center  items-center  "></div>
+        <div className="  mx-auto   ">
           <ResponsiveAppBar />
           {children}
         </div>

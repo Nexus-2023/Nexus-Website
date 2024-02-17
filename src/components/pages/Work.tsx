@@ -9,7 +9,7 @@ export function WorkPage() {
     <div
       className={`justify-center items-center flex  z-10  md:px-16  mx-auto`}
     >
-      <div className=" h-full -z-20   bg-[#010305] w-full relative  md:p-8    border-2 border-[#0D1820] ">
+      <div className=" h-full -z-20   bg-[#010305] w-full relative  md:py-24    md:border-x-2 md:border-t-2 border-[#0D1820] ">
         <Image
           src={glow}
           width={0}
@@ -22,7 +22,7 @@ export function WorkPage() {
         <div className="  flex items-center justify-center  mt-8 ">
           <h1 className="md:text-4xl   font-medium  text-3xl  text-wrap text-center ">
             {" "}
-            How does Nexus Network Work ?
+            How does Nexus Network Work?
           </h1>
         </div>
 

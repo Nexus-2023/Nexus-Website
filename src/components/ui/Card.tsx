@@ -48,7 +48,7 @@ export function AnnounceCard({ h1, p, link }: AnnounceCardProps) {
         </p>
 
         <Link href={link} target="_blank">
-          <Button sx={{ color: "#77C3F8" }}> Read post</Button>
+          <Button sx={{ color: "#77C3F8" }}> Read More</Button>
         </Link>
       </div>
     </div>

@@ -4,8 +4,9 @@ import { buttonCss } from "@/css"
 export function HomePage() {
   return (
     <div
-      className={`h-[100vh] justify-center items-center  border-2 border-[#0D1820]   md:mx-16 flex  z-10 `}
+      className={`h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
     >
+      {/* <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[50%] h-[30%] bg-[#317ff333] rounded-2xl  blur-3xl -z-20 " /> */}
       {/* web */}
       <div className=" ">
         <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">

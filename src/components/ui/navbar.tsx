@@ -1,22 +1,24 @@
 "use client"
 
 import * as React from "react"
-import AppBar from "@mui/material/AppBar"
-import Box from "@mui/material/Box"
-import Toolbar from "@mui/material/Toolbar"
-import IconButton from "@mui/material/IconButton"
-import Typography from "@mui/material/Typography"
-import Menu from "@mui/material/Menu"
+
+import {
+  Box,
+  Toolbar,
+  IconButton,
+  Typography,
+  Menu,
+  Container,
+  Avatar,
+  Button,
+  MenuItem,
+  Tooltip,
+} from "@mui/material"
+
 import MenuIcon from "@mui/icons-material/Menu"
-import Container from "@mui/material/Container"
-import Avatar from "@mui/material/Avatar"
-import Button from "@mui/material/Button"
-import Tooltip from "@mui/material/Tooltip"
-import MenuItem from "@mui/material/MenuItem"
-import AdbIcon from "@mui/icons-material/Adb"
+
 import Image from "next/image"
-import { ThemeProvider } from "@mui/material"
-import theme from "@/theme/theme"
+
 import { logo } from "../../../public/Images/images"
 const pages = ["Home", "About", "Docs", "contact"]
 
@@ -34,7 +36,7 @@ function ResponsiveAppBar() {
   return (
     <div className="flex justify-center    ">
       <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
-      {/* border-2  */}
+
       <nav
         className=" backdrop-blur-lg z-10  px-8 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]    "
         aria-labelledby="menu-button"
@@ -70,7 +72,7 @@ function ResponsiveAppBar() {
             >
               <MenuIcon />
             </IconButton>
-
+            {/* Mobile Links */}
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -88,11 +90,11 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: "block", md: "none" },
                 mt: "1px",
+                // width: "100vw",
                 backdropFilter: "blur(5px)",
                 "& .MuiMenu-paper": {
                   backgroundColor: "#01080F",
-
-                  border: "1px solid #77C3F8",
+                  borderRadius: "8px",
                 },
               }}
             >
@@ -101,12 +103,17 @@ function ResponsiveAppBar() {
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    width: "45rem",
-                    color: "#77C3F8",
+                    width: { sm: "80vw", xs: "90vw" },
+
+                    color: "white",
                     py: "8px",
                     backdropFilter: "blur(5px)",
+                    borderRadius: "8px",
+
+                    transition: "background 0.3s ease-in-out",
+
                     ":hover": {
-                      background: "white",
+                      background: "#77C3F8",
                     },
                   }}
                 >
@@ -135,15 +142,16 @@ function ResponsiveAppBar() {
               width={130}
               height={130}
               alt="nexus logo"
-              className=" "
+              className="  "
             />
           </Box>
 
+          {/* Web Links */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map(page => (
               <button
                 key={page}
-                className="my-2 mx-5 capitalize  font-normal  block   hover:text-blue-300 duration-300  transition-all  ease-in-out"
+                className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8] duration-300  transition-all  ease-in-out"
               >
                 {page}
               </button>

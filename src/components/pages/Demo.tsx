@@ -1,7 +1,6 @@
 import React from "react"
 import { buttonCss } from "@/css"
-import d5 from "/public/Images/d5.svg"
-import features from "/public/Images/btFeatures.svg"
+
 import demo from "/public/Images/demo_btn.svg"
 import Image from "next/image"
 
@@ -10,8 +9,8 @@ export function DemoPage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full   w-full p-16 flex  justify-center items-center  relative  border-2 border-[#0D1820]   flex-col  ">
-        <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[#38598a2c]  rounded-2xl blur-3xl  -z-20 " />
+      <div className="h-full   w-full  py-40 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2  border-[#0D1820]   flex-col  ">
+        <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#0E223F]  rounded-2xl blur-3xl  -z-20 " />
         <div className="justify-center items-center mb-4">
           <Image src={demo} width={90} height={90} alt="effect" className=" " />
         </div>

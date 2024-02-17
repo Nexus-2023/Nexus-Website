@@ -17,7 +17,7 @@ export function FeaturePage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full   w-full p-16 flex    items-center  relative  border-2 border-[#0D1820]  space-y-10 flex-col  ">
+      <div className="h-full   w-full py-32   flex    items-center  relative    border-x-2  border-t-2  border-[#0D1820]  space-y-10 flex-col  ">
         <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 " />
         <div className="justify-center">
           <Image

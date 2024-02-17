@@ -34,11 +34,11 @@ function ResponsiveAppBar() {
   }
 
   return (
-    <div className="flex justify-center    ">
+    <div className="flex justify-center     ">
       <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
 
       <nav
-        className=" backdrop-blur-lg z-10  px-8 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]    "
+        className=" backdrop-blur-lg z-30  px-8 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]    "
         aria-labelledby="menu-button"
       >
         <Toolbar disableGutters>
@@ -151,7 +151,7 @@ function ResponsiveAppBar() {
             {pages.map(page => (
               <button
                 key={page}
-                className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8] duration-300  transition-all  ease-in-out"
+                className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out"
               >
                 {page}
               </button>

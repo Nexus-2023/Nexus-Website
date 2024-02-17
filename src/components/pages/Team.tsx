@@ -16,7 +16,7 @@ export function TeamPage() {
             src={team}
             width={90}
             height={90}
-            alt="effect"
+            alt="team button"
             className="mb-4"
           />
 

@@ -68,7 +68,7 @@ export function YieldCard({
         src={src}
         width={width}
         height={height}
-        alt="effect"
+        alt="yeild icons"
         className=" mb-2  "
       />
       <h1 className="md:text-2xl    text-2xl  text-wrap text-center ">
@@ -83,7 +83,7 @@ export function YieldCard({
 export function PartnersCard({ src, text, width, height }: PartnerCardProps) {
   return (
     <div className=" space-y-5 flex flex-col w-full  lg:max-w-[20vw] justify-center items-center">
-      <Image src={src} width={width} height={height} alt="effect" />
+      <Image src={src} width={width} height={height} alt="partner icon" />
       <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[#141b22]   to-[#2776c0]  mb-4  mt-4" />
 
       <h3 className=" text-gray-400 text-xl ">{text}</h3>
@@ -100,7 +100,13 @@ export function TeamCard({
 }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center">
-      <Image src={src} width={150} height={150} alt="effect" className=" " />
+      <Image
+        src={src}
+        width={150}
+        height={150}
+        alt="profile pic"
+        className=" "
+      />
 
       <h1 className="text-xl font-semibold text-blue-50 mb-2">{name}</h1>
       <h1 className=" text-xl text-gray-400 mb-2">{title}</h1>
@@ -111,7 +117,7 @@ export function TeamCard({
             src={twitter}
             width={40}
             height={40}
-            alt="effect"
+            alt="twitter icon"
             className=" "
           />
         </Link>
@@ -121,7 +127,7 @@ export function TeamCard({
             src={linkedin}
             width={40}
             height={40}
-            alt="effect"
+            alt="linkedin icon"
             className=" "
           />
         </Link>

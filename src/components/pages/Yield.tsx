@@ -18,7 +18,7 @@ export function YieldPage() {
             src={yeild}
             width={90}
             height={90}
-            alt="effect"
+            alt="yeild button"
             className=" "
           />
         </div>

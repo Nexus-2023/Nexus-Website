@@ -24,7 +24,7 @@ export function FeaturePage() {
             src={features}
             width={110}
             height={110}
-            alt="effect"
+            alt="feature button"
             className="mb-6 "
           />
         </div>

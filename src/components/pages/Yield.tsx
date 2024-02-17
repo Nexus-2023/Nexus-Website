@@ -24,13 +24,13 @@ export function YieldPage() {
         </div>
 
         <div className="">
-          <h1 className="md:text-4xl  mb-6  font-medium   text-3xl  text-wrap text-center ">
+          <h1 className=" md:text-4xl   text-3xl  mb-6  font-medium     text-wrap text-center ">
             {" "}
             Native yields for rollups
           </h1>
         </div>
 
-        <div className="md:text-lg text-md text-gray-500   xl:max-w-[40vw] max-w-[60vw] text-wrap text-center  mb-16">
+        <div className="md:text-lg text-md text-gray-500   xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center  mb-16">
           <p>
             Nexus Network provides a suite of native yield products for ETH and
             stablecoins

@@ -20,7 +20,7 @@ export function WorkPage() {
         />
 
         <div className="  flex items-center justify-center  mt-8 ">
-          <h1 className="md:text-4xl   font-medium  text-3xl  text-wrap text-center ">
+          <h1 className="sm:text-4xl   font-medium  text-xl  text-wrap text-center ">
             {" "}
             How does Nexus Network Work?
           </h1>

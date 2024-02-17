@@ -17,7 +17,7 @@ export function FeaturePage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full   w-full py-32   flex    items-center  relative    border-x-2  border-t-2  border-[#0D1820]  space-y-10 flex-col  ">
+      <div className="h-full   w-full py-32   flex    items-center  relative    border-x-2  border-t-2  border-[#0D1820]    flex-col  ">
         <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 " />
         <div className="justify-center">
           <Image
@@ -25,29 +25,29 @@ export function FeaturePage() {
             width={110}
             height={110}
             alt="effect"
-            className="  "
+            className="mb-6 "
           />
         </div>
 
         <div className="">
-          <h1 className="md:text-4xl  font-medium   text-3xl  text-wrap text-center ">
+          <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
             {" "}
             Why you should use Nexus Network for Rollups
           </h1>
         </div>
 
-        <div className="md:text-lg text-md text-gray-500   xl:max-w-[40vw] max-w-[60vw] text-wrap text-center ">
+        <div className="sm:text-lg text-md text-gray-500 xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center">
           <p>
             Rollups can integrate with Nexus Network within minutes to earn
             yields in a secure and non-custodial way
           </p>
         </div>
 
-        <div className=" h-full w-full  flex  justify-center items-center">
+        <div className=" h-full w-full  flex  justify-center items-center mt-24  ">
           {/* boxes */}
           <div className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4   ">
             {/* 1st col */}
-            <div className="flex flex-col  space-y-5">
+            <div className="flex flex-col  sm:px-0 px-4 space-y-5">
               <Box
                 src={d1}
                 t1={"Validator Management"}
@@ -68,7 +68,7 @@ export function FeaturePage() {
             </div>
 
             {/* 2 col */}
-            <div className="flex flex-col  space-y-5  xl:h-[80vh] h-full max-h-[700px] ">
+            <div className="flex flex-col  space-y-5  sm:px-0 px-4  xl:h-[80vh] h-full max-h-[700px] ">
               <FullBox
                 src={d5}
                 t1={"Easy Integration"}
@@ -79,7 +79,7 @@ export function FeaturePage() {
             </div>
 
             {/* 3rd col */}
-            <div className="flex flex-col  space-y-5">
+            <div className="flex flex-col  sm:px-0 px-4  space-y-5">
               <Box
                 src={d3}
                 t1={"Built-in insurance mechanism"}

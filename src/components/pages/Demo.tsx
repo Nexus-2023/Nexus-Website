@@ -16,7 +16,7 @@ export function DemoPage() {
         </div>
 
         <div className="">
-          <h1 className="md:text-4xl  mb-6  font-medium   text-3xl  text-wrap text-center ">
+          <h1 className="md:text-4xl  mb-8  font-medium   sm:text-3xl  text-2xl text-wrap text-center ">
             {" "}
             See Nexus Network in action
           </h1>

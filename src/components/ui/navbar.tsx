@@ -38,7 +38,7 @@ function ResponsiveAppBar() {
       <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
 
       <nav
-        className=" backdrop-blur-lg z-30  px-8 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]    "
+        className=" backdrop-blur-lg z-30  sm:px-8 px-0 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]     "
         aria-labelledby="menu-button"
       >
         <Toolbar disableGutters>
@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
               width={130}
               height={130}
               alt="nexus logo"
-              className="mr-16"
+              className="sm:mr-16"
             />
           </Box>
           <Box
@@ -159,7 +159,18 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button sx={{ color: "#77C3F8" }}>Schedule a call</Button>
+            <Button
+              sx={{
+                color: "#77C3F8",
+                textTransform: "capitalize",
+                fontSize: "16px", // Default font size
+                "@media screen and (max-width: 400px)": {
+                  fontSize: "12px", // Adjust font size for screens less than 500px wide
+                },
+              }}
+            >
+              Schedule a call
+            </Button>
           </Box>
         </Toolbar>
       </nav>

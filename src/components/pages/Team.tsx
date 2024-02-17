@@ -10,8 +10,8 @@ export function TeamPage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full  w-full    border-2 flex justify-center   py-24 border-[#0D1820]">
-        <div className="    items-center   w-full max-w-7xl p-16 flex flex-col">
+      <div className="h-full  w-full      flex justify-center   py-24 border-[#0D1820]">
+        <div className="     items-center   w-full  max-w-7xl    px-0 flex flex-col">
           <Image
             src={team}
             width={90}
@@ -20,11 +20,13 @@ export function TeamPage() {
             className="mb-4"
           />
 
-          <h1 className=" text-4xl font-medium mb-16">Meet the team</h1>
+          <h1 className="  sm:text-4xl text-2xl font-medium mb-16">
+            Meet the team
+          </h1>
 
           <p></p>
 
-          <div className=" lg:p-16  py-4 justify-evenly  space-y-16 lg:space-y-0 w-full lg:max-w-3xl max-w-[60vw] sm:max-w-[50vw]  flex lg:flex-row flex-col rounded-2xl relative">
+          <div className=" lg:p-16  py-4 justify-evenly space-y-16 lg:space-y-0 w-full lg:max-w-3xl max-w-[60vw] sm:max-w-[50vw]  flex lg:flex-row flex-col rounded-2xl relative">
             <div className="absolute top-0 left-0 rounded-2xl w-full h-full bg-gradient-to-r from-[#0B141E] via-[#1b3753] to-[#0B141E] opacity-90 pointer-events-none   backdrop-blur-xl  -z-10"></div>
 
             {TeamData.map((data, index) => (

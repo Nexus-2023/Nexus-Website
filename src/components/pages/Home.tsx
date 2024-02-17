@@ -32,7 +32,7 @@ export function HomePage() {
       {/* mobile */}
       <div className="  justify-center items-center space-y-12 lg:hidden  flex flex-col">
         <div className="">
-          <h1 className="text-6xl font-bold  bg-gradient-to-b text-transparent bg-clip-text text-wrap text-center ">
+          <h1 className=" text-5xl  sm:text-6xl font-bold  bg-gradient-to-b text-transparent bg-clip-text text-wrap text-center ">
             Economic Layer for Rollups
           </h1>
         </div>

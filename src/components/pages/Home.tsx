@@ -1,11 +1,21 @@
 import React from "react"
 import { buttonCss } from "@/css"
+import Image from "next/image"
 
+import hero from "/public/Images/Hero-image.webp"
 export function HomePage() {
   return (
     <div
       className={`h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
     >
+      <Image
+        src={hero}
+        width={0}
+        height={0}
+        style={{ width: "100%", height: "100%" }}
+        alt="Nexus design diagram"
+        className=" aspect-video  absolute -z-20"
+      />
       {/* web */}
       <div className=" ">
         <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">

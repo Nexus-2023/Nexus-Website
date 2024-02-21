@@ -23,6 +23,8 @@ import { logo } from "../../../public/Images/images"
 
 import gsap, { Power2 } from "gsap"
 const pages = ["Home", "About", "Docs", "contact"]
+import { Flip } from "gsap/Flip"
+gsap.registerPlugin(Flip)
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
@@ -109,7 +111,7 @@ function ResponsiveAppBar() {
               src={logo}
               width={130}
               height={130}
-              alt="nexus logo"
+              alt="web nexus logo"
               className="sm:mr-16"
             />
           </Box>
@@ -190,6 +192,10 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
+          {/* Mobile menu end */}
+
+          {/* web/mobile button and links */}
+
           <Box
             sx={{
               display: { xs: "flex", md: "none", flexGrow: 1, mr: 2 },
@@ -199,7 +205,7 @@ function ResponsiveAppBar() {
               src={logo}
               width={130}
               height={130}
-              alt="nexus logo"
+              alt="mobile nexus logo"
               className="  "
             />
           </Box>

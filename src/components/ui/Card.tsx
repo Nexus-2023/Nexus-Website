@@ -111,8 +111,12 @@ export function TeamCard({
       <h1 className="text-xl font-semibold text-blue-50 mb-2">{name}</h1>
       <h1 className=" text-xl text-gray-400 mb-2">{title}</h1>
 
-      <div className="flex space-x-2">
-        <Link href={twitterlink} target="_blank">
+      <div className="flex space-x-2   ">
+        <Link
+          href={twitterlink}
+          target="_blank"
+          className="hover:scale-125    transition-transform d duration-500 ease-in-out"
+        >
           <Image
             src={twitter}
             width={40}
@@ -122,7 +126,11 @@ export function TeamCard({
           />
         </Link>
 
-        <Link href={linkedinlink} target="_blank">
+        <Link
+          href={linkedinlink}
+          target="_blank"
+          className="hover:scale-125    transition-transform d duration-500 ease-in-out"
+        >
           <Image
             src={linkedin}
             width={40}

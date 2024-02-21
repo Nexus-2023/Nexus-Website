@@ -3,8 +3,34 @@ import { buttonCss } from "@/css"
 
 import demo from "/public/Images/demo_btn.svg"
 import Image from "next/image"
+import { useState, useRef } from "react"
 
+import gsap from "gsap"
 export function DemoPage() {
+  const ref = useRef<any>(null)
+
+  const handleVideoHover = () => {
+    const target = ref.current
+    if (target) {
+      gsap.to(target, {
+        scaleX: 1.1,
+        scaleY: 1.1,
+        duration: 0.5,
+        ease: "power2.out",
+      })
+    }
+  }
+
+  const handleVideoLeave = () => {
+    const target = ref.current
+    gsap.to(target, {
+      scaleX: 1,
+      scaleY: 1,
+      duration: 0.5,
+      ease: "power2.out",
+    })
+  }
+
   return (
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
@@ -22,13 +48,18 @@ export function DemoPage() {
         </div>
 
         <div className="">
-          <h1 className="md:text-4xl  mb-8  font-medium   sm:text-3xl  text-2xl text-wrap text-center ">
+          <h1 className="md:text-4xl  mb-16  font-medium   sm:text-3xl  text-2xl text-wrap text-center ">
             {" "}
             See Nexus Network in action
           </h1>
         </div>
 
-        <div className=" h-full w-full   flex  justify-center items-center relative aspect-video max-w-screen-lg  ">
+        <div
+          className=" h-full w-full   flex  justify-center items-center relative aspect-video max-w-screen-lg    "
+          onMouseEnter={handleVideoHover}
+          onMouseLeave={handleVideoLeave}
+          ref={ref}
+        >
           <iframe
             width="auto"
             height="auto"
@@ -36,8 +67,9 @@ export function DemoPage() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="w-full aspect-video max-w-screen-lg rounded-2xl   shadow-lg shadow-slate-700 opacity-100 absolute top-0 left-0 transition-opacity duration-500 ease-in-out  "
+            className={`w-full  aspect-video max-w-screen-lg rounded-2xl   shadow-lg shadow-slate-700 opacity-100 absolute top-0 left-0 transition-opacity duration-500 ease-in-out `}
           ></iframe>
+
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#0016389a] to-transparent opacity-90 pointer-events-none"></div>
         </div>
       </div>

@@ -12,7 +12,9 @@ interface BoxProps {
 
 export function Box({ src, t1, t2, iw, ih }: BoxProps) {
   return (
-    <div className=" px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]    border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center">
+    <div
+      className={`px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]    border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center  `}
+    >
       <div>
         <Image src={src} width={iw} height={ih} alt="box image" />
       </div>
@@ -28,7 +30,10 @@ export function Box({ src, t1, t2, iw, ih }: BoxProps) {
 
 export function FullBox({ src, t1, t2, iw, ih }: BoxProps) {
   return (
-    <div className=" px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]  border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center">
+    <div
+      className=" px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]  border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center   "
+      id="box"
+    >
       <div>
         <Image src={src} width={iw} height={ih} alt="box image" />
       </div>

@@ -34,7 +34,7 @@ const SmoothScroll: React.FC = () => {
       const smoothScroll = (
         content: HTMLElement,
         viewport: HTMLElement,
-        smoothness: number = 1
+        smoothness: number = 3
       ) => {
         gsap.set(viewport || content.parentNode!, {
           overflow: "hidden",

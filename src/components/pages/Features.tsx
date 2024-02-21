@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { buttonCss } from "@/css"
 import diagram from "/public/Images/diagram1.png"
 import d1 from "/public/Images/d1.svg"
@@ -11,7 +11,12 @@ import features from "/public/Images/feature_btn.svg"
 import Image from "next/image"
 import glow from "/public/Images/Glow.png"
 import Box from "../ui/Box"
+import { useRef } from "react"
 import { FullBox } from "../ui/Box"
+import gsap, { Power2 } from "gsap"
+import { Flip } from "gsap/Flip"
+gsap.registerPlugin(Flip)
+
 export function FeaturePage() {
   return (
     <div
@@ -45,7 +50,10 @@ export function FeaturePage() {
 
         <div className=" h-full w-full  flex  justify-center items-center mt-24  ">
           {/* boxes */}
-          <div className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4   ">
+          <div
+            className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4  "
+            id=" boxContainer"
+          >
             {/* 1st col */}
             <div className="flex flex-col  sm:px-0 px-4 space-y-5">
               <Box

@@ -18,13 +18,16 @@ import {
 import MenuIcon from "@mui/icons-material/Menu"
 
 import Image from "next/image"
-
+import { useEffect, useState, useRef } from "react"
 import { logo } from "../../../public/Images/images"
+
+import gsap, { Power2 } from "gsap"
 const pages = ["Home", "About", "Docs", "contact"]
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
 
+  const navbarRef = useRef<HTMLDivElement>(null)
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget)
   }
@@ -33,13 +36,68 @@ function ResponsiveAppBar() {
     setAnchorElNav(null)
   }
 
+  const handleScroll = () => {
+    const navbar = navbarRef.current
+
+    if (navbar) {
+      const scrollY = window.scrollY
+
+      gsap.to(navbar, {
+        opacity: scrollY > 50 ? 0 : 1,
+        duration: 0.5,
+        ease: "power2.out",
+      })
+    }
+  }
+
+  const handleMouseEnter = () => {
+    const navbar = navbarRef.current
+
+    if (navbar) {
+      gsap.to(navbar, {
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out",
+      })
+    }
+  }
+
+  const handleMouseLeave = () => {
+    const navbar = navbarRef.current
+
+    if (navbar) {
+      gsap.to(navbar, {
+        opacity: 0,
+        duration: 0.5,
+        ease: "power2.out",
+      })
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [navbarRef])
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   return (
-    <div className="flex justify-center     ">
+    <div className="flex justify-center  ">
       <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
 
       <nav
         className=" backdrop-blur-lg z-30  sm:px-8 px-0 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]     "
         aria-labelledby="menu-button"
+        ref={navbarRef}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <Toolbar disableGutters>
           <Box

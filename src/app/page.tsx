@@ -46,8 +46,8 @@ gsap.registerPlugin(
 
 export default function Home() {
   return (
-    <div>
+    <>
       <SmoothScroll />
-    </div>
+    </>
   )
 }

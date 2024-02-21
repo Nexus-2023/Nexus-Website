@@ -28,8 +28,6 @@ const SmoothScroll: React.FC = () => {
           trigger: box,
 
           start: "top top",
-
-          // end: "+=300",
         })
       })
 
@@ -48,12 +46,12 @@ const SmoothScroll: React.FC = () => {
           right: 0,
           bottom: 0,
         })
-        gsap.set(content, { overflow: "visible", width: "100%" })
+        gsap.set(content, { overflow: "hidden", width: "100%" })
 
         let getProp = gsap.getProperty(content)
         let setProp = gsap.quickSetter(content, "y", "px")
         let setScroll = ScrollTrigger.getScrollFunc(window)
-        let removeScroll = () => (content.style.overflow = "visible")
+        let removeScroll = () => (content.style.overflow = "hidden")
         let killScrub = (trigger: any) => {
           let scrub = trigger.getTween
             ? trigger.getTween()
@@ -66,7 +64,7 @@ const SmoothScroll: React.FC = () => {
 
         const refreshHeight = () => {
           height = content.clientHeight
-          content.style.overflow = "visible"
+          content.style.overflow = "hidden"
           document.body.style.height = height + "px"
           console.log(" height", height)
           console.log("document.body.style.height", document.body.style.height)
@@ -149,10 +147,10 @@ const SmoothScroll: React.FC = () => {
   return (
     <div
       ref={viewportRef}
-      className=" overflow-hidden fixed h-full w-full top-0 bottom-0 right-0 left-0"
+      className=" overflow-hidden fixed h-full w-full top-0 bottom-0 right-0 left-0   "
     >
-      <div ref={contentRef} className=" overflow-visible w-full  h-min">
-        <div className="box ">
+      <div ref={contentRef} className="  ">
+        <div className="box  ">
           <HomePage />
           <WorkPage />
           <FeaturePage />
@@ -160,6 +158,7 @@ const SmoothScroll: React.FC = () => {
           <DemoPage />
           <AnnouncementPage />
           <TeamPage />
+
           <Footer />
         </div>
       </div>

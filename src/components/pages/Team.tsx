@@ -10,7 +10,7 @@ export function TeamPage() {
     <div
       className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
     >
-      <div className="h-full  w-full      flex justify-center   py-24 border-[#0D1820]">
+      <div className="h-full  w-full   border-2    flex justify-center   py-24 border-[#0D1820]">
         <div className="     items-center   w-full  max-w-7xl    px-0 flex flex-col">
           <Image
             src={team}

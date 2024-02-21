@@ -21,18 +21,9 @@ body {
   background: #01080F;
   scroll-snap-type: mandatory;
  
+}
+
  
-}
-
-main {
-  background-image: url("../../public/Images/effect3.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  object-position: center;
-  justify-content: center;
-  align-items: center;
-}
-
  /* Scrollbar Track */
 ::-webkit-scrollbar {
   width:4px; /* Set the width of the scrollbar */
@@ -59,7 +50,6 @@ main {
 
  
  
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

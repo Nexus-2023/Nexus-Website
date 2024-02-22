@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
       const scrollY = window.scrollY
 
       gsap.to(navbar, {
-        opacity: scrollY > 50 ? 0 : 1,
+        opacity: scrollY > 100 ? 0 : 1,
         duration: 0.5,
         ease: "power2.out",
       })
@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
     if (navbar) {
       gsap.to(navbar, {
         opacity: 1,
-        duration: 0.5,
+        duration: 1,
         ease: "power2.out",
       })
     }
@@ -69,13 +69,35 @@ function ResponsiveAppBar() {
 
     if (navbar) {
       gsap.to(navbar, {
-        opacity: 0,
-        duration: 0.5,
+        opacity: scrollY > 100 ? 0 : 1,
+        duration: 1,
         ease: "power2.out",
       })
     }
   }
+  const ref = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
+    // const target = ref.current
+    // if (target) {
+    //   gsap.to(
+    //     target,
+    //     {
+    //       // delay: 3.5,
+    //       opacity: 1,
+    //       y: -40,
+    //       ease: "power2.inOut",
+    //     }
+    //     // {
+    //     //   // delay: 3.5,
+    //     //   opacity: 1,
+    //     //   y: 0,
+    //     //   duration: 1,
+    //     //   ease: "power2.inOut",
+    //     // }
+    //   )
+    // }
+
     window.addEventListener("scroll", handleScroll)
 
     return () => {
@@ -91,7 +113,7 @@ function ResponsiveAppBar() {
   }, [])
 
   return (
-    <div className="flex justify-center  ">
+    <div className="flex justify-center  " ref={ref}>
       <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
 
       <nav

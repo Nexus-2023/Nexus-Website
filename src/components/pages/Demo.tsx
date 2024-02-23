@@ -1,14 +1,48 @@
 import React from "react"
-import { buttonCss } from "@/css"
 
 import demo from "/public/Images/demo_btn.svg"
 import Image from "next/image"
-import { useState, useRef } from "react"
+
+import { useEffect, useRef } from "react"
+import ScrollTrigger from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react"
 
 import gsap from "gsap"
 export function DemoPage() {
-  const ref = useRef<any>(null)
+  gsap.registerPlugin(ScrollTrigger)
 
+  const ref = useRef<any>(null)
+  const demoContainerRef = useRef(null)
+  useGSAP(
+    () => {
+      console.log(demoContainerRef)
+
+      gsap.fromTo(
+        "#glowEffect ,#demoBtn ,#heading , #video",
+        {
+          opacity: 0,
+          y: 100,
+        },
+
+        {
+          stagger: 0.3,
+          opacity: 1,
+          y: 0,
+          ease: "power2.Out",
+          duration: 1,
+
+          scrollTrigger: {
+            trigger: demoContainerRef.current,
+            start: "top top",
+            end: "center center",
+            // toggleActions: "play none none reverse",
+            markers: true,
+          },
+        }
+      )
+    },
+    { scope: demoContainerRef }
+  )
   const handleVideoHover = () => {
     const target = ref.current
     if (target) {
@@ -33,21 +67,19 @@ export function DemoPage() {
 
   return (
     <div
-      className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
+      className={`justify-center items-center flex  z-10  border-2  md:px-16 px-0  mx-auto`}
+      ref={demoContainerRef}
     >
       <div className="h-full   w-full  py-40 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2  border-[#0D1820]   flex-col  ">
-        <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#0E223F]  rounded-2xl blur-3xl  -z-20 " />
-        <div className="justify-center items-center mb-4">
-          <Image
-            src={demo}
-            width={90}
-            height={90}
-            alt="demo button"
-            className=" "
-          />
+        <div
+          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[90%] bg-[#0E223F]  rounded-2xl blur-3xl  -z-20 "
+          id="glowEffect"
+        />
+        <div className="justify-center items-center mb-4" id="demoBtn">
+          <Image src={demo} width={90} height={90} alt="demo button" />
         </div>
 
-        <div className="">
+        <div id="heading">
           <h1 className="md:text-4xl  mb-16  font-medium   sm:text-3xl  text-2xl text-wrap text-center ">
             {" "}
             See Nexus Network in action
@@ -55,7 +87,8 @@ export function DemoPage() {
         </div>
 
         <div
-          className=" h-full w-full   flex  justify-center items-center relative aspect-video max-w-screen-lg    "
+          className=" h-full w-full   flex  justify-center items-center relative aspect-video max-w-screen-lg "
+          id="video"
           onMouseEnter={handleVideoHover}
           onMouseLeave={handleVideoLeave}
           ref={ref}

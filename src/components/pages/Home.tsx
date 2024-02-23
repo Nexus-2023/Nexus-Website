@@ -1,35 +1,38 @@
 import React from "react"
-import { buttonCss } from "@/css"
+
 import Image from "next/image"
 import { useEffect, useRef } from "react"
 import hero from "/public/Images/Hero-image.webp"
-import { TextRevealAnimation, TextRevealAnimation2 } from "../ui/TextAnimation"
+import {
+  TextRevealAnimation,
+  TextRevealAnimation2,
+  MobileTextRevealAnimation,
+  MobileTextRevealAnimation2,
+} from "../ui/TextAnimation"
 import gsap from "gsap"
 export function HomePage() {
   const buttonRef = useRef<HTMLDivElement>(null)
   const ImageRef = useRef<any>(null)
   useEffect(() => {
-    const target = buttonRef.current
     const target2 = ImageRef.current
 
-    if (target) {
-      gsap.fromTo(
-        target,
-        {
-          delay: 2.5,
-          opacity: 0,
-          y: 40,
-          ease: "power2.inOut",
-        },
-        {
-          delay: 2.5,
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.inOut",
-        }
-      )
-    }
+    gsap.fromTo(
+      "#launchBtn",
+
+      {
+        delay: 2.5,
+        opacity: 0,
+        y: 40,
+        ease: "power2.inOut",
+      },
+      {
+        delay: 2.5,
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.inOut",
+      }
+    )
 
     if (target2) {
       gsap.fromTo(
@@ -73,8 +76,12 @@ export function HomePage() {
             <TextRevealAnimation2 />
           </div>
 
-          <div className="opacity-0" ref={buttonRef}>
-            <button className={buttonCss}>Launch App</button>
+          <div className="opacity-0" id="launchBtn">
+            <button
+              className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
+            >
+              Launch App
+            </button>
           </div>
         </div>
       </div>
@@ -82,20 +89,19 @@ export function HomePage() {
       {/* mobile */}
       <div className="  justify-center items-center space-y-12 lg:hidden  flex flex-col">
         <div className="">
-          <h1 className=" text-5xl  sm:text-6xl font-bold  bg-gradient-to-b text-transparent bg-clip-text text-wrap text-center ">
-            Economic Layer for Rollups
-          </h1>
+          <MobileTextRevealAnimation />
         </div>
 
         <div className="">
-          <p className=" font-normal text-gray-400 text-wrap text-center ">
-            Implement native yields on your rollup in a secure and non-custodial
-            way
-          </p>
+          <MobileTextRevealAnimation2 />
         </div>
 
-        <div className="">
-          <button className={buttonCss}>Launch App</button>
+        <div className="opacity-0" id="launchBtn">
+          <button
+            className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
+          >
+            Launch App
+          </button>
         </div>
       </div>
     </div>

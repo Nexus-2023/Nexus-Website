@@ -1,30 +1,64 @@
-import React, { useEffect } from "react"
-import { buttonCss } from "@/css"
+import React from "react"
+
 import diagram from "/public/Images/diagram1.png"
 import d1 from "/public/Images/d1.svg"
 import d2 from "/public/Images/d2.svg"
 import d3 from "/public/Images/d3.svg"
 import d4 from "/public/Images/d4.svg"
 import d5 from "/public/Images/d5.svg"
-// import features from "/public/Images/btFeatures.svg"
+
 import features from "/public/Images/feature_btn.svg"
 import Image from "next/image"
-import glow from "/public/Images/Glow.png"
+
 import Box from "../ui/Box"
 import { useRef } from "react"
 import { FullBox } from "../ui/Box"
 import gsap, { Power2 } from "gsap"
-import { Flip } from "gsap/Flip"
-gsap.registerPlugin(Flip)
 
+import { useGSAP } from "@gsap/react"
+import ScrollTrigger from "gsap/ScrollTrigger"
 export function FeaturePage() {
+  gsap.registerPlugin(ScrollTrigger)
+  const featureContainerRef = useRef(null)
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        "#glowEffect ,#featuresBtn ,#heading , #paragraph , #BoxContainer , #FullBoxContainer",
+        {
+          opacity: 0,
+          y: 100,
+        },
+
+        {
+          stagger: 0.3,
+          opacity: 1,
+          y: 0,
+          ease: "power2.Out",
+          duration: 1,
+
+          scrollTrigger: {
+            trigger: featureContainerRef.current,
+            start: "top top",
+            end: "center center",
+            // toggleActions: "play none none reverse",
+            markers: true,
+          },
+        }
+      )
+    },
+    { scope: featureContainerRef }
+  )
   return (
     <div
-      className={`justify-center items-center flex  z-10   md:px-16 px-0  mx-auto`}
+      className={`justify-center items-center flex  z-10 border-2   md:px-16 px-0  mx-auto`}
+      ref={featureContainerRef}
     >
-      <div className="h-full   w-full py-32   flex    items-center  relative    border-x-2  border-t-2  border-[#0D1820]    flex-col  ">
-        <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 " />
-        <div className="justify-center">
+      <div className="h-full  w-full py-32   flex    items-center  relative    border-x-2  border-t-2  border-[#0D1820]    flex-col  ">
+        <div
+          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 "
+          id="glowEffect"
+        />
+        <div className="justify-center" id="featuresBtn">
           <Image
             src={features}
             width={110}
@@ -34,26 +68,26 @@ export function FeaturePage() {
           />
         </div>
 
-        <div className="">
+        <div className="" id="heading">
           <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
             {" "}
             Why you should use Nexus Network for Rollups
           </h1>
         </div>
 
-        <div className="sm:text-lg text-md text-gray-500 xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center">
+        <div
+          className="sm:text-lg text-md text-gray-500 xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center"
+          id="paragraph"
+        >
           <p>
             Rollups can integrate with Nexus Network within minutes to earn
             yields in a secure and non-custodial way
           </p>
         </div>
 
-        <div className=" h-full w-full  flex  justify-center items-center mt-24  ">
+        <div className=" h-full w-full  flex  justify-center items-center mt-24   ">
           {/* boxes */}
-          <div
-            className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4  "
-            id=" boxContainer"
-          >
+          <div className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4  ">
             {/* 1st col */}
             <div className="flex flex-col  sm:px-0 px-4 space-y-5">
               <Box

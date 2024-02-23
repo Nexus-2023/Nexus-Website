@@ -78,39 +78,12 @@ function ResponsiveAppBar() {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // const target = ref.current
-    // if (target) {
-    //   gsap.to(
-    //     target,
-    //     {
-    //       // delay: 3.5,
-    //       opacity: 1,
-    //       y: -40,
-    //       ease: "power2.inOut",
-    //     }
-    //     // {
-    //     //   // delay: 3.5,
-    //     //   opacity: 1,
-    //     //   y: 0,
-    //     //   duration: 1,
-    //     //   ease: "power2.inOut",
-    //     // }
-    //   )
-    // }
-
     window.addEventListener("scroll", handleScroll)
 
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [navbarRef])
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
 
   return (
     <div className="flex justify-center  " ref={ref}>
@@ -204,7 +177,7 @@ function ResponsiveAppBar() {
                     sx={{
                       px: "8px",
                       fontSize: "16px",
-                      fontWeight: 100,
+                      fontWeight: 500,
                     }}
                   >
                     {page}
@@ -249,9 +222,9 @@ function ResponsiveAppBar() {
               sx={{
                 color: "#77C3F8",
                 textTransform: "capitalize",
-                fontSize: "16px", // Default font size
+                fontSize: "16px",
                 "@media screen and (max-width: 400px)": {
-                  fontSize: "12px", // Adjust font size for screens less than 500px wide
+                  fontSize: "12px",
                 },
               }}
             >

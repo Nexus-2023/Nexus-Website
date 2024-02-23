@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="  mx-auto   ">
+        <div className="  mx-auto  border-2  ">
           <ResponsiveAppBar />
           {children}
         </div>

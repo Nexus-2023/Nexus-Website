@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
@@ -34,7 +36,7 @@ const SmoothScroll: React.FC = () => {
       const smoothScroll = (
         content: HTMLElement,
         viewport: HTMLElement,
-        smoothness: number = 3
+        smoothness: number = 1
       ) => {
         gsap.set(viewport || content.parentNode!, {
           overflow: "hidden",
@@ -55,7 +57,7 @@ const SmoothScroll: React.FC = () => {
         let killScrub = (trigger: any) => {
           let scrub = trigger.getTween
             ? trigger.getTween()
-            : gsap.getTweensOf(trigger.animation)[0] // getTween() was added in 3.6.2
+            : gsap.getTweensOf(trigger.animation)[0]
           scrub && scrub.pause()
           trigger.animation.progress(trigger.progress)
         }
@@ -149,7 +151,7 @@ const SmoothScroll: React.FC = () => {
       ref={viewportRef}
       className=" overflow-hidden fixed h-full w-full top-0 bottom-0 right-0 left-0   "
     >
-      <div ref={contentRef} className="  ">
+      <div ref={contentRef}>
         <div className="box  ">
           <HomePage />
           <WorkPage />

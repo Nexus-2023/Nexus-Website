@@ -10,7 +10,7 @@
 
 
 html, body {
-  height: 100%;
+ 
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ html, body {
 body {
   color: white;
   background: #01080F;
-  scroll-snap-type: mandatory;
+
  
 }
 
@@ -28,7 +28,7 @@ body {
 ::-webkit-scrollbar {
   width:4px; /* Set the width of the scrollbar */
   height: 4px; 
-  scroll-snap-type: mandatory;
+
 }
 
 /* Handle */

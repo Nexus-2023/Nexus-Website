@@ -30,7 +30,7 @@ export function WorkPage() {
 
           scrollTrigger: {
             trigger: boxRef.current,
-            start: "top top",
+            start: "top 80%",
             end: "center center",
             toggleActions: "play none none reverse",
           },

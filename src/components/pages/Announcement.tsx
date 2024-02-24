@@ -61,7 +61,7 @@ export function AnnouncementPage() {
 
             <Partners />
 
-            <div className=" w-full h-full  px-16  flex flex-col    py-16    max-w-screen-xl   ">
+            <div className=" w-full h-full  md:px-16 px-8 flex flex-col    py-16    max-w-screen-xl   ">
               <h1 className=" text-yellow-500 text-lg mb-3" id="h2">
                 Announcements
               </h1>

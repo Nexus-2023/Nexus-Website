@@ -29,8 +29,8 @@ export const announcementData = [
   {
     heading: "Received USD 60k grant",
     paragraph:
-      "Lorem ipsum dolor sit amet consectetur. Volutpat aliquam mauris vel sem leo ullamcorper pharetra. Faucibus sit nec feugiat in eu ut.",
-    link: "",
+      "We're proud to collaborate with Ethereum's leading decentralised ETH Staking platform SSV Network",
+    link: "https://forum.ssv.network/t/ssv-x-nexus-network-grant-proposal-layer-2-onboarding-and-staking-infrastructure/1142",
   },
 ]
 

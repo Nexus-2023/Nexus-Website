@@ -43,7 +43,7 @@ interface PartnerCardProps {
 export function AnnounceCard({ h1, p, link }: AnnounceCardProps) {
   return (
     <div
-      className=" space-y-5 flex   space-x-4    h-full     lg:min-w-[20vw] min-w-[45vw] flex-col justify-start items-start  "
+      className=" space-y-5 flex   space-x-4    h-full      lg:min-w-[20vw] min-w-[45vw] flex-col justify-start items-start  "
       id="announcementCard"
     >
       <div className="flex flex-col justify-between  min-h-64  px-4 py-4">
@@ -70,7 +70,7 @@ export function YieldCard({
 }: YeildCardProps) {
   return (
     <div
-      className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  "
+      className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  mb-12 "
       id="yeildCard"
     >
       <img

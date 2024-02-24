@@ -36,14 +36,14 @@ export const announcementData = [
 
 export const partnerData = [
   {
-    src: ssv,
+    src: "/Images/partnerIcon1.svg",
     text: "DVT Partner",
 
     width: 150,
     height: 150,
   },
   {
-    src: nexusMutual,
+    src: "/Images/partnerIcon2.svg",
     text: "INSURANCE Partner",
 
     width: 150,
@@ -51,7 +51,7 @@ export const partnerData = [
   },
 
   {
-    src: chainproof,
+    src: "/Images/partnerIcon3.svg",
     text: "INSURANCE Partner",
 
     width: 200,
@@ -61,21 +61,21 @@ export const partnerData = [
 
 export const yeildData = [
   {
-    src: EthIcon,
+    src: "/Images/icon1.svg",
     heading: "Eth Staking",
     range: "4-5%",
     width: 50,
     height: 50,
   },
   {
-    src: coinsIcon,
+    src: "/Images/icon2.svg",
     heading: "Re Staking",
     range: "4-5%",
     width: 180,
     height: 180,
   },
   {
-    src: layerIcon,
+    src: "/Images/icon3.svg",
     heading: "Stablecoin Yeilds",
     range: "4-5%",
     width: 140,
@@ -85,21 +85,21 @@ export const yeildData = [
 
 export const TeamData = [
   {
-    src: p1,
+    src: "/Images/mayank_profile.svg",
     name: "Mayank Raj",
     title: "CEO",
     twitterlink: "https://twitter.com/mnkrj500",
     linkedinlink: "https://www.linkedin.com/in/mayank-raj/",
   },
   {
-    src: p2,
+    src: "/Images/rohit_profile.svg",
     name: "Rohit Aggarwal",
     title: "CTO",
     twitterlink: "https://twitter.com/RohitZoro_eth",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
   },
   {
-    src: p3,
+    src: "/Images/ashish_profile.svg",
     name: "Ashish Gupta",
     title: "COO",
     twitterlink: "https://twitter.com/ashishkumar_19",

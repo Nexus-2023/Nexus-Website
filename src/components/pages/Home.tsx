@@ -1,8 +1,7 @@
 import React from "react"
 
-import Image from "next/image"
 import { useEffect, useRef } from "react"
-import hero from "/public/Images/Hero-image.webp"
+
 import {
   TextRevealAnimation,
   TextRevealAnimation2,
@@ -11,7 +10,6 @@ import {
 } from "../ui/TextAnimation"
 import gsap from "gsap"
 export function HomePage() {
-  const buttonRef = useRef<HTMLDivElement>(null)
   const ImageRef = useRef<any>(null)
   useEffect(() => {
     const target2 = ImageRef.current
@@ -56,15 +54,15 @@ export function HomePage() {
     <div
       className={`h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
     >
-      <Image
-        src={hero}
-        width={0}
-        height={0}
-        style={{ width: "100%", height: "100%" }}
+      <img
+        src="/Images/Hero-image.webp"
+        width="100%"
+        height="100%"
         alt="Nexus design diagram"
         className=" aspect-video  absolute -z-20 opacity-0"
         ref={ImageRef}
       />
+
       {/* web */}
       <div className=" ">
         <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">

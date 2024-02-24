@@ -12,24 +12,11 @@ import {
 import Footer from "@/components/ui/Footer"
 
 import React, { useRef, useEffect, useState, useCallback } from "react"
-
+import SmoothScroll from "@/components/pages/SmoothScroll"
 export default function Home() {
   return (
     <div>
-      {/* <SmoothScroll /> */}
-      <HomePage />
-      <WorkPage />
-
-      <DemoPage />
-
-      <AnnouncementPage />
-      <FeaturePage />
-
-      <YieldPage />
-
-      <TeamPage />
-
-      <Footer />
+      <SmoothScroll />
     </div>
   )
 }

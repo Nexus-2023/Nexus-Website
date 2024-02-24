@@ -30,10 +30,9 @@ export default function Footer() {
 
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "-=500",
+            start: "top 80%",
             end: "center center",
             toggleActions: "play none none reverse",
-            markers: true,
           },
         }
       )
@@ -43,7 +42,7 @@ export default function Footer() {
 
   return (
     <div
-      className={`justify-center items-center flex  z-10  border-2  md:px-16 px-0  mx-auto   `}
+      className={`justify-center items-center flex  z-10     md:px-16 px-0  mx-auto   `}
       ref={containerRef}
     >
       <div className="h-full   w-full lg:p-16 py-24 flex     items-center   relative       ">
@@ -51,10 +50,10 @@ export default function Footer() {
         <div className=" w-full    px-8 flex md:flex-row flex-col justify-center">
           <div className="  w-full justify-center flex" id="c1">
             <div className="flex flex-col space-y-4">
-              <Image
-                src={logo}
-                width={120}
-                height={120}
+              <img
+                src="/Images/logo.png"
+                width="120px"
+                height="120px"
                 alt="effect"
                 className=" "
               />

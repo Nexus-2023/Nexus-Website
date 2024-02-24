@@ -1,8 +1,5 @@
 import React from "react"
 
-import demo from "/public/Images/demo_btn.svg"
-import Image from "next/image"
-
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
@@ -35,8 +32,7 @@ export function DemoPage() {
             trigger: demoContainerRef.current,
             start: "top top",
             end: "center center",
-            // toggleActions: "play none none reverse",
-            markers: true,
+            toggleActions: "play none none reverse",
           },
         }
       )
@@ -67,7 +63,7 @@ export function DemoPage() {
 
   return (
     <div
-      className={`justify-center items-center flex  z-10  border-2  md:px-16 px-0  mx-auto`}
+      className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
       ref={demoContainerRef}
     >
       <div className="h-full   w-full  py-40 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2  border-[#0D1820]   flex-col  ">
@@ -76,7 +72,12 @@ export function DemoPage() {
           id="glowEffect"
         />
         <div className="justify-center items-center mb-4" id="demoBtn">
-          <Image src={demo} width={90} height={90} alt="demo button" />
+          <img
+            src="/Images/demo_btn.svg"
+            width="90px"
+            height="90px"
+            alt="demo button"
+          />
         </div>
 
         <div id="heading">

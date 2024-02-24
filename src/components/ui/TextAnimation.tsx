@@ -53,7 +53,7 @@ export const TextRevealAnimation = () => {
   return (
     <h1
       ref={ref}
-      className="text-7xl font-bold bg-clip-text text-transparent backdrop-blur py-4  "
+      className="text-7xl font-bold bg-clip-text text-transparent backdrop-blur py-4  text-center "
     >
       <span>Eco</span>
       <span>nomic</span>
@@ -285,26 +285,6 @@ export const MobileTextRevealAnimation2 = () => {
       <span>y</span>
     </p>
   )
-}
-
-{
-  /* <span>Implement</span>
- 
-<span>native</span>
- 
-<span>yeilds</span>
-<span>on</span>
-<span>your</span>
-<span>rollu</span>
-<span>in</span>
-<span>a</span>
-<span>secure</span>
-
-  <span>and</span>
-  <span>non</span>
-  <span>-</span>
-  <span>custodial</span>
-  <span>way</span> */
 }
 
 // import React, { useEffect, useRef } from "react"

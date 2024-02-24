@@ -1,7 +1,12 @@
 import React from "react"
 import d1 from "/public/Images/d1.svg"
 import Image from "next/image"
+import { useRef } from "react"
 
+import gsap, { Power2 } from "gsap"
+
+import { useGSAP } from "@gsap/react"
+import ScrollTrigger from "gsap/ScrollTrigger"
 interface BoxProps {
   src: string
   t1: string
@@ -11,13 +16,14 @@ interface BoxProps {
 }
 
 export function Box({ src, t1, t2, iw, ih }: BoxProps) {
+  gsap.registerPlugin(ScrollTrigger)
+
   return (
     <div
-      className={`px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]    border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center  `}
-      id="BoxContainer"
+      className={`BoxContainerFeatures px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]    border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center  `}
     >
       <div>
-        <Image src={src} width={iw} height={ih} alt="box image" />
+        <img src={src} width={iw} height={ih} alt="box image" />
       </div>
 
       <div className="  h-[0.2rem]   min-h-max w-full  max-w-64  bg-gradient-to-br  from-[#141b22]   to-[#2776c0]  mb-4  mt-4" />
@@ -31,12 +37,9 @@ export function Box({ src, t1, t2, iw, ih }: BoxProps) {
 
 export function FullBox({ src, t1, t2, iw, ih }: BoxProps) {
   return (
-    <div
-      className=" px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]  border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center   "
-      id="FullBoxContainer"
-    >
+    <div className="BoxContainerFeatures px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[#0F1923]   to-[#1B2630]  border-8 border-[#28333d] rounded-2xl    border-double flex justify-center items-center   ">
       <div>
-        <Image src={src} width={iw} height={ih} alt="box image" />
+        <img src={src} width={iw} height={ih} alt="box image" />
       </div>
 
       <div className="h-[0.2rem]  min-h-max w-full  max-w-64  bg-gradient-to-br  from-[#141b22]   to-[#2776c0]  mb-4  mt-4" />

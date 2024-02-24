@@ -35,8 +35,7 @@ export function AnnouncementPage() {
             trigger: announceContainerRef.current,
             start: "top top",
             end: "center center",
-            // toggleActions: "play none none reverse",
-            markers: true,
+            toggleActions: "play none none reverse",
           },
         }
       )
@@ -46,7 +45,7 @@ export function AnnouncementPage() {
 
   return (
     <div
-      className={`justify-center items-center flex  z-10   border-2   md:px-16       mx-auto`}
+      className={`justify-center items-center flex  z-10     md:px-16       mx-auto`}
       ref={announceContainerRef}
     >
       <div className="h-full w-full relative   border-x-2  border-t-2  border-[#0D1820]  py-40  ">

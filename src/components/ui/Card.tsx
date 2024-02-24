@@ -6,7 +6,10 @@ import Image from "next/image"
 
 import linkedin from "/public/Images/linkedinIcon.svg"
 import twitter from "/public/Images/twitterIcon.svg"
-
+import { useEffect, useRef } from "react"
+import ScrollTrigger from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react"
+import { gsap } from "gsap"
 interface AnnounceCardProps {
   h1: string
   p: string
@@ -67,16 +70,17 @@ export function YieldCard({
 }: YeildCardProps) {
   return (
     <div
-      className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0 mb-16"
+      className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  "
       id="yeildCard"
     >
-      <Image
+      <img
         src={src}
         width={width}
         height={height}
         alt="yeild icons"
         className=" mb-2  "
       />
+
       <h1 className="md:text-2xl    text-2xl  text-wrap text-center ">
         {" "}
         {heading}
@@ -89,7 +93,8 @@ export function YieldCard({
 export function PartnersCard({ src, text, width, height }: PartnerCardProps) {
   return (
     <div className=" space-y-5 flex flex-col w-full  lg:max-w-[20vw] justify-center items-center">
-      <Image src={src} width={width} height={height} alt="partner icon" />
+      {/* <Image src={src} width={width} height={height} alt="partner icon" /> */}
+      <img src={src} width={width} height={height} alt="partner icon" />
       <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[#141b22]   to-[#2776c0]  mb-4  mt-4" />
 
       <h3 className=" text-gray-400 text-xl ">{text}</h3>
@@ -106,14 +111,13 @@ export function TeamCard({
 }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center" id="teamCard">
-      <Image
+      <img
         src={src}
-        width={150}
-        height={150}
+        width="150px"
+        height="150px"
         alt="profile pic"
         className=" "
       />
-
       <h1 className="text-xl font-semibold text-blue-50 mb-2">{name}</h1>
       <h1 className=" text-xl text-gray-400 mb-2">{title}</h1>
 
@@ -123,10 +127,10 @@ export function TeamCard({
           target="_blank"
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
-          <Image
-            src={twitter}
-            width={40}
-            height={40}
+          <img
+            src="/Images/twitterIcon.svg"
+            width="40px"
+            height="40px"
             alt="twitter icon"
             className=" "
           />
@@ -137,10 +141,10 @@ export function TeamCard({
           target="_blank"
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
-          <Image
-            src={linkedin}
-            width={40}
-            height={40}
+          <img
+            src="/Images/linkedinIcon.svg"
+            width="40px"
+            height="40px"
             alt="linkedin icon"
             className=" "
           />

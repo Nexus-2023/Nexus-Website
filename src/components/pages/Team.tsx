@@ -33,7 +33,7 @@ export function TeamPage() {
 
           scrollTrigger: {
             trigger: teamContainerRef.current,
-            start: "-10% top",
+            start: "top center",
             end: "center center",
             toggleActions: "play none none reverse",
           },

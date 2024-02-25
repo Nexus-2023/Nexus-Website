@@ -19,7 +19,7 @@ import MenuIcon from "@mui/icons-material/Menu"
 
 import Image from "next/image"
 import { useEffect, useState, useRef } from "react"
-import { logo } from "../../../public/Images/images"
+import logo from "/public/Images/logo.png"
 
 import gsap, { Power2 } from "gsap"
 const pages = ["Home", "About", "Docs", "contact"]

@@ -39,8 +39,8 @@ export const partnerData = [
     src: "/Images/partnerIcon1.svg",
     text: "DVT Partner",
 
-    width: 150,
-    height: 150,
+    width: 200,
+    height: 200,
   },
   {
     src: "/Images/partnerIcon2.svg",
@@ -51,35 +51,35 @@ export const partnerData = [
   },
 
   {
-    src: "/Images/partnerIcon3.svg",
+    src: "/Images/partnerIcon3.png",
     text: "INSURANCE Partner",
 
-    width: 200,
-    height: 200,
+    width: 320,
+    height: 320,
   },
 ]
 
 export const yeildData = [
   {
-    src: "/Images/icon1.svg",
+    src: "/Images/icon1.png",
     heading: "Eth Staking",
     range: "4-5%",
-    width: 50,
-    height: 50,
+    width: 60,
+    height: 60,
+  },
+  {
+    src: "/Images/icon2.png",
+    heading: "Re Staking",
+    range: "4-5%",
+    width: 160,
+    height: 160,
   },
   {
     src: "/Images/icon2.svg",
-    heading: "Re Staking",
-    range: "4-5%",
-    width: 180,
-    height: 180,
-  },
-  {
-    src: "/Images/icon3.svg",
     heading: "Stablecoin Yeilds",
     range: "4-5%",
-    width: 140,
-    height: 140,
+    width: 200,
+    height: 200,
   },
 ]
 

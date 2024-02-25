@@ -23,6 +23,15 @@ body {
  
 }
 
+.Home {
+ 
+  background-image: url("/Images/Hero-image.webp");
+  background-size: cover;
+  background-position: center;
+ 
+ 
+}
+
  
  /* Scrollbar Track */
 ::-webkit-scrollbar {

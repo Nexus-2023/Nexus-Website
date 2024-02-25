@@ -12,8 +12,6 @@ import gsap from "gsap"
 export function HomePage() {
   const ImageRef = useRef<any>(null)
   useEffect(() => {
-    const target2 = ImageRef.current
-
     gsap.fromTo(
       "#launchBtn",
 
@@ -33,7 +31,7 @@ export function HomePage() {
     )
 
     gsap.fromTo(
-      ".backgroundEffect",
+      ".Home",
       {
         opacity: 0,
         y: -20,
@@ -50,33 +48,8 @@ export function HomePage() {
 
   return (
     <div
-      className={`h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
+      className={`Home h-full min-h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
     >
-      <img
-        src="/Images/Hero-image.webp"
-        width="100%"
-        height="100%"
-        alt="Nexus design diagram"
-        className="backgroundEffect aspect-video max-h-[100vh]  absolute -z-20 opacity-0 hidden 2xl:block"
-      />
-
-      <img
-        src="/Images/effectSquare.jpg"
-        width="100%"
-        height="100%"
-        alt="Nexus design diagram"
-        // className="  aspect-square  absolute -z-20 opacity-0 hidden lg:block"
-        className="backgroundEffect  aspect-square max-h-[100vh] absolute -z-20  opacity-0  lg:block 2xl:hidden max-w-screen-lg"
-      />
-
-      <img
-        src="/Images/effectSquare.jpg"
-        width="100%"
-        height="100%"
-        alt="Nexus design diagram"
-        className="backgroundEffect max-h-[100vh] aspect-auto absolute -z-20  lg:hidden  "
-      />
-
       {/* web */}
       <div className=" ">
         <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">

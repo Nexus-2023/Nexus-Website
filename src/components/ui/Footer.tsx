@@ -89,14 +89,6 @@ export default function Footer() {
               >
                 Linkedin
               </Link>
-
-              <Link
-                href={""}
-                target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[#77C3F8] duration-300  transition-all  ease-in-out"
-              >
-                Instagram
-              </Link>
             </div>
 
             <div className="flex flex-col " id="c3">

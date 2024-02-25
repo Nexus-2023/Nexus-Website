@@ -69,7 +69,7 @@ export function HomePage() {
               <button
                 className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
               >
-                Launch App
+                Schedule Call
               </button>
             </div>
           </div>
@@ -89,7 +89,7 @@ export function HomePage() {
             <button
               className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
             >
-              Launch App
+              Schedule Call
             </button>
           </div>
         </div>

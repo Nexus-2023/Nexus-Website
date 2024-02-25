@@ -51,7 +51,7 @@ export const partnerData = [
   },
 
   {
-    src: "/Images/partnerIcon3.png",
+    src: "/Images/partnericon3.png",
     text: "INSURANCE Partner",
 
     width: 320,

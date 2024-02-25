@@ -57,7 +57,7 @@ export function HomePage() {
         width="100%"
         height="100%"
         alt="Nexus design diagram"
-        className="backgroundEffect aspect-video  absolute -z-20 opacity-0 hidden 2xl:block"
+        className="backgroundEffect aspect-video max-h-[100vh]  absolute -z-20 opacity-0 hidden 2xl:block"
       />
 
       <img
@@ -66,7 +66,7 @@ export function HomePage() {
         height="100%"
         alt="Nexus design diagram"
         // className="  aspect-square  absolute -z-20 opacity-0 hidden lg:block"
-        className="backgroundEffect  aspect-square  absolute -z-20  opacity-0  lg:block 2xl:hidden max-w-screen-lg"
+        className="backgroundEffect  aspect-square max-h-[100vh] absolute -z-20  opacity-0  lg:block 2xl:hidden max-w-screen-lg"
       />
 
       <img
@@ -74,7 +74,7 @@ export function HomePage() {
         width="100%"
         height="100%"
         alt="Nexus design diagram"
-        className="backgroundEffect  aspect-auto absolute -z-20  lg:hidden  "
+        className="backgroundEffect max-h-[100vh] aspect-auto absolute -z-20  lg:hidden  "
       />
 
       {/* web */}

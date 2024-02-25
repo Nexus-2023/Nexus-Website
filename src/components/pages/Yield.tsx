@@ -7,6 +7,9 @@ import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
+import { BeatLoader } from "react-spinners"
+
+import { Suspense } from "react"
 export function YieldPage() {
   gsap.registerPlugin(ScrollTrigger)
   const yeildContainerRef = useRef<HTMLDivElement>(null)
@@ -41,7 +44,7 @@ export function YieldPage() {
   )
 
   return (
-    <div>
+    <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
       <div
         className={`justify-center items-center flex  z-10    md:px-16 px-0  overflow-hidden `}
         ref={yeildContainerRef}
@@ -94,6 +97,6 @@ export function YieldPage() {
           </div>
         </div>
       </div>
-    </div>
+    </Suspense>
   )
 }

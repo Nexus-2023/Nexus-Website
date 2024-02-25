@@ -14,6 +14,7 @@ import {
 } from "@/components/pages"
 import Footer from "../ui/Footer"
 import { useGSAP } from "@gsap/react"
+
 gsap.registerPlugin(ScrollTrigger)
 
 const SmoothScroll: React.FC = () => {
@@ -36,7 +37,7 @@ const SmoothScroll: React.FC = () => {
       const smoothScroll = (
         content: HTMLElement,
         viewport: HTMLElement,
-        smoothness: number = 1
+        smoothness: number = 3
       ) => {
         gsap.set(viewport || content.parentNode!, {
           overflow: "hidden",
@@ -160,7 +161,6 @@ const SmoothScroll: React.FC = () => {
           <DemoPage />
           <AnnouncementPage />
           <TeamPage />
-
           <Footer />
         </div>
       </div>

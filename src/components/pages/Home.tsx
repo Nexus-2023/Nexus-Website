@@ -9,8 +9,11 @@ import {
   MobileTextRevealAnimation2,
 } from "../ui/TextAnimation"
 import gsap from "gsap"
+import { BeatLoader } from "react-spinners"
+
+import { Suspense } from "react"
+
 export function HomePage() {
-  const ImageRef = useRef<any>(null)
   useEffect(() => {
     gsap.fromTo(
       "#launchBtn",
@@ -35,30 +38,50 @@ export function HomePage() {
       {
         opacity: 0,
         y: -20,
-        ease: "power2.inOut",
       },
       {
         opacity: 1,
         y: 0,
-        duration: 1,
+        duration: 1.5,
         ease: "power2.inOut",
       }
     )
   }, [])
 
   return (
-    <div
-      className={`Home h-full min-h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
-    >
-      {/* web */}
-      <div className=" ">
-        <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">
-          <div className=" px-4 py-4">
-            <TextRevealAnimation />
+    <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
+      <div
+        className={`Home h-full min-h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
+      >
+        {/* web */}
+        <div className=" ">
+          <div className="  justify-center items-center space-y-8 lg:flex lg:flex-col   hidden">
+            <div className=" px-4 py-4">
+              <TextRevealAnimation />
+            </div>
+
+            <div className="">
+              <TextRevealAnimation2 />
+            </div>
+
+            <div className="opacity-0" id="launchBtn">
+              <button
+                className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
+              >
+                Launch App
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* mobile */}
+        <div className="  justify-center items-center space-y-12 lg:hidden  flex flex-col">
+          <div className="">
+            <MobileTextRevealAnimation />
           </div>
 
           <div className="">
-            <TextRevealAnimation2 />
+            <MobileTextRevealAnimation2 />
           </div>
 
           <div className="opacity-0" id="launchBtn">
@@ -70,25 +93,6 @@ export function HomePage() {
           </div>
         </div>
       </div>
-
-      {/* mobile */}
-      <div className="  justify-center items-center space-y-12 lg:hidden  flex flex-col">
-        <div className="">
-          <MobileTextRevealAnimation />
-        </div>
-
-        <div className="">
-          <MobileTextRevealAnimation2 />
-        </div>
-
-        <div className="opacity-0" id="launchBtn">
-          <button
-            className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
-          >
-            Launch App
-          </button>
-        </div>
-      </div>
-    </div>
+    </Suspense>
   )
 }

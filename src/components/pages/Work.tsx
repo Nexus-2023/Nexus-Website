@@ -7,7 +7,10 @@ import { gsap } from "gsap"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
+import dynamic from "next/dynamic"
+import { BeatLoader } from "react-spinners"
 
+import { Suspense } from "react"
 export function WorkPage() {
   gsap.registerPlugin(ScrollTrigger)
 
@@ -47,7 +50,7 @@ export function WorkPage() {
     >
       <div className=" h-full -z-20   bg-[#010305] w-full relative  md:py-24    md:border-x-2 md:border-t-2 border-[#0D1820]   ">
         <div
-          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[#38598a51] rounded-2xl blur-3xl  -z-20 "
+          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[#38598a17] rounded-2xl blur-3xl  -z-20 "
           id="glowEffect1"
         />
         <div
@@ -64,14 +67,16 @@ export function WorkPage() {
           className="flex items-center justify-center   -z-10  "
           id="workImage"
         >
-          <Image
-            src={diagram}
-            width={0}
-            height={0}
-            style={{ width: "100%", height: "100%" }}
-            alt="Nexus design diagram"
-            className=" aspect-video  max-w-screen-xl "
-          />
+          <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
+            <Image
+              src={diagram}
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "100%" }}
+              alt="Nexus design diagram"
+              className=" aspect-video  max-w-screen-xl "
+            />
+          </Suspense>
         </div>
       </div>
     </div>

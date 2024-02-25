@@ -44,11 +44,11 @@ export function YieldPage() {
   )
 
   return (
-    <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
-      <div
-        className={`justify-center items-center flex  z-10    md:px-16 px-0  overflow-hidden `}
-        ref={yeildContainerRef}
-      >
+    <div
+      className={`justify-center items-center flex  z-10    md:px-16 px-0  overflow-hidden `}
+      ref={yeildContainerRef}
+    >
+      <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
         <div className="h-full w-full   flex  justify-center items-center  relative  py-24  border-x-2  border-t-2 border-[#0D1820]    flex-col  ">
           <div
             className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[#38598a2c]  rounded-2xl blur-3xl  -z-20 "
@@ -96,7 +96,7 @@ export function YieldPage() {
             </div>
           </div>
         </div>
-      </div>
-    </Suspense>
+      </Suspense>
+    </div>
   )
 }

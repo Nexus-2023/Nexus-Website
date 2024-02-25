@@ -41,44 +41,43 @@ export function FeaturePage() {
     { scope: featureContainerRef }
   )
   return (
-    <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
+    <div
+      className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
+    >
       <div
-        className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
+        className="h-full  w-full     flex  py-32  items-center  relative    border-x-2  border-t-2  border-[#0D1820]    flex-col  "
+        ref={featureContainerRef}
       >
         <div
-          className="h-full  w-full     flex  py-32  items-center  relative    border-x-2  border-t-2  border-[#0D1820]    flex-col  "
-          ref={featureContainerRef}
-        >
-          <div
-            className="absolute top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2   w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 "
-            id="glowEffect2"
+          className="absolute top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2   w-[20%] h-[80%] bg-[#38598a2c] rounded-2xl blur-3xl  -z-20 "
+          id="glowEffect2"
+        />
+        <div className="justify-center" id="featuresBtn">
+          <img
+            src="/Images/feature_btn.svg"
+            width="110"
+            height="110"
+            className="mb-6"
           />
-          <div className="justify-center" id="featuresBtn">
-            <img
-              src="/Images/feature_btn.svg"
-              width="110"
-              height="110"
-              className="mb-6"
-            />
-          </div>
+        </div>
 
-          <div className="" id="heading_f">
-            <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
-              {" "}
-              Why you should use Nexus Network for Rollups
-            </h1>
-          </div>
+        <div className="" id="heading_f">
+          <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
+            {" "}
+            Why you should use Nexus Network for Rollups
+          </h1>
+        </div>
 
-          <div
-            className="sm:text-lg text-md text-gray-500 xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center"
-            id="paragraph_f"
-          >
-            <p>
-              Rollups can integrate with Nexus Network within minutes to earn
-              yields in a secure and non-custodial way
-            </p>
-          </div>
-
+        <div
+          className="sm:text-lg text-md text-gray-500 xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center"
+          id="paragraph_f"
+        >
+          <p>
+            Rollups can integrate with Nexus Network within minutes to earn
+            yields in a secure and non-custodial way
+          </p>
+        </div>
+        <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
           <div className=" h-full w-full  flex  justify-center items-center mt-24   ">
             {/* boxes */}
             <div className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4  ">
@@ -211,8 +210,8 @@ export function FeaturePage() {
               </div>
             </div>
           </div>
-        </div>
+        </Suspense>
       </div>
-    </Suspense>
+    </div>
   )
 }

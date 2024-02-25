@@ -49,14 +49,14 @@ export function TeamPage() {
 
   return (
     <>
-      <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
+      <div
+        className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
+      >
         <div
-          className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
+          className="h-full w-full   border-2    flex justify-center   py-24 border-[#0D1820]"
+          ref={teamContainerRef}
         >
-          <div
-            className="h-full w-full   border-2    flex justify-center   py-24 border-[#0D1820]"
-            ref={teamContainerRef}
-          >
+          <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
             <div className="     items-center   w-full  max-w-7xl    px-0 flex flex-col">
               <img
                 src="/Images/team_btn.svg"
@@ -90,9 +90,9 @@ export function TeamPage() {
                 ))}
               </div>
             </div>
-          </div>
+          </Suspense>
         </div>
-      </Suspense>
+      </div>
     </>
   )
 }

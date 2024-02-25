@@ -65,6 +65,7 @@ export function DemoPage() {
     <div
       className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
       ref={demoContainerRef}
+      id="DemoPage"
     >
       <div className="h-full   w-full  py-40 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2  border-[#0D1820]   flex-col  ">
         <div

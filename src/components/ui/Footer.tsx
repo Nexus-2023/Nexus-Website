@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
-
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 export default function Footer() {
   gsap.registerPlugin(ScrollTrigger)
   const containerRef = useRef(null)
@@ -44,8 +44,12 @@ export default function Footer() {
     <div
       className={`justify-center items-center flex  z-10     md:px-16 px-0  mx-auto   `}
       ref={containerRef}
+      id="Footer"
     >
-      <div className="h-full   w-full lg:p-16 py-24 flex     items-center   relative       ">
+      <div
+        className="h-full   w-full lg:p-16 py-24 flex     items-center   relative       "
+        id="FooterM"
+      >
         {/* <div className=" w-full    xl:space-x-80   lg:space-x-40   md:space-x-32   sm:space-x-28 space-x-16  px-8 flex md:flex-row flex-col justify-center"> */}
         <div className=" w-full    px-8 flex md:flex-row flex-col justify-center">
           <div className="  w-full justify-center flex" id="c1">
@@ -106,13 +110,17 @@ export default function Footer() {
                 Documentation
               </Link>
 
-              <Link
-                href={""}
-                target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[#77C3F8] duration-300  transition-all  ease-in-out"
-              >
-                Demo
-              </Link>
+              <div className="sm:text-lg text-sm mb-2 hover:text-[#77C3F8] duration-300  transition-all  ease-in-out">
+                <ScrollLink
+                  to="DemoPage"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  Demo
+                </ScrollLink>
+              </div>
             </div>
           </div>
         </div>

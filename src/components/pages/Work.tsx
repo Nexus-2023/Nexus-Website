@@ -47,10 +47,11 @@ export function WorkPage() {
     <div
       className={`justify-center items-center flex  z-10  md:px-16  mx-auto`}
       ref={boxRef}
+      id="WorkPage"
     >
       <div className=" h-full -z-20   bg-[#010305] w-full relative  md:py-24    md:border-x-2 md:border-t-2 border-[#0D1820]   ">
         <div
-          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[#38598a17] rounded-2xl blur-3xl  -z-20 "
+          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[50%] bg-[#38598a17] rounded-2xl blur-3xl  -z-20 "
           id="glowEffect1"
         />
         <div

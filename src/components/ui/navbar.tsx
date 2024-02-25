@@ -2,18 +2,7 @@
 
 import * as React from "react"
 
-import {
-  Box,
-  Toolbar,
-  IconButton,
-  Typography,
-  Menu,
-  Container,
-  Avatar,
-  Button,
-  MenuItem,
-  Tooltip,
-} from "@mui/material"
+import { Box, Toolbar, IconButton, Menu, Button, MenuItem } from "@mui/material"
 
 import MenuIcon from "@mui/icons-material/Menu"
 
@@ -22,11 +11,23 @@ import { useEffect, useState, useRef } from "react"
 import logo from "/public/Images/logo.png"
 
 import gsap, { Power2 } from "gsap"
-const pages = ["Home", "About", "Docs", "contact"]
 import { Flip } from "gsap/Flip"
+import { Link, animateScroll as scroll } from "react-scroll"
+
 gsap.registerPlugin(Flip)
 
 function ResponsiveAppBar() {
+  const openCalendly = () => {
+    // ;(window as any).Calendly.initPopupWidget({
+    //   url: "https://calendly.com/mnkrj500/30min",
+    // })
+    // ;(window as any).Calendly.showPopupWidget()
+    ;(window as any).Calendly.initPopupWidget({
+      url: "https://calendly.com/mnkrj500/30min",
+    })
+    return false
+  }
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
 
   const navbarRef = useRef<HTMLDivElement>(null)
@@ -36,6 +37,18 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null)
+  }
+
+  const scrollToSection = (targetId: string) => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: `#${targetId}`,
+      ease: "power2.inOut",
+    })
+  }
+
+  const handleLinkClick = (targetId: string) => {
+    scrollToSection(targetId)
   }
 
   const handleScroll = () => {
@@ -145,7 +158,7 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: "block", md: "none" },
                 mt: "1px",
-                // width: "100vw",
+
                 backdropFilter: "blur(5px)",
                 "& .MuiMenu-paper": {
                   backgroundColor: "#01080F",
@@ -153,10 +166,14 @@ function ResponsiveAppBar() {
                 },
               }}
             >
-              {pages.map(page => (
+              <Link
+                to="HomePage"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 <MenuItem
-                  key={page}
-                  onClick={handleCloseNavMenu}
                   sx={{
                     width: { sm: "80vw", xs: "90vw" },
 
@@ -172,18 +189,83 @@ function ResponsiveAppBar() {
                     },
                   }}
                 >
-                  <Typography
-                    textAlign="center"
-                    sx={{
-                      px: "8px",
-                      fontSize: "16px",
-                      fontWeight: 500,
-                    }}
-                  >
-                    {page}
-                  </Typography>
+                  Home
                 </MenuItem>
-              ))}
+              </Link>
+              <Link
+                to="WorkPage"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <MenuItem
+                  sx={{
+                    width: { sm: "80vw", xs: "90vw" },
+
+                    color: "white",
+                    py: "8px",
+                    backdropFilter: "blur(5px)",
+                    borderRadius: "8px",
+
+                    transition: "background 0.3s ease-in-out",
+
+                    ":hover": {
+                      background: "#77C3F8",
+                    },
+                  }}
+                >
+                  About
+                </MenuItem>
+              </Link>
+
+              <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+                <MenuItem
+                  sx={{
+                    width: { sm: "80vw", xs: "90vw" },
+
+                    color: "white",
+                    py: "8px",
+                    backdropFilter: "blur(5px)",
+                    borderRadius: "8px",
+
+                    transition: "background 0.3s ease-in-out",
+
+                    ":hover": {
+                      background: "#77C3F8",
+                    },
+                  }}
+                >
+                  Docs
+                </MenuItem>
+              </a>
+
+              <Link
+                to="Footer"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <MenuItem
+                  sx={{
+                    width: { sm: "80vw", xs: "90vw" },
+
+                    color: "white",
+                    py: "8px",
+                    backdropFilter: "blur(5px)",
+                    borderRadius: "8px",
+
+                    transition: "background 0.3s ease-in-out",
+
+                    ":hover": {
+                      background: "#77C3F8",
+                    },
+                  }}
+                >
+                  Contact
+                </MenuItem>
+              </Link>
             </Menu>
           </Box>
 
@@ -207,14 +289,47 @@ function ResponsiveAppBar() {
 
           {/* Web Links */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map(page => (
-              <button
-                key={page}
-                className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out"
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+              <Link
+                to="HomePage"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
               >
-                {page}
-              </button>
-            ))}
+                Home
+              </Link>
+            </button>
+
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+              <Link
+                to="WorkPage"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                About
+              </Link>
+            </button>
+
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+              <a href="https://docs.nexusnetwork.co.in/" target="_blank">
+                Docs
+              </a>
+            </button>
+
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+              <Link
+                to="Footer"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -227,6 +342,7 @@ function ResponsiveAppBar() {
                   fontSize: "12px",
                 },
               }}
+              onClick={openCalendly}
             >
               Schedule a call
             </Button>

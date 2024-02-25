@@ -52,6 +52,7 @@ export function HomePage() {
     <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
       <div
         className={`Home h-full min-h-[100vh] justify-center items-center    border-x-2  border-t-2  border-[#0D1820]   md:mx-16 flex  z-10 relative `}
+        id="HomePage"
       >
         {/* web */}
         <div className=" ">

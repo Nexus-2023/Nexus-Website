@@ -47,12 +47,12 @@ export function AnnouncementPage() {
   )
 
   return (
-    <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
-      <div
-        className={`justify-center items-center flex  z-10     md:px-16       mx-auto`}
-        ref={announceContainerRef}
-      >
-        <div className="h-full w-full relative   border-x-2  border-t-2  border-[#0D1820]  py-40  ">
+    <div
+      className={`justify-center items-center flex  z-10     md:px-16       mx-auto`}
+      ref={announceContainerRef}
+    >
+      <div className="h-full w-full relative   border-x-2  border-t-2  border-[#0D1820]  py-40  ">
+        <Suspense fallback={<BeatLoader color="#36a1d6" size={20} />}>
           <div className="flex justify-center items-center   ">
             <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[50%] bg-[#38598a11] rounded-2xl blur-3xl  -z-20 " />
             <div className="flex flex-col space-y-10  justify-center items-center w-full  ">
@@ -90,8 +90,8 @@ export function AnnouncementPage() {
               </div>
             </div>
           </div>
-        </div>
+        </Suspense>
       </div>
-    </Suspense>
+    </div>
   )
 }

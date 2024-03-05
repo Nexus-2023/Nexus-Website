@@ -153,7 +153,7 @@ const SmoothScroll: React.FC = () => {
       className=" overflow-hidden fixed h-full w-full top-0 bottom-0 right-0 left-0   "
     >
       <div ref={contentRef}>
-        <div className="box  ">
+        <div className="box">
           <HomePage />
           <WorkPage />
           <FeaturePage />

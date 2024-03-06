@@ -1,33 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-gradient-from: white; /* your desired top color */
+  --gradient-to: #45ABF1; /* your desired bottom color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+html, body {
+ 
+  margin: 0;
+  padding: 0;
 }
 
+ 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background: #01080F;
+
+ 
 }
 
+.Home {
+ 
+  background-image: url("/Images/Hero-image.webp");
+  background-size: cover;
+  background-position: center;
+ 
+ 
+}
+
+ 
+ /* Scrollbar Track */
+::-webkit-scrollbar {
+  width:4px; /* Set the width of the scrollbar */
+  height: 4px; 
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #FFB82F; /* Set the color of the scrollbar handle */
+  border-radius: 8px; /* Set the border radius of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: 
+  #1a4380; /* Set the color of the scrollbar handle on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #3d4244; /* Set the color of the scrollbar track */
+}
+
+ 
+ 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+ies {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+es {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+ 

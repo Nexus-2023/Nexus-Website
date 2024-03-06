@@ -32,7 +32,7 @@ export function YieldPage() {
 
           scrollTrigger: {
             trigger: yeildContainerRef.current,
-            start: "-30% top",
+            start: "top 50%",
             end: "center center",
             toggleActions: "play none none reverse",
           },

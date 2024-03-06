@@ -31,7 +31,7 @@ export function FeaturePage() {
           duration: 1,
           scrollTrigger: {
             trigger: featureContainerRef.current,
-            start: "top top",
+            start: "top 50%",
             end: "center center",
             toggleActions: "play none none reverse",
           },

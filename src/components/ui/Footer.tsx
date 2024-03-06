@@ -8,6 +8,11 @@ import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 export default function Footer() {
+  const openCalendly = () => {
+    window.open("https://calendly.com/mnkrj500/30min", "_blank")
+    return false
+  }
+
   gsap.registerPlugin(ScrollTrigger)
   const containerRef = useRef(null)
   useGSAP(
@@ -112,6 +117,13 @@ export default function Footer() {
                 >
                   Demo
                 </ScrollLink>
+              </div>
+
+              <div
+                className="sm:text-lg text-sm mb-2 hover:text-[#77C3F8] duration-300  transition-all  ease-in-out"
+                onClick={openCalendly}
+              >
+                Schedule Call
               </div>
             </div>
           </div>

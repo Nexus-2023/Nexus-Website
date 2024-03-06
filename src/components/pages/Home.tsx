@@ -14,6 +14,11 @@ import { BeatLoader } from "react-spinners"
 import { Suspense } from "react"
 
 export function HomePage() {
+  const openCalendly = () => {
+    window.open("https://calendly.com/mnkrj500/30min", "_blank")
+    return false
+  }
+
   useEffect(() => {
     gsap.fromTo(
       "#launchBtn",
@@ -65,7 +70,7 @@ export function HomePage() {
               <TextRevealAnimation2 />
             </div>
 
-            <div className="opacity-0" id="launchBtn">
+            <div className="opacity-0" id="launchBtn" onClick={openCalendly}>
               <button
                 className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
               >
@@ -85,7 +90,7 @@ export function HomePage() {
             <MobileTextRevealAnimation2 />
           </div>
 
-          <div className="opacity-0" id="launchBtn">
+          <div className="opacity-0" id="launchBtn" onClick={openCalendly}>
             <button
               className={`backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t  from-[#007CCE] to-[#B4F6FF]  hover:from-[#007CCE] hover:to-white     transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-3 border-2 border-[#0D1820]  `}
             >

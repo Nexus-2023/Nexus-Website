@@ -11,7 +11,7 @@ import {
   TeamPage,
   YieldPage,
   DemoPage,
-} from "@/pages"
+} from "@/components/Sections"
 import Footer from "@/components/ui/Footer"
 import { useGSAP } from "@gsap/react"
 

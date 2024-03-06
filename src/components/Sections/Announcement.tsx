@@ -1,9 +1,9 @@
 import React from "react"
 
-import Partners from "../components/ui/Partners"
+import Partners from "../ui/Partners"
 import { Button } from "@mui/material"
 import Card from "@mui/material"
-import { AnnounceCard } from "../components/ui/Card"
+import { AnnounceCard } from "../ui/Card"
 import { announcementData } from "@/constants/data"
 
 import { useEffect, useRef } from "react"

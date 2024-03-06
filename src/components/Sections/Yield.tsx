@@ -2,7 +2,7 @@
 import React from "react"
 
 import { yeildData } from "@/constants/data"
-import { YieldCard } from "../components/ui/Card"
+import { YieldCard } from "../ui/Card"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"

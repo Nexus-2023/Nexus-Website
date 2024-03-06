@@ -4,7 +4,7 @@ import Image from "next/image"
 import team from "/public/Images/team_btn.svg"
 
 import { TeamData } from "@/constants/data"
-import { TeamCard } from "../components/ui/Card"
+import { TeamCard } from "../ui/Card"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"

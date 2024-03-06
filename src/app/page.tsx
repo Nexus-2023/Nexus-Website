@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef, useEffect, useState, useCallback } from "react"
-import SmoothScroll from "@/pages/SmoothScroll"
+import SmoothScroll from "@/components/Sections/SmoothScroll"
 export default function Home() {
   return (
     <div>

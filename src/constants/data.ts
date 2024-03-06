@@ -36,46 +36,46 @@ export const announcementData = [
 
 export const partnerData = [
   {
-    src: "/Images/partnerIcon1.svg",
+    src: "/Images/AnnouncementPage/partnerIcon1.svg",
     text: "DVT Partner",
 
-    width: 200,
-    height: 200,
+    width: 300,
+    height: 300,
   },
-  {
-    src: "/Images/partnerIcon2.svg",
-    text: "INSURANCE Partner",
+  // {
+  //   src: "/Images/AnnouncementPage/partnerIcon2.svg",
+  //   text: "INSURANCE Partner",
 
-    width: 150,
-    height: 150,
-  },
+  //   width: 150,
+  //   height: 150,
+  // },
 
-  {
-    src: "/Images/partnericon3.png",
-    text: "INSURANCE Partner",
+  // {
+  //   src: "/Images/AnnouncementPage/partnericon3.png",
+  //   text: "INSURANCE Partner",
 
-    width: 320,
-    height: 320,
-  },
+  //   width: 320,
+  //   height: 320,
+  // },
 ]
 
 export const yeildData = [
   {
-    src: "/Images/icon1.png",
+    src: "/Images/YeildPage/icon1.png",
     heading: "Eth Staking",
     range: "4-5%",
     width: 60,
     height: 60,
   },
   {
-    src: "/Images/icon2.png",
+    src: "/Images/YeildPage/icon2.png",
     heading: "Re Staking",
     range: "4-5%",
     width: 160,
     height: 160,
   },
   {
-    src: "/Images/icon2.svg",
+    src: "/Images/YeildPage/icon3.svg",
     heading: "Stablecoin Yeilds",
     range: "4-5%",
     width: 200,
@@ -85,21 +85,21 @@ export const yeildData = [
 
 export const TeamData = [
   {
-    src: "/Images/mayank_profile.svg",
+    src: "/Images/TeamPage/mayank_profile.svg",
     name: "Mayank Raj",
     title: "CEO",
     twitterlink: "https://twitter.com/mnkrj500",
     linkedinlink: "https://www.linkedin.com/in/mayank-raj/",
   },
   {
-    src: "/Images/rohit_profile.svg",
+    src: "/Images/TeamPage/rohit_profile.svg",
     name: "Rohit Aggarwal",
     title: "CTO",
     twitterlink: "https://twitter.com/RohitZoro_eth",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
   },
   {
-    src: "/Images/ashish_profile.svg",
+    src: "/Images/TeamPage/ashish_profile.svg",
     name: "Ashish Gupta",
     title: "COO",
     twitterlink: "https://twitter.com/ashishkumar_19",

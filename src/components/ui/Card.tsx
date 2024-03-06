@@ -54,7 +54,7 @@ export function AnnounceCard({ h1, p, link }: AnnounceCardProps) {
         </p>
 
         <Link href={link} target="_blank">
-          <Button sx={{ color: "#77C3F8" }}> Read More</Button>
+          <Button sx={{ color: "var(--button-primary)" }}> Read More</Button>
         </Link>
       </div>
     </div>
@@ -92,10 +92,10 @@ export function YieldCard({
 
 export function PartnersCard({ src, text, width, height }: PartnerCardProps) {
   return (
-    <div className=" space-y-5 flex flex-col w-full  lg:max-w-[20vw] justify-center items-center">
+    <div className=" space-y-5 flex flex-col w-full   lg:max-w-[20vw] justify-center items-center">
       {/* <Image src={src} width={width} height={height} alt="partner icon" /> */}
       <img src={src} width={width} height={height} alt="partner icon" />
-      <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[#141b22]   to-[#2776c0]  mb-4  mt-4" />
+      <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" />
 
       <h3 className=" text-gray-400 text-xl ">{text}</h3>
     </div>
@@ -128,7 +128,7 @@ export function TeamCard({
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
           <img
-            src="/Images/twitterIcon.svg"
+            src="/Images/TeamPage/twitterIcon.svg"
             width="40px"
             height="40px"
             alt="twitter icon"
@@ -142,7 +142,7 @@ export function TeamCard({
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
           <img
-            src="/Images/linkedinIcon.svg"
+            src="/Images/TeamPage/linkedinIcon.svg"
             width="40px"
             height="40px"
             alt="linkedin icon"

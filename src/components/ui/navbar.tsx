@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu"
 
 import Image from "next/image"
 import { useEffect, useState, useRef } from "react"
-import logo from "/public/Images/logo.png"
+import logo from "/public/Images/Logo/logo.png"
 
 import gsap, { Power2 } from "gsap"
 import { Flip } from "gsap/Flip"
@@ -31,18 +31,6 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null)
-  }
-
-  const scrollToSection = (targetId: string) => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: `#${targetId}`,
-      ease: "power2.inOut",
-    })
-  }
-
-  const handleLinkClick = (targetId: string) => {
-    scrollToSection(targetId)
   }
 
   const handleScroll = () => {
@@ -94,8 +82,6 @@ function ResponsiveAppBar() {
 
   return (
     <div className="flex justify-center  " ref={ref}>
-      <div className=" -z-10 w-[85vw]   blur-2xl  bg-[#091824] h-[4rem] absolute" />
-
       <nav
         className=" backdrop-blur-lg z-30  sm:px-8 px-0 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]     "
         aria-labelledby="menu-button"
@@ -155,7 +141,7 @@ function ResponsiveAppBar() {
 
                 backdropFilter: "blur(5px)",
                 "& .MuiMenu-paper": {
-                  backgroundColor: "#01080F",
+                  backgroundColor: "var(--mobile-menu-bg)",
                   borderRadius: "8px",
                 },
               }}
@@ -179,7 +165,7 @@ function ResponsiveAppBar() {
                     transition: "background 0.3s ease-in-out",
 
                     ":hover": {
-                      background: "#77C3F8",
+                      background: "var(--nav-link-hover)",
                     },
                   }}
                 >
@@ -205,7 +191,7 @@ function ResponsiveAppBar() {
                     transition: "background 0.3s ease-in-out",
 
                     ":hover": {
-                      background: "#77C3F8",
+                      background: "var(--nav-link-hover)",
                     },
                   }}
                 >
@@ -226,7 +212,7 @@ function ResponsiveAppBar() {
                     transition: "background 0.3s ease-in-out",
 
                     ":hover": {
-                      background: "#77C3F8",
+                      background: "var(--nav-link-hover)",
                     },
                   }}
                 >
@@ -253,7 +239,7 @@ function ResponsiveAppBar() {
                     transition: "background 0.3s ease-in-out",
 
                     ":hover": {
-                      background: "#77C3F8",
+                      background: "var(--nav-link-hover)",
                     },
                   }}
                 >
@@ -277,13 +263,13 @@ function ResponsiveAppBar() {
               width={130}
               height={130}
               alt="mobile nexus logo"
-              className="  "
+              className=" -ml-12 "
             />
           </Box>
 
           {/* Web Links */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
               <Link
                 to="HomePage"
                 spy={true}
@@ -295,7 +281,7 @@ function ResponsiveAppBar() {
               </Link>
             </button>
 
-            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
               <Link
                 to="WorkPage"
                 spy={true}
@@ -307,13 +293,13 @@ function ResponsiveAppBar() {
               </Link>
             </button>
 
-            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
               <a href="https://docs.nexusnetwork.co.in/" target="_blank">
                 Docs
               </a>
             </button>
 
-            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[#77C3F8]  duration-300  transition-all  ease-in-out">
+            <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
               <Link
                 to="Footer"
                 spy={true}
@@ -326,12 +312,14 @@ function ResponsiveAppBar() {
             </button>
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* schedule call button */}
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Button
               sx={{
-                color: "#77C3F8",
+                color: "var(--nav-link-hover)",
                 textTransform: "capitalize",
                 fontSize: "16px",
+
                 "@media screen and (max-width: 400px)": {
                   fontSize: "12px",
                 },
@@ -340,7 +328,7 @@ function ResponsiveAppBar() {
             >
               Schedule a call
             </Button>
-          </Box>
+          </Box> */}
         </Toolbar>
       </nav>
     </div>

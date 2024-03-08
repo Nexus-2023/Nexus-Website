@@ -4,8 +4,28 @@
  
 
 :root {
-  --text-gradient-from: white; /* your desired top color */
-  --gradient-to: #45ABF1; /* your desired bottom color */
+  --text-gradient-from: white; 
+  --gradient-to: #45ABF1;  
+  --mobile-menu-bg:#01080F;
+  --nav-link-hover :#77C3F8 ;
+  --page-border : #0D1820;
+  --scedule-call-from-gradient : #007CCE ;
+  --scedule-call-to-gradient : #B4F6FF ;
+  --scedule-call-hover-from-gradient : #007CCE ;
+  --scedule-call-hover-to-gradient : white ;
+  --workPage-bg : #010305;
+  --loader:#36a1d6 ;
+  --glow-Effect1 :#38598a2c ;
+  --glow-Effect2 : #38598a11;
+  --line-gradient-from : #141b22;
+  --line-gradient-to : #2776c0;
+  --box-shadow-from : #0F1923;
+  --box-shadow-to : #1B2630;
+  --box-shadow-border : #28333d;
+  --button-primary :#77C3F8 ;
+  --team-bg-gradient-from : #0B141E;
+  --team-bg-gradient-via : #1b3753;
+  --team-bg-gradient-to : #0B141E;
 }
 
 
@@ -25,7 +45,7 @@ body {
 
 .Home {
  
-  background-image: url("/Images/Hero-image.webp");
+  background-image: url("/Images/HomePage/Hero-image.webp");
   background-size: cover;
   background-position: center;
  

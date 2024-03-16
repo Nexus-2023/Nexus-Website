@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     description:
       "Nexus Network is revolutionising Rollup economics by enabling Native Yields for Rollups on Ethereum.",
     siteName: "Nexus Network",
-    images: [
-      {
-        url: "/Images/HomePage/Hero-image.webp",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "/Images/HomePage/Hero-image.webp",
+    //   },
+    // ],
   },
 
   creator: "Muhammad Umer",

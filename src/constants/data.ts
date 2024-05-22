@@ -98,11 +98,5 @@ export const TeamData = [
     twitterlink: "https://twitter.com/RohitZoro_eth",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
   },
-  {
-    src: "/Images/TeamPage/ashish_profile.svg",
-    name: "Ashish Gupta",
-    title: "COO",
-    twitterlink: "https://twitter.com/ashishkumar_19",
-    linkedinlink: "https://www.linkedin.com/in/ashishkumar29/",
-  },
+ 
 ]

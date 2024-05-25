@@ -67,7 +67,7 @@ export default function Footer() {
               />
 
               <p className=" xl:text-lg text-sm lg:text-md  text-gray-400">
-                © 2023 Nexus Network, Inc.
+                © 2024 Nexus Network, Inc.
               </p>
             </div>
           </div>

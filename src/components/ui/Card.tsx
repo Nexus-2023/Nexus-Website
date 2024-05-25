@@ -146,8 +146,8 @@ export function TeamCard({
               {/* <div className="flex sm:justify-start justify-center items-center max-w-[15rem]  laptop:max-w-[25rem] mt-1 border-2 w-full"> */}
               <div className="w-full flex justify-center items-center  ">
 
-              <div className="flex sm:justify-start justify-center items-center  lg:max-w-[16rem] max-w-[16rem] mt-1  w-full">
-                <p className=" text-[0.9rem] desktop:text-base  font-medium  text-gray-300">
+              <div className="flex sm:justify-start justify-center items-center   lg:max-w-[16rem] max-w-[16rem] mt-1  w-full">
+                <p className=" text-[0.9rem] desktop:text-base  font-medium  text-gray-300  text-center h-16">
               
                 {Description}
                 </p>

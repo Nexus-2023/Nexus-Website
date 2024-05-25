@@ -49,7 +49,7 @@ export function WorkPage() {
       ref={boxRef}
       id="WorkPage"
     >
-      <div className=" h-full -z-20 bg-[var(--workPage-bg)] w-full relative  md:py-24    md:border-x-2 md:border-t-2  border-[var(--page-border)]  ">
+      <div className=" h-full -z-20 bg-[var(--workPage-bg)] w-full relative  md:pt-8   md:border-x-2 md:border-t-2  border-[var(--page-border)]  ">
         <div
           className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[50%] bg-[var(--glow-Effect1)] rounded-2xl blur-3xl  -z-20 "
           id="glowEffect1"
@@ -85,7 +85,7 @@ export function WorkPage() {
               height={0}
               style={{ width: "100%", height: "100%" }}
               alt="Nexus design diagram"
-              className=" aspect-video  max-w-screen-xl "
+              className=" aspect-video  max-w-[1200px]  "
             />
           </Suspense>
         </div>

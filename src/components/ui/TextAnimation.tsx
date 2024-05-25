@@ -126,7 +126,7 @@ export const TextRevealAnimation2 = () => {
       <span> non-</span>
       <span>custo</span>
       <span>dial</span>
-      <span> yei</span>
+      <span> yie</span>
       <span>ld</span>
       <span> mech</span>
       <span>anics</span>
@@ -138,7 +138,7 @@ export const TextRevealAnimation2 = () => {
       <span>
 
       <Typewriter
-          words={['Rollups', 'Raas', 'Evm Chain']}
+          words={['Rollup', 'RaaS', 'EVM Chain']}
           loop={true}
           cursor
           cursorStyle='_'
@@ -273,7 +273,7 @@ export const MobileTextRevealAnimation2 = () => {
       <span> non-</span>
       <span>custo</span>
       <span>dial</span>
-      <span> yei</span>
+      <span> yie</span>
       <span>ld</span>
       <span> mech</span>
       <span>anics</span>

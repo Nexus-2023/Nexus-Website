@@ -64,7 +64,7 @@ export function FeaturePage() {
         <div className="" id="heading_f">
           <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
             {" "}
-            Why integrate Nexus for your rollup?
+            Why integrate Nexus for your chain?
           </h1>
         </div>
 
@@ -73,7 +73,7 @@ export function FeaturePage() {
           id="paragraph_f"
         >
           <p>
-          Supercharge your ecosystem with yields! Differentiate your chain by rewarding users and projects while boosting capital efficiency on your rollup
+          Supercharge your ecosystem with yields! Differentiate your chain by rewarding users and dApps while boosting capital efficiency on your chain
           </p>
         </div>
         <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>

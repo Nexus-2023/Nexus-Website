@@ -32,7 +32,7 @@ export function DemoPage() {
             trigger: demoContainerRef.current,
             start: "top 50%",
             end: "center center",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         }
       )
@@ -73,18 +73,13 @@ export function DemoPage() {
           id="glowEffect"
         />
         <div className="justify-center items-center mb-4" id="demoBtn">
-          <img
-            src="/Images/DemoPage/demo_btn.svg"
-            width="90px"
-            height="90px"
-            alt="demo button"
-          />
+ 
         </div>
 
         <div id="heading">
-          <h1 className="md:text-4xl  mb-16  font-medium   sm:text-3xl  text-2xl text-wrap text-center ">
+          <h1 className="md:text-5xl  mb-16  font-medium   sm:text-3xl  text-2xl text-wrap text-center ">
             {" "}
-            See Nexus Network in action
+            Demo
           </h1>
         </div>
 

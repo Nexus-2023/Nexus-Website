@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 import gsap from "gsap"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { Opacity } from "@mui/icons-material"
+import { Typewriter } from 'react-simple-typewriter'
 
 export const TextRevealAnimation = () => {
   const ref = useRef<HTMLDivElement>(null)
@@ -53,17 +54,23 @@ export const TextRevealAnimation = () => {
   return (
     <h1
       ref={ref}
-      className="text-7xl font-bold bg-clip-text text-transparent backdrop-blur py-4  text-center "
+      className="lg:text-5xl font-bold bg-clip-text text-transparent backdrop-blur py-4  text-center "
     >
-      <span>Eco</span>
-      <span>nomic</span>
+      <span>Secu</span>
+      <span>re</span>
 
-      <span> Lay</span>
-      <span>er</span>
+      <span> Yiel</span>
+      <span>ds</span>
+
       <span> for</span>
-      <span> Ro</span>
-      <span>llu</span>
-      <span>ps</span>
+
+      <span> Idle</span>
+
+      <span> Bri</span>
+      <span>dge</span>
+
+      <span> Ass</span>
+      <span>ets</span>
     </h1>
   )
 }
@@ -107,40 +114,39 @@ export const TextRevealAnimation2 = () => {
   return (
     <p
       ref={ref}
-      className="lg:text-xl font-normal text-gray-400 backdrop-blur   opacity-0"
+      className="lg:text-2xl font-normal text-gray-400 backdrop-blur   opacity-0"
     >
       <span>I</span>
       <span>mpl</span>
       <span>eme</span>
       <span>nt</span>
-      <span> na</span>
-      <span>tiv</span>
-      <span>e</span>
-      <span> ye</span>
-      <span>ild</span>
-      <span>s</span>
-      <span> on</span>
-      <span> y</span>
-      <span>ou</span>
-      <span>r</span>
-      <span> ro</span>
-      <span>llu</span>
-      <span>p</span>
-      <span> in</span>
-      <span> a</span>
       <span> se</span>
       <span>cu</span>
-      <span>re</span>
-      <span> and</span>
-      <span> n</span>
-      <span>on</span>
-      <span>-</span>
-      <span>cu</span>
-      <span>stod</span>
-      <span>ia</span>
-      <span>l</span>
-      <span> wa</span>
-      <span>y</span>
+      <span>re,</span>
+      <span> non-</span>
+      <span>custo</span>
+      <span>dial</span>
+      <span> yei</span>
+      <span>ld</span>
+      <span> mech</span>
+      <span>anics</span>
+      <span> or</span>
+      <span> your </span>
+      {/* <span> Ro</span>
+      <span>llu</span>
+      <span>p</span> */}
+      <span>
+
+      <Typewriter
+          words={['Rollups', 'Raas', 'Evm Chain']}
+          loop={true}
+          cursor
+          cursorStyle='_'
+          typeSpeed={100}
+          deleteSpeed={60}
+          delaySpeed={4000}
+        />
+      </span>
     </p>
   )
 }
@@ -195,17 +201,23 @@ export const MobileTextRevealAnimation = () => {
   return (
     <h1
       ref={ref}
-      className="text-5xl  sm:text-6xl font-bold  bg-gradient-to-b text-transparent bg-clip-text text-wrap text-center "
+      className="text-4xl  sm:text-5xl font-bold  bg-gradient-to-b text-transparent bg-clip-text text-wrap text-center "
     >
-      <span>Eco</span>
-      <span>nomic</span>
+       <span>Secu</span>
+      <span>re</span>
 
-      <span> Lay</span>
-      <span>er</span>
+      <span> Yiel</span>
+      <span>ds</span>
+
       <span> for</span>
-      <span> Ro</span>
-      <span>llu</span>
-      <span>ps</span>
+
+      <span> Idle</span>
+
+      <span> Bri</span>
+      <span>dge</span>
+
+      <span> Ass</span>
+      <span>ets</span>
     </h1>
   )
 }
@@ -251,38 +263,32 @@ export const MobileTextRevealAnimation2 = () => {
       ref={ref}
       className="font-normal text-gray-400 text-wrap text-center  opacity-0"
     >
-      <span>I</span>
+       <span>I</span>
       <span>mpl</span>
       <span>eme</span>
       <span>nt</span>
-      <span> na</span>
-      <span>tiv</span>
-      <span>e</span>
-      <span> ye</span>
-      <span>ild</span>
-      <span>s</span>
-      <span> on</span>
-      <span> y</span>
-      <span>ou</span>
-      <span>r</span>
-      <span> ro</span>
-      <span>llu</span>
-      <span>p</span>
-      <span> in</span>
-      <span> a</span>
       <span> se</span>
       <span>cu</span>
-      <span>re</span>
-      <span> and</span>
-      <span> n</span>
-      <span>on</span>
-      <span>-</span>
-      <span>cu</span>
-      <span>stod</span>
-      <span>ia</span>
-      <span>l</span>
-      <span> wa</span>
-      <span>y</span>
+      <span>re,</span>
+      <span> non-</span>
+      <span>custo</span>
+      <span>dial</span>
+      <span> yei</span>
+      <span>ld</span>
+      <span> mech</span>
+      <span>anics</span>
+      <span> or</span>
+      <span> your </span>
+
+      <Typewriter
+          words={['Rollups', 'Raas', 'Evm Chain']}
+          loop={true}
+          cursor
+          cursorStyle='_'
+          typeSpeed={100}
+          deleteSpeed={60}
+          delaySpeed={4000}
+        />
     </p>
   )
 }

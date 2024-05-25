@@ -33,7 +33,7 @@ export function FeaturePage() {
             trigger: featureContainerRef.current,
             start: "top 50%",
             end: "center center",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         }
       )
@@ -53,28 +53,27 @@ export function FeaturePage() {
           id="glowEffect2"
         />
         <div className="justify-center" id="featuresBtn">
-          <img
+          {/* <img
             src="/Images/FeaturesPage/feature_btn.svg"
             width="110"
             height="110"
             className="mb-6"
-          />
+          /> */}
         </div>
 
         <div className="" id="heading_f">
           <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
             {" "}
-            Why you should use Nexus Network for Rollups
+            Why integrate Nexus for your rollup?
           </h1>
         </div>
 
         <div
-          className="sm:text-lg text-md text-gray-500 xl:max-w-[40vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center"
+          className="sm:text-lg text-md text-gray-500 xl:max-w-[50vw]  sm:max-w-[60vw] max-w-[90vw] text-wrap text-center"
           id="paragraph_f"
         >
           <p>
-            Rollups can integrate with Nexus Network within minutes to earn
-            yields in a secure and non-custodial way
+          Supercharge your ecosystem with yields! Differentiate your chain by rewarding users and projects while boosting capital efficiency on your rollup
           </p>
         </div>
         <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>

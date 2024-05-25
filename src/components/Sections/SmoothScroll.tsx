@@ -14,7 +14,7 @@ import {
 } from "@/components/Sections"
 import Footer from "@/components/ui/Footer"
 import { useGSAP } from "@gsap/react"
-
+import { PartnerSlider } from "../ui/Partners"
 gsap.registerPlugin(ScrollTrigger)
 
 const SmoothScroll: React.FC = () => {
@@ -160,6 +160,7 @@ const SmoothScroll: React.FC = () => {
           <YieldPage />
           <DemoPage />
           <AnnouncementPage />
+          {/* <PartnerSlider/> */}
           <TeamPage />
           <Footer />
         </div>

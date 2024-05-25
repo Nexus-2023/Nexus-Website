@@ -34,7 +34,7 @@ export function YieldPage() {
             trigger: yeildContainerRef.current,
             start: "top 50%",
             end: "center center",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         }
       )
@@ -56,13 +56,13 @@ export function YieldPage() {
           />
 
           <div className="justify-center items-center mb-4">
-            <img
+            {/* <img
               src="/Images/YeildPage/yeild_btn.svg"
               width="90px"
               height="90px"
               alt="yeild button"
               id="yeildBtn"
-            />
+            /> */}
           </div>
 
           <div id="heading_y">

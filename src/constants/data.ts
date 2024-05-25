@@ -42,13 +42,38 @@ export const partnerData = [
     width: 300,
     height: 300,
   },
-  // {
-  //   src: "/Images/AnnouncementPage/partnerIcon2.svg",
-  //   text: "INSURANCE Partner",
+  {
+    src: "/Images/AnnouncementPage/Hashkey.svg",
+    text: "INSURANCE Partner",
 
-  //   width: 150,
-  //   height: 150,
-  // },
+    width: 150,
+    height: 150,
+  },
+
+  {
+    src: "/Images/AnnouncementPage/Shellboxes.png",
+    text: "INSURANCE Partner",
+
+    width: 150,
+    height: 150,
+  },
+
+  {
+    src: "/Images/AnnouncementPage/stakely.svg",
+    text: "INSURANCE Partner",
+
+    width: 150,
+    height: 150,
+  },
+
+
+  {
+    src: "/Images/AnnouncementPage/Zeeve.svg",
+    text: "INSURANCE Partner",
+
+    width: 150,
+    height: 150,
+  },
 
   // {
   //   src: "/Images/AnnouncementPage/partnericon3.png",
@@ -69,15 +94,15 @@ export const yeildData = [
   },
   {
     src: "/Images/YeildPage/icon2.png",
-    heading: "Re Staking",
-    range: "4-5%",
+    heading: "Restaking",
+    range: "Upto 5%",
     width: 160,
     height: 160,
   },
   {
     src: "/Images/YeildPage/icon3.svg",
     heading: "Stablecoin Yeilds",
-    range: "4-5%",
+    range: "Upto 15%",
     width: 200,
     height: 200,
   },
@@ -90,6 +115,8 @@ export const TeamData = [
     title: "CEO",
     twitterlink: "https://twitter.com/mnkrj500",
     linkedinlink: "https://www.linkedin.com/in/mayank-raj/",
+    Description : "IIM Ahmedabad (MBA) , IIT Bombay (Btech) , 2+ years in staking space , ex-KPMG"
+
   },
   {
     src: "/Images/TeamPage/rohit_profile.svg",
@@ -97,6 +124,7 @@ export const TeamData = [
     title: "CTO",
     twitterlink: "https://twitter.com/RohitZoro_eth",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
+    Description : "IIT Bombay (Btech) , 5+ years of development experience, SSV DAO contributor, ex-Capgemini"
   },
  
 ]

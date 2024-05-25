@@ -21,7 +21,7 @@ export function TeamPage() {
       console.log(teamContainerRef)
 
       gsap.fromTo(
-        "#h1 , #teamBtn ,#backGlow ,#teamCard,#Footer",
+        "#h1 , #teamBtn ,#backGlow ,#teamCard,#Footer , #p1",
         {
           opacity: 0,
           y: 100,
@@ -70,7 +70,7 @@ export function TeamPage() {
                 Meet the team
               </h1>
 
-              <p className="lg:text-base  lg:max-w-[50%] max-w-[80%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10  mb-6 mt-6  ">
+              <p className="lg:text-base  lg:max-w-[50%] max-w-[80%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10  mb-6 mt-6  " id="p1">
             {" "}
             Founders have been building in staking/liquid staking space across Ethereum and Cosmos for 2+ years
           </p>

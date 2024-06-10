@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import ResponsiveAppBar from "@/components/ui/navbar"
-
+import { PopUp } from "@/components/ui/PopUp"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -75,7 +75,9 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={inter.className}>
+  
         <div className="  mx-auto   ">
+        <PopUp/>
           <ResponsiveAppBar />
           {children}
         </div>

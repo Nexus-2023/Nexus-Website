@@ -160,7 +160,7 @@ const SmoothScroll: React.FC = () => {
           <YieldPage />
           <DemoPage />
           <AnnouncementPage />
-          {/* <PartnerSlider/> */}
+     
           <TeamPage />
           <Footer />
         </div>

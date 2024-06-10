@@ -73,7 +73,7 @@ export function YieldCard({
   return (
     <div
       className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  mb-12 "
-      id="yeildCard"
+      
     >
       <img
         src={src}

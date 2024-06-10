@@ -58,16 +58,9 @@ export function TeamPage() {
         >
           <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
             <div className="     items-center   w-full  max-w-7xl    px-0 flex flex-col">
-              {/* <img
-                src="/Images/TeamPage/team_btn.svg"
-                width="90px"
-                height="90px"
-                alt="team button"
-                className="mb-4"
-                id="teamBtn"
-              /> */}
+ 
               <h1 className="  sm:text-5xl text-2xl font-medium  " id="h1">
-                Meet the team
+                Meet the Founders
               </h1>
 
               <p className="lg:text-base  lg:max-w-[60%] max-w-[80%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10  mb-6 mt-6  " id="p1">

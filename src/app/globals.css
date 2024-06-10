@@ -5,6 +5,7 @@
 
 :root {
   --text-gradient-from: white; 
+  --topBar : #173c54 ;
   --gradient-to: #45ABF1;  
   --mobile-menu-bg:#01080F;
   --nav-link-hover :#77C3F8 ;

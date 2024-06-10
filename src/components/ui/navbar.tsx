@@ -72,22 +72,29 @@ function ResponsiveAppBar() {
   }
   const ref = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll)
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [navbarRef])
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll)
+  //   }
+  // }, [navbarRef])
 
   return (
-    <div className="flex justify-center  " ref={ref}>
-      <nav
+    // <div className="flex justify-center  " ref={ref}>
+    <div className="flex justify-center  " >
+      {/* <nav
         className=" backdrop-blur-lg z-30  sm:px-8 px-0 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]     "
         aria-labelledby="menu-button"
         ref={navbarRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+      > */}
+            <nav
+        className=" backdrop-blur-lg z-30  sm:px-8 px-0 w-full   rounded-2xl fixed mx-auto  md:max-w-[85vw]     "
+        aria-labelledby="menu-button"
+      
+ 
       >
         <Toolbar disableGutters>
           <Box
@@ -311,24 +318,7 @@ function ResponsiveAppBar() {
               </Link>
             </button>
           </Box>
-
-          {/* schedule call button */}
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Button
-              sx={{
-                color: "var(--nav-link-hover)",
-                textTransform: "capitalize",
-                fontSize: "16px",
-
-                "@media screen and (max-width: 400px)": {
-                  fontSize: "12px",
-                },
-              }}
-              onClick={openCalendly}
-            >
-              Schedule a call
-            </Button>
-          </Box> */}
+ 
         </Toolbar>
       </nav>
     </div>

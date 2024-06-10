@@ -16,7 +16,7 @@ export function FeaturePage() {
   useGSAP(
     () => {
       gsap.fromTo(
-        "#glowEffect2 ,#featuresBtn ,#heading_f , #paragraph_f , .BoxContainerFeatures",
+        "#glowEffect2 ,#heading_f , #paragraph_f , #FeaturesContainer",
 
         {
           opacity: 0,
@@ -52,14 +52,7 @@ export function FeaturePage() {
           className="absolute top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2   w-[20%] h-[80%] bg-[var(--glow-Effect1)] rounded-2xl blur-3xl  -z-20 "
           id="glowEffect2"
         />
-        <div className="justify-center" id="featuresBtn">
-          {/* <img
-            src="/Images/FeaturesPage/feature_btn.svg"
-            width="110"
-            height="110"
-            className="mb-6"
-          /> */}
-        </div>
+ 
 
         <div className="" id="heading_f">
           <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
@@ -77,14 +70,14 @@ export function FeaturePage() {
           </p>
         </div>
         <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
-          <div className=" h-full w-full  flex  justify-center items-center mt-24   ">
+          <div className=" h-full w-full  flex  justify-center items-center mt-24   " id="FeaturesContainer" >
             {/* boxes */}
             <div className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4  ">
               {/* 1st col */}
               <div className="flex flex-col  sm:px-0 px-4 space-y-5">
                 {/* box1 */}
                 <div
-                  className={`BoxContainerFeatures px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
+                  className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
                     <img
@@ -108,7 +101,7 @@ export function FeaturePage() {
 
                 {/* box2 */}
                 <div
-                  className={`BoxContainerFeatures px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
+                  className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
                     <img
@@ -135,7 +128,7 @@ export function FeaturePage() {
               {/* 2 col */}
               <div className="flex flex-col  space-y-5  sm:px-0 px-4  xl:h-[80vh] h-full max-h-[700px] ">
                 {/* fullBox */}
-                <div className="BoxContainerFeatures px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center   ">
+                <div className=" px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center   ">
                   <div>
                     <img
                       src="/Images/FeaturesPage/d5.svg"
@@ -161,7 +154,7 @@ export function FeaturePage() {
               <div className="flex flex-col  sm:px-0 px-4  space-y-5">
                 {/* box4*/}
                 <div
-                  className={`BoxContainerFeatures px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
+                  className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
                     <img
@@ -185,7 +178,7 @@ export function FeaturePage() {
 
                 {/* box5*/}
                 <div
-                  className={`BoxContainerFeatures px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
+                  className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
                     <img

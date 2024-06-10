@@ -16,7 +16,7 @@ export function YieldPage() {
   useGSAP(
     () => {
       gsap.fromTo(
-        "#glowEffect3 ,#yeildBtn ,#heading_y , #paragraph_y, #yeildCard",
+        "#glowEffect3 ,#yeildBtn ,#heading_y , #paragraph_y, #yeildContainer",
 
         {
           opacity: 0,
@@ -55,16 +55,7 @@ export function YieldPage() {
             id="glowEffect3"
           />
 
-          <div className="justify-center items-center mb-4">
-            {/* <img
-              src="/Images/YeildPage/yeild_btn.svg"
-              width="90px"
-              height="90px"
-              alt="yeild button"
-              id="yeildBtn"
-            /> */}
-          </div>
-
+ 
           <div id="heading_y">
             <h1 className=" md:text-4xl   text-3xl  mb-6  font-medium     text-wrap text-center ">
               {" "}
@@ -83,7 +74,7 @@ export function YieldPage() {
           </div>
 
           <div className=" h-full w-full   flex  justify-center items-center">
-            <div className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:ml-12 lg:space-x-28 items-center    lg:space-y-2   ">
+            <div className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:ml-12 lg:space-x-28 items-center    lg:space-y-2   " id="yeildContainer">
               {yeildData.map((data, index) => (
                 <YieldCard
                   key={index}

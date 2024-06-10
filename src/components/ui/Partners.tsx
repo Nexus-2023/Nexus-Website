@@ -52,7 +52,7 @@ export function PartnerSlider() {
         </div>
        {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
 
-   <h3 className=" text-gray-400 text-xl  ">DVT partner </h3>
+  
       </div>
       
       <div className="  w-full   flex flex-col  ">
@@ -62,7 +62,7 @@ export function PartnerSlider() {
        {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
 
 </div>
-<h3 className=" text-gray-400 text-xl ">Validator </h3>
+ 
       </div>
 
 
@@ -72,7 +72,7 @@ export function PartnerSlider() {
        <img src="/Images/AnnouncementPage/Shellboxes.png" width="200px" height="200px" alt="partner icon" />
        {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
        </div>
-<h3 className=" text-gray-400 text-xl ">Audit Partner </h3>
+ 
       </div>
 
 
@@ -82,7 +82,7 @@ export function PartnerSlider() {
        <img src="/Images/AnnouncementPage/stakely.svg" width="200px" height="200px" alt="partner icon" />
        {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
        </div>
-<h3 className=" text-gray-400 text-xl ">Validator </h3>
+ 
       </div>
 
 
@@ -92,7 +92,7 @@ export function PartnerSlider() {
        <img src="/Images/AnnouncementPage/Zeeve.svg" width="130px" height="130px" alt="partner icon" />
        {/* <div className="  h-[0.1rem]   min-h-max    max-w-36 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
        </div>
-<h3 className=" text-gray-400 text-xl ">Raas </h3>
+ 
       </div>
       </Slider>
     </div>
@@ -125,7 +125,7 @@ export function TabPartnerSlider() {
       </div>
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
 
- <h3 className=" text-gray-400 text-xl  ">DVT partner </h3>
+ 
     </div>
     
     <div className="  w-full   flex flex-col  ">
@@ -135,7 +135,7 @@ export function TabPartnerSlider() {
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
 
 </div>
-<h3 className=" text-gray-400 text-xl ">Validator </h3>
+ 
     </div>
 
 
@@ -145,7 +145,7 @@ export function TabPartnerSlider() {
      <img src="/Images/AnnouncementPage/Shellboxes.png" width="200px" height="200px" alt="partner icon" />
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
      </div>
-<h3 className=" text-gray-400 text-xl ">Audit Partner </h3>
+ 
     </div>
 
 
@@ -155,7 +155,7 @@ export function TabPartnerSlider() {
      <img src="/Images/AnnouncementPage/stakely.svg" width="200px" height="200px" alt="partner icon" />
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
      </div>
-<h3 className=" text-gray-400 text-xl ">Validator </h3>
+
     </div>
 
 
@@ -165,7 +165,7 @@ export function TabPartnerSlider() {
      <img src="/Images/AnnouncementPage/Zeeve.svg" width="130px" height="130px" alt="partner icon" />
      {/* <div className="  h-[0.1rem]   min-h-max    max-w-36 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
      </div>
-<h3 className=" text-gray-400 text-xl ">Raas </h3>
+
     </div>
     </Slider>
   </div>
@@ -199,7 +199,7 @@ export function MobilePartnerSlider() {
       </div>
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
 
- <h3 className=" text-gray-400 text-xl  ">DVT partner </h3>
+
     </div>
     
     <div className="  w-full   flex flex-col  ">
@@ -209,7 +209,7 @@ export function MobilePartnerSlider() {
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
 
 </div>
-<h3 className=" text-gray-400 text-xl ">Validator </h3>
+
     </div>
 
 
@@ -219,7 +219,7 @@ export function MobilePartnerSlider() {
      <img src="/Images/AnnouncementPage/Shellboxes.png" width="200px" height="200px" alt="partner icon" />
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
      </div>
-<h3 className=" text-gray-400 text-xl ">Audit Partner </h3>
+
     </div>
 
 
@@ -229,7 +229,7 @@ export function MobilePartnerSlider() {
      <img src="/Images/AnnouncementPage/stakely.svg" width="200px" height="200px" alt="partner icon" />
      {/* <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
      </div>
-<h3 className=" text-gray-400 text-xl ">Validator </h3>
+
     </div>
 
 
@@ -239,7 +239,7 @@ export function MobilePartnerSlider() {
      <img src="/Images/AnnouncementPage/Zeeve.svg" width="130px" height="130px" alt="partner icon" />
      {/* <div className="  h-[0.1rem]   min-h-max    max-w-36 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" /> */}
      </div>
-<h3 className=" text-gray-400 text-xl ">Raas </h3>
+
     </div>
     </Slider>
   </div>

@@ -42,10 +42,10 @@ export const PopUp = () => {
       id='popOver'
     >
       <h1 className="font-medium lg:text-sm text-xs text-wrap lg:ml-0 ml-4 mr-2">
-        Get ready: Our testnet chain is launching soon on the Nexus Network!
+      Nexus Network has closed its preseed round of $1M. Check the announcement here
       </h1>
 
-      <a href="https://x.com/NexusNetwork_0x/status/1798025437089824815" target="_blank">
+      <a href="https://x.com/NexusNetwork_0x/status/1800857459520655441" target="_blank">
         <AnimatedArrow sx={{ color: 'black', fontSize: 20 }} />
       </a>
 

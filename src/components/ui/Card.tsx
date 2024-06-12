@@ -114,7 +114,7 @@ export function TeamCard({
 }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center   w-full" id="teamCard">
-                  <div className="p-4 flex-col      w-full    min-w-min       rounded-3xl">
+                  <div className="lg:p-4 p-2 flex-col      w-full    min-w-min       rounded-3xl">
               <div className="flex justify-center items-center   ">
               <img
         src={src}
@@ -130,9 +130,9 @@ export function TeamCard({
                 <div className="flex justify-center items-center   mx-4  w-full   ">
 
                  <div>
-                  <span className="desktop:text-xl text-lg font-bold text-white   w-full">
+                  <span className="sm:text-xl text-base font-bold text-white   w-full">
                   {name} 
-                  <span className=" text-lg desktop:text-base font-regular   text-gray-200 items-center   w-full"> 
+                  <span className=" sm:text-lg text-base font-regular   text-gray-200 items-center   w-full"> 
                  {" "} - {title} 
                   </span>
                 </span>
@@ -147,7 +147,7 @@ export function TeamCard({
               <div className="w-full flex justify-center items-center  ">
 
               <div className="flex sm:justify-start justify-center items-center   lg:max-w-[16rem] max-w-[16rem] mt-1  w-full">
-                <p className=" text-[0.9rem] desktop:text-base  font-medium  text-gray-300  text-center h-16">
+                <p className=" text-[0.7rem] sm:text-base  font-medium  text-gray-300  text-center min-h-16 h-full">
               
                 {Description}
                 </p>

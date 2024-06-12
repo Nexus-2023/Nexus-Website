@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           <div className=" flex w-full space-x-24 md:mt-0 mt-16 justify-center">
-            <div className="flex flex-col " id="c2">
+            <div className="flex flex-col  " id="c2">
               <p className=" sm:text-lg text-sm text-gray-400 mb-3">Socials</p>
 
               <Link
@@ -83,7 +83,15 @@ export default function Footer() {
               >
                 Twitter
               </Link>
-
+              <Link
+                href={
+                  "https://nexusnetwork0x.substack.com/"
+                }
+                target="_blank"
+                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+              >
+                Blog
+              </Link>
               <Link
                 href={
                   "https://www.linkedin.com/company/nexus-network-staking-infra/"
@@ -93,6 +101,19 @@ export default function Footer() {
               >
                 Linkedin
               </Link>
+
+              <Link
+                href={
+                  "https://discord.gg/kubuD7Mvf7"
+                }
+                target="_blank"
+                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+              >
+                Discord
+              </Link>
+
+
+
             </div>
 
             <div className="flex flex-col " id="c3">

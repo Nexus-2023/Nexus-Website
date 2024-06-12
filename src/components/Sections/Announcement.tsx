@@ -11,9 +11,9 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
-import { PartnerSlider , MobilePartnerSlider , TabPartnerSlider} from "../ui/Partners"
+import { PartnerSlider , MobilePartnerSlider , TabPartnerSlider , FunderSlider , TabFunderSlider , MobileFunderSlider} from "../ui/Partners"
 import { Suspense } from "react"
-export function AnnouncementPage() {
+export function PartnersPage() {
   gsap.registerPlugin(ScrollTrigger)
   const announceContainerRef = useRef(null)
   useGSAP(
@@ -51,7 +51,7 @@ export function AnnouncementPage() {
       className={`justify-center items-center flex  z-10     md:px-16       mx-auto`}
       ref={announceContainerRef}
     >
-      <div className="h-full w-full relative   border-x-2  border-t-2   border-[var(--page-border)]  py-40  ">
+      <div className="h-full w-full relative   border-x-2    border-[var(--page-border)]     ">
         <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
    
           <div className="flex justify-center items-center   ">
@@ -64,33 +64,7 @@ export function AnnouncementPage() {
               >
                 Our Partners
               </h1>
-
-          
-              {/* <Partners /> */}
-
-              {/* <div className=" w-full h-full  md:px-16 px-8 flex flex-col    py-16    max-w-screen-xl   ">
-                <h1 className=" text-yellow-500 text-lg mb-3" id="h2">
-                  Announcements
-                </h1>
-                <h1 className="  font-medium text-2xl mb-4" id="p">
-                  Stay in the Loop: Latest News and Announcements
-                </h1>
-
-                <div className="    snap-mandatory    py-16     justify-center   items-center    overflow-x-auto overflow-y-hidden">
-                  <div className="flex      min-w-max  space-x-8   justify-between items-center   ">
-                    {announcementData.map((data, index) => (
-                      <>
-                        <AnnounceCard
-                          key={index}
-                          h1={data.heading}
-                          p={data.paragraph}
-                          link={data.link}
-                        />
-                      </>
-                    ))}
-                  </div>
-                </div>
-              </div> */}
+ 
             </div>
           </div>
 
@@ -104,6 +78,80 @@ export function AnnouncementPage() {
 </div>
           <div className=" mt-8      flex md:hidden justify-center items-center " id="slider">
           <MobilePartnerSlider/>
+          </div>
+        </Suspense>
+      </div>
+    </div>
+  )
+}
+
+
+
+export function FundingPage() {
+  gsap.registerPlugin(ScrollTrigger)
+  const announceContainerRef = useRef(null)
+  useGSAP(
+    () => {
+      console.log(announceContainerRef)
+
+      gsap.fromTo(
+        "#glowEffect ,#h1 ,#partnersCard ,#h2 ,#p, #announcementCard , #slider",
+        {
+          opacity: 0,
+          y: 100,
+        },
+
+        {
+          stagger: 0.3,
+          opacity: 1,
+          y: 0,
+          ease: "power2.Out",
+          duration: 1,
+
+          scrollTrigger: {
+            trigger: announceContainerRef.current,
+            start: "top 50%",
+            end: "center center",
+            toggleActions: "play none none none",
+          },
+        }
+      )
+    },
+    { scope: announceContainerRef }
+  )
+
+  return (
+    <div
+      className={`justify-center items-center flex  z-10     md:px-16       mx-auto`}
+      ref={announceContainerRef}
+    >
+      <div className="h-full w-full relative   border-x-2  border-t-2   border-[var(--page-border)] py-16   ">
+        <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
+   
+          <div className="flex justify-center items-center   ">
+            <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[50%] bg-[var(--glow-Effect2)]  rounded-2xl blur-3xl  -z-20 " />
+            <div className="flex flex-col space-y-10  justify-center items-center w-full  ">
+          
+              <h1
+                className=" text-5xl font-semibold text-gray-50 mb-12   justify-center items-center  text-center  "
+                id="h1"
+              >
+               Backed By the Best
+              </h1>
+ 
+            </div>
+          </div>
+
+          <div className=" mt-8     justify-center items-center lg:flex hidden" id="slider">
+          <FunderSlider/>
+          </div>
+
+          <div className=" mt-8     justify-center items-center hidden  md:flex lg:hidden" id="slider">
+<TabFunderSlider/>
+
+</div>
+          <div className=" mt-8      flex md:hidden justify-center items-center " id="slider">
+          <MobileFunderSlider/>
           </div>
         </Suspense>
       </div>

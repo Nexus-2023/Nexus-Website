@@ -67,7 +67,7 @@ export function DemoPage() {
       ref={demoContainerRef}
       id="DemoPage"
     >
-      <div className="h-full   w-full  py-40 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2   border-[var(--page-border)]   flex-col  ">
+      <div className="h-full   w-full  py-16 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2   border-[var(--page-border)]   flex-col  ">
         <div
           className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[90%] bg-[#0E223F]  rounded-2xl blur-3xl  -z-20 "
           id="glowEffect"

@@ -6,7 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 import {
   HomePage,
   WorkPage,
-  AnnouncementPage,
+  PartnersPage,
   FeaturePage,
   TeamPage,
   YieldPage,
@@ -159,7 +159,7 @@ const SmoothScroll: React.FC = () => {
           <FeaturePage />
           <YieldPage />
           <DemoPage />
-          <AnnouncementPage />
+          <PartnersPage />
      
           <TeamPage />
           <Footer />

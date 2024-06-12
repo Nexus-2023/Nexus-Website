@@ -2,13 +2,15 @@
 import {
   HomePage,
   WorkPage,
-  AnnouncementPage,
+  PartnersPage,
   FeaturePage,
   TeamPage,
   YieldPage,
   DemoPage,
+  FundingPage 
 } from "@/components/Sections"
 import Footer from "@/components/ui/Footer"
+ 
 import React, { useRef, useEffect, useState, useCallback } from "react"
 import SmoothScroll from "@/components/Sections/SmoothScroll"
 export default function Home() {
@@ -19,8 +21,8 @@ export default function Home() {
           <FeaturePage />
           <YieldPage />
           <DemoPage />
-          <AnnouncementPage />
-     
+      <FundingPage />
+          <PartnersPage />
           <TeamPage />
           <Footer />
       {/* <SmoothScroll /> */}

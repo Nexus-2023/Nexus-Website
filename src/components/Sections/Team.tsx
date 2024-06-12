@@ -53,7 +53,7 @@ export function TeamPage() {
         className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
       >
         <div
-          className="h-full w-full   border-2    flex justify-center   py-24   border-[var(--page-border)]"
+          className="h-full w-full   border-2    flex justify-center  py-16   border-[var(--page-border)]"
           ref={teamContainerRef}
         >
           <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>

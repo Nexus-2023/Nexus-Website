@@ -49,7 +49,7 @@ export function YieldPage() {
       ref={yeildContainerRef}
     >
       <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
-        <div className="h-full w-full   flex  justify-center items-center  relative  py-24  border-x-2  border-t-2  border-[var(--page-border)]    flex-col  ">
+        <div className="h-full w-full   flex  justify-center items-center  relative py-16  border-x-2  border-t-2  border-[var(--page-border)]    flex-col  ">
           <div
             className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[20%] h-[100%] bg-[var(--glow-Effect1)] rounded-2xl blur-3xl  -z-20 "
             id="glowEffect3"

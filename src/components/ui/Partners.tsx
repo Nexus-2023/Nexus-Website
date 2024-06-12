@@ -27,24 +27,61 @@ export default function Partners() {
 }
 
 export function PartnerSlider() {
-  const settings = {
+  let settings = {
     dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
     speed: 1000,
     autoplaySpeed: 4000,
+    autoplay: true,
     cssEase: "linear",
+    initialSlide: 0,
+    responsive: [
+       
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide:2,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+        }
+      }
+    ],
     nextArrow: <></>,
     prevArrow: <></>,
   }
 
   return (
-    <div className=" h-[20vh] z-10  w-[60vw]  ">
+    <div className=" h-[20vh] z-10  w-[65vw]    ">
       <Slider {...settings}>
-        <div className="  w-full   flex flex-col  ">
-          <div className="h-[87px] mt-4 ">
+        <div className="  w-full  items-center justify-center   flex flex-col  ">
+          <div className="h-[87px] mt-4  items-center justify-center  flex ">
             <img
               src="/Images/AnnouncementPage/partnerIcon1.svg"
               width="200px"
@@ -54,8 +91,8 @@ export function PartnerSlider() {
           </div>
         </div>
 
-        <div className="  w-full   flex flex-col  ">
-          <div className="h-[100px] ">
+        <div className="  w-full  items-center justify-center  flex flex-col  ">
+          <div className="h-[100px]  items-center justify-center  flex ">
             <img
               src="/Images/AnnouncementPage/hash.jpg"
               width="200px"
@@ -66,8 +103,8 @@ export function PartnerSlider() {
           </div>
         </div>
 
-        <div className="  w-full   flex flex-col   ">
-          <div className="h-[100px] mt-4 ml-2">
+        <div className="  w-full  items-center justify-center  flex flex-col   ">
+          <div className="h-[100px]  items-center justify-center  flex mt-4 ml-2">
             <img
               src="/Images/AnnouncementPage/avail.svg"
               width="180px"
@@ -78,8 +115,8 @@ export function PartnerSlider() {
           </div>
         </div>
 
-        <div className="  w-full   flex flex-col  ">
-          <div className="h-[100px] mt-3">
+        <div className="  w-full items-center justify-center   flex flex-col  ">
+          <div className="h-[100px]  items-center justify-center  flex mt-3">
             <img
               src="/Images/AnnouncementPage/Shellboxes.png"
               width="200px"
@@ -89,8 +126,8 @@ export function PartnerSlider() {
           </div>
         </div>
 
-        <div className="  w-full   flex flex-col  ml-4">
-          <div className="h-[80px] mt-6">
+        <div className="  w-full items-center justify-center   flex flex-col  lg:ml-4">
+          <div className="h-[80px] items-center justify-center  flex  mt-6">
             <img
               src="/Images/AnnouncementPage/stakely.svg"
               width="200px"
@@ -100,12 +137,12 @@ export function PartnerSlider() {
           </div>
         </div>
 
-        <div className="  w-full   flex flex-col ml-8 ">
-          <div className="h-[100px] ml-2 ">
+        <div className="  w-full   items-center justify-center  flex flex-col lg:ml-10  ">
+          <div className="h-[100px]  items-center justify-center  flex  ">
             <img
               src="/Images/AnnouncementPage/Zeeve.svg"
-              width="130px"
-              height="130px"
+              width="140px"
+              height="140px"
               alt="partner icon"
             />
           </div>
@@ -116,35 +153,74 @@ export function PartnerSlider() {
 }
 
 export function FunderSlider() {
-  const settings = {
+  let settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
     speed: 1000,
     autoplaySpeed: 4000,
+ 
     cssEase: "linear",
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+           autoplay: true,
+           speed: 1000,
+           autoplaySpeed: 4000,
+        }
+      },
+      {
+        breakpoint: 1124,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide:2,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+        }
+      }
+    ],
     nextArrow: <></>,
     prevArrow: <></>,
   }
 
   return (
-    <div className=" h-[20vh] z-10  w-[60vw]  ">
+    <div className=" h-[20vh] z-10  w-[70vw]  ">
       <Slider {...settings}>
-        <div className="  w-full   flex flex-col  ">
-          <div className="h-[87px] mt-3  items-center justify-center flex">
-            <img
-              src="/Images/Funders/coin_T.png"
-              width="160px"
-              height="160px"
-              alt="partner icon"
-              className="   bg-contain rounded-xl"
-            />
-          </div>
-        </div>
 
-        <div className="  w-full   flex flex-col  ">
+
+
+      <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex  ml-4">
             <img
               src="/Images/Funders/hashWhite.png"
@@ -154,6 +230,7 @@ export function FunderSlider() {
             />
           </div>
         </div>
+
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex ml-8 ">
@@ -167,8 +244,24 @@ export function FunderSlider() {
           </div>
         </div>
 
+        <div className="  w-full   flex flex-col  ">
+          <div className="h-[87px] mt-3 ml-5  items-center justify-center flex">
+            <img
+              src="/Images/Funders/coin_T.png"
+              width="160px"
+              height="160px"
+              alt="partner icon"
+              className="   bg-contain rounded-xl"
+            />
+          </div>
+        </div>
+
+
+
+
+
         <div className="  w-full   flex flex-col  ml-4">
-          <div className="h-[80px] mt-3 items-center justify-center flex">
+          <div className="h-[80px] mt-3 -ml-4 items-center justify-center flex">
             <img
               src="/Images/Funders/orbit_T.png"
               width="180px"
@@ -201,7 +294,7 @@ export function TabFunderSlider() {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     speed: 1000,
     autoplaySpeed: 4000,
     cssEase: "linear",
@@ -281,7 +374,7 @@ export function MobileFunderSlider() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     speed: 1000,
     autoplaySpeed: 4000,
     cssEase: "linear",

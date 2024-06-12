@@ -88,7 +88,7 @@ export const yeildData = [
   {
     src: "/Images/YeildPage/icon1.png",
     heading: "Eth Staking",
-    range: "4-5%",
+    range: "3-4%",
     width: 60,
     height: 60,
   },

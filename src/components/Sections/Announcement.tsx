@@ -11,7 +11,7 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
-import { PartnerSlider , MobilePartnerSlider , TabPartnerSlider , FunderSlider , TabFunderSlider , MobileFunderSlider} from "../ui/Partners"
+import { PartnerSlider,   FunderSlider  } from "../ui/Partners"
 import { Suspense } from "react"
 export function PartnersPage() {
   gsap.registerPlugin(ScrollTrigger)
@@ -59,7 +59,7 @@ export function PartnersPage() {
             <div className="flex flex-col space-y-10  justify-center items-center w-full  ">
           
               <h1
-                className=" text-5xl font-semibold text-gray-50 mb-12   justify-center items-center  text-center  "
+                className=" lg:text-5xl text-4xl font-semibold text-gray-50 mb-12   justify-center items-center  text-center  "
                 id="h1"
               >
                 Our Partners
@@ -67,18 +67,10 @@ export function PartnersPage() {
  
             </div>
           </div>
-
-          <div className=" mt-8     justify-center items-center lg:flex hidden" id="slider">
+          <div className="     justify-center items-center  flex  " id="slider">
           <PartnerSlider/>
           </div>
-
-          <div className=" mt-8     justify-center items-center hidden  md:flex lg:hidden" id="slider">
-<TabPartnerSlider/>
-
-</div>
-          <div className=" mt-8      flex md:hidden justify-center items-center " id="slider">
-          <MobilePartnerSlider/>
-          </div>
+ 
         </Suspense>
       </div>
     </div>
@@ -133,7 +125,7 @@ export function FundingPage() {
             <div className="flex flex-col space-y-10  justify-center items-center w-full  ">
           
               <h1
-                className=" text-5xl font-semibold text-gray-50 mb-12   justify-center items-center  text-center  "
+                className=" lg:text-5xl text-4xl font-semibold text-gray-50 mb-12   justify-center items-center  text-center  "
                 id="h1"
               >
                Backed By the Best
@@ -142,17 +134,10 @@ export function FundingPage() {
             </div>
           </div>
 
-          <div className=" mt-8     justify-center items-center lg:flex hidden" id="slider">
+          <div className="       justify-center items-center flex  " id="slider">
           <FunderSlider/>
           </div>
-
-          <div className=" mt-8     justify-center items-center hidden  md:flex lg:hidden" id="slider">
-<TabFunderSlider/>
-
-</div>
-          <div className=" mt-8      flex md:hidden justify-center items-center " id="slider">
-          <MobileFunderSlider/>
-          </div>
+ 
         </Suspense>
       </div>
     </div>

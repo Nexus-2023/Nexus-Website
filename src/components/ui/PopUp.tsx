@@ -32,11 +32,11 @@ export const PopUp = () => {
   if (!isVisible) return null;
 
   return (
-    <div className='h-6'>
-
+     <div className='sm:h-6     min-[550px]:h-12   max-[512px]:h-16 max-[290px]:h-20  h-12  '>
+ 
     
     <div
-      className={`fixed top-0 left-0 bg-[#45ABF1] z-50 text-black flex sm:flex-row flex-col items-center sm:justify-center justify-start  w-full text-center p-1   transition-opacity duration-300 ease-in ${
+      className={`   fixed top-0 left-0 bg-[#45ABF1] z-50 text-black flex sm:flex-row flex-col items-center sm:justify-center justify-start  w-full text-center p-1   transition-opacity duration-300 ease-in ${
         isClosing ? 'opacity-0' : 'opacity-100'
       }`}
       id='popOver'

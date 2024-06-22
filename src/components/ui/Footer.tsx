@@ -104,7 +104,7 @@ export default function Footer() {
 
               <Link
                 href={
-                  "https://discord.gg/kubuD7Mvf7"
+                  "https://discord.gg/wnTfyh6T"
                 }
                 target="_blank"
                 className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"

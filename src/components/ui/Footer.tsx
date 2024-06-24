@@ -7,6 +7,8 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
 import { gsap } from "gsap"
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
+ 
+
 export default function Footer() {
   const openCalendly = () => {
     window.open("https://calendly.com/mnkrj500/30min", "_blank")
@@ -52,7 +54,7 @@ export default function Footer() {
       id="Footer"
     >
       <div
-        className="h-full   w-full lg:p-16 py-24 flex     items-center   relative       "
+        className="h-full   w-full lg:p-16 py-24 flex    items-center   relative       "
         id="FooterM"
       >
         <div className=" w-full    px-8 flex md:flex-row flex-col justify-center">
@@ -66,7 +68,7 @@ export default function Footer() {
                 className=" "
               />
 
-              <p className=" xl:text-lg text-sm lg:text-md  text-gray-400">
+              <p className=" xl:text-base text-sm lg:text-md  text-gray-400">
                 © 2024 Nexus Network, Inc.
               </p>
             </div>
@@ -74,30 +76,22 @@ export default function Footer() {
 
           <div className=" flex w-full space-x-24 md:mt-0 mt-16 justify-center">
             <div className="flex flex-col  " id="c2">
-              <p className=" sm:text-lg text-sm text-gray-400 mb-3">Socials</p>
+              <p className=" sm:text-base text-sm text-gray-400 mb-3">Socials</p>
 
               <Link
                 href={"https://twitter.com/NexusNetwork_0x"}
                 target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
                 Twitter
               </Link>
-              <Link
-                href={
-                  "https://nexusnetwork0x.substack.com/"
-                }
-                target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
-              >
-                Blog
-              </Link>
+ 
               <Link
                 href={
                   "https://www.linkedin.com/company/nexus-network-staking-infra/"
                 }
                 target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
                 Linkedin
               </Link>
@@ -107,7 +101,7 @@ export default function Footer() {
                   "https://discord.gg/wnTfyh6T"
                 }
                 target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
                 Discord
               </Link>
@@ -122,12 +116,12 @@ export default function Footer() {
               <Link
                 href={"https://docs.nexusnetwork.co.in/"}
                 target="_blank"
-                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
                 Documentation
               </Link>
 
-              <div className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out">
+              <div className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out">
                 <ScrollLink
                   to="DemoPage"
                   spy={true}
@@ -140,13 +134,33 @@ export default function Footer() {
               </div>
 
               <div
-                className="sm:text-lg text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 onClick={openCalendly}
               >
                 Schedule Call
               </div>
+
+              
+              <Link
+                href={"/terms"}
+                target="_blank"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+              >
+               Terms of service
+              </Link>
+
+              <Link
+                href={"/privacy"}
+                target="_blank"
+                className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+              >
+               Privacy policy 
+              </Link>
             </div>
           </div>
+ 
+        
+
         </div>
       </div>
     </div>

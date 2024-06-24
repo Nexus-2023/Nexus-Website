@@ -318,6 +318,16 @@ function ResponsiveAppBar() {
               </Link>
             </button>
           </Box>
+
+          <Box>
+          <div>
+                <a href="https://www.nexusnetwork.live/" target="_blank">
+              <button className="backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t   from-[var(--scedule-call-from-gradient)]  to-[var(--scedule-call-to-gradient)]  hover:from-[var(--scedule-call-hover-from-gradient)] hover:to-[var(--scedule-call-hover-to-gradient)]    transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-8 py-2 border-2 border-[var(--page-border)]"  title="Nexus orbit Dapp link">
+                app
+              </button>
+                </a>
+            </div>
+          </Box>
  
         </Toolbar>
       </nav>

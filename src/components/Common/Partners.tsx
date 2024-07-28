@@ -137,14 +137,22 @@ export function PartnerSlider() {
           </div>
         </div>
 
-        <div className="  w-full   items-center justify-center  flex flex-col lg:ml-10  ">
+        <div className="  w-full   items-center justify-center  flex flex-col lg:ml-2  ">
           <div className="h-[100px]  items-center justify-center  flex  ">
             <img
-              src="/Images/AnnouncementPage/Zeeve.svg"
+              src="/Images/AnnouncementPage/zeeveWhite.png"
               width="140px"
               height="140px"
               alt="partner icon"
             />
+
+
+{/* <img
+              src="/Images/AnnouncementPage/zeeveColored.jpg"
+              width="140px"
+              height="140px"
+              alt="partner icon"
+            /> */}
           </div>
         </div>
       </Slider>

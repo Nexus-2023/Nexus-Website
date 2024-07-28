@@ -120,7 +120,7 @@ export const TeamData = [
     src: "/Images/TeamPage/rohit_profile.svg",
     name: "Rohit Aggarwal",
     title: "CTO",
-    twitterlink: "https://twitter.com/RohitZoro_eth",
+    twitterlink: "https://x.com/RohitxNexus",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
     Description:
       "IIT Bombay (Btech), 5+ years of development experience, SSV DAO contributor, ex-Capgemini",

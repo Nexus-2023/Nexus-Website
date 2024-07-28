@@ -1,17 +1,15 @@
 import React from "react"
 
-import diagram from "/public/Images/WorkPage/workDiagram.png"
+import diagram from "/public/Images/WorkPage/workDiagram.webp"
 
 import Image from "next/image"
 import { gsap } from "gsap"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
-
 import { BeatLoader } from "react-spinners"
-
 import { Suspense } from "react"
-export function WorkPage() {
+export default function WorkPage() {
   gsap.registerPlugin(ScrollTrigger)
 
   const boxRef = useRef(null)

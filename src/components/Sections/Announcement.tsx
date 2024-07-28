@@ -1,11 +1,4 @@
 import React from "react"
-
-import Partners from "../Common/Partners"
-import { Button } from "@mui/material"
-import Card from "@mui/material"
-import { AnnounceCard } from "../Common/Card"
-import { announcementData } from "@/constants/data"
-
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
@@ -13,7 +6,7 @@ import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
 import { PartnerSlider, FunderSlider } from "../Common/Partners"
 import { Suspense } from "react"
-export function PartnersPage() {
+export default function PartnersPage() {
   gsap.registerPlugin(ScrollTrigger)
   const announceContainerRef = useRef(null)
   useGSAP(
@@ -125,10 +118,7 @@ export function FundingPage() {
             </div>
           </div>
 
-          <div
-            className="       justify-center items-center flex  "
-            id="slider"
-          >
+          <div className="justify-center items-center flex  " id="slider">
             <FunderSlider />
           </div>
         </Suspense>

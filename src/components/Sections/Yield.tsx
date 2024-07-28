@@ -10,7 +10,7 @@ import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
-export function YieldPage() {
+export default function YieldPage() {
   gsap.registerPlugin(ScrollTrigger)
   const yeildContainerRef = useRef<HTMLDivElement>(null)
   useGSAP(

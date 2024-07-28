@@ -10,7 +10,7 @@ import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
-export function TeamPage() {
+export default function TeamPage() {
   gsap.registerPlugin(ScrollTrigger)
   const teamContainerRef = useRef(null)
   useGSAP(

@@ -1,13 +1,3 @@
-import ssv from "/public/Images/partnerIcon1.svg"
-import nexusMutual from "/public/Images/partnerIcon2.svg"
-import chainproof from "/public/Images/partnerIcon3.svg"
-import EthIcon from "/public/Images/icon1.svg"
-import coinsIcon from "/public/Images/icon2.svg"
-import layerIcon from "/public/Images/icon3.svg"
-import p1 from "/public/Images/mayank_profile.svg"
-import p2 from "/public/Images/rohit_profile.svg"
-import p3 from "/public/Images/ashish_profile.svg"
-
 export const announcementData = [
   {
     heading: "Zeeve Partnership",
@@ -73,14 +63,6 @@ export const partnerData = [
     width: 150,
     height: 150,
   },
-
-  // {
-  //   src: "/Images/AnnouncementPage/partnericon3.png",
-  //   text: "INSURANCE Partner",
-
-  //   width: 320,
-  //   height: 320,
-  // },
 ]
 
 export const yeildData = [
@@ -109,7 +91,7 @@ export const yeildData = [
 
 export const TeamData = [
   {
-    src: "/Images/TeamPage/mayank_profile.svg",
+    src: "/Images/TeamPage/mayank_profile.webp",
     name: "Mayank Raj",
     title: "CEO",
     twitterlink: "https://twitter.com/mnkrj500",
@@ -117,7 +99,7 @@ export const TeamData = [
     Description: "IIM Ahmedabad (MBA), IIT Bombay (Btech), ex-KPMG",
   },
   {
-    src: "/Images/TeamPage/rohit_profile.svg",
+    src: "/Images/TeamPage/rohit_profile.webp",
     name: "Rohit Aggarwal",
     title: "CTO",
     twitterlink: "https://x.com/RohitxNexus",

@@ -10,7 +10,7 @@ import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
 
-export function FeaturePage() {
+export default function FeaturePage() {
   gsap.registerPlugin(ScrollTrigger)
   const featureContainerRef = useRef(null)
   useGSAP(

@@ -7,7 +7,7 @@ import {
   TextRevealAnimation2,
   MobileTextRevealAnimation,
   MobileTextRevealAnimation2,
-} from "../ui/TextAnimation"
+} from "../Common/TextAnimation"
 
 import gsap from "gsap"
 import { BeatLoader } from "react-spinners"

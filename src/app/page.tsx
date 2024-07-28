@@ -7,25 +7,24 @@ import {
   TeamPage,
   YieldPage,
   DemoPage,
-  FundingPage 
+  FundingPage,
 } from "@/components/Sections"
-import Footer from "@/components/ui/Footer"
- 
-import React, { useRef, useEffect, useState, useCallback } from "react"
-import SmoothScroll from "@/components/Sections/SmoothScroll"
+import Footer from "@/components/Common/Footer"
+
+import React from "react"
+
 export default function Home() {
   return (
     <div>
-                <HomePage />
-          <WorkPage />
-          <FeaturePage />
-          <YieldPage />
-          <DemoPage />
+      <HomePage />
+      <WorkPage />
+      <FeaturePage />
+      <YieldPage />
+      <DemoPage />
       <FundingPage />
-          <PartnersPage />
-          <TeamPage />
-          <Footer />
-      {/* <SmoothScroll /> */}
+      <PartnersPage />
+      <TeamPage />
+      <Footer />
     </div>
   )
 }

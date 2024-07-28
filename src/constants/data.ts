@@ -66,7 +66,6 @@ export const partnerData = [
     height: 150,
   },
 
-
   {
     src: "/Images/AnnouncementPage/Zeeve.svg",
     text: "INSURANCE Partner",
@@ -115,8 +114,7 @@ export const TeamData = [
     title: "CEO",
     twitterlink: "https://twitter.com/mnkrj500",
     linkedinlink: "https://www.linkedin.com/in/mayank-raj/",
-    Description : "IIM Ahmedabad (MBA), IIT Bombay (Btech), ex-KPMG"
-
+    Description: "IIM Ahmedabad (MBA), IIT Bombay (Btech), ex-KPMG",
   },
   {
     src: "/Images/TeamPage/rohit_profile.svg",
@@ -124,7 +122,58 @@ export const TeamData = [
     title: "CTO",
     twitterlink: "https://twitter.com/RohitZoro_eth",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
-    Description : "IIT Bombay (Btech), 5+ years of development experience, SSV DAO contributor, ex-Capgemini"
+    Description:
+      "IIT Bombay (Btech), 5+ years of development experience, SSV DAO contributor, ex-Capgemini",
   },
- 
 ]
+
+export const MetaData = {
+  title: "Nexus Network: Economic Layer for Rollups",
+  description:
+    "Nexus Network is revolutionising Rollup economics by enabling Native Yields for Rollups on Ethereum.",
+
+  applicationName: "Nexus Network",
+  authors: [
+    { name: "Muhammad Umer", url: "https://github.com/umershaikh123" },
+    { name: "Mayank Raj", url: "https://www.linkedin.com/in/mayank-raj/" },
+    {
+      name: "Rohit Aggarwal",
+      url: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
+    },
+    { name: "Ashish Gupta", url: "https://www.linkedin.com/in/ashishkumar29/" },
+  ],
+  generator: "Next.js",
+  openGraph: {
+    type: "website",
+    url: "https://www.nexusnetwork.co.in/",
+    title: "Economic Layer for Rollups",
+    description:
+      "Nexus Network is revolutionising Rollup economics by enabling Native Yields for Rollups on Ethereum.",
+    siteName: "Nexus Network",
+  },
+
+  creator: "Muhammad Umer",
+  publisher: "vercel",
+  keywords: [
+    "nexus network",
+    "rollup",
+    "ethereum",
+    "ethereum rollups",
+    "rollup bridge security",
+    "rollup capital efficiency",
+    "web3",
+    "blockchain security",
+    "pluggable staking",
+    "customizable staking limits",
+    "one-stop validator management",
+    "rollup security",
+    "rollup efficiency",
+    "native yields",
+    "defi staking",
+    "non-custodial staking",
+    "distributed validator technology (DVT)",
+    "distributed key generation (DKG)",
+    "ethereum bridges",
+    "rollup bridges",
+  ],
+}

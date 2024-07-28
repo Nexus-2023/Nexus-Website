@@ -62,18 +62,19 @@ export function WorkPage() {
             {" "}
             How does Nexus Network Work?
           </h1>
-
         </div>
 
         <div
           className="  flex items-center justify-center  mt-8 "
           id="workText"
-          >
-        <p className="lg:text-base  lg:max-w-[60%] max-w-[90%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10   ">
+        >
+          <p className="lg:text-base  lg:max-w-[60%] max-w-[90%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10   ">
             {" "}
-            Nexus Network delivers consistent, secure returns on idle ETH in bridges. Utilizing the latest staking technology, it offers a non-custodial and transparent way to generate yields
+            Nexus Network delivers consistent, secure returns on idle ETH in
+            bridges. Utilizing the latest staking technology, it offers a
+            non-custodial and transparent way to generate yields
           </p>
-          </div>
+        </div>
         <div
           className="flex items-center justify-center   -z-10  "
           id="workImage"

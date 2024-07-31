@@ -60,10 +60,10 @@ export default function Footer() {
         <div className=" w-full    px-8 flex md:flex-row flex-col justify-center">
           <div className="  w-full justify-center flex" id="c1">
             <div className="flex flex-col space-y-4">
-              <img
+              <Image
                 src="/Images/Logo/logo.png"
-                width="120px"
-                height="120px"
+                width={120}
+                height={120}
                 alt="effect"
                 className=" "
               />

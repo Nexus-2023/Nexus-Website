@@ -82,10 +82,10 @@ export function PartnerSlider() {
       <Slider {...settings}>
         <div className="  w-full  items-center justify-center   flex flex-col  ">
           <div className="h-[87px] mt-4  items-center justify-center  flex ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/partnerIcon1.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -93,10 +93,10 @@ export function PartnerSlider() {
 
         <div className="  w-full  items-center justify-center  flex flex-col  ">
           <div className="h-[100px]  items-center justify-center  flex ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/hash.jpg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className=" rounded-lg"
             />
@@ -105,10 +105,10 @@ export function PartnerSlider() {
 
         <div className="  w-full  items-center justify-center  flex flex-col   ">
           <div className="h-[100px]  items-center justify-center  flex mt-4 ml-2">
-            <img
+            <Image
               src="/Images/AnnouncementPage/avail.svg"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
               className=" rounded-lg"
             />
@@ -117,10 +117,10 @@ export function PartnerSlider() {
 
         <div className="  w-full items-center justify-center   flex flex-col  ">
           <div className="h-[100px]  items-center justify-center  flex mt-3">
-            <img
+            <Image
               src="/Images/AnnouncementPage/Shellboxes.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -128,10 +128,10 @@ export function PartnerSlider() {
 
         <div className="  w-full items-center justify-center   flex flex-col  lg:ml-4">
           <div className="h-[80px] items-center justify-center  flex  mt-6">
-            <img
+            <Image
               src="/Images/AnnouncementPage/stakely.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -139,10 +139,10 @@ export function PartnerSlider() {
 
         <div className="  w-full   items-center justify-center  flex flex-col lg:ml-2  ">
           <div className="h-[100px]  items-center justify-center  flex  ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/zeeveWhite.png"
-              width="140px"
-              height="140px"
+              width={140}
+              height={140}
               alt="partner icon"
             />
 
@@ -230,10 +230,10 @@ export function FunderSlider() {
 
       <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex  ml-4">
-            <img
+            <Image
               src="/Images/Funders/hashWhite.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
             />
           </div>
@@ -242,10 +242,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex ml-8 ">
-            <img
+            <Image
               src="/Images/Funders/Mask_T.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -254,10 +254,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[87px] mt-3 ml-5  items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/coin_T.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain rounded-xl"
             />
@@ -270,10 +270,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col  ml-4">
           <div className="h-[80px] mt-3 -ml-4 items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/orbit_T.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -282,10 +282,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col      justify-center  ">
           <div className="h-[100px]   mt-2  items-center justify-center flex ml-2 ">
-            <img
+            <Image
               src="/Images/Funders/Founderheads_Logo_White.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain"
             />
@@ -315,10 +315,10 @@ export function TabFunderSlider() {
       <Slider {...settings}>
         <div className="  w-full   flex flex-col  ">
           <div className="h-[87px] mt-3  items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/coin_T.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain rounded-xl"
             />
@@ -327,10 +327,10 @@ export function TabFunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex  ml-4">
-            <img
+            <Image
               src="/Images/Funders/hashWhite.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
             />
           </div>
@@ -338,10 +338,10 @@ export function TabFunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex ml-8 ">
-            <img
+            <Image
               src="/Images/Funders/Mask_T.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -350,10 +350,10 @@ export function TabFunderSlider() {
 
         <div className="  w-full   flex flex-col  ml-4">
           <div className="h-[80px] mt-3 items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/orbit_T.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -362,10 +362,10 @@ export function TabFunderSlider() {
 
         <div className="  w-full   flex flex-col      justify-center  ">
           <div className="h-[100px]   mt-2  items-center justify-center flex ml-2 ">
-            <img
+            <Image
               src="/Images/Funders/Founderheads_Logo_White.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain"
             />
@@ -395,10 +395,10 @@ export function MobileFunderSlider() {
       <Slider {...settings}>
         <div className="  w-full   flex flex-col  ">
           <div className="h-[87px] mt-3  items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/coin_T.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain rounded-xl"
             />
@@ -407,10 +407,10 @@ export function MobileFunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex  ml-4">
-            <img
+            <Image
               src="/Images/Funders/hashWhite.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
             />
           </div>
@@ -418,10 +418,10 @@ export function MobileFunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex ml-8 ">
-            <img
+            <Image
               src="/Images/Funders/Mask_T.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -430,10 +430,10 @@ export function MobileFunderSlider() {
 
         <div className="  w-full   flex flex-col  ml-4">
           <div className="h-[80px] mt-3 items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/orbit_T.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -442,10 +442,10 @@ export function MobileFunderSlider() {
 
         <div className="  w-full   flex flex-col      justify-center  ">
           <div className="h-[100px]   mt-2  items-center justify-center flex ml-2 ">
-            <img
+            <Image
               src="/Images/Funders/Founderheads_Logo_White.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain"
             />
@@ -475,10 +475,10 @@ export function TabPartnerSlider() {
       <Slider {...settings}>
         <div className="  w-full   flex flex-col  ">
           <div className="h-[87px] mt-3 ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/partnerIcon1.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -486,10 +486,10 @@ export function TabPartnerSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/hash.jpg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className="rounded-lg"
             />
@@ -498,10 +498,10 @@ export function TabPartnerSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/Shellboxes.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -509,10 +509,10 @@ export function TabPartnerSlider() {
 
         <div className="  w-full   flex flex-col  ml-4">
           <div className="h-[80px] mt-5">
-            <img
+            <Image
               src="/Images/AnnouncementPage/stakely.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -520,10 +520,10 @@ export function TabPartnerSlider() {
 
         <div className="  w-full   flex flex-col ml-8 ">
           <div className="h-[100px] ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/Zeeve.svg"
-              width="130px"
-              height="130px"
+              width={130}
+              height={130}
               alt="partner icon"
             />
           </div>
@@ -552,10 +552,10 @@ export function MobilePartnerSlider() {
       <Slider {...settings}>
         <div className="  w-full   flex flex-col  ">
           <div className="h-[87px] mt-3 ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/partnerIcon1.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="funder icon"
             />
           </div>
@@ -563,10 +563,10 @@ export function MobilePartnerSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/hash.jpg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className="rounded-lg"
             />
@@ -575,10 +575,10 @@ export function MobilePartnerSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/Shellboxes.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -586,10 +586,10 @@ export function MobilePartnerSlider() {
 
         <div className="  w-full   flex flex-col  *:">
           <div className="h-[80px] mt-5">
-            <img
+            <Image
               src="/Images/AnnouncementPage/stakely.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -597,10 +597,10 @@ export function MobilePartnerSlider() {
 
         <div className="  w-full   flex flex-col   ">
           <div className="h-[100px] ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/Zeeve.svg"
-              width="130px"
-              height="130px"
+              width={130}
+              height={130}
               alt="partner icon"
             />
           </div>

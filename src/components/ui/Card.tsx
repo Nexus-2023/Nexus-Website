@@ -75,7 +75,7 @@ export function YieldCard({
       className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  mb-12 "
       
     >
-      <img
+      <Image
         src={src}
         width={width}
         height={height}
@@ -96,7 +96,7 @@ export function PartnersCard({ src, text, width, height }: PartnerCardProps) {
   return (
     <div className=" space-y-5 flex flex-col w-full   lg:max-w-[20vw] justify-center items-center">
       {/* <Image src={src} width={width} height={height} alt="partner icon" /> */}
-      <img src={src} width={width} height={height} alt="partner icon" />
+      <Image src={src} width={width} height={height} alt="partner icon" />
       <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" />
 
       <h3 className=" text-gray-400 text-xl ">{text}</h3>
@@ -116,10 +116,10 @@ export function TeamCard({
     <div className="flex flex-col items-center   w-full" id="teamCard">
                   <div className="lg:p-4 p-2 flex-col      w-full    min-w-min       rounded-3xl">
               <div className="flex justify-center items-center   ">
-              <img
+              <Image
         src={src}
-        width="160px"
-        height="160px"
+        width={160}
+        height={160}
         alt="profile pic"
         className=" "
       />
@@ -160,10 +160,10 @@ export function TeamCard({
           target="_blank"
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
-          <img
+          <Image
             src="/Images/TeamPage/twitterIcon.svg"
-            width="40px"
-            height="40px"
+            width={40}
+            height={40}
             alt="twitter icon"
             className=" "
           />
@@ -173,10 +173,10 @@ export function TeamCard({
           target="_blank"
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
-          <img
+          <Image
             src="/Images/TeamPage/linkedinIcon.svg"
-            width="40px"
-            height="40px"
+            width={40}
+            height={40}
             alt="linkedin icon"
             className=" "
           />

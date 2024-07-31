@@ -9,6 +9,7 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
+import Image from "next/image"
 
 export function FeaturePage() {
   gsap.registerPlugin(ScrollTrigger)
@@ -80,10 +81,10 @@ export function FeaturePage() {
                   className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
-                    <img
+                    <Image
                       src="/Images/FeaturesPage/d1.svg"
-                      width="300px"
-                      height="300px"
+                      width={300}
+                      height={300}
                       alt="box image"
                     />
                   </div>
@@ -104,10 +105,10 @@ export function FeaturePage() {
                   className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
-                    <img
+                    <Image
                       src="/Images/FeaturesPage/d2.svg"
-                      width="300px"
-                      height="300px"
+                      width={300}
+                      height={300}
                       alt="box image"
                     />
                   </div>
@@ -130,10 +131,10 @@ export function FeaturePage() {
                 {/* fullBox */}
                 <div className=" px-4  h-full      w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center   ">
                   <div>
-                    <img
+                    <Image
                       src="/Images/FeaturesPage/d5.svg"
-                      width="200px"
-                      height="200px"
+                      width={200}
+                      height={200}
                       alt="box image"
                     />
                   </div>
@@ -157,10 +158,10 @@ export function FeaturePage() {
                   className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
-                    <img
+                    <Image
                       src="/Images/FeaturesPage/d3.svg"
-                      width="250px"
-                      height="250px"
+                      width={250}
+                      height={250}
                       alt="box image"
                     />
                   </div>
@@ -181,10 +182,10 @@ export function FeaturePage() {
                   className={` px-4  h-full   min-h-[20vh] w-full max-w-[25rem]  shadow-innerC shadow-black    flex-col   py-8   bg-gradient-to-t from-[var(--box-shadow-from)]  to-[var(--box-shadow-to)]    border-8 border-[var(--box-shadow-border)] rounded-2xl    border-double flex justify-center items-center  `}
                 >
                   <div>
-                    <img
+                    <Image
                       src="/Images/FeaturesPage/d4.svg"
-                      width="250px"
-                      height="250px"
+                      width={250}
+                      height={250}
                       alt="box image"
                     />
                   </div>

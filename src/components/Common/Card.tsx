@@ -23,7 +23,7 @@ interface TeamCardProps {
   title: string
   twitterlink: string
   linkedinlink: string
-  Description : string
+  Description: string
 }
 
 interface YeildCardProps {
@@ -71,10 +71,7 @@ export function YieldCard({
   height,
 }: YeildCardProps) {
   return (
-    <div
-      className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  mb-12 "
-      
-    >
+    <div className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  mb-12 ">
       <img
         src={src}
         width={width}
@@ -110,79 +107,73 @@ export function TeamCard({
   title,
   twitterlink,
   linkedinlink,
-  Description
+  Description,
 }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center   w-full" id="teamCard">
-                  <div className="lg:p-4 p-2 flex-col      w-full    min-w-min       rounded-3xl">
-              <div className="flex justify-center items-center   ">
-              <img
-        src={src}
-        width="160px"
-        height="160px"
-        alt="profile pic"
-        className=" "
-      />
-              </div>
+      <div className="lg:p-4 p-2 flex-col      w-full    min-w-min       rounded-3xl">
+        <div className="flex justify-center items-center   ">
+          <img
+            src={src}
+            width="130px"
+            height="130px"
+            alt="profile pic"
+            className=" "
+          />
+        </div>
 
-              <div className="w-full flex justify-center items-center mt-2     ">
-
-                <div className="flex justify-center items-center   mx-4  w-full   ">
-
-                 <div>
-                  <span className="sm:text-xl text-base font-bold text-white   w-full">
-                  {name} 
-                  <span className=" sm:text-lg text-base font-regular   text-gray-200 items-center   w-full"> 
-                 {" "} - {title} 
-                  </span>
+        <div className="w-full flex justify-center items-center mt-2     ">
+          <div className="flex justify-center items-center   mx-4  w-full   ">
+            <div>
+              <span className="sm:text-xl text-base font-bold text-white   w-full">
+                {name}
+                <span className=" sm:text-lg text-base font-regular   text-gray-200 items-center   w-full">
+                  {" "}
+                  - {title}
                 </span>
-                </div> 
- 
-</div>
-              </div>
-
-      
-
-              {/* <div className="flex sm:justify-start justify-center items-center max-w-[15rem]  laptop:max-w-[25rem] mt-1 border-2 w-full"> */}
-              <div className="w-full flex justify-center items-center  ">
-
-              <div className="flex sm:justify-start justify-center items-center   lg:max-w-[16rem] max-w-[16rem] mt-1  w-full">
-                <p className=" text-[0.7rem] sm:text-base  font-medium  text-gray-300  text-center min-h-16 h-full">
-              
-                {Description}
-                </p>
-              </div>
-              </div>
-
-              <div className="flex     justify-center   items-center space-x-5  w-full  mt-5  ">
-              <Link
-          href={twitterlink}
-          target="_blank"
-          className="hover:scale-125    transition-transform d duration-500 ease-in-out"
-        >
-          <img
-            src="/Images/TeamPage/twitterIcon.svg"
-            width="40px"
-            height="40px"
-            alt="twitter icon"
-            className=" "
-          />
-        </Link>
-        <Link
-          href={linkedinlink}
-          target="_blank"
-          className="hover:scale-125    transition-transform d duration-500 ease-in-out"
-        >
-          <img
-            src="/Images/TeamPage/linkedinIcon.svg"
-            width="40px"
-            height="40px"
-            alt="linkedin icon"
-            className=" "
-          />
-        </Link>
-              </div>
+              </span>
             </div>
+          </div>
+        </div>
+
+        {/* <div className="flex sm:justify-start justify-center items-center max-w-[15rem]  laptop:max-w-[25rem] mt-1 border-2 w-full"> */}
+        <div className="w-full flex justify-center items-center  ">
+          <div className="flex sm:justify-start justify-center items-center   lg:max-w-[16rem] max-w-[16rem] mt-1  w-full">
+            <p className=" text-[0.7rem] sm:text-base  font-medium  text-gray-300  text-center min-h-16 h-full">
+              {Description}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex     justify-center   items-center space-x-5  w-full  mt-5  ">
+          <Link
+            href={twitterlink}
+            target="_blank"
+            className="hover:scale-125    transition-transform d duration-500 ease-in-out"
+          >
+            <img
+              src="/Images/TeamPage/twitterIcon.svg"
+              width="40px"
+              height="40px"
+              alt="twitter icon"
+              className=" "
+            />
+          </Link>
+          <Link
+            href={linkedinlink}
+            target="_blank"
+            className="hover:scale-125    transition-transform d duration-500 ease-in-out"
+          >
+            <img
+              src="/Images/TeamPage/linkedinIcon.svg"
+              width="40px"
+              height="40px"
+              alt="linkedin icon"
+              className=" "
+            />
+          </Link>
+        </div>
+      </div>
       {/* <img
         src={src}
         width="150px"

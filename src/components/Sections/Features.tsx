@@ -10,7 +10,7 @@ import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
 
-export function FeaturePage() {
+export default function FeaturePage() {
   gsap.registerPlugin(ScrollTrigger)
   const featureContainerRef = useRef(null)
   useGSAP(
@@ -52,7 +52,6 @@ export function FeaturePage() {
           className="absolute top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2   w-[20%] h-[80%] bg-[var(--glow-Effect1)] rounded-2xl blur-3xl  -z-20 "
           id="glowEffect2"
         />
- 
 
         <div className="" id="heading_f">
           <h1 className="font-medium  md:text-4xl    sm:text-3xl text-2xl  text-wrap text-center mb-6">
@@ -66,11 +65,16 @@ export function FeaturePage() {
           id="paragraph_f"
         >
           <p>
-          Supercharge your ecosystem with yields! Differentiate your chain by rewarding users and dApps while boosting capital efficiency on your chain
+            Supercharge your ecosystem with yields! Differentiate your chain by
+            rewarding users and dApps while boosting capital efficiency on your
+            chain
           </p>
         </div>
         <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
-          <div className=" h-full w-full  flex  justify-center items-center mt-24   " id="FeaturesContainer" >
+          <div
+            className=" h-full w-full  flex  justify-center items-center mt-24   "
+            id="FeaturesContainer"
+          >
             {/* boxes */}
             <div className=" xl:flex-row xl:space-x-12   xl:space-y-4 flex flex-col justify-center items-center  space-x-0  space-y-4  ">
               {/* 1st col */}

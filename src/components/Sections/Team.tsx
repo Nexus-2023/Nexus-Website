@@ -1,10 +1,7 @@
 import React from "react"
 
-import Image from "next/image"
-import team from "/public/Images/team_btn.svg"
-
 import { TeamData } from "@/constants/data"
-import { TeamCard } from "../ui/Card"
+import { TeamCard } from "../Common/Card"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
@@ -13,7 +10,7 @@ import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
-export function TeamPage() {
+export default function TeamPage() {
   gsap.registerPlugin(ScrollTrigger)
   const teamContainerRef = useRef(null)
   useGSAP(
@@ -58,15 +55,19 @@ export function TeamPage() {
         >
           <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
             <div className="     items-center   w-full  max-w-7xl    px-0 flex flex-col">
- 
               <h1 className="  sm:text-5xl text-2xl font-medium  " id="h1">
                 Meet the Founders
               </h1>
 
-              <p className="lg:text-base  lg:max-w-[60%] max-w-[80%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10  mb-6 mt-6  " id="p1">
-            {" "}
-            Building in staking/liquid staking space across Ethereum and Cosmos for 3+ years. Won prizes in multiple ETH Hackathons (Devcon, ETHIstanbul, ETHScaling, ETHOnline)
-          </p>
+              <p
+                className="lg:text-base  lg:max-w-[60%] max-w-[80%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10  mb-6 mt-6  "
+                id="p1"
+              >
+                {" "}
+                Building in staking/liquid staking space across Ethereum and
+                Cosmos for 3+ years. Won prizes in multiple ETH Hackathons
+                (Devcon, ETHIstanbul, ETHScaling, ETHOnline)
+              </p>
 
               <div className=" lg:p-8  py-4   space-y-16 lg:space-y-0 w-full lg:max-w-3xl max-w-[60vw] sm:max-w-[60vw]  flex lg:flex-row flex-col rounded-2xl relative">
                 <div

@@ -1,31 +1,30 @@
 "use client"
 import {
-  HomePage,
-  WorkPage,
-  PartnersPage,
-  FeaturePage,
-  TeamPage,
-  YieldPage,
-  DemoPage,
-  FundingPage 
+  LazyDemoPage,
+  LazyFeaturePage,
+  LazyHomePage,
+  LazyPartnersPage,
+  LazyTeamPage,
+  LazyWorkPage,
+  LazyYieldPage,
+  FundingPage,
 } from "@/components/Sections"
-import Footer from "@/components/ui/Footer"
- 
-import React, { useRef, useEffect, useState, useCallback } from "react"
-import SmoothScroll from "@/components/Sections/SmoothScroll"
+import Footer from "@/components/Common/Footer"
+
+import React from "react"
+
 export default function Home() {
   return (
     <div>
-                <HomePage />
-          <WorkPage />
-          <FeaturePage />
-          <YieldPage />
-          <DemoPage />
+      <LazyHomePage />
+      <LazyWorkPage />
+      <LazyFeaturePage />
+      <LazyYieldPage />
+      <LazyDemoPage />
       <FundingPage />
-          <PartnersPage />
-          <TeamPage />
-          <Footer />
-      {/* <SmoothScroll /> */}
+      <LazyPartnersPage />
+      <LazyTeamPage />
+      <Footer />
     </div>
   )
 }

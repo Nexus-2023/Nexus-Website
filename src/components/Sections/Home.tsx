@@ -7,14 +7,14 @@ import {
   TextRevealAnimation2,
   MobileTextRevealAnimation,
   MobileTextRevealAnimation2,
-} from "../ui/TextAnimation"
+} from "../Common/TextAnimation"
 
 import gsap from "gsap"
 import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
 
-export function HomePage() {
+export default function HomePage() {
   const openCalendly = () => {
     window.open("https://calendly.com/mnkrj500/30min", "_blank")
     return false

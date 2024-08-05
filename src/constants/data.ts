@@ -1,13 +1,3 @@
-import ssv from "/public/Images/partnerIcon1.svg"
-import nexusMutual from "/public/Images/partnerIcon2.svg"
-import chainproof from "/public/Images/partnerIcon3.svg"
-import EthIcon from "/public/Images/icon1.svg"
-import coinsIcon from "/public/Images/icon2.svg"
-import layerIcon from "/public/Images/icon3.svg"
-import p1 from "/public/Images/mayank_profile.svg"
-import p2 from "/public/Images/rohit_profile.svg"
-import p3 from "/public/Images/ashish_profile.svg"
-
 export const announcementData = [
   {
     heading: "Zeeve Partnership",
@@ -66,7 +56,6 @@ export const partnerData = [
     height: 150,
   },
 
-
   {
     src: "/Images/AnnouncementPage/Zeeve.svg",
     text: "INSURANCE Partner",
@@ -74,14 +63,6 @@ export const partnerData = [
     width: 150,
     height: 150,
   },
-
-  // {
-  //   src: "/Images/AnnouncementPage/partnericon3.png",
-  //   text: "INSURANCE Partner",
-
-  //   width: 320,
-  //   height: 320,
-  // },
 ]
 
 export const yeildData = [
@@ -110,21 +91,71 @@ export const yeildData = [
 
 export const TeamData = [
   {
-    src: "/Images/TeamPage/mayank_profile.svg",
+    src: "/Images/TeamPage/mayank_profile.webp",
     name: "Mayank Raj",
     title: "CEO",
     twitterlink: "https://twitter.com/mnkrj500",
     linkedinlink: "https://www.linkedin.com/in/mayank-raj/",
-    Description : "IIM Ahmedabad (MBA), IIT Bombay (Btech), ex-KPMG"
-
+    Description: "IIM Ahmedabad (MBA), IIT Bombay (Btech), ex-KPMG",
   },
   {
-    src: "/Images/TeamPage/rohit_profile.svg",
+    src: "/Images/TeamPage/rohit_profile.webp",
     name: "Rohit Aggarwal",
     title: "CTO",
     twitterlink: "https://x.com/RohitxNexus",
     linkedinlink: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
-    Description : "IIT Bombay (Btech), 5+ years of development experience, SSV DAO contributor, ex-Capgemini"
+    Description:
+      "IIT Bombay (Btech), 5+ years of development experience, SSV DAO contributor, ex-Capgemini",
   },
- 
 ]
+
+export const MetaData = {
+  title: "Nexus Network: Economic Layer for Rollups",
+  description:
+    "Nexus Network is revolutionising Rollup economics by enabling Native Yields for Rollups on Ethereum.",
+
+  applicationName: "Nexus Network",
+  authors: [
+    { name: "Muhammad Umer", url: "https://github.com/umershaikh123" },
+    { name: "Mayank Raj", url: "https://www.linkedin.com/in/mayank-raj/" },
+    {
+      name: "Rohit Aggarwal",
+      url: "https://www.linkedin.com/in/rohit-aggarwal-6045a6b7/",
+    },
+    { name: "Ashish Gupta", url: "https://www.linkedin.com/in/ashishkumar29/" },
+  ],
+  generator: "Next.js",
+  openGraph: {
+    type: "website",
+    url: "https://www.nexusnetwork.co.in/",
+    title: "Economic Layer for Rollups",
+    description:
+      "Nexus Network is revolutionising Rollup economics by enabling Native Yields for Rollups on Ethereum.",
+    siteName: "Nexus Network",
+  },
+
+  creator: "Muhammad Umer",
+  publisher: "vercel",
+  keywords: [
+    "nexus network",
+    "rollup",
+    "ethereum",
+    "ethereum rollups",
+    "rollup bridge security",
+    "rollup capital efficiency",
+    "web3",
+    "blockchain security",
+    "pluggable staking",
+    "customizable staking limits",
+    "one-stop validator management",
+    "rollup security",
+    "rollup efficiency",
+    "native yields",
+    "defi staking",
+    "non-custodial staking",
+    "distributed validator technology (DVT)",
+    "distributed key generation (DKG)",
+    "ethereum bridges",
+    "rollup bridges",
+  ],
+}

@@ -2,7 +2,7 @@
 import React from "react"
 
 import { yeildData } from "@/constants/data"
-import { YieldCard } from "../ui/Card"
+import { YieldCard } from "../Common/Card"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
@@ -10,7 +10,7 @@ import { gsap } from "gsap"
 import { BeatLoader } from "react-spinners"
 
 import { Suspense } from "react"
-export function YieldPage() {
+export default function YieldPage() {
   gsap.registerPlugin(ScrollTrigger)
   const yeildContainerRef = useRef<HTMLDivElement>(null)
   useGSAP(
@@ -55,7 +55,6 @@ export function YieldPage() {
             id="glowEffect3"
           />
 
- 
           <div id="heading_y">
             <h1 className=" md:text-4xl   text-3xl  mb-6  font-medium     text-wrap text-center ">
               {" "}
@@ -74,7 +73,10 @@ export function YieldPage() {
           </div>
 
           <div className=" h-full w-full   flex  justify-center items-center">
-            <div className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:ml-12 lg:space-x-28 items-center    lg:space-y-2   " id="yeildContainer">
+            <div
+              className="    lg:flex  lg:flex-row flex-col  w-full justify-center  lg:ml-12 lg:space-x-28 items-center    lg:space-y-2   "
+              id="yeildContainer"
+            >
               {yeildData.map((data, index) => (
                 <YieldCard
                   key={index}

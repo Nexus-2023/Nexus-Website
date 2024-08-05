@@ -1,17 +1,15 @@
 import React from "react"
 
-import diagram from "/public/Images/WorkPage/workDiagram.png"
+import diagram from "/public/Images/WorkPage/workDiagram.webp"
 
 import Image from "next/image"
 import { gsap } from "gsap"
 import { useEffect, useRef } from "react"
 import ScrollTrigger from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
-
 import { BeatLoader } from "react-spinners"
-
 import { Suspense } from "react"
-export function WorkPage() {
+export default function WorkPage() {
   gsap.registerPlugin(ScrollTrigger)
 
   const boxRef = useRef(null)
@@ -62,18 +60,19 @@ export function WorkPage() {
             {" "}
             How does Nexus Network Work?
           </h1>
-
         </div>
 
         <div
           className="  flex items-center justify-center  mt-8 "
           id="workText"
-          >
-        <p className="lg:text-base  lg:max-w-[60%] max-w-[90%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10   ">
+        >
+          <p className="lg:text-base  lg:max-w-[60%] max-w-[90%]   font-normal text-gray-400 sm:text-base  text-xs  text-wrap text-center  z-10   ">
             {" "}
-            Nexus Network delivers consistent, secure returns on idle ETH in bridges. Utilizing the latest staking technology, it offers a non-custodial and transparent way to generate yields
+            Nexus Network delivers consistent, secure returns on idle ETH in
+            bridges. Utilizing the latest staking technology, it offers a
+            non-custodial and transparent way to generate yields
           </p>
-          </div>
+        </div>
         <div
           className="flex items-center justify-center   -z-10  "
           id="workImage"

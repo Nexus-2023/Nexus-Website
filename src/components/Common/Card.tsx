@@ -2,7 +2,7 @@ import React from "react"
 
 import { Button } from "@mui/material"
 import Link from "next/link"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 import linkedin from "/public/Images/linkedinIcon.svg"
 import twitter from "/public/Images/twitterIcon.svg"
@@ -58,6 +58,62 @@ export function AnnounceCard({ h1, p, link }: AnnounceCardProps) {
           <Button sx={{ color: "var(--button-primary)" }}> Read More</Button>
         </Link>
       </div>
+    </div>
+  )
+}
+
+export function GetStartedCard({
+  src,
+  size,
+  text,
+}: {
+  text: string
+  src: StaticImageData
+  size: number
+}) {
+  return (
+    <div className="flex flex-col  items-center justify-center">
+      <div className="border-2 border-white rounded-full   w-[8rem]  h-[8rem] items-center justify-center flex">
+        <Image src={src} width={size} height={size} alt="Diagram" />
+      </div>
+      <h1 className="text-xl text-white mt-2  min-w-[9rem] text-center">
+        {text}
+      </h1>
+    </div>
+  )
+}
+
+export function EarnYieldCard({
+  src,
+  size,
+  heading,
+  paragragh,
+}: {
+  heading: string
+  paragragh: string
+  src: StaticImageData
+  size: number
+}) {
+  return (
+    <div className=" bg-[#010C19] border-2 border-[#2E9AE4] px-6 py-4 flex flex-col max-w-[24rem] space-y-4 rounded-xl">
+      <Image src={src} width={size} height={size} alt="Diagram" />
+      <h1 className="text-xl">{heading}</h1>
+      <p className=" text-[#A8A8A8] ">{paragragh}</p>
+    </div>
+  )
+}
+
+export function SuperChargeCard({
+  heading,
+  paragragh,
+}: {
+  heading: string
+  paragragh: string
+}) {
+  return (
+    <div className=" bg-[#010C19] border-2 border-[#2E9AE4] px-6 py-4 flex flex-col max-w-[35rem] space-y-4 rounded-xl">
+      <h1 className="text-xl">{heading}</h1>
+      <p className=" text-[#A8A8A8] ">{paragragh}</p>
     </div>
   )
 }

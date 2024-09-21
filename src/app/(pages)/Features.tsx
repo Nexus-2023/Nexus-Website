@@ -5,7 +5,7 @@ import d3 from "/public/Images/FeaturesPage/d3.svg"
 import d4 from "/public/Images/FeaturesPage/d4.svg"
 import d5 from "/public/Images/FeaturesPage/d5.svg"
 import { BeatLoader } from "react-spinners"
-import { GlowEffect2 } from "@/components/Common/GlowEffect"
+import { GlowEffect1 } from "@/components/Common/GlowEffect"
 import { Suspense } from "react"
 import Box, { FullBox } from "@/components/Common/Box"
 import { PageHeading, PageSubHeading } from "@/components/Common/Heading"
@@ -18,7 +18,7 @@ export default function FeaturePage() {
     >
       <div className="h-full  w-full flex  py-16  items-center  relative    border-x-2  border-t-2   border-[var(--page-border)]   flex-col  ">
         <ClientFade delay={400}>
-          <GlowEffect2 />
+          <GlowEffect1 />
 
           <PageHeading text="Why integrate Nexus for your chain?" />
 

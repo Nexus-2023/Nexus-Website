@@ -1,6 +1,6 @@
 import React from "react"
-import { FundingPage } from "./Announcement"
-const LazyPartnersPage = React.lazy(() => import("./Announcement"))
+const LazyPartnersPage = React.lazy(() => import("./Partners"))
+const LazyBackedByPage = React.lazy(() => import("./BackedBy"))
 const LazyHomePage = React.lazy(() => import("./Home"))
 const LazyDemoPage = React.lazy(() => import("./Demo"))
 const LazyFeaturePage = React.lazy(() => import("./Features"))
@@ -9,7 +9,7 @@ const LazyWorkPage = React.lazy(() => import("./Work"))
 const LazyYieldPage = React.lazy(() => import("./Yield"))
 
 export {
-  FundingPage,
+  LazyBackedByPage,
   LazyPartnersPage,
   LazyDemoPage,
   LazyFeaturePage,

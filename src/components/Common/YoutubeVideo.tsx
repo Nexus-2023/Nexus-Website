@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from "react"
 import YouTube from "react-youtube"
 import { ClipLoader } from "react-spinners"
@@ -6,7 +7,6 @@ const YouTubeFacade = ({ videoId }: { videoId: any }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the video container is within the viewport
       const videoContainer = document.getElementById("video")
       if (videoContainer) {
         if (videoContainer.getBoundingClientRect().top < window.innerHeight) {
@@ -18,7 +18,6 @@ const YouTubeFacade = ({ videoId }: { videoId: any }) => {
 
     window.addEventListener("scroll", handleScroll)
 
-    // Optionally, handle component unmount to avoid memory leaks
     return () => window.removeEventListener("scroll", handleScroll)
   }, [videoId])
 

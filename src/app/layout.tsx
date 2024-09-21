@@ -5,9 +5,7 @@ import ResponsiveAppBar from "@/components/Common/navbar"
 import { TopNotification } from "@/components/Common/TopNotification"
 import { MetaData } from "@/constants/data"
 const inter = Inter({ subsets: ["latin"] })
-
 export const metadata: Metadata = MetaData
-
 export default function RootLayout({
   children,
 }: Readonly<{

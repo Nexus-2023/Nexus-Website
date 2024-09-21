@@ -70,22 +70,19 @@ export const yeildData = [
     src: "/Images/YeildPage/icon1.png",
     heading: "Eth Staking",
     range: "3-4%",
-    width: 60,
-    height: 60,
+    size: 60,
   },
   {
     src: "/Images/YeildPage/icon2.png",
     heading: "Restaking",
     range: "Upto 5%",
-    width: 160,
-    height: 160,
+    size: 160,
   },
   {
     src: "/Images/YeildPage/icon3.svg",
     heading: "Stablecoin Yields",
     range: "Upto 15%",
-    width: 200,
-    height: 200,
+    size: 200,
   },
 ]
 

@@ -6,7 +6,7 @@ export default function page() {
       <h1 className=" text-2xl font-semibold">Privacy Policy</h1>
 
       <div className=" justify-start items-start mt-8 lg:px-24">
-        <p className="mb-4">
+        <div className="mb-4">
           Please read this Privacy Policy (“Privacy Policy”) carefully. It
           provides information about how Shifu Software Solutions Pte Ltd.
           (“Company”, “we”, “us”, and “our”) collects, uses, shares, and
@@ -14,33 +14,28 @@ export default function page() {
           Data Protection Act 2012 (the “PDPA”). If you have any questions,
           comments, or concerns please contact us using the methods provided in
           the “Contact Us” section of this Privacy Policy below.
-        </p>
-        <p className="mb-4">
+        </div>
+        <div className="mb-4">
           By visiting, accessing, or using our Services (defined below), you
           acknowledge and agree that you have received and reviewed this Privacy
           Policy. From time to time, we may update this Privacy Policy as
           described in the Changes to this Privacy Policy section below.
-        </p>
-        <p className="mb-4">
-          Please also review the applicable 
-          
-          <a
-            href="/terms"
-            target="_blank"
-            className=" text-blue-400 underline"
-          >
+        </div>
+        <div className="mb-4">
+          Please also review the applicable
+          <a href="/terms" target="_blank" className=" text-blue-400 underline">
             {" "}
-            Terms of Service  {" "}
-          </a>, which also apply
-          to the use of our Services. Terms that are defined in the Terms of
-          Service have the same meaning in this Privacy Policy unless this
-          Privacy Policy specifies differently. If you are a resident of the
-          European Economic Area ("EEA"), United Kingdom (“UK”), Switzerland, or
-          another non-U.S. country with local data protection laws, please see
-          the Notice to European and Non-U.S. Residents section below for
-          information about your rights under the applicable local data
-          protection laws.
-        </p>
+            Terms of Service{" "}
+          </a>
+          , which also apply to the use of our Services. Terms that are defined
+          in the Terms of Service have the same meaning in this Privacy Policy
+          unless this Privacy Policy specifies differently. If you are a
+          resident of the European Economic Area ("EEA"), United Kingdom (“UK”),
+          Switzerland, or another non-U.S. country with local data protection
+          laws, please see the Notice to European and Non-U.S. Residents section
+          below for information about your rights under the applicable local
+          data protection laws.
+        </div>
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           Table of Contents
         </h2>
@@ -65,10 +60,10 @@ export default function page() {
         <h2 className="text-blue-400 text-xl font-semibold mb-4">
           1. Scope of This Privacy Policy
         </h2>
-        <p className="mb-4">
+        <div className="mb-4">
           This Privacy Policy applies to personal information that we collect,
           use, share, and otherwise process when you:
-        </p>
+        </div>
         <ul className="list-disc pl-4  ">
           <li>
             Access or use our website available at
@@ -97,12 +92,12 @@ export default function page() {
           </li>
         </ul>
         <br />
-        <p>
+        <div>
           For purposes of this Privacy Policy, we refer to our Website,
           Products, and any other online service we provide that links to this
           Privacy Policy as the “Services”, which shall be deemed to read and
           construed with the definition provided in our Terms of Service.
-        </p>
+        </div>
         <br />
         This Privacy Policy applies to:
         <ul className="list-disc pl-4  ">
@@ -117,7 +112,7 @@ export default function page() {
         <h2 className="text-blue-400 text-xl font-semibold mb-4">
           2. Personal Information We Collect and How
         </h2>
-        <p>
+        <div>
           As used in this Privacy Policy, “personal information” means any
           information that identifies or could be used to identify an individual
           person. For example, personal information may include name, email
@@ -129,23 +124,23 @@ export default function page() {
           the information we collect to anonymous information, but we do collect
           and process some personal information to enable and provide the
           Services.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           The personal information we collect and how we collect it depends on
           how you use the Services. We collect the following types of personal
           information, as described below.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (a) Information You Provide
         </h3>
-        <p>
+        <div>
           We collect information, including personal information, that you
           provide directly to us when you access or use the Services or when you
           interact with us. We collect information that you provide to us in the
           following ways:
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-decimal  mb-4">
@@ -226,23 +221,23 @@ export default function page() {
             </li>
           </ol>
         </div>
-        <p>
+        <div>
           You may choose not to provide personal information directly to us or
           to not use the Services. However, some personal information is
           necessary so that we can provide you with the Services you have
           requested. Failure to provide this information may prevent us from
           providing you with access to our Services
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (b) Information We Collect Automatically
         </h3>
-        <p>
+        <div>
           When you access or use the Services, we or our third-party agents or
           service providers automatically collect information about the device
           you use to access the Services and your activity when you use the
           Services. Depending on your activity, the information may include:
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-decimal  mb-4">
@@ -299,11 +294,11 @@ export default function page() {
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (c) Information from Third Parties
         </h3>
-        <p>
+        <div>
           In some instances, and depending on the Services you use or how you
           use the Services, we collect and process personal information we
           receive from third parties, which can include the following:
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-decimal  mb-4">
@@ -337,35 +332,37 @@ export default function page() {
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (d) Public Blockchain Information
         </h3>
-        <p>
+        <div>
           If you use certain Products made available through the Services, we
           may collect certain public blockchain information that you make
           available to us, such as your wallet address and crypto-asset
           transaction information related to your wallet address.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (e) Sensitive Personal Information
         </h3>
-        <p>
+        <div>
           We do not intentionally collect sensitive personal information (e.g.,
           social security numbers, racial or ethnic information, health
           information, religious information) that is not relevant to the
           Services provided by us.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           3. How We Use Personal Information
         </h2>
-        <p>We use the personal information we collect in the following ways:</p>
+        <div>
+          We use the personal information we collect in the following ways:
+        </div>
         <br />
         <ul className="list-disc pl-4  ">
           <li>To provide and operate the Services;</li>
 
           <li>
-            To respond to your inquiries and requests, or otherwise
-            communicate with you, and to provide you with assistance related to
-            the Services;
+            To respond to your inquiries and requests, or otherwise communicate
+            with you, and to provide you with assistance related to the
+            Services;
           </li>
 
           <li>
@@ -435,26 +432,26 @@ export default function page() {
           </li>
         </ul>
         <br />
-        <p>
+        <div>
           We may combine any of the information that we collect from you with
           other information, including information that we obtain from third
           parties, or with information derived from any other products or
           services we provide. We will use this information for the purposes
           described in this Privacy Policy.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           4. How We Share Personal Information
         </h2>
-        <p>
+        <div>
           We transmit, share, grant access, make available and provide personal
           information to or with the following types of third parties.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (a) Other Users of the Services
         </h3>
-        <p>
+        <div>
           If you post or share content through the Services (for example
           projects, comments), that information is public and will be shared
           with other users of the Services. We are not a controller of that
@@ -463,19 +460,19 @@ export default function page() {
           associated with any content you post or share, please be aware that
           other users of the Services will be able to view and have access to
           it.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (b) Service Providers
         </h3>
-        <p>
+        <div>
           We share personal information with our third-party vendors,
           consultants, agents, contractors, and service providers that help us
           provide our Services or with any of the purposes described in this
           Privacy Policy. Depending on how you use the Services, the following
           categories of Service Providers may collect data on our behalf,
           receive, or access personal information:
-        </p>
+        </div>
         <br />
         <ul className="list-disc pl-4  ">
           <li>Hosting service providers, </li>
@@ -497,22 +494,21 @@ export default function page() {
           </li>
         </ul>
         <br />
-        
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (c) Our Partners
         </h3>
-        <p>
+        <div>
           From time to time, we may work with other businesses to sponsor or
           host conferences or webinars, market related services, promote joint
           ventures or other similar collaborations. We might share personal
           information, such as your name and email address, with our partners in
           these situations.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (d) Sweepstakes, Contests, and Other Promotional Activities
         </h3>
-        <p>
+        <div>
           If you participate in a promotion, sweepstakes, or contest
           (collectively, “Promotion”), we may disclose your personal information
           to any third parties affiliated with the Promotion or to the public in
@@ -521,15 +517,15 @@ export default function page() {
           a prize, as required by applicable law (such as publishing a list of
           winners), or as permitted by the applicable terms and conditions or
           official rules of the Promotion.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (f) Legal, Compliance and Regulatory Purposes
         </h3>
-        <p>
+        <div>
           We may share personal information if we believe that it is necessary
           to:
-        </p>
+        </div>
         <br />
         <ul className="list-disc pl-4  ">
           <li>
@@ -555,7 +551,7 @@ export default function page() {
           </li>
         </ul>
         <br />
-        <p>
+        <div>
           Non-public information about our users will not be released to law
           enforcement except in response to an appropriate legal process such as
           a subpoena, court order, or other valid legal process that has been
@@ -563,12 +559,12 @@ export default function page() {
           with a good faith belief that there is an exigent emergency, we may
           provide information to law enforcement trying to prevent or mitigate
           the danger, to be determined on a case-by-case basis.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (h) Business Transfers
         </h3>
-        <p>
+        <div>
           We may share personal information with third parties we choose to
           acquire or with buyers, successors, or others in connection with a
           merger, divestiture, restructuring, reorganization, financing due
@@ -577,36 +573,36 @@ export default function page() {
           another provider, whether as a going concern or as part of bankruptcy,
           receivership, liquidation or similar proceeding, as permitted by law
           and/or contract.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (e) With Your Consent
         </h3>
-        <p>
+        <div>
           There may be situations where you are asked to consent to share
           personal information with third parties for additional reasons not
           included in this Privacy Policy.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           5. Cookies and Tracking Technologies
         </h2>
-        <p>
+        <div>
           As described above in this Privacy Policy, we collect and may permit
           third parties to collect information using cookies and other similar
           technologies.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (a) What Are Cookies?
         </h3>
-        <p>
+        <div>
           Cookies are small data files that are placed on your device set by us
           or by third parties when you visit a website or other online service.
           In addition to cookies, we may use other technologies that are similar
           in function, such as pixel tags, also called web beacons or
           single-pixel tags/gifs, local or web storage, and embedded scripts.
-        </p>
+        </div>
         <br />
         <ul className="list-disc pl-4  ">
           <li>
@@ -634,10 +630,10 @@ export default function page() {
             is deactivated or deleted after you are no longer connected.
           </li>
         </ul>
-        <p>
+        <div>
           We use the term “<span className=" text-blue-400"> Cookie </span>”
           throughout this Privacy Policy to cover all these technologies. You
-          can find more information about cookies at: 
+          can find more information about cookies at:
           <a
             href="www.allaboutcookies.org"
             target="_blank"
@@ -646,16 +642,15 @@ export default function page() {
             {" "}
             www.allaboutcookies.org{" "}
           </a>
-         
-        </p>
-        <br/>
+        </div>
+        <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (b) Types of Cookies
         </h3>
-        <p>
+        <div>
           Cookies are often described by who created and placed them and how
           long they last. Types of Cookies generally include the following:
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-decimal  mb-4">
@@ -703,11 +698,11 @@ export default function page() {
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (c) What Types of Information Do Cookies Collect?
         </h3>
-        <p>
+        <div>
           Cookies collect different types of information depending on the type
           of Cookie and its purpose. Some examples of information that may be
           collected by Cookies when you use our Services include:
-        </p>
+        </div>
         <br />
         <ul className="  list-disc px-8">
           <li> The pages or features you visit within our Services; </li>
@@ -730,7 +725,7 @@ export default function page() {
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (d) How Do We Use Cookies?
         </h3>
-        <p>
+        <div>
           Shifu Software Solutions uses Cookies for purposes such as providing
           content or features on our Services, helping us remember you and your
           preferences, and improving your user experience by making our Services
@@ -738,7 +733,7 @@ export default function page() {
           agents acting on our behalf, use the following persistent and session
           Cookies (which may be first-party or third-party Cookies) on our
           Services:
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-disc  mb-4">
@@ -842,10 +837,10 @@ export default function page() {
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (e) How to Manage or Delete Cookies
         </h3>
-        <p>
+        <div>
           You can exercise your preferences concerning Cookies served on our
           Services by taking the steps outlined below.
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-decimal  mb-4">
@@ -867,7 +862,7 @@ export default function page() {
                   setting can prevent the future placement of Cookies, it does
                   not remove existing persistent Cookies.
                 </li>
-                
+
                 <li>
                   Third-Party Cookies: Browsers also allow you to block
                   third-party Cookies using the steps described above for
@@ -937,15 +932,15 @@ export default function page() {
           </ol>
         </div>
         <br />
-        <p>
+        <div>
           Opting out through these mechanisms does not block all online
           advertising. You will continue to receive generic advertisements.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           To learn more about how to manage Cookies and opt-out of Cookies being
           placed on your devices, please visit
-        </p>
+        </div>
         <br />
         <a
           href="www.allaboutcookies.org
@@ -961,12 +956,12 @@ export default function page() {
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           6. "Do Not Track" Preferences
         </h2>
-        <p>
+        <div>
           The Services do not monitor for or behave differently if your browser
           or device transmits a “Do Not Track” or similar message.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           Track” or similar message. Some Internet browsers may be configured to
           send "Do Not Track" signals to the online services that you visit.
           There is no consensus among industry participants as to what "Do Not
@@ -984,12 +979,12 @@ export default function page() {
             {" "}
             All About DNT{" "}
           </a>
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           7. Third-Party Links
         </h2>
-        <p>
+        <div>
           We may provide links to other websites or resources with which we do
           not have a contractual relationship and over which we do not have
           control (“External Websites”). Such links are not paid advertisements,
@@ -1001,12 +996,12 @@ export default function page() {
           of External Websites is subject to their respective terms of use and
           privacy policies. We encourage you to carefully read the privacy
           policy of any website you visit.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           8. Third-Party Social Media Plugins
         </h2>
-        <p>
+        <div>
           The Services may offer Social Media Platform sharing features and
           other integrated tools that enable you to share or view certain
           content via social media sites (such as the Twitter “Follow” button).
@@ -1018,12 +1013,12 @@ export default function page() {
           information about your interactions with the Services to your account
           with them. Please refer to each third party’s privacy policies to
           learn more about its data practices.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           9. Children’s Privacy
         </h2>
-        <p>
+        <div>
           Our Services are not intended for use by anyone younger than the age
           of 18 or under the applicable legal age of the relevant country. We do
           not knowingly collect personal information from children younger than
@@ -1032,7 +1027,7 @@ export default function page() {
           under the age of 18 has provided us with personal information, please
           contact us using the methods provided in the “Contact Us” section of
           this Privacy Policy below.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           10. Your Choices
@@ -1040,66 +1035,65 @@ export default function page() {
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (a) Marketing Preferences
         </h3>
-        <p>
+        <div>
           To stop receiving, or opt-out of, promotional email communications
           from us, click on the "unsubscribe" link or follow the relevant
           opt-out instructions within the marketing communication. If you
           opt-out, we will still send you transactional emails for service
           purposes, such as for responses to your requests or communications
           about your account
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (b) Third Party Analytics
         </h3>
-        <p>
+        <div>
           We use third-party analytics providers to provide us with information
           regarding the use of the Services. For more information about the
           tracking technologies that these third parties use and your options,
           please see the Cookies and Tracking Technologies section above.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           11. How Long We Retain Personal Information
         </h2>
-        <p>
+        <div>
           We retain personal information for the purposes stated in this Privacy
           Policy and as required under applicable law. To determine how long we
           keep personal information, we consider the amount, nature, and
           sensitivity of personal information, the reasons for which we collect
           and process the information, and applicable legal requirements.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           12. How We Protect Personal Information
         </h2>
-     
-        <p>
+        <div>
           At our Company, we take our responsibility to protect the security and
           privacy of personal information seriously. We have implemented what we
           believe to be reasonable and appropriate security measures designed to
           prevent personal information from being lost, used, accessed, altered,
           or disclosed in an unauthorized or unlawful way.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           If we transfer Personal Data outside of Singapore, we will take
           reasonable steps to ensure that such Personal Data transferred
           receives a standard of protection comparable to the protection
           received under the PDPA and such transfer shall be subject to this
           Policy.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           If you have reason to believe that your information is no longer
           secure, please let us know by contacting us using the methods provided
           in the “Contact Us” section of this Privacy Policy below
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           13. International Data Transfers
         </h2>
-        <p>
+        <div>
           The personal information that we collect or receive may be transferred
           to and processed in countries located outside of your country of
           residence to the countries where we or our third-party service
@@ -1108,18 +1102,18 @@ export default function page() {
           equivalent to those in your country of residence. Whenever we transfer
           personal information internationally, we take steps to protect it as
           required under applicable law.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           14. Notice to European and Non-U.S. Residents
         </h2>
-        <p>
+        <div>
           This notice supplements the information provided in this Privacy
           Policy and applies only to individuals located in the EEA, UK,
           Switzerland, or another country with a comprehensive data protection
           law who are within the scope of this Privacy Policy.
-        </p>
-        <p>
+        </div>
+        <div>
           For the purposes of the General Data Protection Regulation (EU)
           2016/679 ("GDPR") and relevant local data protection laws, Shifu
           Software Solutions is the data controller of your personal
@@ -1130,16 +1124,16 @@ export default function page() {
           exercise your data protection rights please contact us using the
           methods provided in the “Contact Us” section of this Privacy Policy
           below.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (a) Legal Basis for Processing
         </h3>
-        <p>
+        <div>
           Shifu Software Solutions processes personal information where there is
           a legal ground to do so, as described below. The applicable legal
           ground depends on the Services you use and how you use them.{" "}
-        </p>
+        </div>
         <br />
         <div className="px-16">
           <ol className="list-decimal  mb-4">
@@ -1227,24 +1221,24 @@ export default function page() {
           </ol>
         </div>
         <br />
-        <p>
+        <div>
           {" "}
           Where Shifu Software Solutions relies on your consent as the lawful
           basis for processing personal data, you have the right to withdraw
           your consent to further use of your personal data at any time. You can
           use the methods described in Exercising Your Rights below to withdraw
           your consent.
-        </p>
+        </div>
         <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (b) Your Data Rights
         </h3>
-        <p>
+        <div>
           {" "}
           Under the GDPR and relevant local data protection laws, you have
           certain rights regarding your personal data. Depending on your country
           of residence, your rights may include:
-        </p>
+        </div>
         <br />
         <ul className="list-disc pl-4  ">
           <li>
@@ -1343,23 +1337,23 @@ export default function page() {
             about our collection and processing of your personal data.
           </li>
         </ul>
-        <br/>
+        <br />
         <h3 className="text-base text-blue-400 font-semibold mb-4">
           (c) Exercising Your Rights
         </h3>
-        <p>
+        <div>
           For each of the rights described above, and for any complaints you may
           have, please contact us.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           We respond to all requests we receive from individuals wishing to
           exercise their data rights in accordance with applicable data
           protection laws. These rights are subject to certain rules around when
           you can exercise them.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           {" "}
           We may need to request specific information from you to help us
           confirm your identity before we can respond to your request. This is a
@@ -1367,9 +1361,9 @@ export default function page() {
           any person who has no right to receive it and to help ensure that the
           person exercising the right is the person about whom the personal data
           relates.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           If you are located in the EEA, the United Kingdom, or Switzerland, you
           have the right to make a complaint at any time to the supervisory
           authority for data protection issues in your country of residence. We
@@ -1377,12 +1371,12 @@ export default function page() {
           before you approach the supervisory authority, so please contact us
           using the methods provided in the “Contact Us” section of this Privacy
           Policy below.{" "}
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           For information on how to contact your data protection authority,
           please see:{" "}
-        </p>
+        </div>
         <br />
         <ul className="list-disc pl-4  ">
           <li>
@@ -1420,17 +1414,17 @@ export default function page() {
             </a>{" "}
           </li>
         </ul>
-        <p>
+        <div>
           {" "}
           Notwithsanding the above, we are not required, under the PDPA, to
           provide access and correction to Personal Data in certain exempted
           situations as set out in the PDPA.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           15. Changes to this Privacy Policy
         </h2>
-        <p>
+        <div>
           We may update this Privacy Policy from time to time. When we update
           this Privacy Policy, we will revise the “Last Updated and Effective
           Date” at the top of this Privacy Policy and post a link to the updated
@@ -1439,15 +1433,15 @@ export default function page() {
           will provide you with notice as required under applicable law. Please
           review this Privacy Policy periodically to ensure you are aware of any
           such changes.
-        </p>
+        </div>
         <br />
         <h2 className=" text-blue-500 text-xl font-semibold mb-4">
           16. Contact Us
         </h2>
-        <p>
+        <div>
           If you have any questions about this Privacy Policy or our privacy
           practices, please contact us: By email at office@nexusnetwork.co.in.
-        </p>
+        </div>
         <br />
       </div>
     </div>

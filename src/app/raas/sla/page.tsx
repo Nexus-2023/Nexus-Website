@@ -2,7 +2,7 @@ import React from "react"
 
 const SLApage = () => {
   return (
-    <div className="px-24 pb-16">
+    <div className="px-24 pb-16 mt-[5rem]">
       <div className="px-16 w-full flex flex-col">
         <h1 className="text-xl font-semibold text-blue-400">
           Nexus Network Service Level Agreement

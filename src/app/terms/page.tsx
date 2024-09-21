@@ -12,7 +12,7 @@ export default function page() {
         <h1 className=" text-2xl mb-4 text-blue-500 font-semibold">
           1. Access and Use of the Service
         </h1>
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           By accessing this website or any other portion of the Site (as defined
           below), you are agreeing to these Terms of Service (as amended from
           time to time, the “Terms of Service”) between you (“you” or “your”)
@@ -37,9 +37,9 @@ export default function page() {
           technologies (collectively with the Interface, Protocol and Site,
           including all existing and any updated or new features, functionality
           and technology, shall be referred to as the “Service”).
-        </p>
+        </div>
         <br />
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           All access and use of the Service is subject to the terms and
           conditions contained in these Terms of Service. By accessing,
           browsing, or otherwise using the Site, the Interface, or any other
@@ -53,9 +53,9 @@ export default function page() {
           that entity or organization). If you do not accept the terms and
           conditions of these Terms of Service, you will not access, browse or
           otherwise use the Service.
-        </p>
+        </div>
         <br />
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           We reserve the right, at our sole discretion, to change or modify any
           portion of these Terms of Service at any time. If we do this, we will
           publicly post the updated Terms of Service on the Site and will
@@ -72,9 +72,9 @@ export default function page() {
           of Service, you agree that we shall not be liable to you or any third
           party as a result of any losses suffered by any modification or
           amendment of this Agreement
-        </p>
+        </div>
         <br />
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           PLEASE READ THESE TERMS OF SERVICE CAREFULLY, AS THEY CONTAIN AN
           AGREEMENT TO ARBITRATE AND OTHER IMPORTANT INFORMATION REGARDING YOUR
           LEGAL RIGHTS, REMEDIES, AND OBLIGATIONS. THE AGREEMENT TO ARBITRATE
@@ -88,9 +88,9 @@ export default function page() {
           NOT BE ABLE TO HAVE ANY CLAIMS YOU HAVE AGAINST US RESOLVED BY A JURY
           OR IN A COURT OF LAW AND SHALL ONLY HAVE RECOURSE THROUGH ARBITRATION
           AS SET FORTH IN THIS TERMS OF SERVICE.
-        </p>
+        </div>
         <br />
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           <span className=" text-blue-400"> Your Privacy: </span>
           For more information regarding our collection, use and disclosure of
           personal data and certain other data, please see our Privacy Policy
@@ -99,18 +99,18 @@ export default function page() {
           defined therein). The Privacy Policy is hereby incorporated by
           reference into these Terms of Service and shall form an integral part
           and be construed together.
-        </p>
+        </div>
         <br />
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           <span className=" text-blue-400">Additional Terms:</span>
           In addition, when using certain features of the Service, you will be
           subject to any additional terms applicable to such features that may
           be posted on or within the Service (including but not limited to
           software licenses) from time to time. All such terms are hereby
           incorporated by reference into these Terms of Service.
-        </p>
+        </div>
         <br />
-        <p className=" text-wrap  ">
+        <div className=" text-wrap  ">
           <span className=" text-blue-400">Developer Documentation: </span> For
           developers seeking to understand and utilize our Service (including
           the Protocol), please refer to our developer documentation available
@@ -136,9 +136,9 @@ export default function page() {
             {" "}
             here{" "}
           </a>
-        </p>
+        </div>
         <br />
-        <p className="  text-wrap">
+        <div className="  text-wrap">
           <span className=" text-blue-400"> Use of Service:</span>
           <br />
           As a best practice and condition to access our Site and Service, you
@@ -247,20 +247,20 @@ export default function page() {
           Company and you, you will be solely responsible for your software
           applications (“Your Apps”), including their development, operation,
           maintenance and all related content and materials.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           <div className=" text-blue-400"> Your Apps: </div>
           As between the Company and you, you will be solely responsible for
           your software applications (“Your Apps”), including their development,
           operation, maintenance and all related content and materials.
-        </p>
+        </div>
 
         <h1 className=" text-2xl mb-4 text-blue-500 font-semibold mt-8">
           2. Conditions of Access and Use
         </h1>
 
-        <p>
+        <div>
           User Conduct: You are solely responsible for all code, video, images,
           information, data, text, software, music, sound, photographs,
           graphics, messages, and other materials (“content”) that you make
@@ -274,9 +274,9 @@ export default function page() {
           sole discretion, violates this provision, including reporting the
           violator to law enforcement authorities. You agree to not use the
           Service or Your Apps to:
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           distribute any content that (i) infringes any intellectual property or
           other proprietary rights of any party; (ii) you do not have a right to
           upload under any law or under contractual or fiduciary relationships;
@@ -314,23 +314,23 @@ export default function page() {
           unsolicited communications or for any other reasons; or further or
           promote any criminal activity or enterprise or provide instructional
           information about illegal activities.
-        </p>
+        </div>
         <br />
-        <p>
+        <div>
           If you are blocked by the Company from accessing the Service
           (including but not limited to blocking your IP address), you agree not
           to implement any measures to circumvent such blocking (e.g., by
           masking your IP address or using a proxy IP address or virtual private
           network). In such an event, we will be permitted to seek legal
           recourse against you.
-        </p>
+        </div>
 
         <h1 className=" text-2xl  text-blue-500 font-semibold mt-8">
           3. No Professional Advice and No Fiduciary Duties
         </h1>
 
         <br />
-        <p>
+        <div>
           All information provided by the Service is for informational purposes
           only and should not be construed as professional advice. You should
           not take, or refrain from taking, any action based on any information
@@ -346,14 +346,14 @@ export default function page() {
           liabilities are hereby irrevocably disclaimed, waived, and eliminated.
           You further agree that the only duties and obligations that we owe you
           are those set out expressly in these Terms of Service.
-        </p>
+        </div>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
           4. Intellectual Property Rights
         </h1>
 
         <br />
-        <p>
+        <div>
           <div className=" text-blue-400"> Service Content: </div>
           You acknowledge and agree that the Service may contain content or
           features (“Service Content”) that are protected by copyright, patent,
@@ -367,10 +367,10 @@ export default function page() {
           to or make available through the Service in accordance with these
           Terms of Service. Any use of the Service or the Service Content other
           than as specifically authorized herein is strictly prohibited.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           <div className=" text-blue-400"> Trademarks: </div>
           The Company’s name and logos in the present and that may be used in
           the future (including but not limited to “Nexus Network”) are
@@ -384,10 +384,10 @@ export default function page() {
           Trademarks displayed on the Service, without our prior written
           permission in each instance. All goodwill generated from the use of
           the Company Trademarks will inure to our exclusive benefit
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           <div className=" text-blue-400"> Third-Party Material: </div>
           Under no circumstances will the Company be liable in any way for any
           content or materials of any third parties (including users), including
@@ -403,10 +403,10 @@ export default function page() {
           You agree that you must evaluate, and bear all risks associated with,
           the use of any content, including any reliance on the accuracy,
           completeness, or usefulness of such content.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           <div className=" text-blue-400"> User Content: </div>
           You represent and warrant that you own all right, title and interest
           in and to such User Content that you make available via the Site,
@@ -420,10 +420,10 @@ export default function page() {
           risk associated with your User Content and the transmission of your
           User Content, and you have sole responsibility for the accuracy,
           quality, legality and appropriateness of your User Content.`
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           You hereby authorize the Company and its third-party service providers
           to derive statistical and usage data relating to your use of the Site
           (“Usage Data”). We may use Usage Data for any purpose in accordance
@@ -436,20 +436,20 @@ export default function page() {
             {" "}
             Privacy Policy{" "}
           </a>
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           Any questions, comments, suggestions, ideas, feedback, reviews, or
           other information about the Service (“Submissions”), provided by you
           to the Company are non-confidential and the Company will be entitled
           to the unrestricted use and dissemination of these Submissions for any
           purpose, commercial or otherwise, without acknowledgment, attribution,
           or compensation to you.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           You acknowledge and agree that the Company may preserve User Content
           and may also disclose User Content if required to do so by law or in
           the good faith belief that such preservation or disclosure is
@@ -462,14 +462,14 @@ export default function page() {
           User Content, may involve (i) transmissions over various networks; and
           (ii) changes to conform and adapt to the technical requirements of
           connecting networks or devices.
-        </p>
+        </div>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
           5. Third-Party Services
         </h1>
 
         <br />
-        <p>
+        <div>
           The Service provides access to services, sites, technology,
           applications and resources that are provided or otherwise made
           available by third parties (the “Third-Party Services”). Your access
@@ -490,14 +490,14 @@ export default function page() {
           be responsible or liable, directly or indirectly, for any damage or
           loss caused or alleged to be caused by or in connection with use of or
           reliance on any Third-Party Services.
-        </p>
+        </div>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
           6. Indemnification and Release
         </h1>
 
         <br />
-        <p>
+        <div>
           You agree to defend, indemnify, and hold harmless the Company, its
           affiliates, and its and their respective officers, employees,
           directors, service providers, licensors, and agents (collectively, the
@@ -513,10 +513,10 @@ export default function page() {
           cooperate with any reasonable requests assisting the Company’s defense
           of such matter. You may not settle or compromise any claim against the
           Company Parties without our prior written consent.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           You expressly agree that you assume all risks in connection with your
           access and use of the Service, including your interaction with the
           Protocol. You further expressly waive and release us from any and all
@@ -530,24 +530,24 @@ export default function page() {
           materially affected his or her settlement with the debtor or releasing
           party.” If you are a resident of another jurisdiction, you waive any
           comparable statute or doctrine.
-        </p>
+        </div>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
           7. Disclaimer of Warranties; Assumption of Risk
         </h1>
 
         <br />
-        <p>
+        <div>
           YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK. THE SERVICE IS PROVIDED
           ON AN “AS IS” AND “AS AVAILABLE” BASIS. THE COMPANY AND THE COMPANY
           PARTIES EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER
           EXPRESS, IMPLIED OR STATUTORY, INCLUDING THE IMPLIED WARRANTIES OF
           MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
           NON-INFRINGEMENT.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           THE COMPANY AND THE COMPANY PARTIES MAKE NO WARRANTY THAT (A) THE
           SERVICE WILL MEET YOUR REQUIREMENTS; (B) THE SERVICE WILL BE
           UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE; (C) THE RESULTS THAT MAY
@@ -555,10 +555,10 @@ export default function page() {
           OR (D) THE QUALITY OF ANY PRODUCTS, SERVICES, APPLICATIONS,
           INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH
           THE SERVICE WILL MEET YOUR EXPECTATIONS.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           BY ACCESSING AND USING THE SERVICE, YOU REPRESENT AND WARRANT THAT YOU
           UNDERSTAND THE INHERENT RISKS ASSOCIATED WITH USING CRYPTOGRAPHIC AND
           BLOCKCHAIN-BASED SYSTEMS, AND THAT YOU HAVE A WORKING KNOWLEDGE OF THE
@@ -599,22 +599,22 @@ export default function page() {
           ADVERSELY AFFECT THE USAGE, TRANSFERABILITY, TRANSACTABILITY AND
           ACCESSIBILITY OF DIGITAL ASSETS, BRIDGING, THE PROTOCOL, OR OTHER
           PARTS OF THE SERVICE.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           YOU ACKNOWLEDGE THAT WE ARE NOT RESPONSIBLE FOR ANY RISKS ASSOCIATED
           WITH YOUR USE OF THE SERVICE, AND CANNOT BE HELD LIABLE FOR ANY
           RESULTING LOSSES THAT YOU EXPERIENCE WHILE ACCESSING OR USING THE
           SERVICE
-        </p>
+        </div>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
           8. Limitation of Liability
         </h1>
 
         <br />
-        <p>
+        <div>
           YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE COMPANY AND THE COMPANY
           PARTIES WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
           CONSEQUENTIAL, EXEMPLARY DAMAGES, OR DAMAGES FOR LOSS OF PROFITS
@@ -643,10 +643,10 @@ export default function page() {
           FUTURE, ACTUAL OR CONTINGENT, OR LIQUIDATED OR UNLIQUIDATED, AGAINST
           ANY SUMS HELD BY THE COMPANY AND OWED TO YOU, WHETHER UNDER THIS
           AGREEMENT OR ANY OTHER AGREEMENT BETWEEN THE COMPANY AND YOU.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           SOME JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OR EXCLUSION OF CERTAIN
           WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL
           OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS
@@ -654,27 +654,27 @@ export default function page() {
           YOU. IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE SERVICE OR WITH
           THESE TERMS OF SERVICE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO
           DISCONTINUE USE OF THE SERVICE.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           THE FOREGOING SECTIONS TITLED “DISCLAIMER OF WARRANTIES; ASSUMPTION OF
           RISK” AND “LIMITATION OF LIABILITY” ARE INTENDED TO BE AS BROAD AS IS
           PERMITTED UNDER GOVERNING LAW OF THIS TERMS OF SERVICE. IF ANY PORTION
           OF THESE SECTIONS IS HELD TO BE INVALID UNDER THE GOVERNING LAW OF
           THIS TERMS OF SERVICE, THE INVALIDITY OF SUCH PORTION WILL NOT AFFECT
           THE VALIDITY OF THE REMAINING PORTIONS OF THE APPLICABLE SECTIONS.
-        </p>
+        </div>
 
         <br />
-        <p>
+        <div>
           SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR
           THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR
           CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE LIMITATIONS SET FORTH
           ABOVE MAY NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH ANY PORTION
           OF THE SERVICES OR WITH THIS AGREEMENT, YOUR SOLE AND EXCLUSIVE REMEDY
           IS TO DISCONTINUE THE USE OF THE SERVICES AND TERMINATE YOUR ACCOUNT
-        </p>
+        </div>
 
         <h1 className=" text-2xl mb-4 text-blue-500 font-semibold mt-8">
           9. Dispute Resolution By Binding Arbitration
@@ -689,7 +689,7 @@ export default function page() {
         <ul className="  list-disc px-8">
           <li className="text-lg text-blue-400 mb-2">Agreement to Arbitrate</li>
 
-          <p>
+          <div>
             This Dispute Resolution by Binding Arbitration section is referred
             to in these Terms of Service as the “Arbitration Agreement.” You
             agree that any and all disputes or claims that have arisen or may
@@ -705,7 +705,7 @@ export default function page() {
             neutral arbitrator, not a judge or jury. The SIAC rules (as defined
             below) govern the interpretation and enforcement of this Arbitration
             Agreement.
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
@@ -715,7 +715,7 @@ export default function page() {
             Non-Individualized Relief
           </li>
 
-          <p>
+          <div>
             YOU AND THE COMPANY AGREE THAT EACH OF US MAY BRING CLAIMS AGAINST
             THE OTHER ONLY ON AN INDIVIDUAL BASIS AND NOT AS A PLAINTIFF OR
             CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE ACTION OR
@@ -727,7 +727,7 @@ export default function page() {
             DECLARATORY RELIEF) ONLY IN FAVOR OF THE INDIVIDUAL PARTY SEEKING
             RELIEF AND ONLY TO THE EXTENT NECESSARY TO PROVIDE RELIEF
             NECESSITATED BY THAT PARTY’S INDIVIDUAL CLAIM(S).
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
@@ -735,7 +735,7 @@ export default function page() {
             Pre-Arbitration Dispute Resolution{" "}
           </li>
 
-          <p>
+          <div>
             The Company is always interested in resolving disputes amicably and
             efficiently, and most customer concerns can be resolved quickly and
             to the customer’s satisfaction by emailing customer support at
@@ -752,13 +752,13 @@ export default function page() {
             offer made by the Company or you will not be disclosed to the
             arbitrator until after the arbitrator determines the amount, if any,
             to which you or the Company is entitled.
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
           <li className="text-lg text-blue-400 mb-2">Arbitration Procedures</li>
 
-          <p>
+          <div>
             Arbitration will be conducted by a neutral arbitrator in accordance
             with the Singapore International Arbitration Centre (“SIAC”) rules
             and procedures, as modified by this Arbitration Agreement. If there
@@ -772,40 +772,40 @@ export default function page() {
             to the scope, enforceability, and arbitrability of this Arbitration
             Agreement. Decisions by the arbitrator are solely enforceable in the
             competent courts of Singapore.
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
           <li className="text-lg text-blue-400 mb-2">Costs of Arbitration</li>
 
-          <p>
+          <div>
             The costs of arbitration, including the fees and expenses of the
             arbitrator, shall be borne by each Party respectively unless
             otherwise determined by the arbitrator. Each Party shall bear its
             own costs and attorneys' fees related to the
             mediation/arbitration/litigation proceedings.
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
           <li className="text-lg text-blue-400 mb-2">Confidentiality</li>
 
-          <p>
+          <div>
             All aspects of the arbitration proceeding, and any ruling, decision,
             or award by the arbitrator, will be strictly confidential for the
             benefit of all parties.
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
           <li className="text-lg text-blue-400 mb-2"> Severability</li>
 
-          <p>
+          <div>
             If any portion of this agreement and/or the Terms of Service is held
             to be unenforceable or overly broad by the arbitrator, such portion
             shall be enforced to the maximum extent permissible, and the
             remainder of the clause shall remain in full force and effect.
-          </p>
+          </div>
         </ul>
 
         <ul className="  list-disc px-8">
@@ -813,7 +813,7 @@ export default function page() {
             Future Changes to Arbitration Agreement
           </li>
 
-          <p>
+          <div>
             Notwithstanding any provision in these Terms of Service to the
             contrary, the Company agrees that if it makes any future change to
             this Arbitration Agreement (other than a change to the Notice
@@ -828,7 +828,7 @@ export default function page() {
             to reject a change within thirty (30) calendar days of the change,
             you are deemed to have accepted such change in this Terms of Service
             and the Arbitration Agreement.
-          </p>
+          </div>
         </ul>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
@@ -836,20 +836,20 @@ export default function page() {
         </h1>
 
         <br />
-        <p>
+        <div>
           You agree that you are solely responsible for your interactions with
           any other user in connection with the Service, and the Company will
           have no liability or responsibility with respect thereto. The Company
           reserves the right, but has no obligation, to become involved in any
           way with disputes between you and any other user of the Service.
-        </p>
+        </div>
 
         <h1 className=" text-2xl  text-blue-500 font-semibold mt-8">
           11. General
         </h1>
 
         <br />
-        <p>
+        <div>
           These Terms of Service (together with the terms incorporated by
           reference herein) constitute the entire agreement between you and the
           Company governing your access and use of the Service, and supersede
@@ -881,11 +881,11 @@ export default function page() {
           prior written consent of the Company, but the Company may assign or
           transfer these Terms of Service, in whole or in part, without
           restriction.
-        </p>
+        </div>
 
         <br />
 
-        <p>
+        <div>
           The section titles in these Terms of Service are for convenience only
           and have no legal or contractual effect. As used in these Terms of
           Service, the words “include” and “including,” and variations thereof,
@@ -902,18 +902,18 @@ export default function page() {
           electrical power, network access or equipment, or any other
           circumstances or causes beyond the Company’sreasonable control
           (including any other force majeure events).
-        </p>
+        </div>
 
         <h1 className=" text-2xl   text-blue-500 font-semibold mt-8">
           12. Questions? Concerns? Suggestions?
         </h1>
 
         <br />
-        <p>
+        <div>
           Please contact us at office@nexusnetwork.co.in to report any
           violations of these Terms of Service or to pose any questions
           regarding these Terms of Service or the Service.
-        </p>
+        </div>
       </div>
     </div>
   )

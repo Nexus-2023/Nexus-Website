@@ -1,7 +1,7 @@
+"use client"
+
 import React from "react"
-
 import Image from "next/image"
-
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -81,10 +81,10 @@ export function PartnerSlider() {
       <Slider {...settings}>
         <div className="  w-full  items-center justify-center   flex flex-col  ">
           <div className="h-[87px] mt-4  items-center justify-center  flex ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/partnerIcon1.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -92,10 +92,10 @@ export function PartnerSlider() {
 
         <div className="  w-full  items-center justify-center  flex flex-col  ">
           <div className="h-[100px]  items-center justify-center  flex ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/hash.jpg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className=" rounded-lg"
             />
@@ -104,10 +104,10 @@ export function PartnerSlider() {
 
         <div className="  w-full  items-center justify-center  flex flex-col   ">
           <div className="h-[100px]  items-center justify-center  flex mt-4 ml-2">
-            <img
+            <Image
               src="/Images/AnnouncementPage/avail.svg"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
               className=" rounded-lg"
             />
@@ -116,10 +116,10 @@ export function PartnerSlider() {
 
         <div className="  w-full items-center justify-center   flex flex-col  ">
           <div className="h-[100px]  items-center justify-center  flex mt-3">
-            <img
+            <Image
               src="/Images/AnnouncementPage/Shellboxes.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -127,10 +127,10 @@ export function PartnerSlider() {
 
         <div className="  w-full items-center justify-center   flex flex-col  lg:ml-4">
           <div className="h-[80px] items-center justify-center  flex  mt-6">
-            <img
+            <Image
               src="/Images/AnnouncementPage/stakely.svg"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
             />
           </div>
@@ -138,10 +138,10 @@ export function PartnerSlider() {
 
         <div className="  w-full   items-center justify-center  flex flex-col lg:ml-2  ">
           <div className="h-[100px]  items-center justify-center  flex  ">
-            <img
+            <Image
               src="/Images/AnnouncementPage/zeeveWhite.png"
-              width="140px"
-              height="140px"
+              width={140}
+              height={140}
               alt="partner icon"
             />
           </div>
@@ -218,10 +218,10 @@ export function FunderSlider() {
       <Slider {...settings}>
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex  ml-4">
-            <img
+            <Image
               src="/Images/Funders/hashWhite.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
             />
           </div>
@@ -229,10 +229,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[100px] items-center justify-center flex ml-8 ">
-            <img
+            <Image
               src="/Images/Funders/Mask_T.png"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -241,10 +241,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col  ">
           <div className="h-[87px] mt-3 ml-5  items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/coin_T.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain rounded-xl"
             />
@@ -253,10 +253,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col  ml-4">
           <div className="h-[80px] mt-3 -ml-4 items-center justify-center flex">
-            <img
+            <Image
               src="/Images/Funders/orbit_T.png"
-              width="180px"
-              height="180px"
+              width={180}
+              height={180}
               alt="partner icon"
               className="  rounded-xl  bg-contain"
             />
@@ -265,10 +265,10 @@ export function FunderSlider() {
 
         <div className="  w-full   flex flex-col      justify-center  ">
           <div className="h-[100px]   mt-2  items-center justify-center flex ml-2 ">
-            <img
+            <Image
               src="/Images/Funders/Founderheads_Logo_White.png"
-              width="160px"
-              height="160px"
+              width={160}
+              height={160}
               alt="partner icon"
               className="   bg-contain"
             />

@@ -30,8 +30,7 @@ interface YeildCardProps {
   src: string
   heading: string
   range: string
-  width: number
-  height: number
+  size: number
 }
 
 interface PartnerCardProps {
@@ -63,21 +62,15 @@ export function AnnounceCard({ h1, p, link }: AnnounceCardProps) {
   )
 }
 
-export function YieldCard({
-  src,
-  heading,
-  range,
-  width,
-  height,
-}: YeildCardProps) {
+export function YieldCard({ src, heading, range, size }: YeildCardProps) {
   return (
     <div className="flex flex-col  justify-center items-center  space-y-4 lg:mb-0  mb-12 ">
-      <img
+      <Image
         src={src}
-        width={width}
-        height={height}
+        width={size}
+        height={size}
         alt="yeild icons"
-        className=" mb-2  "
+        className="mb-2"
       />
 
       <h1 className="md:text-2xl    text-2xl  text-wrap text-center ">
@@ -93,7 +86,7 @@ export function PartnersCard({ src, text, width, height }: PartnerCardProps) {
   return (
     <div className=" space-y-5 flex flex-col w-full   lg:max-w-[20vw] justify-center items-center">
       {/* <Image src={src} width={width} height={height} alt="partner icon" /> */}
-      <img src={src} width={width} height={height} alt="partner icon" />
+      <Image src={src} width={width} height={height} alt="partner icon" />
       <div className="  h-[0.1rem]   min-h-max w-full    max-w-60 bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" />
 
       <h3 className=" text-gray-400 text-xl ">{text}</h3>
@@ -113,10 +106,10 @@ export function TeamCard({
     <div className="flex flex-col items-center   w-full" id="teamCard">
       <div className="lg:p-4 p-2 flex-col      w-full    min-w-min       rounded-3xl">
         <div className="flex justify-center items-center   ">
-          <img
+          <Image
             src={src}
-            width="130px"
-            height="130px"
+            width={130}
+            height={130}
             alt="profile pic"
             className=" "
           />
@@ -151,10 +144,10 @@ export function TeamCard({
             target="_blank"
             className="hover:scale-125    transition-transform d duration-500 ease-in-out"
           >
-            <img
+            <Image
               src="/Images/TeamPage/twitterIcon.svg"
-              width="40px"
-              height="40px"
+              width={40}
+              height={40}
               alt="twitter icon"
               className=" "
             />
@@ -164,17 +157,17 @@ export function TeamCard({
             target="_blank"
             className="hover:scale-125    transition-transform d duration-500 ease-in-out"
           >
-            <img
+            <Image
               src="/Images/TeamPage/linkedinIcon.svg"
-              width="40px"
-              height="40px"
+              width={40}
+              height={40}
               alt="linkedin icon"
               className=" "
             />
           </Link>
         </div>
       </div>
-      {/* <img
+      {/* <Image
         src={src}
         width="150px"
         height="150px"
@@ -190,10 +183,10 @@ export function TeamCard({
           target="_blank"
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
-          <img
+          <Image
             src="/Images/TeamPage/twitterIcon.svg"
-            width="40px"
-            height="40px"
+            width={40}
+            height={40}
             alt="twitter icon"
             className=" "
           />
@@ -204,10 +197,10 @@ export function TeamCard({
           target="_blank"
           className="hover:scale-125    transition-transform d duration-500 ease-in-out"
         >
-          <img
+          <Image
             src="/Images/TeamPage/linkedinIcon.svg"
-            width="40px"
-            height="40px"
+            width={40}
+            height={40}
             alt="linkedin icon"
             className=" "
           />

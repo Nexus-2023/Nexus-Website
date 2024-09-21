@@ -1,76 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 :root {
-  --text-gradient-from: white; 
-  --topBar : #173c54 ;
-  --gradient-to: #45ABF1;  
-  --mobile-menu-bg:#01080F;
-  --nav-link-hover :#77C3F8 ;
-  --page-border : #0D1820;
-  --scedule-call-from-gradient : #007CCE ;
-  --scedule-call-to-gradient : #B4F6FF ;
-  --scedule-call-hover-from-gradient : #007CCE ;
-  --scedule-call-hover-to-gradient : white ;
-  --workPage-bg : #010305;
-  --loader:#36a1d6 ;
-  --glow-Effect1 :#38598a2c ;
-  --glow-Effect2 : #38598a11;
-  --line-gradient-from : #141b22;
-  --line-gradient-to : #2776c0;
-  --box-shadow-from : #0F1923;
-  --box-shadow-to : #1B2630;
-  --box-shadow-border : #28333d;
-  --button-primary :#77C3F8 ;
-  --team-bg-gradient-from : #0B141E;
-  --team-bg-gradient-via : #1b3753;
-  --team-bg-gradient-to : #0B141E;
+  --text-gradient-from: white;
+  --topBar: #173c54;
+  --gradient-to: #45abf1;
+  --mobile-menu-bg: #01080f;
+  --nav-link-hover: #77c3f8;
+  --page-border: #0d1820;
+  --scedule-call-from-gradient: #007cce;
+  --scedule-call-to-gradient: #b4f6ff;
+  --scedule-call-hover-from-gradient: #007cce;
+  --scedule-call-hover-to-gradient: white;
+  --workPage-bg: #010305;
+  --loader: #36a1d6;
+  --glow-Effect1: #38598a2c;
+  --glow-Effect2: #38598a11;
+  --line-gradient-from: #141b22;
+  --line-gradient-to: #2776c0;
+  --box-shadow-from: #0f1923;
+  --box-shadow-to: #1b2630;
+  --box-shadow-border: #28333d;
+  --button-primary: #77c3f8;
+  --team-bg-gradient-from: #0b141e;
+  --team-bg-gradient-via: #1b3753;
+  --team-bg-gradient-to: #0b141e;
 }
 
-
-html, body {
- 
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
- 
 body {
   color: white;
-  background: #01080F;
-
- 
+  background: #01080f;
 }
 
-.Home {
- 
-  background-image: url("/Images/HomePage/Hero-image.webp");
-  background-size: cover;
-  background-position: center;
- 
- 
-}
-
- 
- /* Scrollbar Track */
+/* Scrollbar Track */
 ::-webkit-scrollbar {
-  width:4px; /* Set the width of the scrollbar */
-  height: 4px; 
-
+  width: 4px; /* Set the width of the scrollbar */
+  height: 4px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #FFB82F; /* Set the color of the scrollbar handle */
+  background-color: #ffb82f; /* Set the color of the scrollbar handle */
   border-radius: 8px; /* Set the border radius of the handle */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: 
-  #1a4380; /* Set the color of the scrollbar handle on hover */
+  background-color: #1a4380; /* Set the color of the scrollbar handle on hover */
 }
 
 /* Track */
@@ -78,8 +61,6 @@ body {
   background-color: #3d4244; /* Set the color of the scrollbar track */
 }
 
- 
- 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -95,6 +76,3 @@ es {
     text-wrap: balance;
   }
 }
-
-
- 

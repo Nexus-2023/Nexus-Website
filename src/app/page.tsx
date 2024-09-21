@@ -1,5 +1,5 @@
-"use client"
 import {
+  LazyBackedByPage,
   LazyDemoPage,
   LazyFeaturePage,
   LazyHomePage,
@@ -7,10 +7,8 @@ import {
   LazyTeamPage,
   LazyWorkPage,
   LazyYieldPage,
-  FundingPage,
-} from "@/components/Sections"
+} from "./(pages)"
 import Footer from "@/components/Common/Footer"
-
 import React from "react"
 
 export default function Home() {
@@ -21,7 +19,7 @@ export default function Home() {
       <LazyFeaturePage />
       <LazyYieldPage />
       <LazyDemoPage />
-      <FundingPage />
+      <LazyBackedByPage />
       <LazyPartnersPage />
       <LazyTeamPage />
       <Footer />

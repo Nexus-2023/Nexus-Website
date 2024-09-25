@@ -4,6 +4,8 @@ import "./globals.css"
 import ResponsiveAppBar from "@/components/Common/navbar"
 import { TopNotification } from "@/components/Common/TopNotification"
 import { MetaData } from "@/constants/data"
+import { CSPostHogProvider } from "./providers"
+
 const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = MetaData
 export default function RootLayout({
@@ -20,13 +22,15 @@ export default function RootLayout({
           src="https://assets.calendly.com/assets/external/widget.js"
         ></script>
       </head>
-      <body className={inter.className}>
-        <div className="mx-auto">
-          <TopNotification />
-          <ResponsiveAppBar />
-          {children}
-        </div>
-      </body>
+      <CSPostHogProvider>
+        <body className={inter.className}>
+          <div className="mx-auto">
+            <TopNotification />
+            <ResponsiveAppBar />
+            {children}
+          </div>
+        </body>
+      </CSPostHogProvider>
     </html>
   )
 }

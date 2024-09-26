@@ -4,12 +4,15 @@ import { TeamCard } from "@/components/Common/Card"
 import { BeatLoader } from "react-spinners"
 import { Suspense } from "react"
 import ClientFade from "@/components/Client/ClientFade"
+import ClientPageView from "@/components/Client/ClientPageView"
+
 export default function TeamPage() {
   return (
     <>
       <div
         className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
       >
+        <ClientPageView pageName="Team-Page" />
         <div className="h-full w-full   border-2    flex justify-center  py-16   border-[var(--page-border)]">
           <ClientFade delay={500}>
             <div className="items-center  w-full  max-w-7xl  px-0 flex flex-col">

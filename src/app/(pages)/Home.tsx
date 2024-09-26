@@ -7,12 +7,14 @@ import bgImage from "/public/Images/HomePage/Hero-image.webp"
 import ScheduleCallButton from "@/components/Client/ClientSchedule"
 import { TypeEffectHeading } from "@/components/Client/ClientHeading"
 import { Heading } from "@/components/Common/Heading"
+import ClientPageView from "@/components/Client/ClientPageView"
 export default function HomePage() {
   return (
     <div
       className={`Home h-full  min-h-screen justify-center items-center border-x-2 border-t-2   border-[var(--page-border)] md:mx-16 flex  z-10 relative `}
       id="HomePage"
     >
+      <ClientPageView pageName="Home-Page" />
       <Suspense fallback={<BeatLoader color="var(--loader)" size={20} />}>
         <ClientFade>
           <Image

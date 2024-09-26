@@ -1,10 +1,12 @@
+"use client"
 import React from "react"
 
 import Link from "next/link"
 import { ScheduleCallLink } from "../Client/ClientSchedule"
 import ClientFade from "../Client/ClientFade"
-
+import { usePostHog } from "posthog-js/react"
 export default function Footer() {
+  const posthog = usePostHog()
   return (
     <ClientFade delay={500}>
       <div
@@ -41,6 +43,7 @@ export default function Footer() {
                 <Link
                   href={"https://twitter.com/NexusNetwork_0x"}
                   target="_blank"
+                  onClick={() => posthog?.capture("external_link_clicked")}
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
                   Twitter
@@ -50,6 +53,7 @@ export default function Footer() {
                   href={
                     "https://www.linkedin.com/company/nexus-network-staking-infra/"
                   }
+                  onClick={() => posthog?.capture("external_link_clicked")}
                   target="_blank"
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
@@ -59,6 +63,7 @@ export default function Footer() {
                 <Link
                   href={"https://discord.gg/Qb8zu5sDkj"}
                   target="_blank"
+                  onClick={() => posthog?.capture("external_link_clicked")}
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
                   Discord
@@ -71,6 +76,7 @@ export default function Footer() {
                 <Link
                   href={"https://docs.nexusnetwork.co.in/"}
                   target="_blank"
+                  onClick={() => posthog?.capture("external_link_clicked")}
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
                   Documentation

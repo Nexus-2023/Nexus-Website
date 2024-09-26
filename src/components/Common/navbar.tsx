@@ -11,10 +11,10 @@ import { useRef } from "react"
 import logo from "/public/Images/Logo/logo.png"
 import ClientFade from "../Client/ClientFade"
 import { Link, animateScroll as scroll } from "react-scroll"
-
+import { usePostHog } from "posthog-js/react"
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
-
+  const posthog = usePostHog()
   const navbarRef = useRef<HTMLDivElement>(null)
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget)
@@ -141,7 +141,11 @@ function ResponsiveAppBar() {
                   </MenuItem>
                 </Link>
 
-                <a href="https://docs.nexusnetwork.live/" target="_blank">
+                <a
+                  href="https://docs.nexusnetwork.live/"
+                  target="_blank"
+                  onClick={() => posthog?.capture("external_link_clicked")}
+                >
                   <MenuItem
                     sx={{
                       width: { sm: "80vw", xs: "90vw" },
@@ -235,7 +239,10 @@ function ResponsiveAppBar() {
                 </Link>
               </button>
 
-              <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
+              <button
+                onClick={() => posthog?.capture("external_link_clicked")}
+                className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out"
+              >
                 <a href="https://docs.nexusnetwork.live/" target="_blank">
                   Docs
                 </a>
@@ -263,6 +270,7 @@ function ResponsiveAppBar() {
                   <button
                     className="backdrop-blur mt-2 rounded-3xl  bg-gradient-to-t   from-[var(--scedule-call-from-gradient)]  to-[var(--scedule-call-to-gradient)]  hover:from-[var(--scedule-call-hover-from-gradient)] hover:to-[var(--scedule-call-hover-to-gradient)]    transition  ease-in-out duration-500  hover:scale-110     text-black  font-semibold px-6 py-2 border-2 border-[var(--page-border)]"
                     title="Nexus Orbit Dapp"
+                    onClick={() => posthog?.capture("Launch_button_clicked")}
                   >
                     Launch App
                   </button>

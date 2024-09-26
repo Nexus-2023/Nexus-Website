@@ -10,12 +10,13 @@ import { Suspense } from "react"
 import Box, { FullBox } from "@/components/Common/Box"
 import { PageHeading, PageSubHeading } from "@/components/Common/Heading"
 import ClientFade from "@/components/Client/ClientFade"
-
+import ClientPageView from "@/components/Client/ClientPageView"
 export default function FeaturePage() {
   return (
     <div
       className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
     >
+      <ClientPageView pageName="Features-Page" />
       <div className="h-full  w-full flex  py-16  items-center  relative    border-x-2  border-t-2   border-[var(--page-border)]   flex-col  ">
         <ClientFade delay={400}>
           <GlowEffect1 />

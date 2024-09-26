@@ -7,13 +7,14 @@ import { Suspense } from "react"
 import ClientFade from "@/components/Client/ClientFade"
 import { PageHeading, PageSubHeading } from "@/components/Common/Heading"
 import { GlowEffect1 } from "@/components/Common/GlowEffect"
-
+import ClientPageView from "@/components/Client/ClientPageView"
 export default function WorkPage() {
   return (
     <div
       className={`justify-center items-center flex  z-10  md:px-16  mx-auto`}
       id="WorkPage"
     >
+      <ClientPageView pageName="Work-Page" />
       <div className=" h-full -z-20 bg-[var(--workPage-bg)] w-full relative  md:pt-8   md:border-x-2 md:border-t-2  border-[var(--page-border)]  ">
         <GlowEffect1 />
         <ClientFade delay={500}>

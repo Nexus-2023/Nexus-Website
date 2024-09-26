@@ -4,10 +4,11 @@ import { PageHeading, PageSubHeading } from "@/components/Common/Heading"
 import { SuperChargeCard } from "@/components/Common/Card"
 import Image from "next/image"
 import diagram from "/public/Images/SuperCharge/diagram.svg"
-
+import ClientPageView from "@/components/Client/ClientPageView"
 const SuperCharge = () => {
   return (
     <Container>
+      <ClientPageView pageName="SuperCharge-Page" />
       <PageHeading text="Supercharge your ecosystem with yields" />
       <PageSubHeading text="Boost your ecosystem by integrating Nexus yields" />
 

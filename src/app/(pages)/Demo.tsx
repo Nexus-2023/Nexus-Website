@@ -2,7 +2,7 @@ import React from "react"
 import YouTubeFacade from "@/components/Common/YoutubeVideo"
 import { GlowEffect1 } from "@/components/Common/GlowEffect"
 import { PageHeading } from "@/components/Common/Heading"
-
+import ClientPageView from "@/components/Client/ClientPageView"
 export default function DemoPage() {
   const videoId = "IJHJCleMu-o"
   return (
@@ -10,6 +10,7 @@ export default function DemoPage() {
       className={`justify-center items-center flex  z-10    md:px-16 px-0  mx-auto`}
       id="DemoPage"
     >
+      <ClientPageView pageName="Demo-Page" />
       <div className="h-full   w-full  py-16 px-4 flex  justify-center items-center  relative    border-x-2  border-t-2   border-[var(--page-border)]   flex-col  ">
         <GlowEffect1 />
         <PageHeading text=" Demo" />

@@ -4,11 +4,12 @@ import { PageHeading, PageSubHeading } from "@/components/Common/Heading"
 import icon1 from "/public/Images/EarnYeild/i1.svg"
 import icon2 from "/public/Images/EarnYeild/i2.svg"
 import icon3 from "/public/Images/EarnYeild/i3.svg"
-
+import ClientPageView from "@/components/Client/ClientPageView"
 import { EarnYieldCard } from "@/components/Common/Card"
 const EarnYeild = () => {
   return (
     <Container>
+      <ClientPageView pageName="Earn-Yeild-Page" />
       <PageHeading text="How does Nexus Network earn yields?" />
       <PageSubHeading text="Your NexusETH is always working for you, thanks to our dynamic yield strategies" />
 

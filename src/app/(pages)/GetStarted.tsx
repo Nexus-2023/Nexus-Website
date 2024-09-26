@@ -5,10 +5,11 @@ import Eth from "/public/Images/GetStarted/Ethereum.svg"
 import NexusEth from "/public/Images/GetStarted/NexusEth.svg"
 import Yields from "/public/Images/GetStarted/Yeilds.svg"
 import { GetStartedCard } from "@/components/Common/Card"
-
+import ClientPageView from "@/components/Client/ClientPageView"
 const GetStarted = () => {
   return (
     <Container>
+      <ClientPageView pageName="Get-started-Page" />
       <PageHeading text="Get Started with Nexus" />
       <PageSubHeading text="Bridge ETH, get NexusETH, and start earning yields effortlessly" />
 

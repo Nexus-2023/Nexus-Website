@@ -6,11 +6,13 @@ import { Suspense } from "react"
 import { GlowEffect1 } from "@/components/Common/GlowEffect"
 import { PageHeading, PageSubHeading } from "@/components/Common/Heading"
 import ClientFade from "@/components/Client/ClientFade"
+import ClientPageView from "@/components/Client/ClientPageView"
 export default function YieldPage() {
   return (
     <div
       className={`justify-center items-center flex  z-10    md:px-16 px-0  overflow-hidden `}
     >
+      <ClientPageView pageName="Yield-Page" />
       <div className="h-full w-full  space-y-10  flex  justify-center items-center  relative py-16  border-x-2  border-t-2  border-[var(--page-border)]    flex-col  ">
         <ClientFade>
           <GlowEffect1 />
